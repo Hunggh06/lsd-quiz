@@ -16,16 +16,12 @@
   var results = loadResults();
 
   /* ---------- flatten for dashboard ---------- */
-  var FLAT = []; // {id, ch, ls, q}
-  DATA.chapters.forEach(function (ch, ci) {
-    (ch.lessons || []).forEach(function (ls, li) {
-      (ls.questions || []).forEach(function (q, qi) {
-        FLAT.push({ id: ci + "-" + li + "-" + qi, ch: ch.title, ls: ls.title, q: q });
-      });
+  var FLAT = []; // {id, ch, q}
+  DATA.chapters.forEach(function (ch) {
+    (ch.questions || []).forEach(function (q) {
+      FLAT.push({ id: q.id, ch: ch.title, q: q });
     });
   });
-
-  function qidOf(ci, li, qi) { return ci + "-" + li + "-" + qi; }
 
   /* ---------- elements ---------- */
   var tree = document.getElementById("tree");
@@ -36,99 +32,75 @@
   var dashModal = document.getElementById("dashModal");
   var dashBody = document.getElementById("dashBody");
 
-  /* ---------- sidebar tree ---------- */
+  /* ---------- sidebar tree (one button per Bài) ---------- */
   function renderTree() {
     tree.innerHTML = "";
     DATA.chapters.forEach(function (ch, ci) {
       var total = 0, done = 0, correct = 0;
-      ch.lessons.forEach(function (ls, li) {
-        ls.questions.forEach(function (q, qi) {
-          total++;
-          var r = results[qidOf(ci, li, qi)];
-          if (r) { done++; if (r.status === "correct") correct++; }
-        });
+      ch.questions.forEach(function (q) {
+        total++;
+        var r = results[q.id];
+        if (r) { done++; if (r.status === "correct") correct++; }
       });
-      var chap = document.createElement("div");
-      chap.className = "chapter open";
-      var head = document.createElement("button");
-      head.className = "chapter-head";
-      head.innerHTML = '<span class="chev">▶</span><span>' + esc(ch.title) +
-        '</span><span class="chapter-count">' + correct + "/" + total + "</span>";
-      head.onclick = function () { chap.classList.toggle("open"); };
-      var lessons = document.createElement("div");
-      lessons.className = "lessons";
-      ch.lessons.forEach(function (ls, li) {
-        var lt = 0, ld = 0, lc = 0;
-        ls.questions.forEach(function (q, qi) {
-          lt++;
-          var r = results[qidOf(ci, li, qi)];
-          if (r) { ld++; if (r.status === "correct") lc++; }
-        });
-        var b = document.createElement("button");
-        b.className = "lesson-btn";
-        b.setAttribute("data-ci", ci); b.setAttribute("data-li", li);
-        b.innerHTML = "<span>" + esc(ls.title) + '</span><span class="lp"><span class="a">' +
-          lc + '</span>/<span class="w">' + (lt - lc) + "</span> (" + ld + "/" + lt + ")</span>";
-        b.onclick = function () { selectLesson(ci, li); closeSidebarMobile(); };
-        lessons.appendChild(b);
-      });
-      chap.appendChild(head);
-      chap.appendChild(lessons);
-      tree.appendChild(chap);
+      var b = document.createElement("button");
+      b.className = "lesson-btn";
+      b.setAttribute("data-ci", ci);
+      b.innerHTML = "<span>" + esc(ch.title) + "</span><span class='lp'><span class='a'>" +
+        correct + "</span>/<span class='w'>" + (total - correct) + "</span> (" + done + "/" + total + ")</span>";
+      b.onclick = function () { selectBai(ci); closeSidebarMobile(); };
+      tree.appendChild(b);
     });
   }
 
-  /* ---------- select & render lesson ---------- */
+  /* ---------- select & render a Bài ---------- */
   var current = null;
-  function selectLesson(ci, li) {
-    current = { ci: ci, li: li };
+  function selectBai(ci) {
+    current = { ci: ci };
     welcome.style.display = "none";
     var ch = DATA.chapters[ci];
-    var ls = ch.lessons[li];
-    crumb.textContent = ch.title + "  ›  " + ls.title;
+    crumb.textContent = ch.title;
     document.querySelectorAll(".lesson-btn").forEach(function (b) {
-      b.classList.toggle("active", +b.getAttribute("data-ci") === ci && +b.getAttribute("data-li") === li);
+      b.classList.toggle("active", +b.getAttribute("data-ci") === ci);
     });
-    renderLesson(ci, li);
-    updateLessonProgress(ci, li);
+    renderBai(ci);
+    updateBaiProgress(ci);
   }
 
-  function updateLessonProgress(ci, li) {
-    var ls = DATA.chapters[ci].lessons[li];
-    var t = ls.questions.length, d = 0, c = 0;
-    ls.questions.forEach(function (q, qi) {
-      var r = results[qidOf(ci, li, qi)];
+  function updateBaiProgress(ci) {
+    var ch = DATA.chapters[ci];
+    var t = ch.questions.length, d = 0, c = 0;
+    ch.questions.forEach(function (q) {
+      var r = results[q.id];
       if (r) { d++; if (r.status === "correct") c++; }
     });
-    lessonProgress.innerHTML = "Đã làm <b>" + d + "/" + t + "</b> · Đúng <b style='color:var(--ok)'>" + c + "</b> · Sai <b style='color:var(--bad)'>" + (d - c) + "</b>";
+    lessonProgress.innerHTML = "Đã làm <b>" + d + "/" + t + "</b> · Đúng <b style='color:var(--ok)'>" + c +
+      "</b> · Sai <b style='color:var(--bad)'>" + (d - c) + "</b>";
   }
 
-  function renderLesson(ci, li) {
-    var ls = DATA.chapters[ci].lessons[li];
+  function renderBai(ci) {
+    var ch = DATA.chapters[ci];
     content.innerHTML = "";
 
-    // toolbar
     var bar = document.createElement("div");
     bar.className = "lesson-actions";
     var retry = document.createElement("button");
     retry.className = "mini-btn";
     retry.textContent = "↺ Làm lại bài này";
     retry.onclick = function () {
-      if (confirm("Xóa kết quả bài \"" + ls.title + "\"?")) {
-        ls.questions.forEach(function (q, qi) { delete results[qidOf(ci, li, qi)]; });
-        saveResults(results); renderLesson(ci, li); renderTree(); updateLessonProgress(ci, li);
+      if (confirm("Xóa kết quả \"" + ch.title + "\"?")) {
+        ch.questions.forEach(function (q) { delete results[q.id]; });
+        saveResults(results); renderBai(ci); renderTree(); updateBaiProgress(ci);
       }
     };
     bar.appendChild(retry);
     content.appendChild(bar);
 
-    ls.questions.forEach(function (q, qi) { content.appendChild(buildCard(ci, li, qi, q)); });
-    // refresh top progress after (re)build
-    updateLessonProgress(ci, li);
+    ch.questions.forEach(function (q, qi) { content.appendChild(buildCard(ci, qi, q)); });
+    updateBaiProgress(ci);
   }
 
-  function buildCard(ci, li, qi, q) {
-    var id = qidOf(ci, li, qi);
+  function buildCard(ci, qi, q) {
+    var id = q.id;
     var r = results[id];
     var card = document.createElement("div");
     card.className = "q-card";
@@ -143,15 +115,20 @@
     qt.className = "q-text"; qt.textContent = q.q || "(câu hỏi)";
     card.appendChild(qt);
 
+    if (q.tiet) {
+      var tg = document.createElement("div");
+      tg.className = "q-tiet"; tg.textContent = "Tiết " + q.tiet;
+      card.appendChild(tg);
+    }
+
     var wrap = document.createElement("div");
     wrap.className = "options";
-
     letters.forEach(function (L) {
       if (!opts[L]) return;
       var btn = document.createElement("button");
       btn.className = "opt";
       btn.innerHTML = '<span class="key">' + L + '</span><span class="oval">' + esc(opts[L]) + "</span>";
-      btn.onclick = function () { onAnswer(ci, li, qi, q, L, card, btn); };
+      btn.onclick = function () { onAnswer(ci, qi, q, L, card, btn); };
       wrap.appendChild(btn);
     });
     card.appendChild(wrap);
@@ -160,27 +137,23 @@
     fb.className = "feedback";
     card.appendChild(fb);
 
-    // restore previous state
-    if (r) {
-      markCard(card, q, r.chosen, r.status, false);
-    }
+    if (r) { markCard(card, q, r.chosen, r.status, false); }
     return card;
   }
 
-  function onAnswer(ci, li, qi, q, chosen, card, btn) {
-    var id = qidOf(ci, li, qi);
+  function onAnswer(ci, qi, q, chosen, card, btn) {
+    var id = q.id;
     if (results[id]) return; // already answered (locked)
     var isCorrect = (chosen === q.answer);
     var status = isCorrect ? "correct" : "wrong";
     results[id] = { status: status, chosen: chosen };
     saveResults(results);
     markCard(card, q, chosen, status, true);
-    if (current) { updateLessonProgress(current.ci, current.li); renderTree(); }
+    if (current) { updateBaiProgress(current.ci); renderTree(); }
   }
 
   function markCard(card, q, chosen, status, animate) {
     var opts = card.querySelectorAll(".opt");
-    var letters = ["A", "B", "C", "D"];
     var fb = card.querySelector(".feedback");
     var correct = q.answer;
 
@@ -231,14 +204,13 @@
     html += stat(acc + "%", "Tỉ lệ đúng");
     html += "</div>";
 
-    // per chapter
     var byCh = {};
     FLAT.forEach(function (f) {
       if (!byCh[f.ch]) byCh[f.ch] = { t: 0, d: 0, c: 0 };
       byCh[f.ch].t++;
       if (results[f.id]) { byCh[f.ch].d++; if (results[f.id].status === "correct") byCh[f.ch].c++; }
     });
-    html += "<h3 style='font-family:var(--serif);margin:6px 0 10px'>Kết quả theo chương</h3>";
+    html += "<h3 style='font-family:var(--serif);margin:6px 0 10px'>Kết quả theo Bài</h3>";
     Object.keys(byCh).forEach(function (ch) {
       var o = byCh[ch];
       var a = o.d ? Math.round((o.c / o.d) * 100) : 0;
@@ -275,7 +247,7 @@
   document.getElementById("btnResetAll").onclick = function () {
     if (confirm("Xóa TOÀN BỘ tiến độ đã làm?")) {
       results = {}; saveResults(results); renderTree();
-      if (current) { renderLesson(current.ci, current.li); updateLessonProgress(current.ci, current.li); }
+      if (current) { renderBai(current.ci); updateBaiProgress(current.ci); }
       lessonProgress.innerHTML = "";
     }
   };
