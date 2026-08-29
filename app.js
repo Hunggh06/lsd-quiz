@@ -152,30 +152,34 @@
     fb.className = "feedback";
     card.appendChild(fb);
 
-    if (r) { markCard(card, q, r.chosen, r.status, false); }
+    if (r) { markCard(card, q, r.status, r.status === "wrong" ? (r.wrongs || []) : null); }
     return card;
   }
 
   function onAnswer(ci, qi, q, chosen, card, btn) {
     var id = q.id;
-    if (results[id] && results[id].status === "correct") return; // chỉ khóa khi đã chọn đúng
+    if (results[id] && results[id].status === "correct") return; // đã chọn đúng -> khóa hẳn
     var isCorrect = (chosen === q.answer);
     if (isCorrect) {
       results[id] = { status: "correct", chosen: chosen };
       saveResults(results);
-      markCard(card, q, chosen, "correct", true);
+      markCard(card, q, "correct", null);
       playTone("correct");
     } else {
-      results[id] = { status: "wrong", chosen: chosen };
+      var rec = (results[id] && results[id].status === "wrong") ? results[id] : { status: "wrong", wrongs: [] };
+      if (!rec.wrongs) rec.wrongs = [];
+      if (rec.wrongs.indexOf(chosen) === -1) rec.wrongs.push(chosen);
+      rec.status = "wrong";
+      results[id] = rec;
       saveResults(results);
-      markCard(card, q, chosen, "wrong", true);
+      markCard(card, q, "wrong", rec.wrongs);
       playTone("wrong");
     }
     if (current) { updateBaiProgress(current.ci); renderTree(); }
     updateRank();
   }
 
-  function markCard(card, q, chosen, status, animate) {
+  function markCard(card, q, status, wrongs) {
     var opts = card.querySelectorAll(".opt");
     var fb = card.querySelector(".feedback");
     var correct = q.answer;
@@ -185,18 +189,24 @@
       b.disabled = false;
       var old = b.querySelector(".badge"); if (old) old.remove();
       var key = b.querySelector(".key").textContent;
-      if (key === correct) {
-        b.classList.add("correct");
-        var bd = document.createElement("span"); bd.className = "badge"; bd.textContent = "✓ Đúng";
-        b.appendChild(bd);
-        // khi đang ở trạng thái sai, giữ đáp án đúng còn bấm được để user chọn cho xong
-        if (status !== "wrong") b.disabled = true;
-      } else if (key === chosen && status === "wrong") {
-        b.classList.add("wrong", "locked");
+
+      if (status === "correct") {
+        if (key === correct) {
+          b.classList.add("correct");
+          var bd = document.createElement("span"); bd.className = "badge"; bd.textContent = "✓ Đúng";
+          b.appendChild(bd);
+        } else {
+          b.classList.add("dim");
+        }
         b.disabled = true;
       } else {
-        b.classList.add("dim", "locked");
-        b.disabled = true;
+        // đang đoán: chỉ khóa những phương án ĐÃ bấm sai; không lộ đáp án đúng
+        if (wrongs && wrongs.indexOf(key) !== -1) {
+          b.classList.add("wrong", "locked");
+          var bx = document.createElement("span"); bx.className = "badge"; bx.textContent = "✗";
+          b.appendChild(bx);
+          b.disabled = true;
+        }
       }
     });
 
@@ -206,9 +216,7 @@
         (q.explain ? "<b>Giải thích:</b> " + esc(q.explain) : "");
     } else {
       fb.innerHTML = '<span class="fb-title">❌ Chưa đúng — thử lại nhé</span>' +
-        (q.hint ? "<b>Gợi ý:</b> " + esc(q.hint) + "<br>" : "") +
-        "<span class='reveal-correct'>Đáp án đúng là: <b>" + correct + "</b>. " +
-        (q.explain ? esc(q.explain) : "") + "</span>";
+        (q.hint ? "<b>Gợi ý:</b> " + esc(q.hint) : "");
     }
   }
 
