@@ -36,6 +36,8 @@
   var playerName = "";
   try { playerName = localStorage.getItem(PNAME_KEY) || ""; } catch (e) {}
   var lastUploaded = -1;
+  var currentStreak = 0;   // chuỗi đúng liên tiếp (sạch, không từng sai) - reset khi sai
+  var lastRankKey = null;  // rank key lần trước để phát hiện thăng hạng
 
   /* ---------- flatten for dashboard ---------- */
   var FLAT = []; // {id, ch, q}
@@ -196,6 +198,14 @@
       markCard(card, q, "wrong", rec.wrongs);
       speakWrong();
     }
+    if (isCorrect) {
+      // câu từng trả lời sai (sửa lại đúng) vẫn tính là gãy chuỗi
+      if (results[id] && results[id].everWrong) currentStreak = 0;
+      else currentStreak++;
+    } else {
+      currentStreak = 0; // sai cái là ngắt chuỗi luôn
+    }
+    updateCombo();
     if (current) { updateBaiProgress(current.ci); renderTree(); }
     updateRank();
   }
@@ -253,7 +263,7 @@
     order.sort(function (a, b) { return (a.seq || 0) - (b.seq || 0); });
     var bestC = 0, runC = 0, bestW = 0, runW = 0;
     order.forEach(function (r) {
-      if (r.status === "correct") { runC++; if (runC > bestC) bestC = runC; runW = 0; }
+      if (r.status === "correct" && !r.everWrong) { runC++; if (runC > bestC) bestC = runC; runW = 0; }
       else { runW++; if (runW > bestW) bestW = runW; runC = 0; }
     });
 
@@ -266,6 +276,7 @@
     html += stat(acc + "%", "Tỉ lệ đúng");
     html += stat(bestC, "Chuỗi đúng dài nhất");
     html += stat(bestW, "Chuỗi sai dài nhất");
+    html += stat(currentStreak, "Chuỗi đang có");
     html += "</div>";
 
     var byCh = {};
@@ -340,6 +351,11 @@
         '<div class="rb-foot"><span>' + r.sub + "</span><span>" + r.pct + "%</span></div></div>";
         big.title = "Bấm để xem các mốc rank";
     }
+    if (lastRankKey !== null) {
+      var curK = parseInt(r.cur.key, 10), lastK = parseInt(lastRankKey, 10);
+      if (curK > lastK) { playRankUp(curK); showRankUpAnim(r.cur); }
+    }
+    lastRankKey = r.cur.key;
     uploadScore();
   }
 
@@ -488,14 +504,59 @@
         }
         var rows = list.map(function (e) {
           var me = (e.name === playerName) ? " me" : "";
-          return "<tr class='lb-row" + me + "'><td>" + e.rank + "</td><td>" + esc(e.name) + "</td><td>" + e.score + "</td></tr>";
+          var rk = rankFromScore(e.score);
+          return "<tr class='lb-row" + me + "'><td>" + e.rank + "</td><td>" + esc(e.name) + "</td><td>" + e.score + "</td>" +
+            "<td class='lb-rank'><img src='ranks/" + rk.key + ".png' alt='" + rk.name + "'><span>" + rk.name + "</span></td></tr>";
         }).join("");
         body.innerHTML =
-          "<table class='lb-table'><thead><tr><th>#</th><th>Tên</th><th>Câu đúng</th></tr></thead><tbody>" + rows + "</tbody></table>";
+          "<table class='lb-table'><thead><tr><th>#</th><th>Tên</th><th>Câu đúng</th><th>Hạng</th></tr></thead><tbody>" + rows + "</tbody></table>";
       })
       .catch(function () {
         body.innerHTML = "<p style='color:var(--bad)'>Không tải được bảng xếp hạng (có thể chưa bật server).</p>";
       });
+  }
+
+  function rankFromScore(score) {
+    var cur = RANKS[0];
+    for (var i = 0; i < RANKS.length; i++) { if (score >= RANKS[i].min) cur = RANKS[i]; }
+    return cur;
+  }
+  function playCombo(streak) {
+    var ctx = _getCtx(); if (!ctx) return;
+    if (ctx.state === "suspended") ctx.resume();
+    var t = ctx.currentTime;
+    var step = Math.min(streak - 1, 14);
+    _tone(ctx, 523.25 * Math.pow(2, step / 12), t, 0.12, 0.13);
+  }
+  function playRankUp(tier) {
+    var ctx = _getCtx(); if (!ctx) return;
+    if (ctx.state === "suspended") ctx.resume();
+    var t = ctx.currentTime;
+    var base = 523.25 * Math.pow(2, (Math.min(tier, 10) - 1) / 12);
+    [0, 4, 7, 12].forEach(function (semi, i) {
+      _tone(ctx, base * Math.pow(2, semi / 12), t + i * 0.09, 0.18, 0.15);
+    });
+  }
+  function updateCombo() {
+    var el = document.getElementById("comboBadge");
+    if (!el) return;
+    if (currentStreak >= 2) {
+      el.innerHTML = "🔥 <b>x" + currentStreak + "</b>";
+      el.classList.toggle("hot", currentStreak >= 5);
+      el.classList.add("show");
+      el.classList.remove("pop"); void el.offsetWidth; el.classList.add("pop");
+      playCombo(currentStreak);
+    } else {
+      el.classList.remove("show");
+    }
+  }
+  function showRankUpAnim(rank) {
+    var fx = document.getElementById("rankUpFx");
+    if (!fx) return;
+    fx.innerHTML = "<div class='ru-card'><img src='ranks/" + rank.key + ".png' alt='" + rank.name + "'>" +
+      "<div class='ru-title'>THĂNG HẠNG!</div><div class='ru-name'>" + rank.name + "</div></div>";
+    fx.classList.remove("show"); void fx.offsetWidth; fx.classList.add("show");
+    setTimeout(function () { fx.classList.remove("show"); }, 1800);
   }
 
   /* ---------- wire controls ---------- */

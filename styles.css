@@ -227,6 +227,39 @@ body{
 .lb-table td:nth-child(3){text-align:right;color:var(--ok);font-weight:600}
 .lb-row.me{background:var(--hint-bg);font-weight:700}
 .lb-row.me td:nth-child(2){color:var(--accent)}
+.lb-rank{display:flex;align-items:center;gap:7px;white-space:nowrap}
+.lb-rank img{width:26px;height:26px;object-fit:contain}
+.lb-rank span{color:var(--gold);font-weight:600}
+
+/* ---------- Combo (chuỗi đúng) ---------- */
+.combo-badge{
+  position:fixed;right:18px;bottom:18px;z-index:60;display:none;align-items:center;gap:6px;
+  background:linear-gradient(135deg,#ff7a18,#ffb347);color:#fff;
+  font-family:var(--serif);font-weight:700;font-size:20px;
+  padding:9px 15px;border-radius:999px;box-shadow:0 6px 22px rgba(255,120,30,.45);
+  transform:translateY(8px) scale(.9);opacity:0;
+}
+.combo-badge.show{display:flex}
+.combo-badge.pop{animation:comboPop .42s ease}
+.combo-badge.hot{background:linear-gradient(135deg,#ff3d00,#ff9100);box-shadow:0 8px 30px rgba(255,60,0,.6);animation:comboFlame .5s infinite alternate}
+.combo-badge b{font-size:23px}
+@keyframes comboPop{0%{transform:translateY(0) scale(.6) rotate(-7deg);opacity:.4}40%{transform:translateY(-7px) scale(1.28) rotate(5deg);opacity:1}100%{transform:translateY(0) scale(1) rotate(0);opacity:1}}
+@keyframes comboFlame{from{filter:brightness(1)}to{filter:brightness(1.18) saturate(1.2)}}
+
+/* ---------- Rank-up overlay ---------- */
+.rankup-fx{
+  position:fixed;inset:0;z-index:80;display:flex;align-items:center;justify-content:center;
+  pointer-events:none;opacity:0;
+  background:radial-gradient(circle at center,rgba(184,137,59,.18),transparent 60%);
+}
+.rankup-fx.show{animation:ruFade 1.8s ease}
+@keyframes ruFade{0%{opacity:0}15%{opacity:1}80%{opacity:1}100%{opacity:0}}
+.ru-card{text-align:center;transform:scale(.7)}
+.rankup-fx.show .ru-card{animation:ruPop 1.8s cubic-bezier(.2,1.4,.4,1)}
+@keyframes ruPop{0%{transform:scale(.6) rotate(-8deg)}20%{transform:scale(1.15) rotate(4deg)}40%{transform:scale(1) rotate(0)}100%{transform:scale(1)}}
+.ru-card img{width:130px;height:130px;object-fit:contain;filter:drop-shadow(0 10px 22px rgba(184,137,59,.5))}
+.ru-title{font-family:var(--serif);font-weight:800;font-size:30px;color:var(--accent);letter-spacing:.06em;margin-top:8px;text-shadow:0 2px 10px rgba(0,0,0,.25)}
+.ru-name{font-size:19px;color:var(--gold);font-weight:700;margin-top:2px}
 
 /* ---------- Responsive ---------- */
 .mobile-only{display:none}
