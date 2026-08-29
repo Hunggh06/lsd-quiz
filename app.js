@@ -7,16 +7,16 @@
 
   // Rank ladder (LoL tiers) — advances with total correct answers across all Bài.
   var RANKS = [
-    { key: "iron",        name: "Hạng Sắt",        min: 0 },
-    { key: "bronze",      name: "Hạng Đồng",       min: 30 },
-    { key: "silver",      name: "Hạng Bạc",        min: 70 },
-    { key: "gold",        name: "Hạng Vàng",       min: 120 },
-    { key: "platinum",    name: "Hạng Bạch Kim",   min: 180 },
-    { key: "emerald",     name: "Hạng Lục Bảo",    min: 250 },
-    { key: "diamond",     name: "Hạng Kim Cương",  min: 330 },
-    { key: "master",      name: "Hạng Cao Thủ",    min: 410 },
-    { key: "grandmaster", name: "Hạng Đại Cao Thủ", min: 460 },
-    { key: "challenger",  name: "Hạng Thách Đấu",  min: 490 }
+    { key: "1",  name: "Hạng Sắt",        min: 0 },
+    { key: "2",  name: "Hạng Đồng",       min: 30 },
+    { key: "3",  name: "Hạng Bạc",        min: 70 },
+    { key: "4",  name: "Hạng Vàng",       min: 120 },
+    { key: "5",  name: "Hạng Bạch Kim",   min: 180 },
+    { key: "6",  name: "Hạng Lục Bảo",    min: 250 },
+    { key: "7",  name: "Hạng Kim Cương",  min: 330 },
+    { key: "8",  name: "Hạng Cao Thủ",    min: 410 },
+    { key: "9",  name: "Hạng Đại Cao Thủ", min: 460 },
+    { key: "10", name: "Hạng Thách Đấu",  min: 490 }
   ];
 
   /* ---------- storage ---------- */
@@ -276,7 +276,7 @@
   }
   function updateRank() {
     var r = computeRank();
-    var fill = r.cur.key === "challenger" ? "var(--gold)" : "linear-gradient(90deg,var(--gold),#e6c057)";
+    var fill = r.cur.key === "10" ? "var(--gold)" : "linear-gradient(90deg,var(--gold),#e6c057)";
     var rb = document.getElementById("rankBar");
     if (rb) {
       rb.innerHTML =
