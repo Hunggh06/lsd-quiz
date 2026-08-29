@@ -537,18 +537,55 @@
       _tone(ctx, base * Math.pow(2, semi / 12), t + i * 0.09, 0.18, 0.15);
     });
   }
+  var prevStreak = 0;
   function updateCombo() {
     var el = document.getElementById("comboBadge");
     if (!el) return;
-    if (currentStreak >= 2) {
-      el.innerHTML = "🔥 <b>x" + currentStreak + "</b>";
-      el.classList.toggle("hot", currentStreak >= 5);
-      el.classList.add("show");
+    // chuỗi đứt: vỡ đôi rồi biến mất, sau đó reset về trạng thái gốc
+    if (prevStreak > 0 && currentStreak === 0) { prevStreak = 0; breakCombo(); return; }
+    prevStreak = currentStreak;
+    var scale = 1 + Math.min(currentStreak, 25) * 0.022;          // càng nhiều câu càng to, tăng tí tẹo
+    var hue = 28 + (Math.min(currentStreak, 25) / 25) * 252;       // cam (28) -> tím (280) dần
+    el.style.setProperty("--combo-scale", scale.toFixed(3));
+    el.style.setProperty("--combo-hue", hue.toFixed(0));
+    el.style.background = "linear-gradient(135deg, hsl(var(--combo-hue),85%,55%), hsl(calc(var(--combo-hue) + 18),85%,62%))";
+    el.innerHTML = currentStreak >= 1 ? ("🔥 <b>x" + currentStreak + "</b>") : "🔥";
+    el.classList.add("show");
+    if (currentStreak >= 1) {
       el.classList.remove("pop"); void el.offsetWidth; el.classList.add("pop");
       playCombo(currentStreak);
-    } else {
-      el.classList.remove("show");
     }
+  }
+  function breakCombo() {
+    var el = document.getElementById("comboBadge");
+    if (!el) return;
+    var cs = getComputedStyle(el);
+    el.classList.add("breaking"); // badge thật mờ dần
+    for (var s = -1; s <= 1; s += 2) {
+      var half = document.createElement("div");
+      half.className = "combo-half";
+      half.textContent = "🔥";
+      half.style.position = "fixed";
+      half.style.right = "18px";
+      half.style.bottom = "18px";
+      half.style.zIndex = "61";
+      half.style.background = el.style.background || cs.background;
+      half.style.color = "#fff";
+      half.style.fontWeight = cs.fontWeight;
+      half.style.fontSize = cs.fontSize;
+      half.style.fontFamily = cs.fontFamily;
+      half.style.padding = "9px 15px";
+      half.style.borderRadius = "999px";
+      half.style.boxShadow = cs.boxShadow;
+      half.style.transition = "transform .5s ease, opacity .5s ease";
+      half.style.clipPath = s < 0 ? "inset(0 50% 0 0)" : "inset(0 0 0 50%)";
+      document.body.appendChild(half);
+      void half.offsetWidth;
+      half.style.transform = "translateX(" + (s * 150) + "px) rotate(" + (s * 28) + "deg)";
+      half.style.opacity = "0";
+      (function (h) { setTimeout(function () { if (h.parentNode) h.parentNode.removeChild(h); }, 540); })(half);
+    }
+    setTimeout(function () { el.classList.remove("breaking"); }, 540);
   }
   function showRankUpAnim(rank) {
     var fx = document.getElementById("rankUpFx");
@@ -584,6 +621,7 @@
   /* ---------- init ---------- */
   renderTree();
   updateRank();
+  updateCombo();
   ensureName();
 
   if (!DATA.chapters.length) {

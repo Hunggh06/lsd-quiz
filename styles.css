@@ -234,17 +234,18 @@ body{
 /* ---------- Combo (chuỗi đúng) ---------- */
 .combo-badge{
   position:fixed;right:18px;bottom:18px;z-index:60;display:none;align-items:center;gap:6px;
-  background:linear-gradient(135deg,#ff7a18,#ffb347);color:#fff;
-  font-family:var(--serif);font-weight:700;font-size:20px;
-  padding:9px 15px;border-radius:999px;box-shadow:0 6px 22px rgba(255,120,30,.45);
-  transform:translateY(8px) scale(.9);opacity:0;
+  color:#fff;font-family:var(--serif);font-weight:700;font-size:20px;
+  padding:9px 15px;border-radius:999px;
+  box-shadow:0 6px 22px rgba(184,137,59,.4);
+  transform:scale(var(--combo-scale,1));transform-origin:bottom right;
+  opacity:0;transition:opacity .2s ease;
 }
-.combo-badge.show{display:flex}
+.combo-badge.show{display:flex;opacity:1}
 .combo-badge.pop{animation:comboPop .42s ease}
-.combo-badge.hot{background:linear-gradient(135deg,#ff3d00,#ff9100);box-shadow:0 8px 30px rgba(255,60,0,.6);animation:comboFlame .5s infinite alternate}
+.combo-badge.breaking{opacity:0}
 .combo-badge b{font-size:23px}
-@keyframes comboPop{0%{transform:translateY(0) scale(.6) rotate(-7deg);opacity:.4}40%{transform:translateY(-7px) scale(1.28) rotate(5deg);opacity:1}100%{transform:translateY(0) scale(1) rotate(0);opacity:1}}
-@keyframes comboFlame{from{filter:brightness(1)}to{filter:brightness(1.18) saturate(1.2)}}
+.combo-half{display:flex;align-items:center;gap:6px;transform-origin:bottom right;pointer-events:none}
+@keyframes comboPop{0%{transform:scale(.55) rotate(-8deg);opacity:.3}40%{transform:scale(calc(var(--combo-scale,1) * 1.28)) rotate(5deg);opacity:1}100%{transform:scale(var(--combo-scale,1)) rotate(0);opacity:1}}
 
 /* ---------- Rank-up overlay ---------- */
 .rankup-fx{
