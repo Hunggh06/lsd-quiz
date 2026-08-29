@@ -309,7 +309,25 @@
         '<div class="rb-sub">' + r.correct + "/" + r.total + " câu đúng</div>" +
         '<span class="rb-track"><span class="rb-fill" style="width:' + r.pct + '%;background:' + fill + '"></span></span>' +
         '<div class="rb-foot"><span>' + r.sub + "</span><span>" + r.pct + "%</span></div></div>";
+      big.title = "Bấm để xem các mốc rank";
     }
+  }
+
+  function openRankModal() {
+    var r = computeRank();
+    var body = document.getElementById("rankBody");
+    body.innerHTML = RANKS.map(function (rk) {
+      var reached = r.correct >= rk.min, cur = rk.key === r.cur.key;
+      return '<div class="rank-row' + (cur ? " cur" : "") + (reached ? " reached" : "") + '">' +
+        '<img class="rank-emblem-sm" src="ranks/' + rk.key + '.png" alt="' + rk.name + '">' +
+        '<div class="rr-meta"><span class="rr-name">' + rk.name + '</span>' +
+        '<span class="rr-min">Từ ' + rk.min + ' câu đúng</span></div>' +
+        (cur ? '<span class="rr-badge">ĐANG Ở ĐÂY</span>'
+          : (reached ? '<span class="rr-ok">✓</span>' : '<span class="rr-lock">🔒</span>')) +
+        '</div>';
+    }).join("") +
+    '<div class="rank-note">Tổng <b>' + r.correct + '/' + r.total + '</b> câu đúng · rank hiện tại: <b>' + r.cur.name + '</b></div>';
+    document.getElementById("rankModal").classList.remove("hidden");
   }
 
   /* ---------- helpers ---------- */
@@ -395,6 +413,9 @@
   document.getElementById("btnDashboard").onclick = openDashboard;
   document.getElementById("btnDashClose").onclick = function () { dashModal.classList.add("hidden"); };
   dashModal.onclick = function (e) { if (e.target === dashModal) dashModal.classList.add("hidden"); };
+  document.getElementById("rankBig").addEventListener("click", openRankModal);
+  document.getElementById("btnRankClose").onclick = function () { document.getElementById("rankModal").classList.add("hidden"); };
+  document.getElementById("rankModal").onclick = function (e) { if (e.target === document.getElementById("rankModal")) document.getElementById("rankModal").classList.add("hidden"); };
   document.getElementById("btnMenu").onclick = function () { document.getElementById("sidebar").classList.toggle("open"); };
   document.getElementById("btnResetAll").onclick = function () {
     if (confirm("Xóa TOÀN BỘ tiến độ đã làm?")) {
