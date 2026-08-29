@@ -148,7 +148,10 @@ body{
 .opt.correct .key{background:var(--ok);color:#fff}
 .opt.wrong{background:var(--bad-bg);border-color:var(--bad-line);color:#7e1812}
 .opt.wrong .key{background:var(--bad);color:#fff}
-.opt.locked{cursor:default}
+.opt.locked{pointer-events:none;cursor:default}
+.opt:disabled{pointer-events:none;cursor:default}
+.opt.locked:not(.correct){opacity:.55}
+.opt.dim{opacity:.55}
 .opt .badge{margin-left:auto;font-size:12px;font-weight:700}
 .opt.correct .badge{color:var(--ok)}
 .opt.dim{opacity:.55}

@@ -182,18 +182,21 @@
 
     opts.forEach(function (b) {
       b.classList.remove("locked", "correct", "wrong", "dim");
+      b.disabled = false;
       var old = b.querySelector(".badge"); if (old) old.remove();
       var key = b.querySelector(".key").textContent;
       if (key === correct) {
         b.classList.add("correct");
         var bd = document.createElement("span"); bd.className = "badge"; bd.textContent = "✓ Đúng";
         b.appendChild(bd);
+        // khi đang ở trạng thái sai, giữ đáp án đúng còn bấm được để user chọn cho xong
+        if (status !== "wrong") b.disabled = true;
       } else if (key === chosen && status === "wrong") {
-        b.classList.add("wrong");
-        var bd2 = document.createElement("span"); bd2.className = "badge"; bd2.textContent = "✗";
-        b.appendChild(bd2);
+        b.classList.add("wrong", "locked");
+        b.disabled = true;
       } else {
-        b.classList.add("dim");
+        b.classList.add("dim", "locked");
+        b.disabled = true;
       }
     });
 
