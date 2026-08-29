@@ -173,7 +173,7 @@
       results[id] = rec;
       saveResults(results);
       markCard(card, q, "wrong", rec.wrongs);
-      playTone("wrong");
+      speakWrong();
     }
     if (current) { updateBaiProgress(current.ci); renderTree(); }
     updateRank();
@@ -338,6 +338,28 @@
     } else {
       _tone(ctx, 207.65, t, 0.26, 0.13);
     }
+  }
+  var WRONG_TAUNTS = [
+    "Sai mẹ mày rồi!",
+    "Óc lợn có thế cũng sai!",
+    "Trật lất rồi ông nội ơi!",
+    "Ngốc ơi, sai bét rồi!",
+    "Học bài đâu mà trả lời bậy thế?",
+    "Lại sai nữa rồi, cố lên đi!",
+    "Đáp án này thì cũng sai được á?",
+    "Não cá vàng thế không biết à?",
+    "Sai quá sai, thử lại đi!",
+    "Chơi dở hơi, sai tưng bừng luôn!"
+  ];
+  function speakWrong() {
+    try {
+      if (!("speechSynthesis" in window)) return;
+      window.speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(WRONG_TAUNTS[Math.floor(Math.random() * WRONG_TAUNTS.length)]);
+      u.lang = "vi-VN";
+      u.rate = 1.05; u.pitch = 1.0;
+      window.speechSynthesis.speak(u);
+    } catch (e) {}
   }
 
   function scrollToProgress(ci) {
