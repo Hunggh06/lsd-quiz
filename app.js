@@ -275,16 +275,26 @@
     return { cur: cur, next: next, correct: correct, total: total, pct: pct, sub: sub };
   }
   function updateRank() {
-    var rb = document.getElementById("rankBar");
-    if (!rb) return;
     var r = computeRank();
     var fill = r.cur.key === "challenger" ? "var(--gold)" : "linear-gradient(90deg,var(--gold),#e6c057)";
-    rb.innerHTML =
-      '<img class="rank-emblem" src="ranks/' + r.cur.key + '.png" alt="' + r.cur.name + '">' +
-      '<div class="rb-meta"><span class="rb-name">' + r.cur.name + "</span>" +
-      '<span class="rb-sub">' + r.correct + "/" + r.total + " đúng · " + r.sub + "</span></div>" +
-      '<span class="rb-track"><span class="rb-fill" style="width:' + r.pct + '%;background:' + fill + '"></span></span>' +
-      '<span class="rb-pct">' + r.pct + "%</span>";
+    var rb = document.getElementById("rankBar");
+    if (rb) {
+      rb.innerHTML =
+        '<img class="rank-emblem" src="ranks/' + r.cur.key + '.png" alt="' + r.cur.name + '">' +
+        '<div class="rb-meta"><span class="rb-name">' + r.cur.name + "</span>" +
+        '<span class="rb-sub">' + r.correct + "/" + r.total + " đúng · " + r.sub + "</span></div>" +
+        '<span class="rb-track"><span class="rb-fill" style="width:' + r.pct + '%;background:' + fill + '"></span></span>' +
+        '<span class="rb-pct">' + r.pct + "%</span>";
+    }
+    var big = document.getElementById("rankBig");
+    if (big) {
+      big.innerHTML =
+        '<img class="rb-emblem" src="ranks/' + r.cur.key + '.png" alt="' + r.cur.name + '">' +
+        '<div class="rb-info"><div class="rb-name">' + r.cur.name + "</div>" +
+        '<div class="rb-sub">' + r.correct + "/" + r.total + " câu đúng</div>" +
+        '<span class="rb-track"><span class="rb-fill" style="width:' + r.pct + '%;background:' + fill + '"></span></span>' +
+        '<div class="rb-foot"><span>' + r.sub + "</span><span>" + r.pct + "%</span></div></div>";
+    }
   }
 
   /* ---------- helpers ---------- */

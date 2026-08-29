@@ -106,6 +106,22 @@ body{
 .rank-bar .rb-track{width:90px;height:7px;background:#e9e0cc;border-radius:6px;overflow:hidden;flex:0 0 90px}
 .rank-bar .rb-fill{height:100%;background:linear-gradient(90deg,var(--gold),#e6c057);border-radius:6px;transition:width .35s}
 .rank-bar .rb-pct{font-size:10.5px;color:var(--ink-soft);flex:0 0 auto}
+
+/* ---------- Big rank display (bottom of lesson list) ---------- */
+.rank-big{
+  margin:10px 10px 4px;padding:16px 14px;border-radius:14px;text-align:center;
+  background:linear-gradient(160deg,#fffdf7,#f6edd8);
+  border:1.5px solid var(--line-strong);box-shadow:var(--shadow);
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+}
+.rank-big .rb-emblem{width:96px;height:108px;object-fit:contain;filter:drop-shadow(0 5px 12px rgba(60,45,20,.28))}
+.rank-big .rb-info{width:100%}
+.rank-big .rb-name{font-family:var(--serif);font-weight:700;font-size:21px;color:var(--ink);line-height:1.2}
+.rank-big .rb-sub{font-size:13px;color:var(--ink-soft);margin:2px 0 10px}
+.rank-big .rb-track{display:block;height:13px;background:#e9e0cc;border-radius:8px;overflow:hidden}
+.rank-big .rb-fill{display:block;height:100%;border-radius:8px;transition:width .35s}
+.rank-big .rb-foot{display:flex;justify-content:space-between;font-size:12px;color:var(--ink-soft);margin-top:6px}
+.rank-big .rb-foot span:last-child{font-weight:700;color:var(--gold)}
 .content{padding:22px;max-width:920px;width:100%;margin:0 auto}
 
 /* ---------- Welcome ---------- */
