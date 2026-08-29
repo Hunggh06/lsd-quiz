@@ -28,6 +28,9 @@
     try { localStorage.setItem(STORE_KEY, JSON.stringify(r)); } catch (e) {}
   }
   var results = loadResults();
+  var answerSeq = 0;
+  for (var k in results) { if (results[k] && typeof results[k].seq === "number" && results[k].seq > answerSeq) answerSeq = results[k].seq; }
+  answerSeq++;
 
   /* ---------- flatten for dashboard ---------- */
   var FLAT = []; // {id, ch, q}
@@ -166,17 +169,22 @@
   function onAnswer(ci, qi, q, chosen, card, btn) {
     var id = q.id;
     if (results[id] && results[id].status === "correct") return; // đã chọn đúng -> khóa hẳn
+    var now = Date.now();
     var isCorrect = (chosen === q.answer);
     if (isCorrect) {
-      results[id] = { status: "correct", chosen: chosen };
+      var prevTs = (results[id] && results[id].ts) || now;
+      var prevSeq = (results[id] && typeof results[id].seq === "number") ? results[id].seq : answerSeq++;
+      results[id] = { status: "correct", chosen: chosen, ts: prevTs, seq: prevSeq };
       saveResults(results);
       markCard(card, q, "correct", null);
       playTone("correct");
     } else {
-      var rec = (results[id] && results[id].status === "wrong") ? results[id] : { status: "wrong", wrongs: [] };
+      var rec = (results[id] && results[id].status === "wrong") ? results[id] : { status: "wrong", wrongs: [], ts: now };
       if (!rec.wrongs) rec.wrongs = [];
       if (rec.wrongs.indexOf(chosen) === -1) rec.wrongs.push(chosen);
       rec.status = "wrong";
+      if (!rec.ts) rec.ts = now;
+      if (typeof rec.seq !== "number") rec.seq = answerSeq++;
       results[id] = rec;
       saveResults(results);
       markCard(card, q, "wrong", rec.wrongs);
@@ -233,6 +241,16 @@
     FLAT.forEach(function (f) { if (results[f.id]) { done++; if (results[f.id].status === "correct") correct++; } });
 
     var acc = done ? Math.round((correct / done) * 100) : 0;
+
+    var order = [];
+    FLAT.forEach(function (f) { var r = results[f.id]; if (r) order.push(r); });
+    order.sort(function (a, b) { return (a.seq || 0) - (b.seq || 0); });
+    var bestC = 0, runC = 0, bestW = 0, runW = 0;
+    order.forEach(function (r) {
+      if (r.status === "correct") { runC++; if (runC > bestC) bestC = runC; runW = 0; }
+      else { runW++; if (runW > bestW) bestW = runW; runC = 0; }
+    });
+
     var html = "";
     html += '<div class="stat-grid">';
     html += stat(total, "Tổng câu");
@@ -240,6 +258,8 @@
     html += stat(correct, "Đúng");
     html += stat(done - correct, "Sai");
     html += stat(acc + "%", "Tỉ lệ đúng");
+    html += stat(bestC, "Chuỗi đúng dài nhất");
+    html += stat(bestW, "Chuỗi sai dài nhất");
     html += "</div>";
 
     var byCh = {};
