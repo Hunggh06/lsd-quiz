@@ -349,7 +349,17 @@
     "Đáp án này thì cũng sai được á?",
     "Não cá vàng thế không biết à?",
     "Sai quá sai, thử lại đi!",
-    "Chơi dở hơi, sai tưng bừng luôn!"
+    "Chơi dở hơi, sai tưng bừng luôn!",
+    "Chó Khôi cũng làm được mày à?",
+    "Chó Tuấn cười mày bây giờ đấy!",
+    "Chó Minh Bell🐧 còn biết mày sai rồi!",
+    "Chó Kiên Corgi chuyên Hưng Yên cũng chê mày đấy!",
+    "Chuyên Tin Bắc Giang đcmm, sai bét rồi!",
+    "Thằng Chó Khôi xem thường mày rồi!",
+    "Chó Tuấn bảo mày ngu lắm!",
+    "Chó Minh Bell🐧🐧 cười ẻ nhìn mày kìa!",
+    "Chó Kiên Corgi chuyên Hưng Yên lắc đầu với mày!",
+    "Chuyên Tin Bắc Giang đcmm, học đi rồi trả lời!"
   ];
   function speakWrong() {
     try {
