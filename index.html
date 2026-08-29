@@ -23,7 +23,9 @@
       <nav id="tree" class="tree"></nav>
       <div id="rankBig" class="rank-big"></div>
       <div class="side-foot">
+      <div id="playerName" class="player-name"></div>
       <button id="btnDashboard" class="ghost-btn">📊 Thống kê</button>
+      <button id="btnLeaderboard" class="ghost-btn">🏆 Xếp hạng</button>
       <button id="btnResetAll" class="ghost-btn danger">🗑 Xóa tiến độ</button>
     </div>
   </aside>
@@ -72,6 +74,29 @@
       <button id="btnRankClose" class="ghost-btn">✕</button>
     </div>
     <div id="rankBody" class="rank-body"></div>
+  </div>
+</div>
+
+<div id="nameModal" class="modal hidden">
+  <div class="modal-card">
+    <div class="modal-head">
+      <h2>👋 Nhập tên của bạn</h2>
+    </div>
+    <div class="name-body">
+      <p>Nhập tên để lưu điểm lên bảng xếp hạng chung của mọi người.</p>
+      <input id="nameInput" type="text" maxlength="24" placeholder="Tên của bạn" autocomplete="off" />
+      <button id="btnNameOk" class="ghost-btn">Xác nhận</button>
+    </div>
+  </div>
+</div>
+
+<div id="leaderboardModal" class="modal hidden">
+  <div class="modal-card">
+    <div class="modal-head">
+      <h2>🏆 Bảng xếp hạng</h2>
+      <button id="btnLbClose" class="ghost-btn">✕</button>
+    </div>
+    <div id="lbBody" class="lb-body"></div>
   </div>
 </div>
 

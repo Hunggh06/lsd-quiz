@@ -32,6 +32,11 @@
   for (var k in results) { if (results[k] && typeof results[k].seq === "number" && results[k].seq > answerSeq) answerSeq = results[k].seq; }
   answerSeq++;
 
+  var PNAME_KEY = "lsd_player_name";
+  var playerName = "";
+  try { playerName = localStorage.getItem(PNAME_KEY) || ""; } catch (e) {}
+  var lastUploaded = -1;
+
   /* ---------- flatten for dashboard ---------- */
   var FLAT = []; // {id, ch, q}
   DATA.chapters.forEach(function (ch) {
@@ -329,8 +334,9 @@
         '<div class="rb-sub">' + r.correct + "/" + r.total + " câu đúng</div>" +
         '<span class="rb-track"><span class="rb-fill" style="width:' + r.pct + '%;background:' + fill + '"></span></span>' +
         '<div class="rb-foot"><span>' + r.sub + "</span><span>" + r.pct + "%</span></div></div>";
-      big.title = "Bấm để xem các mốc rank";
+        big.title = "Bấm để xem các mốc rank";
     }
+    uploadScore();
   }
 
   function openRankModal() {
@@ -429,6 +435,65 @@
     if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
+  /* ---------- leaderboard + player name ---------- */
+  function uploadScore() {
+    if (!playerName) return;
+    var r = computeRank();
+    if (r.correct === lastUploaded) return;
+    lastUploaded = r.correct;
+    try {
+      fetch("/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: playerName, score: r.correct })
+      }).catch(function () {});
+    } catch (e) {}
+  }
+  function renderPlayerName() {
+    var el = document.getElementById("playerName");
+    if (el) el.textContent = playerName ? ("👤 " + playerName) : "";
+  }
+  function ensureName() {
+    if (playerName) { renderPlayerName(); return; }
+    var m = document.getElementById("nameModal");
+    var input = document.getElementById("nameInput");
+    m.classList.remove("hidden");
+    input.value = "";
+    setTimeout(function () { input.focus(); }, 30);
+  }
+  function submitName() {
+    var input = document.getElementById("nameInput");
+    var v = (input.value || "").trim().slice(0, 24);
+    if (!v) { input.focus(); return; }
+    playerName = v;
+    try { localStorage.setItem(PNAME_KEY, v); } catch (e) {}
+    document.getElementById("nameModal").classList.add("hidden");
+    renderPlayerName();
+    uploadScore();
+  }
+  function openLeaderboard() {
+    var body = document.getElementById("lbBody");
+    body.innerHTML = "<p style='color:var(--ink-soft)'>Đang tải…</p>";
+    document.getElementById("leaderboardModal").classList.remove("hidden");
+    fetch("/api/leaderboard")
+      .then(function (r) { return r.json(); })
+      .then(function (list) {
+        if (!list || !list.length) {
+          body.innerHTML = "<p style='color:var(--ink-soft)'>Chưa có ai trên bảng xếp hạng. Hãy làm bài để lên top!</p>";
+          return;
+        }
+        var rows = list.map(function (e) {
+          var me = (e.name === playerName) ? " me" : "";
+          return "<tr class='lb-row" + me + "'><td>" + e.rank + "</td><td>" + esc(e.name) + "</td><td>" + e.score + "</td></tr>";
+        }).join("");
+        body.innerHTML =
+          "<table class='lb-table'><thead><tr><th>#</th><th>Tên</th><th>Câu đúng</th></tr></thead><tbody>" + rows + "</tbody></table>";
+      })
+      .catch(function () {
+        body.innerHTML = "<p style='color:var(--bad)'>Không tải được bảng xếp hạng (có thể chưa bật server).</p>";
+      });
+  }
+
   /* ---------- wire controls ---------- */
   document.getElementById("btnDashboard").onclick = openDashboard;
   document.getElementById("btnDashClose").onclick = function () { dashModal.classList.add("hidden"); };
@@ -445,10 +510,16 @@
       updateRank();
     }
   };
+  document.getElementById("btnLeaderboard").onclick = openLeaderboard;
+  document.getElementById("btnLbClose").onclick = function () { document.getElementById("leaderboardModal").classList.add("hidden"); };
+  document.getElementById("leaderboardModal").onclick = function (e) { if (e.target === document.getElementById("leaderboardModal")) document.getElementById("leaderboardModal").classList.add("hidden"); };
+  document.getElementById("nameInput").addEventListener("keydown", function (e) { if (e.key === "Enter") submitName(); });
+  document.getElementById("btnNameOk").onclick = submitName;
 
   /* ---------- init ---------- */
   renderTree();
   updateRank();
+  ensureName();
 
   if (!DATA.chapters.length) {
     content.innerHTML = "<div class='welcome'><h1>Chưa có dữ liệu</h1><p>File <code>data.js</code> chưa được tạo. Hãy chạy merge để sinh dữ liệu câu hỏi.</p></div>";

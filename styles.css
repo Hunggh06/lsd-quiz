@@ -213,6 +213,21 @@ body{
 .chapter-stat{margin:14px 0;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--paper-2)}
 .chapter-stat h4{margin:0 0 8px;font-family:var(--serif);font-size:15px}
 
+/* ---------- Name modal + leaderboard ---------- */
+.player-name{font-size:13px;color:var(--ink-soft);padding:4px 2px 8px;min-height:18px}
+.name-body{padding:14px 18px 20px}
+.name-body p{margin:0 0 10px;color:var(--ink-soft);font-size:14px}
+.name-body input{width:100%;padding:10px 12px;border:1px solid var(--line-strong);border-radius:10px;font-size:15px;font-family:var(--sans);background:#fff}
+.name-body input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(138,31,31,.12)}
+.name-body .ghost-btn{margin-top:12px;width:100%}
+.lb-body{padding:14px 18px 20px;max-height:62vh;overflow:auto}
+.lb-table{width:100%;border-collapse:collapse;font-size:14px}
+.lb-table th,.lb-table td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--line)}
+.lb-table th{color:var(--ink-soft);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.lb-table td:nth-child(3){text-align:right;color:var(--ok);font-weight:600}
+.lb-row.me{background:var(--hint-bg);font-weight:700}
+.lb-row.me td:nth-child(2){color:var(--accent)}
+
 /* ---------- Responsive ---------- */
 .mobile-only{display:none}
 @media(max-width:860px){
