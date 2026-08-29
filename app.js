@@ -62,7 +62,7 @@
       ch.questions.forEach(function (q) {
         total++;
         var r = results[q.id];
-        if (r) { done++; if (r.status === "correct") correct++; }
+        if (r) { done++; if (countsForRank(r)) correct++; }
       });
       var b = document.createElement("button");
       b.className = "lesson-btn";
@@ -96,7 +96,7 @@
     var t = ch.questions.length, d = 0, c = 0;
     ch.questions.forEach(function (q) {
       var r = results[q.id];
-      if (r) { d++; if (r.status === "correct") c++; }
+      if (r) { d++; if (countsForRank(r)) c++; }
     });
     lessonProgress.innerHTML = "Đã làm <b>" + d + "/" + t + "</b> · Đúng <b style='color:var(--ok)'>" + c +
       "</b> · Sai <b style='color:var(--bad)'>" + (d - c) + "</b>";
@@ -179,7 +179,7 @@
     if (isCorrect) {
       var prevTs = (results[id] && results[id].ts) || now;
       var prevSeq = (results[id] && typeof results[id].seq === "number") ? results[id].seq : answerSeq++;
-      results[id] = { status: "correct", chosen: chosen, ts: prevTs, seq: prevSeq };
+      results[id] = { status: "correct", chosen: chosen, ts: prevTs, seq: prevSeq, everWrong: !!(results[id] && results[id].everWrong) };
       saveResults(results);
       markCard(card, q, "correct", null);
       playTone("correct");
@@ -188,6 +188,7 @@
       if (!rec.wrongs) rec.wrongs = [];
       if (rec.wrongs.indexOf(chosen) === -1) rec.wrongs.push(chosen);
       rec.status = "wrong";
+      rec.everWrong = true;
       if (!rec.ts) rec.ts = now;
       if (typeof rec.seq !== "number") rec.seq = answerSeq++;
       results[id] = rec;
@@ -243,7 +244,7 @@
   /* ---------- dashboard ---------- */
   function openDashboard() {
     var total = FLAT.length, done = 0, correct = 0;
-    FLAT.forEach(function (f) { if (results[f.id]) { done++; if (results[f.id].status === "correct") correct++; } });
+    FLAT.forEach(function (f) { if (results[f.id]) { done++; if (countsForRank(results[f.id])) correct++; } });
 
     var acc = done ? Math.round((correct / done) * 100) : 0;
 
@@ -271,7 +272,7 @@
     FLAT.forEach(function (f) {
       if (!byCh[f.ch]) byCh[f.ch] = { t: 0, d: 0, c: 0 };
       byCh[f.ch].t++;
-      if (results[f.id]) { byCh[f.ch].d++; if (results[f.id].status === "correct") byCh[f.ch].c++; }
+      if (results[f.id]) { byCh[f.ch].d++; if (countsForRank(results[f.id])) byCh[f.ch].c++; }
     });
     html += "<h3 style='font-family:var(--serif);margin:6px 0 10px'>Kết quả theo Bài</h3>";
     Object.keys(byCh).forEach(function (ch) {
@@ -294,9 +295,12 @@
   }
 
   /* ---------- rank ladder ---------- */
+  function countsForRank(r) {
+    return !!(r && r.status === "correct" && !r.everWrong);
+  }
   function totalCorrect() {
     var c = 0;
-    FLAT.forEach(function (f) { if (results[f.id] && results[f.id].status === "correct") c++; });
+    FLAT.forEach(function (f) { if (countsForRank(results[f.id])) c++; });
     return c;
   }
   function computeRank() {
