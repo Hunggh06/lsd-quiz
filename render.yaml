@@ -6,5 +6,5 @@ services:
     runtime: static
     buildCommand: ""          # không cần build, file tĩnh sẵn sàng
     staticPublishPath: ./     # publish toàn bộ nội dung thư mục gốc
-    pullRequestPreviewsEnabled: true
-    healthCheckPath: /
+    previews:
+      generation: automatic
