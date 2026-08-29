@@ -1,4 +1,4 @@
-// Auto-updated from T.Ninh+Cường.docx (68 cau, phan loai theo Bai)
+// Auto-updated: +subtitle cho moi Bai
 window.QUIZ_DATA = {
  "chapters": [
   {
@@ -254,7 +254,8 @@ window.QUIZ_DATA = {
      "hint": "",
      "id": "b1-18"
     }
-   ]
+   ],
+   "subtitle": "Giới thiệu về môn học Lịch sử Đảng Cộng sản Việt Nam"
   },
   {
    "title": "Bài 2",
@@ -1077,7 +1078,8 @@ window.QUIZ_DATA = {
      "hint": "",
      "id": "b2-59"
     }
-   ]
+   ],
+   "subtitle": "Sự hình thành của Đảng Cộng sản Việt Nam (1911–1930)"
   },
   {
    "title": "Bài 3",
@@ -1988,7 +1990,8 @@ window.QUIZ_DATA = {
      "hint": "",
      "id": "b3-65"
     }
-   ]
+   ],
+   "subtitle": "Đảng Cộng sản Việt Nam lãnh đạo cách mạng 1930–1945"
   },
   {
    "title": "Bài 4",
@@ -3288,7 +3291,8 @@ window.QUIZ_DATA = {
      "hint": "",
      "id": "b4-94"
     }
-   ]
+   ],
+   "subtitle": "Cách mạng tháng Tám và kháng chiến chống Pháp, Mỹ (1945–1975)"
   },
   {
    "title": "Bài 5",
@@ -4071,7 +4075,8 @@ window.QUIZ_DATA = {
      "hint": "",
      "id": "b5-56"
     }
-   ]
+   ],
+   "subtitle": "Xây dựng chủ nghĩa xã hội ở Việt Nam (1975–1986)"
   },
   {
    "title": "Bài 6",
@@ -4971,7 +4976,8 @@ window.QUIZ_DATA = {
      "hint": "",
      "id": "b6-65"
     }
-   ]
+   ],
+   "subtitle": "Công cuộc đổi mới đất nước (1986–1996)"
   },
   {
    "title": "Bài 7",
@@ -5676,7 +5682,8 @@ window.QUIZ_DATA = {
      "tiet": null,
      "id": "b7-50"
     }
-   ]
+   ],
+   "subtitle": "Đảng Cộng sản Việt Nam trong hệ thống chính trị"
   },
   {
    "title": "Bài 8",
@@ -6420,7 +6427,8 @@ window.QUIZ_DATA = {
      "hint": "",
      "id": "b8-53"
     }
-   ]
+   ],
+   "subtitle": "Văn hóa, giáo dục và con người Việt Nam"
   },
   {
    "title": "Bài 9",
@@ -7177,7 +7185,8 @@ window.QUIZ_DATA = {
      "hint": "",
      "id": "b9-54"
     }
-   ]
+   ],
+   "subtitle": "Đường lối đối ngoại của Đảng Cộng sản Việt Nam"
   },
   {
    "title": "Bài 10",
@@ -7947,7 +7956,8 @@ window.QUIZ_DATA = {
      "hint": "",
      "id": "b10-55"
     }
-   ]
+   ],
+   "subtitle": "Độc lập dân tộc gắn liền với chủ nghĩa xã hội – Tổng kết cách mạng"
   }
  ]
 };

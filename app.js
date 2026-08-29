@@ -59,8 +59,10 @@
       var b = document.createElement("button");
       b.className = "lesson-btn";
       b.setAttribute("data-ci", ci);
-      b.innerHTML = "<span>" + esc(ch.title) + "</span><span class='lp'><span class='a'>" +
-        correct + "</span>/<span class='w'>" + (total - correct) + "</span> (" + done + "/" + total + ")</span>";
+      b.innerHTML = "<span class='lt'>" + esc(ch.title) + "</span>" +
+        (ch.subtitle ? "<span class='ls'>" + esc(ch.subtitle) + "</span>" : "") +
+        "<span class='lp'><span class='a'>" + correct + "</span>/<span class='w'>" +
+        (total - correct) + "</span> (" + done + "/" + total + ")</span>";
       b.onclick = function () { selectBai(ci); closeSidebarMobile(); };
       tree.appendChild(b);
     });
@@ -72,7 +74,7 @@
     current = { ci: ci };
     welcome.style.display = "none";
     var ch = DATA.chapters[ci];
-    crumb.textContent = ch.title;
+    crumb.textContent = ch.title + (ch.subtitle ? " — " + ch.subtitle : "");
     document.querySelectorAll(".lesson-btn").forEach(function (b) {
       b.classList.toggle("active", +b.getAttribute("data-ci") === ci);
     });
@@ -95,6 +97,11 @@
   function renderBai(ci) {
     var ch = DATA.chapters[ci];
     content.innerHTML = "";
+
+    var hd = document.createElement("h2");
+    hd.className = "lesson-heading";
+    hd.textContent = ch.title + (ch.subtitle ? " — " + ch.subtitle : "");
+    content.appendChild(hd);
 
     var bar = document.createElement("div");
     bar.className = "lesson-actions";
