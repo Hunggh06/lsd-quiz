@@ -1,0 +1,10 @@
+# Render Blueprint — Trắc nghiệm Lịch sử Đảng CSVN (static site)
+# Deploy: kết nối repo GitHub này trên Render, Render tự đọc file này.
+services:
+  - type: web
+    name: lsd-quiz
+    runtime: static
+    buildCommand: ""          # không cần build, file tĩnh sẵn sàng
+    staticPublishPath: ./     # publish toàn bộ nội dung thư mục gốc
+    pullRequestPreviewsEnabled: true
+    healthCheckPath: /
