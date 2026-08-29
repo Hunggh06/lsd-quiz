@@ -16,7 +16,7 @@
     { key: "7",  name: "Hạng Kim Cương",  min: 330 },
     { key: "8",  name: "Hạng Cao Thủ",    min: 410 },
     { key: "9",  name: "Hạng Đại Cao Thủ", min: 460 },
-    { key: "10", name: "Hạng Thách Đấu",  min: 490 }
+    { key: "10", name: "Hạng Thách Đấu",  min: 550 }
   ];
 
   /* ---------- storage ---------- */
@@ -43,7 +43,7 @@
   var FLAT = []; // {id, ch, q}
   DATA.chapters.forEach(function (ch) {
     (ch.questions || []).forEach(function (q) {
-      FLAT.push({ id: q.id, ch: ch.title, q: q });
+      FLAT.push({ id: q.id, ch: ch.title, q: q, tong: !!ch.tong });
     });
   });
 
@@ -314,8 +314,23 @@
     FLAT.forEach(function (f) { if (countsForRank(results[f.id])) c++; });
     return c;
   }
+  // Rank score: Bài 1-10 dùng clean-correct (+1); mục "Câu hỏi tổng hợp" (tong)
+  // dùng cơ chế ±1: đúng +1, từng sai -1 (net có thể âm).
+  function rankScore() {
+    var s = 0;
+    FLAT.forEach(function (f) {
+      var r = results[f.id];
+      if (f.tong) {
+        if (r && r.status === "correct") s += 1;
+        if (r && r.everWrong) s -= 1;
+      } else {
+        if (countsForRank(r)) s += 1;
+      }
+    });
+    return s;
+  }
   function computeRank() {
-    var correct = totalCorrect(), total = FLAT.length;
+    var correct = rankScore(), total = FLAT.length;
     var cur = RANKS[0], next = null;
     for (var i = 0; i < RANKS.length; i++) {
       if (correct >= RANKS[i].min) { cur = RANKS[i]; next = RANKS[i + 1] || null; }
@@ -325,7 +340,7 @@
       var span = next.min - cur.min;
       var got = correct - cur.min;
       pct = span > 0 ? Math.max(0, Math.min(100, Math.round(got / span * 100))) : 100;
-      sub = (next.min - correct) + " câu nữa → " + next.name;
+      sub = (next.min - correct) + " điểm nữa → " + next.name;
     } else { pct = 100; sub = "Đạt rank cao nhất!"; }
     return { cur: cur, next: next, correct: correct, total: total, pct: pct, sub: sub };
   }
@@ -337,7 +352,7 @@
       rb.innerHTML =
         '<img class="rank-emblem" src="ranks/' + r.cur.key + '.png" alt="' + r.cur.name + '">' +
         '<div class="rb-meta"><span class="rb-name">' + r.cur.name + "</span>" +
-        '<span class="rb-sub">' + r.correct + "/" + r.total + " đúng · " + r.sub + "</span></div>" +
+        '<span class="rb-sub">' + r.correct + "/" + r.total + " điểm · " + r.sub + "</span></div>" +
         '<span class="rb-track"><span class="rb-fill" style="width:' + r.pct + '%;background:' + fill + '"></span></span>' +
         '<span class="rb-pct">' + r.pct + "%</span>";
     }
@@ -346,7 +361,7 @@
       big.innerHTML =
         '<img class="rb-emblem" src="ranks/' + r.cur.key + '.png" alt="' + r.cur.name + '">' +
         '<div class="rb-info"><div class="rb-name">' + r.cur.name + "</div>" +
-        '<div class="rb-sub">' + r.correct + "/" + r.total + " câu đúng</div>" +
+        '<div class="rb-sub">' + r.correct + "/" + r.total + " điểm</div>" +
         '<span class="rb-track"><span class="rb-fill" style="width:' + r.pct + '%;background:' + fill + '"></span></span>' +
         '<div class="rb-foot"><span>' + r.sub + "</span><span>" + r.pct + "%</span></div></div>";
         big.title = "Bấm để xem các mốc rank";
@@ -367,12 +382,12 @@
       return '<div class="rank-row' + (cur ? " cur" : "") + (reached ? " reached" : "") + '">' +
         '<img class="rank-emblem-sm" src="ranks/' + rk.key + '.png" alt="' + rk.name + '">' +
         '<div class="rr-meta"><span class="rr-name">' + rk.name + '</span>' +
-        '<span class="rr-min">Từ ' + rk.min + ' câu đúng</span></div>' +
+        '<span class="rr-min">Từ ' + rk.min + ' điểm</span></div>' +
         (cur ? '<span class="rr-badge">ĐANG Ở ĐÂY</span>'
           : (reached ? '<span class="rr-ok">✓</span>' : '<span class="rr-lock">🔒</span>')) +
         '</div>';
     }).join("") +
-    '<div class="rank-note">Tổng <b>' + r.correct + '/' + r.total + '</b> câu đúng · rank hiện tại: <b>' + r.cur.name + '</b></div>';
+    '<div class="rank-note">Tổng <b>' + r.correct + '/' + r.total + '</b> điểm · rank hiện tại: <b>' + r.cur.name + '</b></div>';
     document.getElementById("rankModal").classList.remove("hidden");
   }
 
