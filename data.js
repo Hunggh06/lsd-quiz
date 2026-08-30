@@ -10315,14 +10315,14 @@ window.QUIZ_DATA = {
      "id": "tc-170"
     },
     {
-     "q": "Đại hội nào của Đảng được gọi là Đại hội \"Trí tuệ, đổi mới, Dân chủ, kỷ cương và đoàn kết\"?",
-     "options": {
-      "A": "Đại hội lần thứ V",
-      "B": "Đại hội lần thứ VI",
-      "C": "Đại hội lần thứ VII",
-      "D": "Đại hội lần thứ VIII"
-     },
-     "answer": "B",
+      "q": "Đại hội nào của Đảng được gọi là Đại hội \"Trí tuệ, đổi mới, Dân chủ, kỷ cương và đoàn kết\"?",
+      "options": {
+       "A": "Đại hội lần thứ V",
+       "B": "Đại hội lần thứ VI",
+       "C": "Đại hội lần thứ VII",
+       "D": "Đại hội lần thứ VIII"
+      },
+      "answer": "D",
      "explain": "",
      "hint": "",
      "tiet": "",
