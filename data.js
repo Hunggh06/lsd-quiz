@@ -8748,14 +8748,14 @@ window.QUIZ_DATA = {
      "id": "tc-58"
     },
     {
-     "q": "Nhà yêu nước nào tiêu biểu cho phong trào yêu nước theo xu hướng bạo động cuối thế kỷ XIX đầu thế kỷ XX",
-     "options": {
-      "A": "Hàm Nghi",
-      "B": "Đề Thám",
-      "C": "Phan Bội Châu",
-      "D": "Phan Châu Trinh"
-     },
-     "answer": "D",
+      "q": "Nhà yêu nước nào tiêu biểu cho phong trào yêu nước theo xu hướng bạo động cuối thế kỷ XIX đầu thế kỷ XX",
+      "options": {
+       "A": "Hàm Nghi",
+       "B": "Đề Thám",
+       "C": "Phan Bội Châu",
+       "D": "Phan Châu Trinh"
+      },
+      "answer": "C",
      "explain": "",
      "hint": "",
      "tiet": "",
