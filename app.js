@@ -83,6 +83,21 @@
 
   /* ---------- select & render a Bài ---------- */
   var current = null;
+  var qnavOpen = true;
+  try { qnavOpen = localStorage.getItem("lsd_qnav_open") !== "0"; } catch (e) {}
+  function updateQnavVisibility() {
+    if (!qnav) return;
+    if (current && qnavOpen) qnav.classList.remove("hidden");
+    else qnav.classList.add("hidden");
+    syncToggleBtn();
+  }
+  function syncToggleBtn() {
+    var b = document.getElementById("btnToggleQnav");
+    if (!b) return;
+    var on = !!(current && qnavOpen);
+    b.classList.toggle("qnav-on", on);
+    b.textContent = on ? "🗂 Bảng câu" : "🗂 Bật bảng";
+  }
   function selectBai(ci) {
     current = { ci: ci };
     welcome.style.display = "none";
@@ -93,7 +108,7 @@
     });
     renderBai(ci);
     renderQnav(ci);
-    if (qnav) qnav.classList.remove("hidden");
+    updateQnavVisibility();
     scrollToProgress(ci);
     updateBaiProgress(ci);
   }
@@ -661,6 +676,11 @@
 
   /* ---------- wire controls ---------- */
   document.getElementById("btnDashboard").onclick = openDashboard;
+  document.getElementById("btnToggleQnav").onclick = function () {
+    qnavOpen = !qnavOpen;
+    try { localStorage.setItem("lsd_qnav_open", qnavOpen ? "1" : "0"); } catch (e) {}
+    updateQnavVisibility();
+  };
   document.getElementById("btnDashClose").onclick = function () { dashModal.classList.add("hidden"); };
   dashModal.onclick = function (e) { if (e.target === dashModal) dashModal.classList.add("hidden"); };
   document.getElementById("rankBig").addEventListener("click", openRankModal);
@@ -671,7 +691,7 @@
     if (confirm("Xóa TOÀN BỘ tiến độ đã làm?")) {
       results = {}; saveResults(results); renderTree();
       if (current) { renderBai(current.ci); updateBaiProgress(current.ci); refreshQnav(); }
-      else { welcome.style.display = "block"; if (qnav) qnav.classList.add("hidden"); lessonProgress.innerHTML = ""; }
+      else { welcome.style.display = "block"; updateQnavVisibility(); lessonProgress.innerHTML = ""; }
       updateRank();
     }
   };
@@ -686,7 +706,8 @@
   updateRank();
   updateCombo();
   ensureName();
-  if (qnav) qnav.classList.add("hidden");
+  updateQnavVisibility();
+  syncToggleBtn();
 
   if (!DATA.chapters.length) {
     content.innerHTML = "<div class='welcome'><h1>Chưa có dữ liệu</h1><p>File <code>data.js</code> chưa được tạo. Hãy chạy merge để sinh dữ liệu câu hỏi.</p></div>";

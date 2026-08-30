@@ -87,6 +87,7 @@ body{
 .ghost-btn:hover{background:#efe6d2}
 .ghost-btn.danger{color:var(--bad);border-color:#e7b7b1}
 .ghost-btn.danger:hover{background:var(--bad-bg)}
+.ghost-btn.qnav-on{color:var(--accent);border-color:var(--accent);background:#fff7e8}
 
 /* ---------- Main ---------- */
 #main{flex:1;display:flex;flex-direction:column;min-width:0}
