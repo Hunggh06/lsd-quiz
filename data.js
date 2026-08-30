@@ -9406,14 +9406,14 @@ window.QUIZ_DATA = {
      "id": "tc-105"
     },
     {
-     "q": "Nền tảng của khối đại đoàn kết dân tộc được đảng Lao Động Việt Nam xác định tại Đại hội II",
-     "options": {
-      "A": "Công nhân và nông dân",
-      "B": "Công nhân, nông dân và tư sản dân tộc",
-      "C": "Công nhân, nông dân, lao động trí thức",
-      "D": "Công nhân, nông dân và tiểu tư sản"
-     },
-     "answer": "D",
+      "q": "Nền tảng của khối đại đoàn kết dân tộc được đảng Lao Động Việt Nam xác định tại Đại hội II",
+      "options": {
+       "A": "Công nhân và nông dân",
+       "B": "Công nhân, nông dân và tư sản dân tộc",
+       "C": "Công nhân, nông dân, lao động trí thức",
+       "D": "Công nhân, nông dân và tiểu tư sản"
+      },
+      "answer": "C",
      "explain": "",
      "hint": "",
      "tiet": "",
