@@ -234,7 +234,7 @@
 
   function onAnswer(ci, qi, q, chosen, card, btn) {
     var id = q.id;
-    if (results[id] && results[id].status === "correct") return; // đã chọn đúng -> khóa hẳn
+    if (results[id]) return;
     var now = Date.now();
     var isCorrect = (chosen === q.answer);
     if (isCorrect) {
@@ -273,6 +273,7 @@
     var opts = card.querySelectorAll(".opt");
     var fb = card.querySelector(".feedback");
     var correct = q.answer;
+    var corrText = (q.options && q.options[correct]) ? esc(q.options[correct]) : "";
 
     opts.forEach(function (b) {
       b.classList.remove("locked", "correct", "wrong", "dim");
@@ -280,23 +281,19 @@
       var old = b.querySelector(".badge"); if (old) old.remove();
       var key = b.querySelector(".key").textContent;
 
-      if (status === "correct") {
-        if (key === correct) {
-          b.classList.add("correct");
-          var bd = document.createElement("span"); bd.className = "badge"; bd.textContent = "✓ Đúng";
-          b.appendChild(bd);
-        } else {
-          b.classList.add("dim");
-        }
+      if (key === correct) {
+        b.classList.add("correct");
         b.disabled = true;
+        var bd = document.createElement("span"); bd.className = "badge"; bd.textContent = "✓ Đúng";
+        b.appendChild(bd);
+      } else if (wrongs && wrongs.indexOf(key) !== -1) {
+        b.classList.add("wrong", "locked");
+        b.disabled = true;
+        var bx = document.createElement("span"); bx.className = "badge"; bx.textContent = "✗";
+        b.appendChild(bx);
       } else {
-        // đang đoán: chỉ khóa những phương án ĐÃ bấm sai; không lộ đáp án đúng
-        if (wrongs && wrongs.indexOf(key) !== -1) {
-          b.classList.add("wrong", "locked");
-          var bx = document.createElement("span"); bx.className = "badge"; bx.textContent = "✗";
-          b.appendChild(bx);
-          b.disabled = true;
-        }
+        b.classList.add("dim");
+        b.disabled = true;
       }
     });
 
@@ -305,8 +302,9 @@
       fb.innerHTML = '<span class="fb-title">✅ Chính xác</span>' +
         (q.explain ? "<b>Giải thích:</b> " + esc(q.explain) : "");
     } else {
-      fb.innerHTML = '<span class="fb-title">❌ Chưa đúng — thử lại nhé</span>' +
-        (q.hint ? "<b>Gợi ý:</b> " + esc(q.hint) : "");
+      fb.innerHTML = '<span class="fb-title">❌ Chưa đúng — Đáp án đúng: ' + correct +
+        (corrText ? " (" + corrText + ")" : "") + '</span>' +
+        (q.explain ? "<b>Giải thích:</b> " + esc(q.explain) : "");
     }
   }
 
