@@ -10161,14 +10161,14 @@ window.QUIZ_DATA = {
      "id": "tc-159"
     },
     {
-     "q": "Đại hội lần II của Đảng (2/1951) đã quyết định ?",
-     "options": {
-      "A": "Đặt cách mạng 3 nước trên bán đảo Đông Dương dưới sự lãnh đạo thống nhất của một đảng",
-      "B": "Tách Đảng Cộng sản Đông Dương để thành lập ở mỗi nước một đảng riêng",
-      "C": "Thành lập Liên bang Đông Dương",
-      "D": "Hội nghiên cứu chủ nghĩa Mác ở Đông Dương"
-     },
-     "answer": "A",
+      "q": "Đại hội lần II của Đảng (2/1951) đã quyết định ?",
+      "options": {
+       "A": "Đặt cách mạng 3 nước trên bán đảo Đông Dương dưới sự lãnh đạo thống nhất của một đảng",
+       "B": "Tách Đảng Cộng sản Đông Dương để thành lập ở mỗi nước một đảng riêng",
+       "C": "Thành lập Liên bang Đông Dương",
+       "D": "Hội nghiên cứu chủ nghĩa Mác ở Đông Dương"
+      },
+      "answer": "B",
      "explain": "",
      "hint": "",
      "tiet": "",
