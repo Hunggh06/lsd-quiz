@@ -11014,14 +11014,14 @@ window.QUIZ_DATA = {
      "id": "tc-220"
     },
     {
-     "q": "Việt Nam gia nhập ASEAN vào năm nào?",
-     "options": {
-      "A": "Năm 1993.",
-      "B": "Năm 1994.",
-      "C": "Năm 1995.",
-      "D": "Năm 1996."
-     },
-     "answer": "B",
+      "q": "Việt Nam gia nhập ASEAN vào năm nào?",
+      "options": {
+       "A": "Năm 1993.",
+       "B": "Năm 1994.",
+       "C": "Năm 1995.",
+       "D": "Năm 1996."
+      },
+      "answer": "C",
      "explain": "",
      "hint": "",
      "tiet": "",
