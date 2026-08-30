@@ -5193,15 +5193,15 @@ window.QUIZ_DATA = {
      "id": "b7-15"
     },
     {
-     "q": "Chính phủ nước CHXHCN Việt Nam là cơ quan gì của nhà nước?",
-     "options": {
-      "A": "Cơ quan hành chính nhà nước cao nhất",
-      "B": "Cơ quan tư pháp cao nhất",
-      "C": "Cơ quan lập pháp cao nhất",
-      "D": "Cơ quan kiểm sát cao nhất"
-     },
-     "answer": "A",
-     "explain": "Chính phủ là cơ quan hành chính nhà nước cao nhất, thực hiện quyền hành pháp.",
+      "q": "Chính phủ nước CHXHCN Việt Nam là cơ quan gì của nhà nước?",
+      "options": {
+       "A": "Cơ quan hành pháp",
+       "B": "Cơ quan tư pháp cao nhất",
+       "C": "Cơ quan lập pháp cao nhất",
+       "D": "Cơ quan kiểm sát cao nhất"
+      },
+      "answer": "A",
+      "explain": "Chính phủ thực hiện quyền hành pháp; theo Hiến pháp 2013 là cơ quan hành chính nhà nước cao nhất, cơ quan chấp hành của Quốc hội.",
      "hint": "Đứng đầu là Thủ tướng Chính phủ.",
      "tiet": 22,
      "id": "b7-16"
