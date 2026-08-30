@@ -8930,14 +8930,14 @@ window.QUIZ_DATA = {
      "id": "tc-71"
     },
     {
-     "q": "Chỉ thị \"Nhật - Pháp bắn nhau và hành động của chúng ta\" ra đời khi nào?",
-     "options": {
-      "A": "9/3/1945",
-      "B": "12/3/1945",
-      "C": "10/3/1846",
-      "D": "12/3/1946"
-     },
-     "answer": "A",
+      "q": "Chỉ thị \"Nhật - Pháp bắn nhau và hành động của chúng ta\" ra đời khi nào?",
+      "options": {
+       "A": "9/3/1945",
+       "B": "12/3/1945",
+       "C": "10/3/1846",
+       "D": "12/3/1946"
+      },
+      "answer": "B",
      "explain": "",
      "hint": "",
      "tiet": "",
