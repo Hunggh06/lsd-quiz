@@ -8832,14 +8832,14 @@ window.QUIZ_DATA = {
      "id": "tc-64"
     },
     {
-     "q": "Chủ trì việc thành lập Đảng Cộng sản Việt Nam, Nguyễn Ái Quốc với tư cách là gì?",
-     "options": {
-      "A": "Thành viên của quốc tế Cộng sản",
-      "B": "Thành viên của Đảng Cộng sản Đông Dương",
-      "C": "Thành viên của An Nam Cộng sản Đảng",
-      "D": "Thành viên của Đông Dương Cộng sản liên đoàn"
-     },
-     "answer": "C",
+      "q": "Chủ trì việc thành lập Đảng Cộng sản Việt Nam, Nguyễn Ái Quốc với tư cách là gì?",
+      "options": {
+       "A": "Thành viên của quốc tế Cộng sản",
+       "B": "Thành viên của Đảng Cộng sản Đông Dương",
+       "C": "Thành viên của An Nam Cộng sản Đảng",
+       "D": "Thành viên của Đông Dương Cộng sản liên đoàn"
+      },
+      "answer": "A",
      "explain": "",
      "hint": "",
      "tiet": "",
