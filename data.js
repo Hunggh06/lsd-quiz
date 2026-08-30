@@ -10329,14 +10329,14 @@ window.QUIZ_DATA = {
      "id": "tc-171"
     },
     {
-     "q": "Trong các nguồn lực để công nghiệp hóa, hiện đại hóa ở Việt Nam đến năm 2020, Đại hội VIII của Đảng đã xác định nguồn lực nào là yếu tố cơ bản cho sự phát triển nhanh và bền vững?",
-     "options": {
-      "A": "Khoa học công nghệ",
-      "B": "Tài nguyên đất đai",
-      "C": "Con người",
-      "D": "Cả A, B và C"
-     },
-     "answer": "B",
+      "q": "Trong các nguồn lực để công nghiệp hóa, hiện đại hóa ở Việt Nam đến năm 2020, Đại hội VIII của Đảng đã xác định nguồn lực nào là yếu tố cơ bản cho sự phát triển nhanh và bền vững?",
+      "options": {
+       "A": "Khoa học công nghệ",
+       "B": "Tài nguyên đất đai",
+       "C": "Con người",
+       "D": "Cả A, B và C"
+      },
+      "answer": "C",
      "explain": "",
      "hint": "",
      "tiet": "",
