@@ -8650,14 +8650,14 @@ window.QUIZ_DATA = {
      "id": "tc-51"
     },
     {
-     "q": "Những thuận lợi căn bản của đất nước sau cách mạng tháng Tám – 1945",
-     "options": {
-      "A": "Cách mạng thế giới phát triển mạnh mẽ",
-      "B": "Hệ thống chính quyền cách mạng nhân dân được thiết lập",
-      "C": "Nhân dân có quyết tâm bảo vệ chế độ mới",
-      "D": "Tất cả các phương án trên"
-     },
-     "answer": "C",
+      "q": "Những thuận lợi căn bản của đất nước sau cách mạng tháng Tám – 1945",
+      "options": {
+       "A": "Cách mạng thế giới phát triển mạnh mẽ",
+       "B": "Hệ thống chính quyền cách mạng nhân dân được thiết lập",
+       "C": "Nhân dân có quyết tâm bảo vệ chế độ mới",
+       "D": "Tất cả các phương án trên"
+      },
+      "answer": "D",
      "explain": "",
      "hint": "",
      "tiet": "",
