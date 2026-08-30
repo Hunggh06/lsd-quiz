@@ -10245,14 +10245,14 @@ window.QUIZ_DATA = {
      "id": "tc-165"
     },
     {
-     "q": "Đại hội III xác định mục tiêu cơ bản của CNH XHCN là?",
-     "options": {
-      "A": "Xây dựng nền kinh tế cân đối và hiện đại, bước đầu xây dựng cơ sở vật chất kĩ thuật của CNXH",
-      "B": "Phát triển mạnh nền kinh tế, bảo đảm dân giàu nước mạnh",
-      "C": "Phát triển mạnh lực lượng sản xuất, xây dựng quan hệ sản xuất mới XHCN",
-      "D": "Phát triển mạnh kinh tế đi đôi với đảm bảo quốc phòng và an ninh"
-     },
-     "answer": "B",
+      "q": "Đại hội III xác định mục tiêu cơ bản của CNH XHCN là?",
+      "options": {
+       "A": "Xây dựng nền kinh tế cân đối và hiện đại, bước đầu xây dựng cơ sở vật chất kĩ thuật của CNXH",
+       "B": "Phát triển mạnh nền kinh tế, bảo đảm dân giàu nước mạnh",
+       "C": "Phát triển mạnh lực lượng sản xuất, xây dựng quan hệ sản xuất mới XHCN",
+       "D": "Phát triển mạnh kinh tế đi đôi với đảm bảo quốc phòng và an ninh"
+      },
+      "answer": "A",
      "explain": "",
      "hint": "",
      "tiet": "",
