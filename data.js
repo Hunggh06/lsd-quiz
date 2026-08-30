@@ -9028,14 +9028,14 @@ window.QUIZ_DATA = {
      "id": "tc-78"
     },
     {
-     "q": "Ai là người lấy thân mình lập lỗ Châu Mai trong chiến dịch Điện Biên Phủ?",
-     "options": {
-      "A": "Phan Đình Giót",
-      "B": "Bế Văn Đàn",
-      "C": "La Văn Cầu",
-      "D": "Nguyễn Đức Cảnh"
-     },
-     "answer": "C",
+      "q": "Ai là người lấy thân mình lập lỗ Châu Mai trong chiến dịch Điện Biên Phủ?",
+      "options": {
+       "A": "Phan Đình Giót",
+       "B": "Bế Văn Đàn",
+       "C": "La Văn Cầu",
+       "D": "Nguyễn Đức Cảnh"
+      },
+      "answer": "A",
      "explain": "",
      "hint": "",
      "tiet": "",
