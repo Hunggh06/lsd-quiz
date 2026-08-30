@@ -8552,14 +8552,14 @@ window.QUIZ_DATA = {
      "id": "tc-44"
     },
     {
-     "q": "Khẩu hiệu nào dưới đây được nêu ra trong Cao trào kháng Nhật cứu nước?",
-     "options": {
-      "A": "Đánh đuổi thực dân Pháp",
-      "B": "Đánh đuổi phát xít Nhật",
-      "C": "Đánh đuổi phát xít Nhật- Pháp",
-      "D": "Phản đối xâm lược Nhật"
-     },
-     "answer": "D",
+      "q": "Khẩu hiệu nào dưới đây được nêu ra trong Cao trào kháng Nhật cứu nước?",
+      "options": {
+       "A": "Đánh đuổi thực dân Pháp",
+       "B": "Đánh đuổi phát xít Nhật",
+       "C": "Đánh đuổi phát xít Nhật- Pháp",
+       "D": "Phản đối xâm lược Nhật"
+      },
+      "answer": "B",
      "explain": "",
      "hint": "",
      "tiet": "",
