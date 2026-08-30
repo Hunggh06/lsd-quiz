@@ -10882,7 +10882,7 @@ window.QUIZ_DATA = {
        "C": "Đảng Cộng sản Việt Nam, Mặt trận Tổ quốc Việt Nam, Các đoàn thể chính trị - xã hội",
        "D": "Đảng Cộng sản Việt Nam, Nhà nước XHCN Việt Nam, các đoàn thể chính trị - xã hội"
       },
-      "answer": "C",
+      "answer": "A",
      "explain": "",
      "hint": "",
      "tiet": "",
