@@ -10930,14 +10930,14 @@ window.QUIZ_DATA = {
      "id": "tc-214"
     },
     {
-     "q": "Đại hội nào của Đảng xác định: “Tiến hành đồng thời ba cuộc cách mạng về quan hệ sản xuất, khoa học - kỹ thuật, tư tưởng văn hoá, trong đó cách mạng khoa học - kỹ thuật là then chốt”?",
-     "options": {
-      "A": "Đại hội III (1960)",
-      "B": "Đại hội IV (1976)",
-      "C": "Đại hội V (1982)",
-      "D": "Đại hội VI (1986)"
-     },
-     "answer": "C",
+      "q": "Đại hội nào của Đảng xác định: “Tiến hành đồng thời ba cuộc cách mạng về quan hệ sản xuất, khoa học - kỹ thuật, tư tưởng văn hoá, trong đó cách mạng khoa học - kỹ thuật là then chốt”?",
+      "options": {
+       "A": "Đại hội III (1960)",
+       "B": "Đại hội IV (1976)",
+       "C": "Đại hội V (1982)",
+       "D": "Đại hội VI (1986)"
+      },
+      "answer": "B",
      "explain": "",
      "hint": "",
      "tiet": "",
