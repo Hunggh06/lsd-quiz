@@ -11112,14 +11112,14 @@ window.QUIZ_DATA = {
      "id": "tc-227"
     },
     {
-     "q": "Luật An ninh mạng ra đời năm nào?",
-     "options": {
-      "A": "Năm 2016",
-      "B": "Năm 2018",
-      "C": "Năm 2019",
-      "D": "Năm 2020"
-     },
-     "answer": "C",
+      "q": "Luật An ninh mạng ra đời năm nào?",
+      "options": {
+       "A": "Năm 2016",
+       "B": "Năm 2018",
+       "C": "Năm 2019",
+       "D": "Năm 2020"
+      },
+      "answer": "B",
      "explain": "",
      "hint": "",
      "tiet": "",
