@@ -10064,14 +10064,14 @@ window.QUIZ_DATA = {
      "id": "tc-152"
     },
     {
-     "q": "Quân ta vào tiếp quản Thủ đô Hà Nội ngày nào?",
-     "options": {
-      "A": "10-10-1954",
-      "B": "10-10-1955",
-      "C": "10-10-1956",
-      "D": "1-10-1954"
-     },
-     "answer": "B",
+      "q": "Quân ta vào tiếp quản Thủ đô Hà Nội ngày nào?",
+      "options": {
+       "A": "10-10-1954",
+       "B": "10-10-1955",
+       "C": "10-10-1956",
+       "D": "1-10-1954"
+      },
+      "answer": "A",
      "explain": "",
      "hint": "",
      "tiet": "",
