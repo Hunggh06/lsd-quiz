@@ -10875,14 +10875,14 @@ window.QUIZ_DATA = {
      "id": "tc-210"
     },
     {
-     "q": "Hệ thống chính trị Việt Nam bao gồm những thành tố nào?",
-     "options": {
-      "A": "Đảng Cộng sản Việt Nam, Nhà nước XHCN VN, Mặt trận Tổ quốc VN, các đoàn thể chính trị - xã hội",
-      "B": "Đảng Cộng sản Việt Nam, Nhà nước XHCN Việt Nam, Mặt trận Tổ quốc Việt Nam",
-      "C": "Đảng Cộng sản Việt Nam, Mặt trận Tổ quốc Việt Nam, Các đoàn thể chính trị - xã hội",
-      "D": "Đảng Cộng sản Việt Nam, Nhà nước XHCN Việt Nam, các đoàn thể chính trị - xã hội"
-     },
-     "answer": "A",
+      "q": "Hệ thống chính trị Việt Nam bao gồm những thành tố nào?",
+      "options": {
+       "A": "Đảng Cộng sản Việt Nam, Nhà nước XHCN VN, Mặt trận Tổ quốc VN, các đoàn thể chính trị - xã hội",
+       "B": "Đảng Cộng sản Việt Nam, Nhà nước XHCN Việt Nam, Mặt trận Tổ quốc Việt Nam",
+       "C": "Đảng Cộng sản Việt Nam, Mặt trận Tổ quốc Việt Nam, Các đoàn thể chính trị - xã hội",
+       "D": "Đảng Cộng sản Việt Nam, Nhà nước XHCN Việt Nam, các đoàn thể chính trị - xã hội"
+      },
+      "answer": "C",
      "explain": "",
      "hint": "",
      "tiet": "",
