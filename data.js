@@ -8174,14 +8174,14 @@ window.QUIZ_DATA = {
      "id": "tc-17"
     },
     {
-     "q": "Nội dung nào sau đây nằm trong Cương lĩnh đầu tiên của Đảng?",
-     "options": {
-      "A": "Đánh đổ đế quốc chủ nghĩa Pháp và bọn phong kiến, làm cho nước Nam hoàn toàn độc lập.",
-      "B": "Tư sản Dân quyền cách mạng là thời kỳ dự bị để làm xã hội cách mạng.",
-      "C": "Chỉ có giải phóng giai cấp vô sản thì mới giải phóng được dân tộc.",
-      "D": "Đảng có vững cách mạng mới thành công"
-     },
-     "answer": "B",
+      "q": "Nội dung nào sau đây nằm trong Cương lĩnh đầu tiên của Đảng?",
+      "options": {
+       "A": "Đánh đổ đế quốc chủ nghĩa Pháp và bọn phong kiến, làm cho nước Nam hoàn toàn độc lập.",
+       "B": "Tư sản Dân quyền cách mạng là thời kỳ dự bị để làm xã hội cách mạng.",
+       "C": "Chỉ có giải phóng giai cấp vô sản thì mới giải phóng được dân tộc.",
+       "D": "Đảng có vững cách mạng mới thành công"
+      },
+      "answer": "A",
      "explain": "",
      "hint": "",
      "tiet": "",
@@ -8356,14 +8356,14 @@ window.QUIZ_DATA = {
      "id": "tc-30"
     },
     {
-     "q": "Chiến tranh thế giới II bùng nổ vào thời gian nào?",
-     "options": {
-      "A": "Năm 1937",
-      "B": "Năm 1938",
-      "C": "Năm 1939",
-      "D": "Năm 1940"
-     },
-     "answer": "D",
+      "q": "Chiến tranh thế giới II bùng nổ vào thời gian nào?",
+      "options": {
+       "A": "Năm 1937",
+       "B": "Năm 1938",
+       "C": "Năm 1939",
+       "D": "Năm 1940"
+      },
+      "answer": "C",
      "explain": "",
      "hint": "",
      "tiet": "",
