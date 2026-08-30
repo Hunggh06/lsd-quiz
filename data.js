@@ -7064,34 +7064,6 @@ window.QUIZ_DATA = {
      "id": "b9-45"
     },
     {
-     "q": "Chủ trương chủ động và tích cực hội nhập kinh tế quốc tế là trực tiếp xuất phát từ cơ sở nào?",
-     "options": {
-      "A": "Nhu cầu chống tụt hậu về kinh tế, tranh thủ các nguồn lực bên ngoài đặt ra gay gắt với Việt Nam",
-      "B": "Toàn cầu hóa kinh tế là một xu thế khách quan, lôi cuốn ngày càng nhiều nước tham gia để tránh khỏi nguy cơ bị biệt lập, tụt hậu, kém phát triển",
-      "C": "Các nước, nhất là nước đang phát triển đã đổi mới tư duy đối ngoại, thực hiện chính sách đa phương hóa, đa dạng hóa quan hệ quốc tế",
-      "D": "Vấn đề giải tỏa tình trạng đối đầu, thù địch, phá thế bị bao vây, cấm vận, tạo môi trường quốc tế thuận lợi để tập trung xây dựng kinh tế là nhu cầu cấp bách đối với nước ta"
-     },
-     "answer": "B",
-     "explain": "Hội nhập kinh tế quốc tế xuất phát từ xu thế toàn cầu hóa khách quan không thể đứng ngoài.",
-     "hint": "Xu thế khách quan lôi cuốn mọi quốc gia.",
-     "tiet": null,
-     "id": "b9-46"
-    },
-    {
-     "q": "Chính sách đối ngoại rộng mở, đa phương hóa, đa dạng hóa các quan hệ kinh tế của Đảng ta là trực tiếp xuất phát từ cơ sở nào?",
-     "options": {
-      "A": "Vấn đề giải tỏa tình trạng đối đầu, thù địch, phá thế bị bao vây, cấm vận, tạo môi trường quốc tế thuận lợi để tập trung xây dựng kinh tế là nhu cầu cấp bách đối với nước ta",
-      "B": "Toàn cầu hóa kinh tế là một xu thế khách quan, lôi cuốn ngày càng nhiều nước tham gia để tránh khỏi nguy cơ bị biệt lập, tụt hậu, kém phát triển",
-      "C": "Nhu cầu chống tụt hậu về kinh tế, tranh thủ các nguồn lực bên ngoài đặt ra gay gắt với Việt Nam",
-      "D": "Các nước, nhất là nước đang phát triển đã đổi mới tư duy đối ngoại, thực hiện chính sách đa phương hóa, đa dạng hóa quan hệ quốc tế"
-     },
-     "answer": "A",
-     "explain": "Đa phương hóa, đa dạng hóa nhằm giải tỏa đối đầu, phá bao vây, tạo môi trường thuận lợi.",
-     "hint": "Cơ sở về nhu cầu phá thế đối đầu.",
-     "tiet": null,
-     "id": "b9-47"
-    },
-    {
      "q": "Việt Nam gia nhập ASEAN vào năm nào?",
      "options": {
       "A": "Năm 1995",
