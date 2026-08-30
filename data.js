@@ -10511,14 +10511,14 @@ window.QUIZ_DATA = {
      "id": "tc-184"
     },
     {
-     "q": "Nghị quyết Số: 26-NQ/TW ngày 5 tháng 8 năm 2008 của hội nghị lần thứ bảy BCH TW khoá mấy bàn về nông nghiệp, nông dân, nông thôn:",
-     "options": {
-      "A": "Khóa IX",
-      "B": "Khóa X",
-      "C": "Khóa XI",
-      "D": "Khóa XII"
-     },
-     "answer": "A",
+      "q": "Nghị quyết Số: 26-NQ/TW ngày 5 tháng 8 năm 2008 của hội nghị lần thứ bảy BCH TW khoá mấy bàn về nông nghiệp, nông dân, nông thôn:",
+      "options": {
+       "A": "Khóa IX",
+       "B": "Khóa X",
+       "C": "Khóa XI",
+       "D": "Khóa XII"
+      },
+      "answer": "B",
      "explain": "",
      "hint": "",
      "tiet": "",
