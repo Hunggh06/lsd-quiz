@@ -10847,14 +10847,14 @@ window.QUIZ_DATA = {
      "id": "tc-208"
     },
     {
-     "q": "Ở Việt Nam, tiến hành xây dựng kinh tế hàng hóa nhiều thành phần vào thời gian nào?",
-     "options": {
-      "A": "Năm 1976",
-      "B": "Năm 1985",
-      "C": "Năm 1986",
-      "D": "Năm 1991"
-     },
-     "answer": "A",
+      "q": "Ở Việt Nam, tiến hành xây dựng kinh tế hàng hóa nhiều thành phần vào thời gian nào?",
+      "options": {
+       "A": "Năm 1976",
+       "B": "Năm 1985",
+       "C": "Năm 1986",
+       "D": "Năm 1991"
+      },
+      "answer": "C",
      "explain": "",
      "hint": "",
      "tiet": "",
