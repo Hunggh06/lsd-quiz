@@ -57,7 +57,6 @@
   var dashBody = document.getElementById("dashBody");
   var qnav = document.getElementById("qnav");
   var qnavGrid = document.getElementById("qnavGrid");
-  var qnavSummary = document.getElementById("qnavSummary");
 
   /* ---------- sidebar tree (one button per Bài) ---------- */
   function renderTree() {
@@ -152,19 +151,16 @@
   function refreshQnav() {
     var ch = DATA.chapters[current && current.ci];
     if (!ch) return;
-    var correct = 0, wrong = 0;
     ch.questions.forEach(function (q, qi) {
       var r = results[q.id];
       var cell = qnavCells[qi];
       if (!cell) return;
       cell.classList.remove("done", "miss");
       if (r) {
-        if (r.status === "correct") { cell.classList.add("done"); correct++; }
-        else if (r.status === "wrong") { cell.classList.add("miss"); wrong++; }
+        if (r.status === "correct") cell.classList.add("done");
+        else if (r.status === "wrong") cell.classList.add("miss");
       }
     });
-    var unanswered = ch.questions.length - correct - wrong;
-    if (qnavSummary) qnavSummary.textContent = "Đúng " + correct + " · Sai " + wrong + " · Chưa " + unanswered;
   }
 
   function renderBai(ci) {

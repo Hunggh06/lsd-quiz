@@ -280,7 +280,6 @@ body{
   background:rgba(247,242,231,.9);backdrop-filter:blur(6px);
 }
 .qnav-title{font-family:var(--serif);font-weight:600;font-size:14px;color:var(--ink)}
-.qnav-summary{font-size:11px;color:var(--ink-soft);white-space:nowrap}
 .qnav-grid{
   flex:1;overflow:auto;padding:8px 10px;
   display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));
