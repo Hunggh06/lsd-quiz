@@ -136,19 +136,60 @@
     }
     return _audioCtx;
   }
-  function _tone(ctx, freq, start, dur, gainVal) {
+  function _tone(ctx, freq, start, dur, gainVal, type, detune) {
     try {
       var osc = ctx.createOscillator();
       var gain = ctx.createGain();
-      osc.type = "sine";
+      osc.type = type || "sine";
       osc.frequency.value = freq;
+      if (detune) osc.detune.value = detune;
       gain.gain.setValueAtTime(gainVal || 0.15, start);
       gain.gain.exponentialRampToValueAtTime(0.0001, start + dur);
-      osc.connect(gain);
+      var filter = ctx.createBiquadFilter();
+      filter.type = "lowpass";
+      filter.frequency.value = 4200;
+      filter.Q.value = 0.7;
+      osc.connect(filter);
+      filter.connect(gain);
       gain.connect(ctx.destination);
       osc.start(start);
       osc.stop(start + dur);
+      if (detune) {
+        var osc2 = ctx.createOscillator();
+        var gain2 = ctx.createGain();
+        osc2.type = type || "sine";
+        osc2.frequency.value = freq;
+        osc2.detune.value = -detune;
+        gain2.gain.setValueAtTime((gainVal||0.15)*0.85, start);
+        gain2.gain.exponentialRampToValueAtTime(0.0001, start + dur);
+        osc2.connect(filter);
+        filter.connect(gain2);
+        gain2.connect(ctx.destination);
+        osc2.start(start);
+        osc2.stop(start + dur);
+      }
     } catch (e) {}
+  }
+  function _hit(ctx, freq, start, dur, gainVal){
+    try{
+      var osc = ctx.createOscillator();
+      var gain = ctx.createGain();
+      osc.type = "triangle";
+      osc.frequency.setValueAtTime(freq, start);
+      osc.frequency.exponentialRampToValueAtTime(freq*0.5, start+dur*0.6);
+      gain.gain.setValueAtTime(gainVal||0.4, start);
+      gain.gain.exponentialRampToValueAtTime(0.0001, start+dur);
+      osc.connect(gain); gain.connect(ctx.destination);
+      osc.start(start); osc.stop(start+dur);
+      var osc2 = ctx.createOscillator();
+      var gain2 = ctx.createGain();
+      osc2.type="sine";
+      osc2.frequency.value=freq*0.5;
+      gain2.gain.setValueAtTime((gainVal||0.4)*0.6, start);
+      gain2.gain.exponentialRampToValueAtTime(0.0001, start+dur*1.2);
+      osc2.connect(gain2); gain2.connect(ctx.destination);
+      osc2.start(start); osc2.stop(start+dur*1.2);
+    }catch(e){}
   }
   function playCorrect() {
     var ctx = _getCtx(); if (!ctx) return;
@@ -175,10 +216,37 @@
     var ctx = _getCtx(); if (!ctx) return;
     if (ctx.state === "suspended") ctx.resume();
     var t = ctx.currentTime;
-    var base = 523.25 * Math.pow(2, (Math.min(tier, 10) - 1) / 12);
-    [0, 4, 7, 12].forEach(function (semi, i) {
-      _tone(ctx, base * Math.pow(2, semi / 12), t + i * 0.09, 0.18, 0.15);
+    var rank = Math.min(Math.max(tier||1,1),10);
+    var base = 392 * Math.pow(2, (rank-1)/12 * 0.55);
+    var isHigh = rank >= 7;
+    var isMax = rank >= 9;
+    _hit(ctx, 90 + rank*6, t, 0.55, 0.45);
+    _hit(ctx, 180 + rank*8, t+0.08, 0.35, 0.25);
+    var semis = isMax ? [0,4,7,12,16,19,24] : isHigh ? [0,4,7,12,16,19] : [0,4,7,12,16];
+    semis.forEach(function(semi,i){
+      var f = base * Math.pow(2, semi/12);
+      var gain = 0.18 + (i*0.015);
+      var dur = 0.28 + (i*0.04);
+      var tt = t + 0.18 + i*0.095;
+      _tone(ctx, f, tt, dur, gain, "triangle", 7);
+      _tone(ctx, f*2, tt+0.02, dur*0.7, gain*0.32, "sine", 0);
+      if(i>=3) _tone(ctx, f/2, tt, dur*0.9, gain*0.18, "sine", 0);
     });
+    var finalT = t + 0.18 + semis.length*0.095 + 0.05;
+    var chord = [0,4,7,12,16,24];
+    chord.forEach(function(semi){
+      var f = base * 2 * Math.pow(2, semi/12);
+      _tone(ctx, f, finalT, 1.1, 0.14, "triangle", 5);
+      _tone(ctx, f, finalT, 1.4, 0.08, "sine", 0);
+    });
+    for(var s=0;s<6;s++){
+      var sf = base * 4 * Math.pow(2, (Math.random()*12)/12);
+      _tone(ctx, sf, finalT+0.05+s*0.06, 0.18, 0.09, "sine", 0);
+    }
+    if(isMax){
+      _hit(ctx, 55, finalT, 0.9, 0.55);
+      _tone(ctx, base*0.5, finalT, 1.2, 0.22, "sine", 0);
+    }
   }
 
   var WRONG_TAUNTS = [
