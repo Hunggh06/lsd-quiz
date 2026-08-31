@@ -10322,7 +10322,7 @@ window.QUIZ_DATA = {
        "C": "Đại hội lần thứ VII",
        "D": "Đại hội lần thứ VIII"
       },
-      "answer": "D",
+      "answer": "C",
      "explain": "",
      "hint": "",
      "tiet": "",
