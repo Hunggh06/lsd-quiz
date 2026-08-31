@@ -478,12 +478,32 @@
         '<div class="welcome-essay-banner" style="background:linear-gradient(135deg,#eff6ff,#dbeafe);border-color:#93c5fd">' +
           '<div class="web-content">' +
             '<span class="web-tag" style="background:#1e3a8a">⚖️ Môn học Pháp luật đại cương</span>' +
-            '<h2 style="color:#1e3a8a">💼 Tổng hợp Đề cương &amp; 4 Dạng bài Ôn tập Chuẩn</h2>' +
-            '<p style="color:#1e40af">Hệ thống đầy đủ Trắc nghiệm ABCD, 100+ câu nhận định Đúng/Sai có giải thích, phân tích Cấu trúc QPPL và Hướng dẫn giải chi tiết Bài tập Chia thừa kế (Điều 644, 651, 652 BLDS 2015).</p>' +
+            '<h2 style="color:#1e3a8a">💼 Tổng hợp Đề cương &amp; 4 Dạng bài Ôn tập Chuẩn (HAUI)</h2>' +
+            '<p style="color:#1e40af">Hệ thống đầy đủ Trắc nghiệm ABCD, nhận định Đúng/Sai có giải thích, phân tích Cấu trúc QPPL và Hướng dẫn giải chi tiết Bài tập Chia thừa kế (Điều 644, 651, 652 BLDS 2015).</p>' +
           '</div>' +
         '</div>' +
-        '<h1>Ôn tập Pháp luật đại cương (HAUI)</h1>' +
-        '<p>Cấu trúc ôn tập 4 dạng bài bám sát đề thi kết thúc học phần:</p>' +
+        '<div class="welcome-pldc-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:24px">' +
+          '<div class="welcome-card" id="btnWkTN" style="background:#fff;border:1.5px solid #bfdbfe;border-radius:14px;padding:18px;cursor:pointer;transition:all .2s;box-shadow:0 2px 6px rgba(0,0,0,0.04)">' +
+            '<div style="font-size:26px;margin-bottom:8px">🎯</div>' +
+            '<div style="font-weight:700;font-size:15.5px;color:#1e3a8a;margin-bottom:4px">Trắc nghiệm ABCD</div>' +
+            '<div style="font-size:12.5px;color:#64748b">Luyện các câu hỏi trắc nghiệm chia theo chương</div>' +
+          '</div>' +
+          '<div class="welcome-card" id="btnWkDS" style="background:#fff;border:1.5px solid #bbf7d0;border-radius:14px;padding:18px;cursor:pointer;transition:all .2s;box-shadow:0 2px 6px rgba(0,0,0,0.04)">' +
+            '<div style="font-size:26px;margin-bottom:8px">⚖️</div>' +
+            '<div style="font-weight:700;font-size:15.5px;color:#166534;margin-bottom:4px">Nhận định Đúng / Sai</div>' +
+            '<div style="font-size:12.5px;color:#64748b">Hơn 30+ câu khẳng định then chốt có giải thích</div>' +
+          '</div>' +
+          '<div class="welcome-card" id="btnWkQP" style="background:#fff;border:1.5px solid #fed7aa;border-radius:14px;padding:18px;cursor:pointer;transition:all .2s;box-shadow:0 2px 6px rgba(0,0,0,0.04)">' +
+            '<div style="font-size:26px;margin-bottom:8px">📜</div>' +
+            '<div style="font-weight:700;font-size:15.5px;color:#9a3412;margin-bottom:4px">Cấu trúc QPPL &amp; VPPL</div>' +
+            '<div style="font-size:12.5px;color:#64748b">Phân tích Giả định - Quy định - Chế tài</div>' +
+          '</div>' +
+          '<div class="welcome-card" id="btnWkTK" style="background:#fff;border:1.5px solid #ddd6fe;border-radius:14px;padding:18px;cursor:pointer;transition:all .2s;box-shadow:0 2px 6px rgba(0,0,0,0.04)">' +
+            '<div style="font-size:26px;margin-bottom:8px">💼</div>' +
+            '<div style="font-weight:700;font-size:15.5px;color:#5b21b6;margin-bottom:4px">Chia thừa kế &amp; Tình huống</div>' +
+            '<div style="font-size:12.5px;color:#64748b">Sơ đồ gia phả và các bước tính toán di sản</div>' +
+          '</div>' +
+        '</div>' +
         '<ul class="welcome-tips">' +
           '<li>🎯 <b>Trắc nghiệm 4 lựa chọn (ABCD):</b> Đầy đủ các chương kèm giải thích điều luật cụ thể.</li>' +
           '<li>⚖️ <b>Nhận định Đúng / Sai:</b> Luyện nhận định nhanh kèm căn cứ pháp lý và phân tích điểm mấu chốt.</li>' +
@@ -491,6 +511,15 @@
           '<li>💼 <b>Chia thừa kế &amp; Tình huống:</b> Hướng dẫn phương pháp giải từng bước kèm sơ đồ gia phả trực quan.</li>' +
           '<li>⚠️ <b>Tag [Nghi vấn kết quả]:</b> Tự động cảnh báo và đối chiếu các câu có đáp án tài liệu cũ mâu thuẫn hoặc căn cứ luật đã sửa đổi.</li>' +
         '</ul>';
+
+      var bWkTN = document.getElementById("btnWkTN");
+      if (bWkTN) bWkTN.onclick = function() { pldcMode = "trac_nghiem"; renderPldcModeTabs(); selectPldcTN(0); };
+      var bWkDS = document.getElementById("btnWkDS");
+      if (bWkDS) bWkDS.onclick = function() { pldcMode = "dung_sai"; renderPldcModeTabs(); selectPldcDS(); };
+      var bWkQP = document.getElementById("btnWkQP");
+      if (bWkQP) bWkQP.onclick = function() { pldcMode = "qppl"; renderPldcModeTabs(); selectPldcQPPL(); };
+      var bWkTK = document.getElementById("btnWkTK");
+      if (bWkTK) bWkTK.onclick = function() { pldcMode = "thua_ke"; renderPldcModeTabs(); selectPldcTK(); };
     }
   }
 
