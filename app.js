@@ -1025,7 +1025,8 @@
         "<div class='essay-sec'><div class='essay-sec-head'>📍 1. Giả định</div><div class='essay-sec-items'><b>Nội dung:</b> " + esc(item.gia_dinh) + "<br><em>Giải thích: " + esc(item.gia_dinh_gt) + "</em></div></div>" +
         "<div class='essay-sec'><div class='essay-sec-head'>📝 2. Quy định</div><div class='essay-sec-items'><b>Nội dung:</b> " + esc(item.quy_dinh) + "<br><em>Giải thích: " + esc(item.quy_dinh_gt) + "</em></div></div>" +
         "<div class='essay-sec'><div class='essay-sec-head'>⚖️ 3. Chế tài</div><div class='essay-sec-items'><b>Nội dung:</b> " + esc(item.che_tai) + "<br><em>Giải thích: " + esc(item.che_tai_gt) + "</em></div></div>" +
-        "<div class='essay-sec sec-lienhe'><div class='essay-sec-head'>🎯 Hình thức thực hiện pháp luật</div><div class='essay-sec-items'><b>" + esc(item.hinh_thuc) + "</b></div></div>" +
+        "<div class='essay-sec sec-lienhe'><div class='essay-sec-head'>🎯 4. Hình thức thực hiện pháp luật</div><div class='essay-sec-items'><b>" + esc(item.hinh_thuc) + "</b><br><em>Giải thích: " + esc(item.hinh_thuc_gt) + "</em></div></div>" +
+        (item.vi_du ? "<div class='essay-sec sec-tips'><div class='essay-sec-head'>💡 5. Ví dụ minh họa thực tế</div><div class='essay-sec-items'><div>" + esc(item.vi_du) + "</div></div></div>" : "") +
         "</div>";
 
       body.innerHTML = clauseHtml + analysisHtml;
@@ -1081,9 +1082,12 @@
         (item.elements || []).map(function (el) {
           var cls = "essay-sec";
           if (el.label && (el.label.includes("Khách quan") || el.label.includes("Chủ thể"))) cls += " sec-tips";
-          if (el.label && el.label.includes("Nội dung")) cls += " sec-lienhe";
+          if (el.label && (el.label.includes("Nội dung") || el.label.includes("Trách nhiệm"))) cls += " sec-lienhe";
+          var itemsList = el.items || (el.content ? [el.content] : []);
           return "<div class='" + cls + "'><div class='essay-sec-head'>" + esc(el.label) + "</div>" +
-            "<div class='essay-sec-items'><div>" + esc(el.content) + "</div></div></div>";
+            "<div class='essay-sec-items'>" +
+            itemsList.map(function (it) { return "<div>" + esc(it) + "</div>"; }).join("") +
+            "</div></div>";
         }).join("") +
         "</div>";
 
