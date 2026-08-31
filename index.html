@@ -3,24 +3,49 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Lịch sử Đảng Cộng sản Việt Nam — Trắc nghiệm</title>
+<title>Hệ Thống Ôn Tập Môn Học — Đại Học Công Nghiệp Hà Nội</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-subject="lsd">
+<header class="top-header">
+  <div class="top-header-inner">
+    <div class="site-logo">
+      <span class="logo-badge">HAUI</span>
+      <span class="logo-title">Ôn Thi Đại Cương &amp; Chuyên Ngành</span>
+    </div>
+    <div class="subject-switcher">
+      <button id="btnSubjectLSD" class="subject-btn active" title="Ôn tập Lịch sử Đảng">
+        <span class="sb-icon">🏛️</span>
+        <div class="sb-info">
+          <strong>Lịch sử Đảng</strong>
+          <span>Trắc nghiệm &amp; Tự luận</span>
+        </div>
+      </button>
+      <button id="btnSubjectPLDC" class="subject-btn" title="Ôn tập Pháp luật đại cương">
+        <span class="sb-icon">⚖️</span>
+        <div class="sb-info">
+          <strong>Pháp luật đại cương</strong>
+          <span>4 Dạng bài &amp; Chia thừa kế</span>
+        </div>
+      </button>
+    </div>
+  </div>
+</header>
+
 <div id="app">
   <!-- SIDEBAR -->
   <aside id="sidebar">
     <div class="brand">
-      <div class="brand-mark">ĐCSVN</div>
+      <div id="brandMark" class="brand-mark">ĐCSVN</div>
       <div class="brand-text">
-        <strong>Lịch sử Đảng</strong>
-        <span>Trắc nghiệm &amp; Tự luận</span>
+        <strong id="brandTitle">Lịch sử Đảng</strong>
+        <span id="brandSub">Trắc nghiệm &amp; Tự luận</span>
       </div>
     </div>
-    <div class="sidebar-mode-tabs">
+    <div id="sidebarModeTabs" class="sidebar-mode-tabs">
       <button id="tabTracNghiem" class="mode-tab active">🎯 Trắc nghiệm</button>
       <button id="tabTuLuan" class="mode-tab">📝 Tự luận (8 câu)</button>
     </div>
@@ -35,8 +60,8 @@
       </button>
     </div>
     <nav id="tree" class="tree"></nav>
-      <div id="rankBig" class="rank-big"></div>
-      <div class="side-foot">
+    <div id="rankBig" class="rank-big"></div>
+    <div class="side-foot">
       <div id="playerName" class="player-name"></div>
       <button id="btnDashboard" class="ghost-btn">📊 Thống kê</button>
       <button id="btnLeaderboard" class="ghost-btn">🏆 Xếp hạng</button>
@@ -50,26 +75,6 @@
 
     <section id="content" class="content">
       <div id="welcome" class="welcome">
-        <div class="welcome-essay-banner" id="btnWelcomeEssay">
-          <div class="web-content">
-            <span class="web-tag">🔥 Đề cương tự luận mới nhất</span>
-            <h2>📝 8 Câu hỏi Tự luận Lịch sử Đảng (Kỳ II)</h2>
-            <p>Tổng hợp cô đọng, gạch đầu dòng siêu ngắn, dễ thuộc, kèm mẹo làm câu Đúng/Sai và phần liên hệ sinh viên.</p>
-          </div>
-          <button class="ghost-btn web-btn">Vào ôn Tự luận ngay →</button>
-        </div>
-
-        <h1>Ôn tập Lịch sử Đảng Cộng sản Việt Nam</h1>
-        <p>Hơn 300 câu trắc nghiệm ABCD chia theo chương &amp; bài. Chọn đáp án để nhận
-           phản hồi: <span class="tag ok">xanh</span> kèm giải thích khi đúng,
-           <span class="tag bad">đỏ</span> kèm gợi ý khi sai.</p>
-        <ul class="welcome-tips">
-          <li>📝 <b>Mục Tự luận riêng biệt:</b> Ôn nhanh 8 câu tự luận trọng tâm kèm phân tích và mẹo Đúng/Sai.</li>
-          <li>🟩 Chọn đúng → tô xanh &amp; giải thích lý do.</li>
-          <li>🟥 Chọn sai → tô đỏ &amp; hiện gợi ý + đáp án đúng.</li>
-          <li>📊 Mở <b>Thống kê</b> để xem kết quả, tỉ lệ đúng theo chương.</li>
-          <li>💾 Tiến độ lưu tự động trên trình duyệt này.</li>
-        </ul>
       </div>
     </section>
   </main>
@@ -124,6 +129,10 @@
       <h2>🏆 Bảng xếp hạng</h2>
       <button id="btnLbClose" class="ghost-btn">✕</button>
     </div>
+    <div class="lb-subject-tabs">
+      <button id="btnLbLsd" class="lb-tab active">🏛️ Lịch sử Đảng</button>
+      <button id="btnLbPldc" class="lb-tab">⚖️ Pháp luật đại cương</button>
+    </div>
     <div id="lbBody" class="lb-body"></div>
   </div>
 </div>
@@ -133,6 +142,7 @@
 
 <script src="data.js"></script>
 <script src="essay-data.js"></script>
+<script src="data-pldc.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
