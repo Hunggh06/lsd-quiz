@@ -9805,8 +9805,8 @@ window.QUIZ_DATA = {
       "C": "Hội nghị Trung ương 23 - Khoá III của Đảng (12-1974)",
       "D": "Hội nghị Bộ Chính trị (3-1975)"
      },
-     "answer": "B",
-     "explain": "",
+     "answer": "D",
+     "explain": "Trước tình hình thắng lớn ở Tây Nguyên, cuộc họp Bộ Chính trị ngày 18/3/1975 đã quyết định giải phóng miền Nam trong năm 1975.",
      "hint": "",
      "tiet": "",
      "id": "tc-134"
@@ -10658,8 +10658,8 @@ window.QUIZ_DATA = {
       "C": "Văn hóa",
       "D": "Khoa học"
      },
-     "answer": "A",
-     "explain": "",
+     "answer": "C",
+     "explain": "Đảng ta khẳng định: Phát triển kinh tế là nhiệm vụ trọng tâm, xây dựng Đảng là nhiệm vụ then chốt, phát triển văn hóa là nền tảng tinh thần của xã hội, là mục tiêu và động lực để phát triển đất nước.",
      "hint": "",
      "tiet": "",
      "id": "tc-195"
