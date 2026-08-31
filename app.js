@@ -3,7 +3,20 @@
   "use strict";
 
   var DATA = window.QUIZ_DATA || { chapters: [] };
+  var ESSAY_DATA = window.ESSAY_DATA || { questions: [] };
   var STORE_KEY = "lsd_quiz_results_v2";
+  var ESSAY_KEY = "lsd_essay_learned_v1";
+
+  function loadEssayLearned() {
+    try { return JSON.parse(localStorage.getItem(ESSAY_KEY)) || {}; }
+    catch (e) { return {}; }
+  }
+  function saveEssayLearned(obj) {
+    try { localStorage.setItem(ESSAY_KEY, JSON.stringify(obj)); } catch (e) {}
+  }
+  var essayLearned = loadEssayLearned();
+  var essayFilter = "";
+  var essayShortOnly = false;
 
   // Rank ladder (LoL tiers) — advances with total correct answers across all Bài.
   var RANKS = [
@@ -97,9 +110,377 @@
     b.classList.toggle("qnav-on", on);
     b.textContent = on ? "🗂 Bảng câu" : "🗂 Bật bảng";
   }
+  function showToast(msg) {
+    var t = document.getElementById("toastMsg");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "toastMsg";
+      t.className = "toast-msg";
+      document.body.appendChild(t);
+    }
+    t.innerHTML = "📋 " + esc(msg);
+    t.classList.remove("show");
+    void t.offsetWidth;
+    t.classList.add("show");
+    setTimeout(function () { t.classList.remove("show"); }, 2200);
+  }
+
+  function selectEssay() {
+    current = { isEssay: true };
+    welcome.style.display = "none";
+    crumb.textContent = "Ôn thi Tự Luận — 8 câu hỏi trọng tâm (Kỳ II 2025-2026)";
+    document.querySelectorAll(".lesson-btn").forEach(function (b) {
+      b.classList.remove("active");
+    });
+    var enb = document.getElementById("btnEssayNav");
+    if (enb) enb.classList.add("active");
+    var tabTL = document.getElementById("tabTuLuan");
+    var tabTN = document.getElementById("tabTracNghiem");
+    if (tabTL) tabTL.classList.add("active");
+    if (tabTN) tabTN.classList.remove("active");
+    renderEssay();
+    renderEssayQnav();
+    updateQnavVisibility();
+    updateEssayProgress();
+  }
+
+  function updateEssayProgress() {
+    var qs = (window.ESSAY_DATA && window.ESSAY_DATA.questions) || [];
+    var total = qs.length || 8;
+    var count = 0;
+    qs.forEach(function (q) {
+      if (essayLearned[q.id]) count++;
+    });
+    lessonProgress.innerHTML = "Đã thuộc <b style='color:var(--ok)'>" + count + "/" + total + "</b> câu (" + Math.round(count / total * 100) + "%)";
+  }
+
+  function renderEssayQnav() {
+    var qs = (window.ESSAY_DATA && window.ESSAY_DATA.questions) || [];
+    qnavGrid.innerHTML = "";
+    qnavCells = [];
+    qs.forEach(function (q, qi) {
+      var cell = document.createElement("div");
+      cell.className = "qnav-cell" + (essayLearned[q.id] ? " done" : "");
+      cell.textContent = "C" + q.id;
+      cell.title = q.title;
+      cell.onclick = function () {
+        var card = document.getElementById("essayCard_" + q.id);
+        if (card) {
+          card.classList.add("open");
+          card.scrollIntoView({ behavior: "smooth", block: "start" });
+          qnavCells.forEach(function (c) { c.classList.remove("active"); });
+          cell.classList.add("active");
+        }
+      };
+      qnavGrid.appendChild(cell);
+      qnavCells.push(cell);
+    });
+  }
+
+  function refreshEssayQnav() {
+    var qs = (window.ESSAY_DATA && window.ESSAY_DATA.questions) || [];
+    qs.forEach(function (q, qi) {
+      var cell = qnavCells[qi];
+      if (!cell) return;
+      if (essayLearned[q.id]) cell.classList.add("done");
+      else cell.classList.remove("done");
+    });
+  }
+
+  function renderEssay() {
+    content.innerHTML = "";
+    var ed = window.ESSAY_DATA || { questions: [] };
+    var qs = ed.questions || [];
+
+    var container = document.createElement("div");
+    container.className = "essay-container";
+
+    var hero = document.createElement("div");
+    hero.className = "essay-hero";
+    hero.innerHTML =
+      '<div class="essay-hero-head"><span class="essay-hero-badge">ĐỀ CƯƠNG TRỌNG TÂM</span>' +
+      '<span style="font-size:12px;color:var(--gold);font-weight:700">KỲ II NĂM HỌC 2025 - 2026</span></div>' +
+      '<h1 class="essay-hero-title">8 Câu Hỏi Tự Luận Lịch Sử Đảng</h1>' +
+      '<div class="essay-hero-sub">Tóm tắt cô đọng bằng các ý chính, gạch đầu dòng then chốt, kèm mẹo làm câu Đúng/Sai và phần liên hệ sinh viên.</div>' +
+      '<div class="exam-structure-box">' +
+      '<div class="es-item"><b>Cấu trúc đề thi (10 điểm):</b></div>' +
+      '<div class="es-item"><b>• Phần 1 (4.0đ):</b> 20 câu trắc nghiệm ABCD chuẩn hóa.</div>' +
+      '<div class="es-item"><b>• Phần 2 (6.0đ):</b> 2 câu tự luận (Câu 1: 3.0đ dạng Đúng/Sai giải thích; Câu 2: 3.0đ dạng Phân tích chuyên đề + Liên hệ thực tiễn / Trách nhiệm SV).</div>' +
+      '</div>';
+    container.appendChild(hero);
+
+    var toolbar = document.createElement("div");
+    toolbar.className = "essay-toolbar";
+
+    var searchWrap = document.createElement("div");
+    searchWrap.className = "essay-search-wrap";
+    searchWrap.innerHTML =
+      '<span class="essay-search-icon">🔍</span>' +
+      '<input type="text" id="essaySearchInput" class="essay-search-input" placeholder="Tìm kiếm theo từ khóa (vd: 1930, chuyển hướng, Pháp, kinh tế thị trường...)" value="' + esc(essayFilter) + '">';
+    toolbar.appendChild(searchWrap);
+
+    var btnExpandAll = document.createElement("button");
+    btnExpandAll.className = "essay-tool-btn";
+    btnExpandAll.innerHTML = "📖 Mở tất cả";
+    btnExpandAll.onclick = function () {
+      document.querySelectorAll(".essay-card").forEach(function (c) { c.classList.add("open"); });
+    };
+    toolbar.appendChild(btnExpandAll);
+
+    var btnCollapseAll = document.createElement("button");
+    btnCollapseAll.className = "essay-tool-btn";
+    btnCollapseAll.innerHTML = "📕 Thu gọn";
+    btnCollapseAll.onclick = function () {
+      document.querySelectorAll(".essay-card").forEach(function (c) { c.classList.remove("open"); });
+    };
+    toolbar.appendChild(btnCollapseAll);
+
+    var btnModeToggle = document.createElement("button");
+    btnModeToggle.className = "essay-tool-btn" + (essayShortOnly ? " active" : "");
+    btnModeToggle.innerHTML = essayShortOnly ? "⚡ Đang xem: Siêu ngắn" : "📑 Đang xem: Đầy đủ";
+    btnModeToggle.onclick = function () {
+      essayShortOnly = !essayShortOnly;
+      renderEssay();
+    };
+    toolbar.appendChild(btnModeToggle);
+
+    var btnCopyAll = document.createElement("button");
+    btnCopyAll.className = "essay-tool-btn";
+    btnCopyAll.innerHTML = "📋 Sao chép 8 câu";
+    btnCopyAll.onclick = function () {
+      copyAllEssayText();
+    };
+    toolbar.appendChild(btnCopyAll);
+
+    container.appendChild(toolbar);
+
+    var cardsWrap = document.createElement("div");
+    cardsWrap.style.display = "grid";
+    cardsWrap.style.gap = "16px";
+
+    var filteredQs = qs.filter(function (q) {
+      if (!essayFilter) return true;
+      var term = essayFilter.toLowerCase();
+      var inTitle = q.title.toLowerCase().indexOf(term) !== -1;
+      var inTags = (q.tags || []).some(function (t) { return t.toLowerCase().indexOf(term) !== -1; });
+      var inSummary = (q.shortSummary || []).some(function (s) { return s.toLowerCase().indexOf(term) !== -1; });
+      var inSections = (q.sections || []).some(function (sec) {
+        return sec.heading.toLowerCase().indexOf(term) !== -1 ||
+          (sec.items || []).some(function (it) { return it.toLowerCase().indexOf(term) !== -1; });
+      });
+      return inTitle || inTags || inSummary || inSections;
+    });
+
+    if (!filteredQs.length) {
+      var noRes = document.createElement("div");
+      noRes.style.padding = "30px";
+      noRes.style.textAlign = "center";
+      noRes.style.color = "var(--ink-soft)";
+      noRes.innerHTML = "<p style='font-size:16px'>Không tìm thấy câu hỏi phù hợp với từ khóa \"<b>" + esc(essayFilter) + "</b>\"</p>";
+      cardsWrap.appendChild(noRes);
+    } else {
+      filteredQs.forEach(function (q) {
+        cardsWrap.appendChild(buildEssayCard(q));
+      });
+    }
+
+    container.appendChild(cardsWrap);
+    content.appendChild(container);
+
+    var sin = document.getElementById("essaySearchInput");
+    if (sin) {
+      sin.oninput = function (e) {
+        essayFilter = e.target.value;
+        renderEssay();
+        var nsin = document.getElementById("essaySearchInput");
+        if (nsin) { nsin.focus(); nsin.selectionStart = nsin.selectionEnd = nsin.value.length; }
+      };
+    }
+  }
+
+  function buildEssayCard(q) {
+    var card = document.createElement("div");
+    card.id = "essayCard_" + q.id;
+    var isLearned = !!essayLearned[q.id];
+    card.className = "essay-card open" + (isLearned ? " learned" : "");
+
+    var header = document.createElement("div");
+    header.className = "essay-card-header";
+
+    var noBadge = document.createElement("div");
+    noBadge.className = "ec-no";
+    noBadge.textContent = q.number;
+    header.appendChild(noBadge);
+
+    var titleWrap = document.createElement("div");
+    titleWrap.className = "ec-title-wrap";
+
+    var titleEl = document.createElement("div");
+    titleEl.className = "ec-title";
+    titleEl.innerHTML =
+      '<span style="display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;margin-right:6px;vertical-align:middle">CÂU HỎI ' + q.id + '</span>' +
+      '<span>' + esc(q.title) + '</span>';
+    titleWrap.appendChild(titleEl);
+
+    if (q.tags && q.tags.length) {
+      var tagsEl = document.createElement("div");
+      tagsEl.className = "ec-tags";
+      q.tags.forEach(function (t) {
+        var tp = document.createElement("span");
+        tp.className = "ec-tag";
+        tp.textContent = t;
+        tagsEl.appendChild(tp);
+      });
+      titleWrap.appendChild(tagsEl);
+    }
+    header.appendChild(titleWrap);
+
+    var actions = document.createElement("div");
+    actions.className = "ec-actions";
+
+    var btnLearn = document.createElement("button");
+    btnLearn.className = "btn-learn-check" + (isLearned ? " is-learned" : "");
+    btnLearn.innerHTML = isLearned ? "✓ Đã thuộc" : "⭐ Đánh dấu thuộc";
+    btnLearn.onclick = function (e) {
+      e.stopPropagation();
+      essayLearned[q.id] = !essayLearned[q.id];
+      if (!essayLearned[q.id]) delete essayLearned[q.id];
+      saveEssayLearned(essayLearned);
+      card.classList.toggle("learned", !!essayLearned[q.id]);
+      btnLearn.className = "btn-learn-check" + (essayLearned[q.id] ? " is-learned" : "");
+      btnLearn.innerHTML = essayLearned[q.id] ? "✓ Đã thuộc" : "⭐ Đánh dấu thuộc";
+      updateEssayProgress();
+      refreshEssayQnav();
+    };
+    actions.appendChild(btnLearn);
+
+    var btnCopy = document.createElement("button");
+    btnCopy.className = "btn-ec-copy";
+    btnCopy.title = "Sao chép câu hỏi và đáp án này";
+    btnCopy.innerHTML = "📋 Copy";
+    btnCopy.onclick = function (e) {
+      e.stopPropagation();
+      copySingleEssayText(q);
+    };
+    actions.appendChild(btnCopy);
+
+    var chev = document.createElement("span");
+    chev.className = "ec-chev";
+    chev.innerHTML = "▼";
+    actions.appendChild(chev);
+
+    header.appendChild(actions);
+
+    header.onclick = function () {
+      card.classList.toggle("open");
+    };
+
+    card.appendChild(header);
+
+    var body = document.createElement("div");
+    body.className = "essay-card-body";
+
+    var ansDivider = document.createElement("div");
+    ansDivider.style.display = "flex";
+    ansDivider.style.alignItems = "center";
+    ansDivider.style.gap = "8px";
+    ansDivider.style.margin = "0 0 14px";
+    ansDivider.style.paddingBottom = "6px";
+    ansDivider.style.borderBottom = "2px solid var(--accent)";
+    ansDivider.innerHTML =
+      '<span style="background:var(--accent);color:#fff;font-family:var(--serif);font-size:12px;font-weight:700;padding:3px 10px;border-radius:4px">ĐÁP ÁN TỰ LUẬN TRỌNG TÂM</span>' +
+      '<span style="font-size:12px;color:var(--ink-soft);font-weight:500">(Gạch đầu dòng cốt lõi — Dễ học — Dễ nhớ)</span>';
+    body.appendChild(ansDivider);
+
+    var shortBox = document.createElement("div");
+    shortBox.className = "essay-short-box";
+    shortBox.innerHTML =
+      '<div class="esb-title">⚡ 10 GIÂY GHI NHỚ (ĐÁP ÁN RÚT GỌN)</div>' +
+      '<ul class="esb-list">' +
+      (q.shortSummary || []).map(function (s) { return "<li>" + s + "</li>"; }).join("") +
+      '</ul>';
+    body.appendChild(shortBox);
+
+    if (!essayShortOnly) {
+      var secWrap = document.createElement("div");
+      secWrap.className = "essay-sections-wrap";
+
+      (q.sections || []).forEach(function (sec) {
+        var sBox = document.createElement("div");
+        var extraClass = "";
+        if (sec.heading.indexOf("Mẹo") !== -1) extraClass = " sec-tips";
+        else if (sec.heading.indexOf("Liên hệ") !== -1) extraClass = " sec-lienhe";
+
+        sBox.className = "essay-sec" + extraClass;
+        sBox.innerHTML =
+          '<div class="essay-sec-head">' + sec.heading + '</div>' +
+          '<div class="essay-sec-items">' +
+          (sec.items || []).map(function (it) {
+            return "<div>" + it + "</div>";
+          }).join("") +
+          '</div>';
+        secWrap.appendChild(sBox);
+      });
+      body.appendChild(secWrap);
+    }
+
+    card.appendChild(body);
+    return card;
+  }
+
+  function copySingleEssayText(q) {
+    var lines = [];
+    lines.push(q.number + ": " + q.title);
+    lines.push("----------------------------------------");
+    lines.push("TÓM TẮT SIÊU NGẮN:");
+    (q.shortSummary || []).forEach(function (s) {
+      lines.push("• " + s.replace(/<[^>]+>/g, ""));
+    });
+    lines.push("");
+    (q.sections || []).forEach(function (sec) {
+      lines.push("[" + sec.heading.replace(/<[^>]+>/g, "") + "]");
+      (sec.items || []).forEach(function (it) {
+        lines.push(it.replace(/<[^>]+>/g, ""));
+      });
+      lines.push("");
+    });
+    navigator.clipboard.writeText(lines.join("\n")).then(function () {
+      showToast("Đã sao chép " + q.number + " vào bộ nhớ tạm!");
+    });
+  }
+
+  function copyAllEssayText() {
+    var qs = (window.ESSAY_DATA && window.ESSAY_DATA.questions) || [];
+    var all = ["8 CÂU HỎI TỰ LUẬN TRỌNG TÂM ÔN THI LỊCH SỬ ĐẢNG (KỲ II 2025-2026)\n=======================================================\n"];
+    qs.forEach(function (q) {
+      all.push("=== " + q.number + ": " + q.title + " ===\n");
+      all.push("TÓM TẮT CỐT LÕI:");
+      (q.shortSummary || []).forEach(function (s) {
+        all.push("• " + s.replace(/<[^>]+>/g, ""));
+      });
+      all.push("\nNỘI DUNG CHI TIẾT:");
+      (q.sections || []).forEach(function (sec) {
+        all.push("\n" + sec.heading.replace(/<[^>]+>/g, ""));
+        (sec.items || []).forEach(function (it) {
+          all.push(it.replace(/<[^>]+>/g, ""));
+        });
+      });
+      all.push("\n-------------------------------------------------------\n");
+    });
+    navigator.clipboard.writeText(all.join("\n")).then(function () {
+      showToast("Đã sao chép toàn bộ 8 câu Tự luận!");
+    });
+  }
+
   function selectBai(ci) {
     current = { ci: ci };
     welcome.style.display = "none";
+    var enb = document.getElementById("btnEssayNav");
+    if (enb) enb.classList.remove("active");
+    var tabTL = document.getElementById("tabTuLuan");
+    var tabTN = document.getElementById("tabTracNghiem");
+    if (tabTL) tabTL.classList.remove("active");
+    if (tabTN) tabTN.classList.add("active");
     var ch = DATA.chapters[ci];
     crumb.textContent = ch.title + (ch.subtitle ? " — " + ch.subtitle : "");
     document.querySelectorAll(".lesson-btn").forEach(function (b) {
@@ -149,6 +530,10 @@
   }
 
   function refreshQnav() {
+    if (current && current.isEssay) {
+      refreshEssayQnav();
+      return;
+    }
     var ch = DATA.chapters[current && current.ci];
     if (!ch) return;
     ch.questions.forEach(function (q, qi) {
@@ -666,6 +1051,41 @@
       "<div class='ru-title'>THĂNG HẠNG!</div><div class='ru-name'>" + rank.name + "</div></div>";
     fx.classList.remove("show"); void fx.offsetWidth; fx.classList.add("show");
     setTimeout(function () { fx.classList.remove("show"); }, 1800);
+  }
+
+  var btnTabTN = document.getElementById("tabTracNghiem");
+  if (btnTabTN) {
+    btnTabTN.onclick = function () {
+      if (current && current.isEssay) {
+        selectBai(0);
+      }
+      btnTabTN.classList.add("active");
+      var tTL = document.getElementById("tabTuLuan");
+      if (tTL) tTL.classList.remove("active");
+      closeSidebarMobile();
+    };
+  }
+  var btnTabTL = document.getElementById("tabTuLuan");
+  if (btnTabTL) {
+    btnTabTL.onclick = function () {
+      selectEssay();
+      closeSidebarMobile();
+    };
+  }
+
+  var btnEssay = document.getElementById("btnEssayNav");
+  if (btnEssay) {
+    btnEssay.onclick = function () {
+      selectEssay();
+      closeSidebarMobile();
+    };
+  }
+  var btnWlEssay = document.getElementById("btnWelcomeEssay");
+  if (btnWlEssay) {
+    btnWlEssay.onclick = function () {
+      selectEssay();
+      closeSidebarMobile();
+    };
   }
 
   /* ---------- wire controls ---------- */
