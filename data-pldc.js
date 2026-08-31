@@ -1,7 +1,7 @@
 window.PLDC_DATA = {
   "metadata": {
-    "title": "Pháp luật đại cương",
-    "description": "Ngân hàng toàn bộ câu hỏi trắc nghiệm, đúng/sai, cấu trúc QPPL và bài tập thừa kế từ tat-ca-cau-hoi-va-dap-an.md - Chuẩn hóa theo Pháp luật Việt Nam",
+    "title": "Pháp luật đại cương (v2)",
+    "description": "Ngân hàng toàn bộ câu hỏi trắc nghiệm, đúng/sai, cấu trúc QPPL và bài tập thừa kế trích xuất chi tiết từ tat-ca-cau-hoi-va-dap-an-v2.md",
     "updated": "2026-08-31"
   },
   "trac_nghiem": [
@@ -714,7 +714,7 @@ window.PLDC_DATA = {
   "dung_sai": [
     {
       "id": "ds-1",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Nhà nước tồn tại trong mọi chế độ xã hội.",
       "answer": "S",
       "explain": "Nhà nước chỉ xuất hiện, tồn tại trong xã hội có giai cấp và đấu tranh giai cấp (không tồn tại trong xã hội Cộng sản nguyên thủy).",
@@ -723,7 +723,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-2",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Điều luật với quy phạm pháp luật là hai khái niệm đồng nhất.",
       "answer": "S",
       "explain": "Quy phạm pháp luật là quy tắc xử sự chung do nhà nước ban hành, còn điều luật là hình thức biểu hiện (văn bản) chứa đựng quy phạm pháp luật. Một điều luật có thể chứa nhiều quy phạm pháp luật và ngược lại.",
@@ -732,7 +732,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-3",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Áp dụng pháp luật là hoạt động điều chỉnh cá biệt.",
       "answer": "Đ",
       "explain": "Áp dụng pháp luật do cơ quan nhà nước có thẩm quyền thực hiện nhằm giải quyết các vụ việc cụ thể đối với các chủ thể cá biệt.",
@@ -741,7 +741,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-4",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Pháp luật là phương tiện duy nhất để nhà nước quản lý xã hội.",
       "answer": "S",
       "explain": "Nhà nước quản lý xã hội bằng nhiều phương tiện khác nhau như chính sách, đạo đức, tuyên truyền giáo dục, kế hoạch kinh tế... bên cạnh pháp luật.",
@@ -750,7 +750,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-5",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Điều lệ Đảng Cộng sản Việt Nam là văn bản quy phạm pháp luật.",
       "answer": "S",
       "explain": "Điều lệ Đảng là văn bản quy tắc xử sự trong nội bộ tổ chức Đảng, không do cơ quan nhà nước có thẩm quyền ban hành theo trình tự luật định và không có tính bắt buộc chung toàn xã hội.",
@@ -759,7 +759,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-6",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Áp dụng pháp luật chỉ được tiến hành khi có vi phạm pháp luật.",
       "answer": "S",
       "explain": "Áp dụng pháp luật còn được thực hiện khi nhà nước áp dụng các biện pháp khen thưởng, công nhận quyền lợi hoặc giải quyết các sự kiện pháp lý thông thường (như đăng ký kết hôn, khai sinh...).",
@@ -768,7 +768,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-7",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Áp dụng pháp luật là hoạt động mang tính tổ chức, thể hiện quyền lực nhà nước.",
       "answer": "Đ",
       "explain": "Vì hoạt động này chỉ do cơ quan nhà nước hoặc người có thẩm quyền thực hiện nhân danh quyền lực nhà nước.",
@@ -777,16 +777,16 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-8",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Chính phủ là một cơ quan nhà nước thuộc hệ thống cơ quan quyền lực nhà nước.",
       "answer": "S",
       "explain": "Chính phủ là cơ quan hành chính nhà nước cao nhất, thực hiện quyền hành pháp, không thuộc hệ thống cơ quan quyền lực nhà nước (hệ thống cơ quan quyền lực gồm Quốc hội và Hội đồng nhân dân các cấp).",
       "isDoubt": true,
-      "doubtNote": "Chính phủ là cơ quan hành chính cao nhất (hành pháp), không thuộc cơ quan quyền lực (Quốc hội, HĐND)."
+      "doubtNote": "Chính phủ là cơ quan hành chính cao nhất (hành pháp), không thuộc hệ thống cơ quan quyền lực (Quốc hội, HĐND)."
     },
     {
       "id": "ds-9",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Văn bản luật là văn bản quy phạm pháp luật do cơ quan quyền lực nhà nước cao nhất (Quốc hội) ban hành.",
       "answer": "Đ",
       "explain": "Quốc hội là cơ quan duy nhất có quyền lập hiến và lập pháp để ban hành các văn bản luật (Hiến pháp, Bộ luật, Luật, Nghị quyết).",
@@ -795,7 +795,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-10",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Điều lệ của Đoàn Thanh niên Cộng sản Hồ Chí Minh là văn bản quy phạm pháp luật.",
       "answer": "S",
       "explain": "Đây là văn bản nội bộ của tổ chức Đoàn TNCS HCM, không phải văn bản quy phạm pháp luật do nhà nước ban hành.",
@@ -804,7 +804,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-11",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Cưỡng chế nhà nước là biện pháp duy nhất để bảo đảm cho pháp luật được thực hiện trong đời sống xã hội.",
       "answer": "S",
       "explain": "Bên cạnh cưỡng chế, nhà nước còn sử dụng các biện pháp giáo dục, thuyết phục, tuyên truyền pháp luật để người dân tự giác chấp hành.",
@@ -813,7 +813,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-12",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Tuân theo pháp luật là hình thức thực hiện pháp luật trong đó cá nhân, tổ chức thực hiện đầy đủ nghĩa vụ của mình thông qua những hành động tích cực.",
       "answer": "S",
       "explain": "Định nghĩa trên là của hình thức Thi hành pháp luật. Tuân thủ pháp luật là kiềm chế không thực hiện những hành vi mà pháp luật cấm.",
@@ -822,7 +822,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-13",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Mọi quy tắc xử sự chung đều là quy phạm pháp luật.",
       "answer": "S",
       "explain": "Có những quy tắc xử sự chung khác như quy tắc đạo đức, phong tục tập quán không mang tính quy phạm pháp luật do nhà nước ban hành.",
@@ -831,7 +831,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-14",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Vi phạm pháp luật phải là hành vi trái pháp luật.",
       "answer": "Đ",
       "explain": "Hành vi trái pháp luật là thuộc tính khách quan và là tiền đề bắt buộc của vi phạm pháp luật.",
@@ -840,7 +840,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-15",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Văn bản quy phạm pháp luật là hình thức duy nhất của pháp luật.",
       "answer": "S",
       "explain": "Ngoài văn bản quy phạm pháp luật, hình thức pháp luật còn bao gồm tập quán pháp và tiền lệ pháp (án lệ).",
@@ -849,7 +849,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-16",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Pháp luật có tính xác định chặt chẽ về hình thức.",
       "answer": "Đ",
       "explain": "Các quy phạm pháp luật luôn được thể hiện dưới những hình thức văn bản rõ ràng, chuẩn xác để tránh hiểu sai nghĩa.",
@@ -858,7 +858,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-17",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Mọi quan hệ xã hội đều là quan hệ pháp luật.",
       "answer": "S",
       "explain": "Chỉ có những quan hệ xã hội được các quy phạm pháp luật điều chỉnh mới trở thành quan hệ pháp luật (ví dụ quan hệ tình yêu, tình bạn không phải quan hệ pháp luật).",
@@ -867,7 +867,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-18",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Trong hệ thống chính trị của Việt Nam, Nhà nước giữ vị trí trung tâm, trụ cột của hệ thống chính trị.",
       "answer": "Đ",
       "explain": "Nhà nước là cơ quan đại diện cho toàn thể nhân dân, trực tiếp quản lý mọi mặt xã hội bằng pháp luật.",
@@ -876,7 +876,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-19",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Tuân theo pháp luật là hình thức thực hiện pháp luật trong đó chủ thể xử sự đúng những gì pháp luật quy định phải làm.",
       "answer": "S",
       "explain": "Đó là hình thức Thi hành pháp luật.",
@@ -885,7 +885,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-20",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Điều lệ của Đảng Cộng sản Việt Nam là văn bản quy phạm pháp luật.",
       "answer": "S",
       "explain": "(Giống câu 5)",
@@ -894,7 +894,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-21",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Nhà nước chỉ tồn tại trong xã hội có giai cấp.",
       "answer": "Đ",
       "explain": "Nhà nước là sản phẩm và biểu hiện của các mâu thuẫn giai cấp không thể điều hòa được.",
@@ -903,7 +903,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-22",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Văn bản quy phạm pháp luật chỉ do cơ quan nhà nước có thẩm quyền ban hành.",
       "answer": "S",
       "explain": "Văn bản quy phạm pháp luật có thể do các tổ chức chính trị - xã hội phối hợp với cơ quan nhà nước liên tịch ban hành.",
@@ -912,7 +912,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-23",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Mọi quyết định của Thủ tướng Chính phủ đều là văn bản quy phạm pháp luật.",
       "answer": "S",
       "explain": "Quyết định của Thủ tướng có thể là quyết định cá biệt (ví dụ quyết định bổ nhiệm nhân sự, khen thưởng...) không mang tính quy phạm pháp luật.",
@@ -921,7 +921,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-24",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Mọi quy phạm pháp luật đều có chế tài.",
       "answer": "S",
       "explain": "Có những quy phạm pháp luật định nghĩa hoặc quy phạm nhiệm vụ quyền hạn khuyết bộ phận chế tài.",
@@ -930,7 +930,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-25",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Khi tham gia giao thông, anh A điều khiển xe mô tô có đội mũ bảo hiểm. Trong trường hợp này anh A đã tuân theo pháp luật.",
       "answer": "S",
       "explain": "Việc chủ động đội mũ bảo hiểm là thực hiện nghĩa vụ mà pháp luật bắt buộc phải làm, đây thuộc hình thức Thi hành pháp luật.",
@@ -939,7 +939,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-26",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Pháp luật chỉ được bảo đảm thực hiện bằng biện pháp cưỡng chế nhà nước.",
       "answer": "S",
       "explain": "(Giống câu 11)",
@@ -948,7 +948,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-27",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Điều luật và quy phạm pháp luật là hai khái niệm đồng nhất.",
       "answer": "S",
       "explain": "(Giống câu 2)",
@@ -957,7 +957,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-28",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Cá nhân, tổ chức muốn trở thành chủ thể của quan hệ pháp luật thì phải có năng lực chủ thể và phải tham gia vào một quan hệ pháp luật cụ thể.",
       "answer": "Đ",
       "explain": "Năng lực chủ thể gồm năng lực pháp luật và năng lực hành vi là điều kiện cần để tham gia quan hệ pháp luật.",
@@ -966,7 +966,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-29",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Mọi hành vi trái pháp luật đều là vi phạm pháp luật.",
       "answer": "S",
       "explain": "Hành vi trái pháp luật chỉ là vi phạm pháp luật khi có lỗi của chủ thể và chủ thể có năng lực trách nhiệm pháp lý.",
@@ -975,7 +975,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-30",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Mọi hành vi có lỗi của chủ thể vi phạm đều là vi phạm pháp luật.",
       "answer": "S",
       "explain": "Hành vi có lỗi nhưng không trái với quy định của pháp luật thì không bị coi là vi phạm pháp luật.",
@@ -984,7 +984,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-31",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Tuân theo pháp luật là hình thức thực hiện pháp luật trong đó cá nhân, tổ chức kiềm chế không thực hiện những điều mà pháp luật cấm.",
       "answer": "Đ",
       "explain": "Đây là định nghĩa chuẩn của tuân thủ pháp luật.",
@@ -993,7 +993,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-32",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "A có ý định ăn cắp xe máy. Trong trường hợp này A đã vi phạm pháp luật.",
       "answer": "S",
       "explain": "Mới chỉ dừng lại ở ý định (tư tưởng), chưa biểu hiện ra hành vi khách quan bên ngoài nên chưa cấu thành vi phạm pháp luật.",
@@ -1002,7 +1002,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-33",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Mọi quy phạm pháp luật đều có đủ 3 bộ phận: giả định, quy định và chế tài.",
       "answer": "S",
       "explain": "Thực tế các văn bản quy phạm thường khuyết một bộ phận (phổ biến nhất là khuyết quy định hoặc chế tài).",
@@ -1011,7 +1011,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-34",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam là nhà nước đơn nhất.",
       "answer": "Đ",
       "explain": "Lãnh thổ Việt Nam là một khối thống nhất, có một Hiến pháp và một hệ thống cơ quan nhà nước thống nhất từ trung ương đến địa phương.",
@@ -1020,7 +1020,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-35",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Mọi văn bản do Quốc hội ban hành đều là văn bản quy phạm pháp luật.",
       "answer": "S",
       "explain": "Quốc hội có thể ban hành các nghị quyết cá biệt (ví dụ nghị quyết bầu nhân sự, miễn nhiệm...) không chứa quy phạm pháp luật phổ biến.",
@@ -1029,7 +1029,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-36",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Pháp luật mang bản chất của giai cấp cầm quyền.",
       "answer": "Đ",
       "explain": "Pháp luật thể hiện ý chí của giai cấp thống trị được nâng lên thành luật của nhà nước.",
@@ -1038,7 +1038,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-37",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Chỉ Quốc hội mới có thẩm quyền ban hành văn bản quy phạm pháp luật với hình thức là Nghị quyết.",
       "answer": "S",
       "explain": "Ủy ban Thường vụ Quốc hội, Chính phủ, Hội đồng nhân dân các cấp cũng có thẩm quyền ban hành Nghị quyết quy phạm pháp luật.",
@@ -1047,7 +1047,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-38",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Trách nhiệm pháp lý chính là chế tài của quy phạm pháp luật.",
       "answer": "S",
       "explain": "Chế tài là bộ phận của quy phạm pháp luật xác định hậu quả bất lợi, còn trách nhiệm pháp lý là nghĩa vụ thực tế mà chủ thể vi phạm phải gánh chịu trước nhà nước.",
@@ -1056,7 +1056,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-39",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Chấp hành pháp luật là hình thức thực hiện pháp luật trong đó chủ thể không làm những điều mà pháp luật cấm.",
       "answer": "S",
       "explain": "Không làm điều cấm là Tuân thủ pháp luật. Chấp hành (hay thi hành) là thực hiện chủ động điều pháp luật yêu cầu phải làm.",
@@ -1065,7 +1065,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-40",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Pháp luật chỉ tồn tại trong xã hội có giai cấp.",
       "answer": "Đ",
       "explain": "Pháp luật ra đời cùng với nhà nước, là công cụ để duy trì trật tự và bảo vệ quyền lợi của giai cấp cầm quyền.",
@@ -1074,7 +1074,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-41",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Bộ luật Hình sự của nước Cộng hòa xã hội chủ nghĩa Việt Nam năm 2015 không phải là văn bản quy phạm pháp luật.",
       "answer": "S",
       "explain": "Bộ luật Hình sự là văn bản quy phạm pháp luật do Quốc hội ban hành, có hiệu lực pháp lý cao thứ hai sau Hiến pháp.",
@@ -1083,7 +1083,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-42",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Văn bản quy phạm pháp luật là hình thức cơ bản, chủ yếu của pháp luật.",
       "answer": "Đ",
       "explain": "Tại Việt Nam và các nước theo hệ thống dân luật (Civil Law), văn bản quy phạm pháp luật là nguồn luật cơ bản và quan trọng nhất.",
@@ -1092,7 +1092,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-43",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Quốc hội là cơ quan quyền lực nhà nước cao nhất của nước Cộng hòa xã hội chủ nghĩa Việt Nam.",
       "answer": "Đ",
       "explain": "Được quy định rõ tại Hiến pháp năm 2013.",
@@ -1101,7 +1101,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-44",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Pháp luật do nhà nước ban hành hoặc thừa nhận và được bảo đảm thực hiện bằng sức mạnh của nhà nước.",
       "answer": "Đ",
       "explain": "Đây là một trong các đặc trưng cơ bản nhất phân biệt pháp luật với các quy tắc xã hội khác.",
@@ -1110,7 +1110,7 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-45",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam năm 2013 là một loại văn bản quy phạm pháp luật.",
       "answer": "Đ",
       "explain": "Đây là đạo luật cơ bản, văn bản quy phạm pháp luật có hiệu lực pháp lý cao nhất trong hệ thống pháp luật Việt Nam.",
@@ -1119,7 +1119,16 @@ window.PLDC_DATA = {
     },
     {
       "id": "ds-46",
-      "ch": "Đề cương trọng tâm",
+      "ch": "Đề cương 47 câu (v2)",
+      "q": "Pháp luật chỉ được bảo đảm thực hiện bằng biện pháp cưỡng chế nhà nước.",
+      "answer": "S",
+      "explain": "(Giống câu 11 và 26)",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-47",
+      "ch": "Đề cương 47 câu (v2)",
       "q": "Chỉ Bộ trưởng mới có thẩm quyền ban hành văn bản quy phạm pháp luật với hình thức là Thông tư.",
       "answer": "S",
       "explain": "Thủ trưởng cơ quan ngang bộ, Chánh án Tòa án nhân dân tối cao, Viện trưởng Viện kiểm sát nhân dân tối cao cũng có thẩm quyền ban hành Thông tư.",
@@ -1127,829 +1136,450 @@ window.PLDC_DATA = {
       "doubtNote": ""
     },
     {
-      "id": "ds-47",
-      "ch": "Mã đề thi & Bổ sung",
+      "id": "ds-48",
+      "ch": "Mã đề thi (v2)",
       "q": "Năng lực hành vi của cá nhân phát sinh kể từ khi cá nhân được sinh ra.",
       "answer": "S",
-      "explain": "Sai. Năng lực pháp luật của cá nhân mới phát sinh từ khi sinh ra, còn năng lực hành vi dân sự chỉ xuất hiện và phát triển dần theo độ tuổi và khả năng nhận thức."
-    },
-    {
-      "id": "ds-48",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Mọi quy tắc xử sự tồn tại trong xã hội có nhà nước đều là pháp luật.",
-      "answer": "S",
-      "explain": "Sai. Trong xã hội có nhà nước còn tồn tại nhiều quy tắc xử sự khác như đạo đức, phong tục, tập quán, quy tắc của tổ chức xã hội..."
+      "explain": "Năng lực pháp luật của cá nhân mới phát sinh từ khi sinh ra, còn năng lực hành vi dân sự chỉ xuất hiện và phát triển dần theo độ tuổi và khả năng nhận thức của cá nhân."
     },
     {
       "id": "ds-49",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Chức năng tư pháp của nhà nước là một mặt hoạt động bảo vệ pháp luật.",
-      "answer": "Đ",
-      "explain": "Đúng. Hoạt động tư pháp (xét xử, kiểm sát...) nhằm bảo vệ pháp luật, bảo vệ quyền lợi hợp pháp của công dân và nhà nước."
+      "ch": "Mã đề thi (v2)",
+      "q": "Mọi quy tắc xử sự tồn tại trong xã hội có nhà nước đều là pháp luật.",
+      "answer": "S",
+      "explain": "Trong xã hội có nhà nước còn tồn tại nhiều quy tắc xử sự khác như đạo đức, phong tục, tập quán, quy tắc của tổ chức xã hội..."
     },
     {
       "id": "ds-50",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Hội đồng nhân dân là cơ quan hành chính nhà nước ở địa phương, do nhân dân bầu ra.",
-      "answer": "S",
-      "explain": "Sai. Hội đồng nhân dân là cơ quan quyền lực nhà nước ở địa phương. Cơ quan hành chính nhà nước ở địa phương là Ủy ban nhân dân."
+      "ch": "Mã đề thi (v2)",
+      "q": "Chức năng tư pháp của nhà nước là một mặt hoạt động bảo vệ pháp luật.",
+      "answer": "Đ",
+      "explain": "Hoạt động tư pháp (xét xử, kiểm sát...) nhằm bảo vệ pháp luật, bảo vệ quyền lợi hợp pháp của công dân và nhà nước."
     },
     {
       "id": "ds-51",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Ba lần phân công lao động cuối thời kỳ công xã nguyên thủy là nguyên nhân dẫn đến sự ra đời của nhà nước.",
+      "ch": "Mã đề thi (v2)",
+      "q": "Hội đồng nhân dân là cơ quan hành chính nhà nước ở địa phương, do nhân dân bầu ra.",
       "answer": "S",
-      "explain": "Sai. Ba lần phân công lao động dẫn đến sự xuất hiện của chế độ tư hữu và mâu thuẫn giai cấp gay gắt không thể điều hòa được, đó mới là nguyên nhân trực tiếp dẫn đến sự ra đời của nhà nước."
+      "explain": "Hội đồng nhân dân là cơ quan quyền lực nhà nước ở địa phương. Cơ quan hành chính nhà nước ở địa phương là Ủy ban nhân dân."
     },
     {
       "id": "ds-52",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Những quan điểm tiêu cực của chủ thể vi phạm pháp luật được xem xét là biểu hiện bên ngoài (mặt khách quan) của vi phạm pháp luật.",
+      "ch": "Mã đề thi (v2)",
+      "q": "Ba lần phân công lao động cuối thời kỳ công xã nguyên thủy là nguyên nhân dẫn đến sự ra đời của nhà nước.",
       "answer": "S",
-      "explain": "Sai. Quan điểm tiêu cực thuộc về nhận thức, tâm lý bên trong (mặt chủ quan), không phải là hành vi biểu hiện ra bên ngoài thế giới khách quan (mặt khách quan)."
+      "explain": "Ba lần phân công lao động lớn trong lịch sử dẫn đến sự xuất hiện của chế độ tư hữu và mâu thuẫn giai cấp gay gắt không thể điều hòa được, đó mới là nguyên nhân trực tiếp dẫn đến sự ra đời của nhà nước."
     },
     {
       "id": "ds-53",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Quốc hội là cơ quan hành chính cao nhất của nước Cộng hoà xã hội chủ nghĩa Việt Nam.",
+      "ch": "Mã đề thi (v2)",
+      "q": "Độ tuổi tối thiểu mà công dân có thể tham gia ứng cử đại biểu Quốc hội nước CHXHCN Việt Nam là:\n   - a. Đủ 18 tuổi\n   - b. Đủ 20 tuổi\n   - c. Đủ 21 tuổi\n   - d. Đủ 23 tuổi\n2. Ông B xây nhà lấn chiếm lối đi của khu phố, bị cơ quan có thẩm quyền yêu cầu phá bỏ phần lấn chiếm để trả lại lối đi. Đây là biện pháp chế tài:\n   - a. Dân sự (Hoặc Hành chính tùy theo chủ thể yêu cầu phá dỡ, trong đề khoanh đáp án a. Dân sự để buộc khôi phục tình trạng ban đầu).\n   - b. Hình sự\n   - c. Hành chính\n   - d. Kỷ luật\n3. Xã hội cộng sản nguyên thủy là xã hội:\n   - a. Có giai cấp mâu thuẫn đối kháng nhau\n   - b. Không có giai cấp mâu thuẫn đối kháng nhau\n   - c. Do nhà nước quản lý\n   - d. Do các cơ quan lập pháp quản lý\n4. Hành vi vi phạm pháp luật không thể là:\n   - a. Lời nói\n   - b. Một tư tưởng xấu xa\n   - c. Một kế hoạch\n   - d. Cả a, b, c\n5. Chủ thể của tham nhũng là:\n   - a. Người có chức vụ quyền hạn trong xã hội\n   - b. Người có chức vụ, quyền hạn trong cơ quan, doanh nghiệp\n   - c. Người có chức vụ, quyền hạn trong các cơ quan nhà nước\n   - d. Cả a, b, c đều sai.\n6. Ở xã hội cộng sản nguyên thủy:\n   - a. Chưa xuất hiện chế độ công hữu, chưa xuất hiện giai cấp nên nhà nước chưa xuất hiện (Nhận định trong đề cương chọn đáp án này, tuy nhiên bản chất xã hội CSNT có chế độ công hữu về tư liệu sản xuất và đất đai, chưa xuất hiện tư hữu và giai cấp).\n   - b. Xuất hiện chế độ công hữu, xuất hiện các giai cấp khác nhau nhưng chưa xuất hiện nhà nước\n   - c. Xuất hiện chế độ tư hữu, chưa xuất hiện giai cấp, nhà nước chưa xuất hiện\n   - d. Xuất hiện chế độ công hữu, chưa xuất hiện giai cấp, nhà nước chưa xuất hiện\n7. Nguyên tắc áp dụng hình phạt trong pháp luật hình sự:\n   - a. Có thể áp dụng một lúc nhiều hình phạt chính và nhiều hình phạt bổ sung\n   - b. Chỉ có thể áp dụng một lúc nhiều hình phạt chính và chỉ một hình phạt bổ sung\n   - c. Chỉ có thể áp dụng một hình phạt chính và một hình phạt bổ sung\n   - d. Chỉ có thể áp dụng được một hình phạt chính và áp dụng được nhiều hình phạt bổ sung\n8. Khẳng định nào sau đây là đúng:\n   - a. Sự kiện pháp lý là sự cụ thể hóa phần giả định của quy phạm pháp luật trong thực tiễn\n   - b. Sự kiện pháp lý là sự cụ thể hóa phần giả định và quy định của quy phạm pháp luật trong thực tiễn\n   - c. Sự kiện pháp lý là sự cụ thể hóa phần giả định, quy định và chế tài của quy phạm pháp luật trong thực tiễn\n   - d. Cả a, b và c đều đúng\n9. Khẳng định nào đúng:\n   - a. Áp dụng pháp luật là việc thực hiện pháp luật của công dân\n   - b. Áp dụng pháp luật là việc thực hiện pháp luật của cơ quan nhà nước và người có thẩm quyền\n   - c. Áp dụng pháp luật là việc thực hiện pháp luật của công dân, của cơ quan nhà nước và người có thẩm quyền\n   - d. Cả a, b và c đều đúng\n10. Đâu không phải là một ngành luật trong hệ thống pháp luật Việt Nam:\n    - a. Luật xây dựng (Vì đây là một văn bản luật cụ thể, không phải ngành luật độc lập trong hệ thống 12 ngành luật chính).\n    - b. Luật hôn nhân và gia đình\n    - c. Luật kinh tế\n    - d. Luật tài chính\n\n#### Phần II: Giải quyết tình huống (3 điểm)\nTình huống 1 (1.5 điểm): Phân tích cấu trúc của các quy phạm pháp luật sau:\n*   a. \"Người nào xúi giục làm người khác tự sát hoặc giúp người khác tự sát thì bị phạt tù từ sáu tháng đến ba năm\" - K1 Đ 101 BLHS 1999.\n       Giả định:* \"Người nào xúi giục làm người khác tự sát hoặc giúp người khác tự sát\"\n       Chế tài:* \"thì bị phạt tù từ sáu tháng đến ba năm\" (Quy phạm này khuyết bộ phận Quy định - tức là ngầm hiểu cấm hành vi xúi giục/giúp người khác tự sát).\n*   b. \"Doanh nghiệp tư nhân là doanh nghiệp do một cá nhân làm chủ và tự chịu trách nhiệm bằng toàn bộ tài sản của mình về mọi hoạt động của doanh nghiệp\" - K1 Đ 141 Luật Doanh nghiệp 2005.\n       Giả định:* \"Doanh nghiệp tư nhân\"\n       Quy định:* \"là doanh nghiệp do một cá nhân làm chủ và tự chịu trách nhiệm bằng toàn bộ tài sản của mình về mọi hoạt động của doanh nghiệp\" (Quy phạm khuyết bộ phận Chế tài).\n\nTình huống 2 (1.5 điểm): Nguyễn Văn Hoàng 12 tuổi đã bẻ khóa vào một nhà dân để trộm cắp tài sản. Thấy trong nhà có bé gái 8 tuổi, Hoàng đã dùng hung khí mang theo đánh chết em gái này sau đó lấy của cải và bỏ trốn. Trong trường hợp này Hoàng có phải chịu trách nhiệm pháp lý không? Vì sao? Có gì khác nếu khi thực hiện hành vi trên Hoàng đã đủ 14 tuổi hoặc đã đủ 18 tuổi?\nLời giải chi tiết từng bước:\n*   Trường hợp Hoàng 12 tuổi (khi thực hiện hành vi):\n    *   Trách nhiệm hình sự: Căn cứ Điều 12 Bộ luật Hình sự 2015 (sửa đổi, bổ sung 2017), tuổi chịu trách nhiệm hình sự tối thiểu là từ đủ 14 tuổi. Nguyễn Văn Hoàng mới 12 tuổi nên không phải chịu trách nhiệm hình sự về hành vi giết người và trộm cắp tài sản.\n    *   Trách nhiệm hành chính: Có thể bị áp dụng biện pháp xử lý hành chính đưa vào trường giáo dưỡng đối với người từ đủ 12 tuổi đến dưới 14 tuổi thực hiện hành vi có dấu hiệu của một tội phạm đặc biệt nghiêm trọng do cố ý quy định tại Bộ luật Hình sự (theo Luật Xử lý vi phạm hành chính).\n    *   Trách nhiệm dân sự: Căn cứ quy định về bồi thường thiệt hại ngoài hợp đồng trong Bộ luật Dân sự, cha mẹ của Hoàng có nghĩa vụ bồi thường toàn bộ thiệt hại về tính mạng (chi phí mai táng, tiền tổn thất tinh thần cho gia đình nạn nhân) và tài sản bị mất cho gia đình người bị hại.\n\n*   Trường hợp Hoàng đủ 14 tuổi (khi thực hiện hành vi):\n    *   Căn cứ Khoản 2 Điều 12 Bộ luật Hình sự 2015, người từ đủ 14 tuổi đến dưới 16 tuổi phải chịu trách nhiệm hình sự về tội phạm rất nghiêm trọng, tội phạm đặc biệt nghiêm trọng quy định tại một số điều luật cụ thể, trong đó có Tội giết người (Điều 123) và Tội cướp tài sản/trộm cắp tài sản.\n    *   Hành vi dùng hung khí đánh chết người rồi lấy tài sản của Hoàng cấu thành tội giết người với tính tiết tăng nặng (giết người dưới 16 tuổi) và tội cướp tài sản, thuộc nhóm tội đặc biệt nghiêm trọng. Do đó, nếu Hoàng đã đủ 14 tuổi thì phải chịu trách nhiệm hình sự. Khung hình phạt cao nhất áp dụng đối với người từ đủ 14 tuổi đến dưới 16 tuổi không quá 12 năm tù.\n\n*   Trường hợp Hoàng đủ 18 tuổi (khi thực hiện hành vi):\n    *   Hoàng đã là người thành niên, có năng lực trách nhiệm hình sự đầy đủ. Hoàng sẽ phải gánh chịu trách nhiệm hình sự hoàn toàn về các tội danh đã thực hiện (Tội giết người theo Điều 123 và Tội cướp tài sản theo Điều 168 BLHS 2015). Do hành vi có tính chất đặc biệt nghiêm trọng và dã man, Hoàng có thể phải đối mặt với mức hình phạt cao nhất là tù chung thân hoặc tử hình.\n    *   Khi Hoàng 12 tuổi: Không phải chịu trách nhiệm hình sự (TNHS) vì chưa đủ tuổi chịu trách nhiệm hình sự tối thiểu (dưới 14 tuổi theo Bộ luật Hình sự). Tuy nhiên, có thể bị áp dụng biện pháp xử lý hành chính đưa vào trường giáo dưỡng. Cha mẹ Hoàng có trách nhiệm bồi thường thiệt hại dân sự thay cho con.\n    *   Khi Hoàng đủ 14 tuổi: Đã đạt độ tuổi chịu TNHS đối với tội phạm rất nghiêm trọng hoặc đặc biệt nghiêm trọng (khoản 2 Điều 12 BLHS). Hành vi giết người và cướp tài sản thuộc nhóm tội đặc biệt nghiêm trọng nên Hoàng phải chịu trách nhiệm hình sự.\n    *   Khi Hoàng đủ 18 tuổi: Chịu trách nhiệm hình sự đầy đủ của người thành niên với khung hình phạt cao nhất có thể áp dụng (kể cả tù chung thân hoặc tử hình).\n\n#### Phần III: Bài tập (3.5 điểm)\nVợ chồng A và B kết hôn năm 1959, có con chung là: C, D, E, F (đều đã thành niên). Do A thường xuyên bị B mắng chửi nên hai vợ chồng không còn tình cảm. Từ năm 2003, ông A chuyển ra sống với bà H và có hai người con là K, J (đều chưa thành niên). Tháng 4/2007, A chết để lại di chúc cho H hưởng toàn bộ di sản thừa kế. 2 tháng sau khi A chết, bà H cũng qua đời. Sau đó, B kiện lên tòa án yêu cầu chia thừa kế lại. Biết rằng tài sản chung hợp nhất của A và B là 1.4 tỷ đồng. Hãy chia di sản thừa kế trong các trường hợp trên?\nLời giải chi tiết từng bước:\n\nBước 1: Xác định di sản của ông A\n*   Tài sản chung hợp nhất của ông A và bà B là 1,4 tỷ đồng. Theo nguyên tắc phân chia tài sản chung của vợ chồng, phần tài sản của ông A trong khối tài sản chung này là:\n    1,4  tỷ / 2 = 700  triệu đồng\n*   Do ông A không có tài sản riêng nào khác được nêu, tổng di sản thực tế của ông A dùng để chia thừa kế là 700 triệu đồng.\n\nBước 2: Phân chia di sản của ông A theo di chúc\n*   Theo di chúc: Ông A định đoạt để lại toàn bộ tài sản cho bà H (người sống chung).\n*   Tuy nhiên, cần áp dụng Điều 644 BLDS 2015 về người thừa kế không phụ thuộc vào nội dung di chúc để bảo vệ quyền lợi của những người thừa kế bắt buộc.\n*   Đối tượng hưởng thừa kế bắt buộc của ông A gồm:\n    1.  Bà B (vợ hợp pháp - hai người mới ly thân, chưa ly hôn)\n    2.  Cháu K (con đẻ chưa thành niên tại thời điểm ông A chết năm 2007 - sinh sau năm 2003)\n    3.  Cháu J (con đẻ chưa thành niên tại thời điểm ông A chết năm 2007 - sinh sau năm 2003)\n    (Các con chung của A và B là C, D, E, F đều đã thành niên và có khả năng lao động bình thường nên không thuộc đối tượng này).\n\n*   Tính toán suất thừa kế bắt buộc:\n    *   Giả sử toàn bộ di sản 700 triệu đồng của ông A được chia theo pháp luật, hàng thừa kế thứ nhất của ông A gồm 7 người: bà B (vợ), các con: C, D, E, F, K, J. (Bà H không phải là vợ hợp pháp nên không thuộc hàng thừa kế pháp luật).\n    *   Trị giá một suất thừa kế theo pháp luật là:\n        1 suất pháp luật = 700  triệu / 7  người = 100  triệu đồng\n    *   Trị giá suất thừa kế bắt buộc tối thiểu mà bà B, cháu K, và cháu J mỗi người phải nhận (bằng 2/3 một suất pháp luật) là:\n        Suất bắt buộc = \\frac{2{3 \\times 100  triệu = 66,67  triệu đồng / mỗi người\n    *   Thực tế, theo di chúc bà B, cháu K, và cháu J nhận được 0 đồng. Do đó, mỗi người phải được bù đúng bằng suất bắt buộc là 66,67 triệu đồng.\n    *   Tổng di sản cần trích ra để bù cho 3 người này là:\n        66,67  triệu \\times 3 = 200  triệu đồng\n    *   Số tiền này sẽ được khấu trừ trực tiếp từ phần di chúc của bà H.\n    *   Phần di sản thực tế còn lại bà H được nhận là:\n        Bà H nhận = 700  triệu - 200  triệu = 500  triệu đồng\n\nBước 3: Giải quyết di sản sau khi bà H chết (2 tháng sau)\n*   Sau khi ông A chết được 2 tháng, bà H cũng qua đời. Phần di sản trị giá 500 triệu đồng bà H nhận từ ông A đã hòa nhập vào khối tài sản của bà H và trở thành di sản thừa kế của bà H.\n*   Do bà H chết không có di chúc, di sản 500 triệu đồng của bà H được chia theo pháp luật cho hàng thừa kế thứ nhất của bà H gồm 2 con đẻ: cháu K và cháu J.\n*   Mỗi cháu được hưởng phần di sản của bà H là bằng nhau:\n    K = J = 500  triệu / 2 = 250  triệu đồng / mỗi cháu\n\nBước 4: Tổng hợp tài sản thực nhận của từng người\n*   Bà B (vợ hợp pháp ông A): Nhận thừa kế bắt buộc từ ông A = 66,67 triệu đồng\n*   Cháu K (con chung ông A và bà H): Nhận bắt buộc từ ông A (66,67 triệu) + nhận pháp luật từ bà H (250 triệu) = 316,67 triệu đồng\n*   Cháu J (con chung ông A và bà H): Nhận bắt buộc từ ông A (66,67 triệu) + nhận pháp luật từ bà H (250 triệu) = 316,67 triệu đồng\n*   Các con C, D, E, F: Nhận từ ông A = 0 đồng\n\n---\n\n### MÃ ĐỀ 4775\n#### Phần I: Trắc nghiệm & Lý thuyết (4.0 điểm)\nCâu 1: Trả lời đúng/sai và giải thích ngắn gọn (2.0 điểm)\n1. Những quan điểm tiêu cực của chủ thể vi phạm pháp luật được xem xét là biểu hiện bên ngoài (mặt khách quan) của vi phạm pháp luật.",
       "answer": "S",
-      "explain": "Sai. Quốc hội là cơ quan quyền lực nhà nước cao nhất, cơ quan lập pháp. Cơ quan hành chính nhà nước cao nhất là Chính phủ."
+      "explain": "Quan điểm tiêu cực thuộc về nhận thức, tâm lý bên trong (mặt chủ quan), không phải là hành vi biểu hiện ra bên ngoài thế giới khách quan (mặt khách quan)."
     },
     {
       "id": "ds-54",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Chủ quyền quốc gia là quyền độc lập tự quyết của một quốc gia trong lĩnh vực đối nội.",
+      "ch": "Mã đề thi (v2)",
+      "q": "Quốc hội là cơ quan hành chính cao nhất của nước Cộng hoà xã hội chủ nghĩa Việt Nam.",
       "answer": "S",
-      "explain": "Sai. Chủ quyền quốc gia bao gồm quyền độc lập tự quyết trong cả đối nội và đối ngoại."
+      "explain": "Quốc hội là cơ quan quyền lực nhà nước cao nhất, cơ quan lập pháp. Cơ quan hành chính nhà nước cao nhất là Chính phủ."
     },
     {
       "id": "ds-55",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Uỷ ban nhân dân địa phương có quyền ban hành quyết định, chỉ thị, công văn mang tính quy phạm pháp luật.",
-      "answer": "S",
-      "explain": "Sai. Theo Luật Ban hành văn bản quy phạm pháp luật, UBND chỉ ban hành quyết định quy phạm, còn chỉ thị và công văn là văn bản hành chính cá biệt."
+      "ch": "Mã đề thi (v2)",
+      "q": "Chức năng tư pháp của nhà nước là mặt hoạt động bảo vệ pháp luật.",
+      "answer": "Đ",
+      "explain": "4. Chủ quyền quốc gia là quyền độc lập tự quyết của một quốc gia trong lĩnh vực đối nội.    - Đáp án: SAI. Chủ quyền quốc gia bao gồm quyền độc lập tự quyết trong cả đối nội và đối ngoại."
     },
     {
       "id": "ds-56",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Nhà Nước phân chia và quản lý dân cư theo huyết thống.",
+      "ch": "Mã đề thi (v2)",
+      "q": "Uỷ ban nhân dân địa phương có quyền ban hành quyết định, chỉ thị, công văn.",
       "answer": "S",
-      "explain": "Sai. Thị tộc nguyên thủy quản lý theo huyết thống. Nhà nước phân chia và quản lý dân cư theo đơn vị hành chính lãnh thổ."
-    },
-    {
-      "id": "ds-57",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Một trong những đặc trưng của Nhà Nước là thu thuế bắt buộc.",
-      "answer": "Đ",
-      "explain": "Đúng. Nhà nước đặt ra và thu các khoản thuế bắt buộc để nuôi dưỡng bộ máy và thực hiện chức năng công cộng."
-    },
-    {
-      "id": "ds-58",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Quyền lực trong xã hội cộng sản nguyên thủy mang tính xã hội.",
-      "answer": "Đ",
-      "explain": "Đúng. Quyền lực hòa nhập vào cộng đồng dân cư, phục vụ lợi ích chung của thị tộc."
-    },
-    {
-      "id": "ds-59",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Nhà nước là chủ thể duy nhất có chủ quyền quốc gia.",
-      "answer": "Đ",
-      "explain": "Đúng. Chủ quyền quốc gia là thuộc tính chính trị - pháp lý thiêng liêng chỉ thuộc về Nhà nước."
-    },
-    {
-      "id": "ds-60",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Nhà nước quân chủ tuyệt đối không có hiến pháp.",
-      "answer": "Đ",
-      "explain": "Đúng. Trong nhà nước quân chủ chuyên chế tuyệt đối, quyền lực tối cao tập trung vào tay vua, không có hiến pháp giới hạn quyền lực."
-    },
-    {
-      "id": "ds-61",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Trong nhà nước có vua, vua luôn nắm giữ quyền lực nhà nước tuyệt đối.",
-      "answer": "S",
-      "explain": "Sai. Trong nhà nước quân chủ lập hiến (hạn chế), quyền lực của vua bị giới hạn bởi Hiến pháp và Nghị viện."
-    },
-    {
-      "id": "ds-62",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Bản chất của nhà nước gồm hai thuộc tính: tính giai cấp và tính xã hội.",
-      "answer": "Đ",
-      "explain": "Đúng. Nhà nước là thể thống nhất giữa tính giai cấp (bảo vệ giai cấp thống trị) và tính xã hội (duy trì trật tự chung)."
-    },
-    {
-      "id": "ds-63",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Trong nhà nước CHXHCN Việt Nam, nhân dân là chủ thể tối cao của quyền lực nhà nước.",
-      "answer": "Đ",
-      "explain": "Đúng. Căn cứ Điều 2 Hiến pháp 2013, tất cả quyền lực nhà nước thuộc về Nhân dân."
-    },
-    {
-      "id": "ds-64",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Nhà nước CHXHCN Việt Nam là nhà nước của khối đại đoàn kết toàn dân tộc.",
-      "answer": "Đ",
-      "explain": "Đúng. Được quy định rõ trong Hiến pháp 2013."
-    },
-    {
-      "id": "ds-65",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Pháp luật mang tính quy phạm phổ biến so với các quy phạm xã hội khác.",
-      "answer": "Đ",
-      "explain": "Đúng. Pháp luật áp dụng bắt buộc chung với mọi chủ thể trong cả nước và được áp dụng nhiều lần."
-    },
-    {
-      "id": "ds-66",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Quy định là bộ phận trung tâm, không thể thiếu của quy phạm pháp luật.",
-      "answer": "Đ",
-      "explain": "Đúng. Quy định chứa đựng khuôn mẫu hành vi, quyền và nghĩa vụ của chủ thể."
-    },
-    {
-      "id": "ds-67",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Vợ chồng có quyền có tài sản riêng trong thời kỳ hôn nhân.",
-      "answer": "Đ",
-      "explain": "Đúng. Điều 43 Luật Hôn nhân và Gia đình 2014 thừa nhận tài sản riêng của vợ, chồng (do thừa kế riêng, tặng cho riêng hoặc có trước hôn nhân)."
-    },
-    {
-      "id": "ds-68",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Pháp luật cấm kết hôn giữa cha mẹ nuôi với con nuôi.",
-      "answer": "Đ",
-      "explain": "Đúng. Căn cứ Điều 5 Luật HNGĐ 2014, pháp luật nghiêm cấm kết hôn giữa cha mẹ nuôi với con nuôi."
-    },
-    {
-      "id": "ds-69",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Không cấm kết hôn giữa anh chị em nuôi với nhau.",
-      "answer": "Đ",
-      "explain": "Đúng. Pháp luật Hôn nhân và Gia đình 2014 không cấm kết hôn giữa anh chị em nuôi với nhau."
-    },
-    {
-      "id": "ds-70",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Cấm kết hôn giữa những người có họ trong phạm vi 3 đời.",
-      "answer": "Đ",
-      "explain": "Đúng. Căn cứ Điểm d Khoản 2 Điều 5 Luật HNGĐ 2014 cấm kết hôn giữa những người có họ trong phạm vi ba đời."
-    },
-    {
-      "id": "ds-71",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Nhà nước Việt Nam không thừa nhận hôn nhân của những người cùng giới tính.",
-      "answer": "Đ",
-      "explain": "Đúng. Khoản 2 Điều 8 Luật HNGĐ 2014 quy định Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính."
-    },
-    {
-      "id": "ds-72",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Hợp đồng lao động có thời hạn dưới 01 tháng có thể giao kết bằng lời nói.",
-      "answer": "Đ",
-      "explain": "Đúng. Điều 14 Bộ luật Lao động 2019 cho phép giao kết HĐLĐ bằng lời nói đối với hợp đồng có thời hạn dưới 01 tháng."
-    },
-    {
-      "id": "ds-73",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Người lao động có độ tuổi tối thiểu thông thường là từ đủ 15 tuổi trở lên.",
-      "answer": "Đ",
-      "explain": "Đúng. Căn cứ Điều 3 và Điều 143 Bộ luật Lao động 2019."
-    },
-    {
-      "id": "ds-74",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Mục đích của hành vi tham nhũng luôn luôn là vụ lợi.",
-      "answer": "Đ",
-      "explain": "Đúng. Vụ lợi là dấu hiệu bắt buộc thuộc mặt chủ quan của mọi hành vi tham nhũng theo Luật Phòng, chống tham nhũng 2018."
-    },
-    {
-      "id": "ds-75",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Hành vi tham nhũng chỉ có thể được thực hiện với lỗi cố ý.",
-      "answer": "Đ",
-      "explain": "Đúng. Chủ thể thực hiện hành vi tham nhũng luôn nhận thức rõ hành vi và mong muốn đạt được lợi ích vụ lợi."
-    },
-    {
-      "id": "ds-76",
-      "ch": "Mã đề thi & Bổ sung",
-      "q": "Phòng vệ chính đáng là hành vi vi phạm pháp luật.",
-      "answer": "S",
-      "explain": "Sai. Theo Điều 22 BLHS 2015, phòng vệ chính đáng là hành vi hợp pháp, không phải là tội phạm."
+      "explain": "Theo Luật Ban hành văn bản quy phạm pháp luật, UBND ban hành quyết định (quy phạm), còn chỉ thị và công văn chỉ là văn bản hành chính cá biệt, không mang tính quy phạm pháp luật phổ biến."
     }
   ],
   "qppl": [
     {
       "id": "qppl-cap-1",
-      "title": "Cặp 1: Tội quảng cáo gian dối & Tình huống bỏ thuốc độc vào nồi nước dùng",
-      "clause": "Khoản 1 Điều 197 BLHS 2015 (sửa đổi, bổ sung 2017)",
-      "content": "Người nào quảng cáo gian dối về hàng hóa, dịch vụ, đã bị xử phạt vi phạm hành chính về hành vi này hoặc đã bị kết án về tội này, chưa được xóa án tích mà còn vi phạm, thì bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng hoặc phạt cải tạo không giam giữ đến 03 năm.",
+      "title": "Cặp 1: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 1",
+      "content": "Người nào quảng cáo gian dối về hàng hóa, dịch vụ, đã bị xử phạt vi phạm hành chính về hành vi này hoặc đã bị kết án về tội này, chưa được xóa án tích mà còn vi phạm, thì bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng hoặc phạt cải tạo không giam giữ đến 03 năm",
       "analysis": {
-        "gia_dinh": "Người nào quảng cáo gian dối về hàng hóa, dịch vụ, đã bị xử phạt vi phạm hành chính về hành vi này hoặc đã bị kết án về tội này, chưa được xóa án tích mà còn vi phạm.",
-        "gia_dinh_gt": "Xác định chủ thể (người quảng cáo gian dối) và điều kiện, hoàn cảnh (đã bị xử phạt VPHC hoặc kết án chưa xóa án tích mà còn vi phạm).",
-        "quy_dinh": "Cấm quảng cáo gian dối về hàng hóa, dịch vụ.",
-        "quy_dinh_gt": "Quy tắc xử sự cấm chủ thể thực hiện hành vi nêu tại phần giả định.",
-        "che_tai": "Bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng hoặc phạt cải tạo không giam giữ đến 03 năm.",
-        "che_tai_gt": "Biện pháp cưỡng chế hình sự áp dụng khi chủ thể vi phạm phần quy định.",
-        "hinh_thuc": "Tuân thủ pháp luật (Kiềm chế không thực hiện hành vi pháp luật cấm)."
+        "gia_dinh": "Người nào quảng cáo gian dối về hàng hóa, dịch vụ, đã bị xử phạt vi phạm hành chính về hành vi này hoặc đã bị kết án về tội này, chưa được xóa án tích mà còn vi phạm",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "thì bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng hoặc phạt cải tạo không giam giữ đến 03 năm",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "Chị H (sinh năm 1987) mở quán ăn sáng cạnh quán đối thủ. Ngày 02/3/2019, H lén bỏ thuốc độc vào nồi nước dùng của đối thủ làm 1 nhân viên và 3 khách ăn tử vong. Phân tích các dấu hiệu vi phạm pháp luật của H.",
+        "text": "Chị H (SN 1987) lén bỏ thuốc độc vào nồi nước dùng của quán ăn đối thủ làm 1 nhân viên và 3 khách hàng tử vong.\n       Kết luận:* Đây là hành vi Vi phạm pháp luật đặc biệt nghiêm trọng (tội Giết người).\n       Phân tích 4 dấu hiệu:* (1) Là hành vi xác định của con người (hành động lén bỏ thuốc độc); (2) Trái pháp luật (xâm hại tính mạng con người); (3) Có lỗi (lỗi cố ý trực tiếp); (4) Do chủ thể có năng lực trách nhiệm pháp lý thực hiện (chị H 32 tuổi, nhận thức bình thường).",
         "elements": [
           {
-            "name": "Mặt khách quan",
-            "detail": "Hành động bỏ thuốc độc vào nồi nước dùng của quán ăn; Hậu quả: 4 người tử vong; Quan hệ nhân quả trực tiếp."
-          },
-          {
-            "name": "Mặt chủ quan",
-            "detail": "Lỗi cố ý trực tiếp (hoặc cố ý gián tiếp): H nhận thức rõ thuốc độc gây chết người, mong muốn hoặc bỏ mặc hậu quả xảy ra; Động cơ: triệt hạ đối thủ kinh doanh."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Quyền được bảo vệ tính mạng con người được pháp luật hình sự bảo vệ."
-          },
-          {
-            "name": "Chủ thể",
-            "detail": "Chị H (32 tuổi, nhận thức bình thường, có đầy đủ năng lực trách nhiệm hình sự)."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "Hành vi của H cấu thành tội phạm đặc biệt nghiêm trọng (Tội giết người - Điều 123 BLHS)."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Chị H (SN 1987) lén bỏ thuốc độc vào nồi nước dùng của quán ăn đối thủ làm 1 nhân viên và 3 khách hàng tử vong.\n       Kết luận:* Đây là hành vi Vi phạm pháp luật đặc biệt nghiêm trọng (tội Giết người).\n       Phân tích 4 dấu hiệu:* (1) Là hành vi xác định của con người (hành động lén bỏ thuốc độc); (2) Trái pháp luật (xâm hại tính mạng con người); (3) Có lỗi (lỗi cố ý trực tiếp); (4) Do chủ thể có năng lực trách nhiệm pháp lý thực hiện (chị H 32 tuổi, nhận thức bình thường)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-2",
-      "title": "Cặp 2: Tội sản xuất ma túy & Quan hệ pháp luật xe đạp điện mất trộm",
-      "clause": "Khoản 1 Điều 248 BLHS 2015",
+      "title": "Cặp 2: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 2",
       "content": "Người nào sản xuất trái phép chất ma túy dưới bất kỳ hình thức nào, thì bị phạt tù từ 02 năm đến 07 năm.",
       "analysis": {
-        "gia_dinh": "Người nào sản xuất trái phép chất ma túy dưới bất kỳ hình thức nào.",
-        "gia_dinh_gt": "Xác định chủ thể (người có năng lực TNHS) và hoàn cảnh (sản xuất ma túy trái phép).",
-        "quy_dinh": "Cấm sản xuất trái phép chất ma túy dưới bất kỳ hình thức nào.",
-        "quy_dinh_gt": "Mệnh lệnh cấm đoán của Nhà nước.",
-        "che_tai": "Bị phạt tù từ 02 năm đến 07 năm.",
-        "che_tai_gt": "Chế tài hình sự phạt tù có thời hạn.",
-        "hinh_thuc": "Tuân thủ pháp luật."
+        "gia_dinh": "Người nào sản xuất trái phép chất ma túy dưới bất kỳ hình thức nào",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "thì bị phạt tù từ 02 năm đến 07 năm",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "A (sinh viên ĐH) bị mất trộm xe đạp điện 13 triệu đồng. Sau đó A phát hiện xe của mình tại cửa hàng bán xe cũ của T (T mua lại từ kẻ gian). A xin lại nhưng T từ chối. Phân tích quan hệ pháp luật giữa A và T.",
+        "text": "Sinh viên A bị mất xe đạp điện, phát hiện xe của mình tại cửa hàng của T (T mua lại từ kẻ gian). A xin lại nhưng T từ chối.\n       Kết luận:* Giữa A và T có phát sinh quan hệ pháp luật (Quan hệ tranh chấp quyền sở hữu tài sản).\n       Phân tích cấu thành:*\n           Chủ thể:* Sinh viên A và chủ cửa hàng T (đều có năng lực chủ thể).\n           Khách thể:* Chiếc xe đạp điện bị mất trị giá 13 triệu đồng (lợi ích vật chất).\n           Nội dung:* Quyền đòi lại tài sản từ người chiếm hữu không có căn cứ pháp luật của A (Điều 166 BLDS) và quyền/nghĩa vụ chứng minh tính hợp pháp của việc mua bán của T.",
         "elements": [
           {
-            "name": "Chủ thể",
-            "detail": "A (chủ sở hữu bị mất tài sản) và T (người đang chiếm hữu tài sản). Cả hai đều có năng lực chủ thể dân sự."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Lợi ích vật chất: Quyền sở hữu đối với chiếc xe đạp điện 13 triệu đồng."
-          },
-          {
-            "name": "Nội dung",
-            "detail": "Quyền của A: Yêu cầu đòi lại tài sản từ người chiếm hữu không có căn cứ pháp luật (Điều 166 BLDS 2015); Nghĩa vụ của A: Chứng minh xe thuộc sở hữu của mình; Nghĩa vụ của T: Trả lại xe khi A chứng minh được; Quyền của T: Yêu cầu người bán bồi thường thiệt hại."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Sinh viên A bị mất xe đạp điện, phát hiện xe của mình tại cửa hàng của T (T mua lại từ kẻ gian). A xin lại nhưng T từ chối.\n       Kết luận:* Giữa A và T có phát sinh quan hệ pháp luật (Quan hệ tranh chấp quyền sở hữu tài sản).\n       Phân tích cấu thành:*\n           Chủ thể:* Sinh viên A và chủ cửa hàng T (đều có năng lực chủ thể).\n           Khách thể:* Chiếc xe đạp điện bị mất trị giá 13 triệu đồng (lợi ích vật chất).\n           Nội dung:* Quyền đòi lại tài sản từ người chiếm hữu không có căn cứ pháp luật của A (Điều 166 BLDS) và quyền/nghĩa vụ chứng minh tính hợp pháp của việc mua bán của T."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-3",
-      "title": "Cặp 3: Quy định lao động nước ngoài & Cố ý gây thương tích 32%",
-      "clause": "Khoản 2 Điều 150 Bộ luật Lao động 2019",
-      "content": "Công dân Việt Nam làm việc cho các tổ chức nước ngoài tại Việt Nam, trong khu công nghiệp, khu kinh tế, khu chế xuất, khu công nghệ cao hoặc làm việc cho cá nhân là công dân nước ngoài tại Việt Nam phải tuân theo pháp luật Việt Nam và được pháp luật bảo vệ.",
+      "title": "Cặp 3: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 3",
+      "content": "Công dân Việt Nam làm việc cho các tổ chức nước ngoài tại Việt Nam... phải tuân theo pháp luật Việt Nam và được pháp luật bảo vệ.",
       "analysis": {
-        "gia_dinh": "Công dân Việt Nam làm việc cho các tổ chức nước ngoài tại Việt Nam, trong khu công nghiệp, khu kinh tế, khu chế xuất, khu công nghệ cao hoặc làm việc cho cá nhân là công dân nước ngoài tại Việt Nam.",
-        "gia_dinh_gt": "Xác định chủ thể và hoàn cảnh làm việc cụ thể.",
-        "quy_dinh": "Phải tuân theo pháp luật Việt Nam và được pháp luật bảo vệ.",
-        "quy_dinh_gt": "Quy định vừa nêu nghĩa vụ bắt buộc vừa nêu quyền được bảo vệ.",
-        "che_tai": "Không có chế tài trực tiếp trong điều khoản này.",
-        "che_tai_gt": "Chế tài xử lý vi phạm được dẫn chiếu ở các điều luật tương ứng khác.",
-        "hinh_thuc": "Thi hành pháp luật (thực hiện nghĩa vụ) và Sử dụng pháp luật (hưởng quyền)."
+        "gia_dinh": "Công dân Việt Nam làm việc cho các tổ chức nước ngoài tại Việt Nam, trong khu công nghiệp, khu kinh tế, khu chế xuất, khu công nghệ cao hoặc làm việc cho cá nhân là công dân nước ngoài tại Việt Nam",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "Nguyễn Văn A (35 tuổi) mâu thuẫn lối đi chung với em trai Nguyễn Văn B, A dùng gậy đánh B gây thương tật 32%. A bị khởi tố theo Điều 134 BLHS. Phân tích 4 yếu tố cấu thành vi phạm pháp luật của A.",
+        "text": "Nguyễn Văn A (35 tuổi) dùng gậy đánh em trai B thương tật 32% do mâu thuẫn lối đi chung.\n       Phân tích dấu hiệu VPPL:* Hành vi dùng gậy đánh người của A trái pháp luật (xâm phạm sức khỏe), có lỗi cố ý trực tiếp, do chủ thể có đầy đủ năng lực trách nhiệm hình sự thực hiện.",
         "elements": [
           {
-            "name": "Mặt khách quan",
-            "detail": "Hành vi dùng gậy đánh người liên tiếp; Hậu quả: B bị tổn thương cơ thể 32%; Quan hệ nhân quả trực tiếp."
-          },
-          {
-            "name": "Mặt chủ quan",
-            "detail": "Lỗi cố ý trực tiếp (nhận thức rõ hành vi nguy hiểm, mong muốn gây thương tích); Động cơ: mâu thuẫn tranh chấp lối đi."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Quyền bất khả xâm phạm về sức khỏe, thân thể của công dân được pháp luật hình sự bảo vệ."
-          },
-          {
-            "name": "Chủ thể",
-            "detail": "Nguyễn Văn A (35 tuổi, không mắc bệnh tâm thần, có đầy đủ năng lực TNHS)."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "Vi phạm pháp luật hình sự (Tội cố ý gây thương tích - Điều 134 BLHS)."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Nguyễn Văn A (35 tuổi) dùng gậy đánh em trai B thương tật 32% do mâu thuẫn lối đi chung.\n       Phân tích dấu hiệu VPPL:* Hành vi dùng gậy đánh người của A trái pháp luật (xâm phạm sức khỏe), có lỗi cố ý trực tiếp, do chủ thể có đầy đủ năng lực trách nhiệm hình sự thực hiện."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-4",
-      "title": "Cặp 4: Tội lôi kéo dùng ma túy & Vi phạm vượt đèn đỏ",
-      "clause": "Khoản 1 Điều 258 BLHS 2015 (sửa đổi, bổ sung 2017)",
-      "content": "Người nào rủ rê, dụ dỗ, xúi giục hoặc bằng các thủ đoạn khác nhằm lôi kéo người khác sử dụng trái phép chất ma túy, thì bị phạt tù từ 01 năm đến 05 năm.",
+      "title": "Cặp 4: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 4",
+      "content": "Người nào rủ rê, dụ dỗ, xúi giục... lôi kéo người khác sử dụng trái phép chất ma túy, thì bị phạt tù từ 01 năm đến 05 năm.",
       "analysis": {
-        "gia_dinh": "Người nào rủ rê, dụ dỗ, xúi giục hoặc bằng các thủ đoạn khác nhằm lôi kéo người khác sử dụng trái phép chất ma túy.",
-        "gia_dinh_gt": "Xác định chủ thể và hành vi lôi kéo người khác dùng ma túy.",
-        "quy_dinh": "Cấm rủ rê, dụ dỗ, xúi giục lôi kéo người khác dùng ma túy.",
-        "quy_dinh_gt": "Mệnh lệnh cấm đoán của Nhà nước.",
-        "che_tai": "Bị phạt tù từ 01 năm đến 05 năm.",
-        "che_tai_gt": "Chế tài hình sự phạt tù có thời hạn.",
-        "hinh_thuc": "Tuân thủ pháp luật."
+        "gia_dinh": "Xác định trong điều luật",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "Chị A (28 tuổi) vội đón con nên vượt đèn đỏ tại ngã tư và bị CSGT lập biên bản xử phạt hành chính. Phân tích các yếu tố cấu thành vi phạm pháp luật.",
+        "text": "Chị A (28 tuổi) vượt đèn đỏ để kịp đón con, bị lập biên bản phạt hành chính.\n       Cấu thành vi phạm pháp luật:*\n           Mặt khách quan:* Hành vi vượt đèn đỏ tại ngã tư Khuất Duy Tiến ngày 20/2/2020.\n           Mặt chủ quan:* Lỗi cố ý trực tiếp (hoặc cố ý gián tiếp), động cơ vội đi đón con.\n           Chủ thể:* Chị A (28 tuổi, có năng lực trách nhiệm hành chính).\n           Khách thể:* Trật tự quản lý hành chính nhà nước trong lĩnh vực an toàn giao thông đường bộ.",
         "elements": [
           {
-            "name": "Mặt khách quan",
-            "detail": "Hành vi điều khiển xe vượt đèn đỏ tại ngã tư Khuất Duy Tiến ngày 20/2/2020."
-          },
-          {
-            "name": "Mặt chủ quan",
-            "detail": "Lỗi cố ý trực tiếp; Động cơ: vội về đón con."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Trật tự quản lý nhà nước về an toàn giao thông đường bộ."
-          },
-          {
-            "name": "Chủ thể",
-            "detail": "Chị A (28 tuổi, có năng lực trách nhiệm hành chính)."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "Vi phạm pháp luật hành chính."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Chị A (28 tuổi) vượt đèn đỏ để kịp đón con, bị lập biên bản phạt hành chính.\n       Cấu thành vi phạm pháp luật:*\n           Mặt khách quan:* Hành vi vượt đèn đỏ tại ngã tư Khuất Duy Tiến ngày 20/2/2020.\n           Mặt chủ quan:* Lỗi cố ý trực tiếp (hoặc cố ý gián tiếp), động cơ vội đi đón con.\n           Chủ thể:* Chị A (28 tuổi, có năng lực trách nhiệm hành chính).\n           Khách thể:* Trật tự quản lý hành chính nhà nước trong lĩnh vực an toàn giao thông đường bộ."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-5",
-      "title": "Cặp 5: Chiếm đoạt tàu bay & Đốt rác gây cháy rừng phòng hộ",
-      "clause": "Điều 282 Bộ luật Hình sự 2015",
-      "content": "Người nào dùng vũ lực, đe dọa dùng vũ lực hoặc dùng thủ đoạn khác nhằm chiếm đoạt tàu bay hoặc tàu thủy, thì bị phạt tù từ 07 năm đến 15 năm.",
+      "title": "Cặp 5: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 5",
+      "content": "Người nào dùng vũ lực, đe dọa dùng vũ lực hoặc dùng thủ đoạn khác nhằm chiếm đoạt tàu bay hoặc tàu thủy, thì bị phạt tù từ 07 năm đến 15 năm",
       "analysis": {
-        "gia_dinh": "Người nào dùng vũ lực, đe dọa dùng vũ lực hoặc dùng thủ đoạn khác nhằm chiếm đoạt tàu bay hoặc tàu thủy.",
-        "gia_dinh_gt": "Xác định đối tượng và hành vi dự liệu.",
-        "quy_dinh": "Cấm dùng vũ lực hoặc thủ đoạn nhằm chiếm đoạt tàu bay, tàu thủy.",
-        "quy_dinh_gt": "Quy định cấm đoán ngầm.",
-        "che_tai": "Bị phạt tù từ 07 năm đến 15 năm.",
-        "che_tai_gt": "Chế tài hình sự rất nghiêm khắc.",
-        "hinh_thuc": "Tuân thủ pháp luật."
+        "gia_dinh": "Người nào dùng vũ lực, đe dọa dùng vũ lực hoặc dùng thủ đoạn khác nhằm chiếm đoạt tàu bay hoặc tàu thủy",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "Phan Đình Thành (46 tuổi) đốt rác trong vườn nhà lúc gió to, lửa cháy lan sang rừng phòng hộ gây thiệt hại gần 50ha rừng. Phân tích lỗi và trách nhiệm pháp lý.",
+        "text": "Phan Đình Thành đốt rác tại vườn nhà gặp gió lớn cháy lan sang rừng phòng hộ gây thiệt hại 50ha.\n       Phân tích lỗi:* Đây là hành vi vi phạm pháp luật hình sự. Lỗi của Thành là Lỗi vô ý do cẩu thả (không nhận thức được khả năng gây cháy rừng dù phải nhận thức được hoặc có thể nhận thức được) hoặc Vô ý vì quá tự tin.",
         "elements": [
           {
-            "name": "Mặt khách quan",
-            "detail": "Hành vi đốt rác gây cháy 50ha rừng phòng hộ."
-          },
-          {
-            "name": "Mặt chủ quan",
-            "detail": "Lỗi vô ý do cẩu thả (hoặc vô ý vì quá tự tin) khi đốt rác trong điều kiện gió mạnh."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Quy định quản lý an toàn PCCC và tài nguyên rừng của Nhà nước."
-          },
-          {
-            "name": "Chủ thể",
-            "detail": "Phan Đình Thành (46 tuổi, đủ năng lực trách nhiệm hình sự)."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "Vi phạm pháp luật hình sự (Điều 313 BLHS) và trách nhiệm bồi thường thiệt hại dân sự."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Phan Đình Thành đốt rác tại vườn nhà gặp gió lớn cháy lan sang rừng phòng hộ gây thiệt hại 50ha.\n       Phân tích lỗi:* Đây là hành vi vi phạm pháp luật hình sự. Lỗi của Thành là Lỗi vô ý do cẩu thả (không nhận thức được khả năng gây cháy rừng dù phải nhận thức được hoặc có thể nhận thức được) hoặc Vô ý vì quá tự tin."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-6",
-      "title": "Cặp 6: Tấn công mạng & Thuê người tự gây thương tích",
-      "clause": "Điều 285 Bộ luật Hình sự 2015",
-      "content": "Người nào sản xuất, mua bán, trao đổi hoặc tặng cho công cụ, thiết bị, phần mềm có tính năng tấn công mạng máy tính, mạng viễn thông, phương tiện điện tử để sử dụng vào mục đích trái pháp luật, thì bị phạt tiền từ 20.000.000 đồng đến 100.000.000 đồng, phạt cải tạo không giam giữ đến 02 năm hoặc phạt tù từ 03 tháng đến 02 năm.",
+      "title": "Cặp 6: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 6",
+      "content": "Người nào sản xuất, mua bán, trao đổi hoặc tặng cho công cụ, thiết bị, phần mềm có tính năng tấn công mạng... thì bị phạt tiền từ 20.000.000đ đến 100.000.000đ...",
       "analysis": {
-        "gia_dinh": "Người nào sản xuất, mua bán, trao đổi hoặc tặng cho công cụ, thiết bị, phần mềm có tính năng tấn công mạng máy tính, mạng viễn thông, phương tiện điện tử để sử dụng vào mục đích trái pháp luật.",
-        "gia_dinh_gt": "Chủ thể và hành vi mua bán/chuyển giao công cụ tấn công mạng trái phép.",
-        "quy_dinh": "Cấm sản xuất, mua bán, trao đổi, tặng cho công cụ tấn công mạng trái pháp luật.",
-        "quy_dinh_gt": "Mệnh lệnh cấm đoán.",
-        "che_tai": "Bị phạt tiền từ 20.000.000đ đến 100.000.000đ, phạt cải tạo không giam giữ đến 02 năm hoặc phạt tù từ 03 tháng đến 02 năm.",
-        "che_tai_gt": "Chế tài hình sự.",
-        "hinh_thuc": "Tuân thủ pháp luật."
+        "gia_dinh": "Người nào sản xuất, mua bán, trao đổi hoặc tặng cho công cụ, thiết bị, phần mềm có tính năng tấn công mạng máy tính, mạng viễn thông, phương tiện điện tử để sử dụng vào mục đích trái pháp luật",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "Chị N thuê Doãn Văn D (1995) tự gây thương tích cho mình với số tiền 50 triệu đồng để trục lợi (thương tật 60%). Phân tích hành vi của D.",
+        "text": "Chị N thuê anh Đoàn Văn D (1995) tự gây thương tích cho mình với số tiền 50 triệu đồng để trục lợi (hoặc lý do khác).\n       Phân tích:* Anh D có hành vi gây thương tích cho người khác (dù được thuê). Hành vi của D cấu thành tội cố ý gây thương tích (Lỗi cố ý trực tiếp).",
         "elements": [
           {
-            "name": "Mặt khách quan",
-            "detail": "Hành vi dùng hung khí gây thương tích cho N (tỷ lệ thương tật 60%)."
-          },
-          {
-            "name": "Mặt chủ quan",
-            "detail": "Lỗi cố ý trực tiếp; Động cơ: nhận 50 triệu đồng thù lao."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Sức khỏe, thân thể của con người được pháp luật bảo vệ."
-          },
-          {
-            "name": "Chủ thể",
-            "detail": "Doãn Văn D (21 tuổi, có đầy đủ năng lực trách nhiệm hình sự)."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "D cấu thành tội cố ý gây thương tích (Điều 134 BLHS)."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Chị N thuê anh Đoàn Văn D (1995) tự gây thương tích cho mình với số tiền 50 triệu đồng để trục lợi (hoặc lý do khác).\n       Phân tích:* Anh D có hành vi gây thương tích cho người khác (dù được thuê). Hành vi của D cấu thành tội cố ý gây thương tích (Lỗi cố ý trực tiếp)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-7",
-      "title": "Cặp 7: Lực lượng vũ trang (Hiến pháp) & Cắt phanh xe đồng nghiệp",
-      "clause": "Điều 65 Hiến pháp 2013",
-      "content": "Lực lượng vũ trang nhân dân tuyệt đối trung thành với Tổ quốc, Nhân dân, với Đảng và Nhà nước, có nhiệm vụ bảo vệ độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ của Tổ quốc, an ninh quốc gia và trật tự, an toàn xã hội; bảo vệ Nhân dân, Đảng, Nhà nước và chế độ xã hội chủ nghĩa; cùng toàn dân xây dựng đất nước và thực hiện nghĩa vụ quốc tế.",
+      "title": "Cặp 7: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 7",
+      "content": "Lực lượng vũ trang nhân dân tuyệt đối trung thành với Tổ quốc... bảo vệ Nhân dân và thực hiện nghĩa vụ quốc tế",
       "analysis": {
-        "gia_dinh": "Lực lượng vũ trang nhân dân.",
-        "gia_dinh_gt": "Xác định chủ thể điều chỉnh của quy phạm.",
-        "quy_dinh": "Tuyệt đối trung thành với Tổ quốc, Nhân dân, với Đảng và Nhà nước, có nhiệm vụ bảo vệ độc lập, chủ quyền... và thực hiện nghĩa vụ quốc tế.",
-        "quy_dinh_gt": "Quy định nhiệm vụ và nghĩa vụ chính trị của lực lượng vũ trang.",
-        "che_tai": "Không có.",
-        "che_tai_gt": "Quy phạm Hiến pháp mang tính nguyên tắc.",
-        "hinh_thuc": "Thi hành pháp luật."
+        "gia_dinh": "Lực lượng vũ trang nhân dân",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "Nguyễn Văn A dùng dao cắt phanh xe của đồng nghiệp B do mâu thuẫn cá nhân khiến B gặp tai nạn tử vong trên đường đi làm về. Phân tích các yếu tố cấu thành vi phạm pháp luật.",
+        "text": "Nguyễn Văn A mâu thuẫn cá nhân, cắt phanh xe của B khiến B gặp tai nạn tử vong trên đường đi làm về.\n       Cấu thành vi phạm pháp luật:*\n           Mặt khách quan:* Hành vi lén lút cắt phanh xe của B, hậu quả B tử vong.\n           Mặt chủ quan:* Lỗi cố ý trực tiếp (A nhận thức rõ hành vi cắt phanh xe có thể gây tai nạn chết người, mong muốn hoặc để mặc hậu quả xảy ra).\n           Chủ thể:* Nguyễn Văn A (đầy đủ năng lực trách nhiệm hình sự).\n           Khách thể:* Quyền được sống, quyền được bảo hộ tính mạng của công dân B.",
         "elements": [
           {
-            "name": "Mặt khách quan",
-            "detail": "Hành vi lén lút cắt phanh xe của B; Hậu quả: B tử vong; Quan hệ nhân quả trực tiếp."
-          },
-          {
-            "name": "Mặt chủ quan",
-            "detail": "Lỗi cố ý trực tiếp; Động cơ: trả thù do mâu thuẫn cá nhân; Mục đích: tước đoạt tính mạng B."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Quyền sống, tính mạng của công dân B."
-          },
-          {
-            "name": "Chủ thể",
-            "detail": "Nguyễn Văn A (đầy đủ năng lực trách nhiệm hình sự)."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "Vi phạm pháp luật hình sự (Tội giết người - Điều 123 BLHS) và trách nhiệm bồi thường dân sự."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Nguyễn Văn A mâu thuẫn cá nhân, cắt phanh xe của B khiến B gặp tai nạn tử vong trên đường đi làm về.\n       Cấu thành vi phạm pháp luật:*\n           Mặt khách quan:* Hành vi lén lút cắt phanh xe của B, hậu quả B tử vong.\n           Mặt chủ quan:* Lỗi cố ý trực tiếp (A nhận thức rõ hành vi cắt phanh xe có thể gây tai nạn chết người, mong muốn hoặc để mặc hậu quả xảy ra).\n           Chủ thể:* Nguyễn Văn A (đầy đủ năng lực trách nhiệm hình sự).\n           Khách thể:* Quyền được sống, quyền được bảo hộ tính mạng của công dân B."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-8",
-      "title": "Cặp 8: Giao dịch dân sự do lừa dối & Đâm chết người do mâu thuẫn",
-      "clause": "Điều 127 Bộ luật Dân sự 2015",
+      "title": "Cặp 8: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 8",
       "content": "Khi một bên tham gia giao dịch dân sự do bị lừa dối hoặc bị đe dọa, cưỡng ép thì có quyền yêu cầu Tòa án tuyên bố giao dịch dân sự đó là vô hiệu.",
       "analysis": {
-        "gia_dinh": "Khi một bên tham gia giao dịch dân sự do bị lừa dối hoặc bị đe dọa, cưỡng ép.",
-        "gia_dinh_gt": "Điều kiện, hoàn cảnh ý chí tham gia giao dịch bị khiếm khuyết.",
-        "quy_dinh": "Có quyền yêu cầu Tòa án tuyên bố giao dịch dân sự đó là vô hiệu.",
-        "quy_dinh_gt": "Trao quyền tự định đoạt cho bên bị lừa dối/đe dọa.",
-        "che_tai": "Không có.",
-        "che_tai_gt": "Quy phạm trao quyền.",
-        "hinh_thuc": "Sử dụng pháp luật."
+        "gia_dinh": "Khi một bên tham gia giao dịch dân sự do bị lừa dối hoặc bị đe dọa, cưỡng ép",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "X (sinh năm 1980) chặn đường và dùng dao đâm chết Y tại chỗ lúc 21h30 ngày 23/3/2020 do mâu thuẫn cá nhân. Phân tích cấu thành vi phạm pháp luật.",
+        "text": "X (SN 1980) dùng dao đâm chết Y tại chỗ lúc 21h30 do mâu thuẫn cá nhân.\n       Cấu thành:* Hành vi đâm chết người trái pháp luật, lỗi cố ý trực tiếp, xâm phạm quyền sống của Y. X phạm tội Giết người (Vi phạm pháp luật hình sự).",
         "elements": [
           {
-            "name": "Mặt khách quan",
-            "detail": "Hành vi dùng dao tấn công nhiều nhát; Hậu quả: Y tử vong tại chỗ; Thời gian 21h30 ngày 23/3/2020."
-          },
-          {
-            "name": "Mặt chủ quan",
-            "detail": "Lỗi cố ý trực tiếp; Động cơ: trả thù; Mục đích: tước đoạt tính mạng Y."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Tính mạng con người được pháp luật hình sự bảo vệ."
-          },
-          {
-            "name": "Chủ thể",
-            "detail": "X (40 tuổi, có đầy đủ năng lực trách nhiệm hình sự)."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "Vi phạm pháp luật hình sự (Tội giết người - Điều 123 BLHS)."
+            "name": "Phân tích và Giải quyết",
+            "detail": "X (SN 1980) dùng dao đâm chết Y tại chỗ lúc 21h30 do mâu thuẫn cá nhân.\n       Cấu thành:* Hành vi đâm chết người trái pháp luật, lỗi cố ý trực tiếp, xâm phạm quyền sống của Y. X phạm tội Giết người (Vi phạm pháp luật hình sự)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-9",
-      "title": "Cặp 9: Say rượu bia phạm tội & Đầu độc hàng xóm bằng thuốc chuột",
-      "clause": "Điều 13 Bộ luật Hình sự 2015",
-      "content": "Người phạm tội trong tình trạng mất khả năng nhận thức hoặc khả năng điều khiển hành vi của mình do dùng rượu, bia hoặc chất kích thích mạnh khác, thì vẫn phải chịu trách nhiệm hình sự.",
+      "title": "Cặp 9: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 9",
+      "content": "Người phạm tội trong tình trạng mất khả năng nhận thức... do dùng rượu, bia... thì vẫn phải chịu trách nhiệm hình sự.",
       "analysis": {
-        "gia_dinh": "Người phạm tội trong tình trạng mất khả năng nhận thức hoặc khả năng điều khiển hành vi của mình do dùng rượu, bia hoặc chất kích thích mạnh khác.",
-        "gia_dinh_gt": "Xác định chủ thể phạm tội và tình trạng say rượu/chất kích thích.",
-        "quy_dinh": "Phải chấp hành hình phạt hình sự (không được miễn trừ trách nhiệm).",
-        "quy_dinh_gt": "Quy tắc xác định nghĩa vụ pháp lý hình sự.",
-        "che_tai": "Bị áp dụng các chế tài hình sự tương ứng với tội danh đã thực hiện.",
-        "che_tai_gt": "Chế tài hình sự theo tội danh vi phạm.",
-        "hinh_thuc": "Thi hành pháp luật / Áp dụng pháp luật."
+        "gia_dinh": "Người phạm tội trong tình trạng mất khả năng nhận thức hoặc khả năng điều khiển hành vi của mình do dùng rượu, bia hoặc chất kích thích mạnh khác",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Phải chấp hành hình phạt hình sự.",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "Nghĩa (35 tuổi) lẻn vào bếp rắc thuốc chuột vào nồi canh nhà hàng xóm Trang làm vợ và con anh Trang tử vong, anh Trang ngộ độc nặng. Phân tích các yếu tố cấu thành.",
+        "text": "Nghĩa rắc thuốc chuột vào nồi canh nhà anh Trang làm vợ và con anh Trang tử vong, anh Trang ngộ độc nặng.\n       Cấu thành:* Hành vi bỏ thuốc độc của Nghĩa (mặt khách quan), lỗi cố ý trực tiếp giết người (mặt chủ quan), xâm phạm tính mạng người khác (khách thể), Nghĩa 35 tuổi có năng lực hành vi (chủ thể).",
         "elements": [
           {
-            "name": "Mặt khách quan",
-            "detail": "Hành vi rắc thuốc chuột vào nồi canh; Hậu quả: 2 người chết, 1 người ngộ độc nặng; Quan hệ nhân quả trực tiếp."
-          },
-          {
-            "name": "Mặt chủ quan",
-            "detail": "Lỗi cố ý trực tiếp; Động cơ: trả thù tranh chấp đất đai; Mục đích: giết người."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Tính mạng, sức khỏe của các thành viên gia đình anh Trang."
-          },
-          {
-            "name": "Chủ thể",
-            "detail": "Nghĩa (35 tuổi, nhận thức bình thường, đủ năng lực TNHS)."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "Vi phạm pháp luật hình sự (Tội giết người - Điều 123 BLHS)."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Nghĩa rắc thuốc chuột vào nồi canh nhà anh Trang làm vợ và con anh Trang tử vong, anh Trang ngộ độc nặng.\n       Cấu thành:* Hành vi bỏ thuốc độc của Nghĩa (mặt khách quan), lỗi cố ý trực tiếp giết người (mặt chủ quan), xâm phạm tính mạng người khác (khách thể), Nghĩa 35 tuổi có năng lực hành vi (chủ thể)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-10",
-      "title": "Cặp 10: Đe dọa giết người & Đánh trả gây tử vong do xuất huyết não",
-      "clause": "Khoản 1 Điều 133 Bộ luật Hình sự 2015",
-      "content": "Người nào đe dọa giết người, nếu có căn cứ làm cho người bị đe dọa lo sợ rằng việc đe dọa này sẽ được thực hiện, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm.",
+      "title": "Cặp 10: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 10",
+      "content": "Người nào đe dọa giết người, nếu có căn cứ làm cho người bị đe dọa lo sợ... thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm",
       "analysis": {
-        "gia_dinh": "Người nào đe dọa giết người, nếu có căn cứ làm cho người bị đe dọa lo sợ rằng việc đe dọa này sẽ được thực hiện.",
-        "gia_dinh_gt": "Xác định chủ thể và hành vi đe dọa có căn cứ gây lo sợ.",
-        "quy_dinh": "Cấm đe dọa giết người.",
-        "quy_dinh_gt": "Mệnh lệnh cấm đoán.",
-        "che_tai": "Bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm.",
-        "che_tai_gt": "Chế tài hình sự.",
-        "hinh_thuc": "Tuân thủ pháp luật."
+        "gia_dinh": "Người nào đe dọa giết người, nếu có căn cứ làm cho người bị đe dọa lo sợ rằng việc đe dọa này sẽ được thực hiện",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "Vêu dùng gậy chặn đánh Ngán, Ngao (20 tuổi) xông vào giật gậy đánh nhiều nhát vào đầu Vêu khiến Vêu tử vong do xuất huyết não. Phân tích hành vi của Ngao.",
+        "text": "Vêu dùng gậy đánh Ngán, Ngao xông vào giật gậy đánh lại vào đầu Vêu khiến Vêu tử vong.\n       Phân tích:* Hành vi của Ngao vượt quá giới hạn phòng vệ chính đáng hoặc cố ý gây thương tích dẫn đến chết người. Lỗi cố ý đối với hành vi đánh người, vô ý đối với hậu quả chết người.",
         "elements": [
           {
-            "name": "Mặt khách quan",
-            "detail": "Hành vi giật gậy đánh nhiều nhát vào đầu Vêu; Hậu quả: Vêu tử vong do chấn thương sọ não."
-          },
-          {
-            "name": "Mặt chủ quan",
-            "detail": "Lỗi cố ý đối với hành vi đánh người, vô ý đối với hậu quả tử vong (hoặc cố ý gián tiếp); Động cơ: cứu bạn."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Tính mạng, sức khỏe của Vêu."
-          },
-          {
-            "name": "Chủ thể",
-            "detail": "Ngao (20 tuổi, có đầy đủ năng lực trách nhiệm hình sự)."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "Tội cố ý gây thương tích dẫn đến chết người (Điều 134 BLHS) hoặc Giết người do vượt quá giới hạn phòng vệ chính đáng (Điều 126 BLHS)."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Vêu dùng gậy đánh Ngán, Ngao xông vào giật gậy đánh lại vào đầu Vêu khiến Vêu tử vong.\n       Phân tích:* Hành vi của Ngao vượt quá giới hạn phòng vệ chính đáng hoặc cố ý gây thương tích dẫn đến chết người. Lỗi cố ý đối với hành vi đánh người, vô ý đối với hậu quả chết người."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-11",
-      "title": "Cặp 11: Cướp giật tài sản & Đột nhập kho trộm tài sản",
-      "clause": "Khoản 1 Điều 171 Bộ luật Hình sự 2015",
-      "content": "Người nào cướp giật tài sản của người khác, thì bị phạt tù từ 01 năm đến 05 năm.",
+      "title": "Cặp 11: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 11",
+      "content": "Người nào cướp giật tài sản của người khác thì bị phạt tù từ 01 năm đến 05 năm",
       "analysis": {
-        "gia_dinh": "Người nào cướp giật tài sản của người khác.",
-        "gia_dinh_gt": "Xác định chủ thể và hành vi cướp giật tài sản.",
-        "quy_dinh": "Cấm cướp giật tài sản của người khác.",
-        "quy_dinh_gt": "Mệnh lệnh cấm đoán.",
-        "che_tai": "Bị phạt tù từ 01 năm đến 05 năm.",
-        "che_tai_gt": "Chế tài hình sự phạt tù có thời hạn.",
-        "hinh_thuc": "Tuân thủ pháp luật."
+        "gia_dinh": "Người nào cướp giật tài sản của người khác",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "A và B (20 tuổi) phá khóa đột nhập kho X trộm tài sản 30 triệu nhưng kho rỗng nên đi về thì bị phát hiện. Hỏi hành vi có dấu hiệu vi phạm pháp luật không?",
+        "text": "A và B (20 tuổi) phá khóa đột nhập kho X trộm tài sản trị giá 30 triệu nhưng kho rỗng nên đi về thì bị bắt.\n       Phân tích:* Hành vi của A và B có dấu hiệu của vi phạm pháp luật hình sự (tội Trộm cắp tài sản ở giai đoạn phạm tội chưa đạt).",
         "elements": [
           {
-            "name": "Mặt khách quan",
-            "detail": "Hành vi phá khóa đột nhập vào kho X nhằm mục đích trộm cắp tài sản."
-          },
-          {
-            "name": "Mặt chủ quan",
-            "detail": "Lỗi cố ý trực tiếp; Mục đích: chiếm đoạt tài sản trị giá 30 triệu đồng."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Quyền sở hữu tài sản của cơ quan X được pháp luật bảo vệ."
-          },
-          {
-            "name": "Chủ thể",
-            "detail": "A và B (20 tuổi, nhận thức bình thường, có đầy đủ năng lực TNHS)."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "Cấu thành Tội trộm cắp tài sản ở giai đoạn phạm tội chưa đạt (Điều 15, Điều 173 BLHS)."
+            "name": "Phân tích và Giải quyết",
+            "detail": "A và B (20 tuổi) phá khóa đột nhập kho X trộm tài sản trị giá 30 triệu nhưng kho rỗng nên đi về thì bị bắt.\n       Phân tích:* Hành vi của A và B có dấu hiệu của vi phạm pháp luật hình sự (tội Trộm cắp tài sản ở giai đoạn phạm tội chưa đạt)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-12",
-      "title": "Cặp 12: Tài sản chung vợ chồng & Hợp đồng mua bán 2 tấn gạo",
-      "clause": "Khoản 1 Điều 35 Luật Hôn nhân và Gia đình 2014",
-      "content": "Việc chiếm hữu, sử dụng, định đoạt tài sản chung do vợ chồng thỏa thuận.",
+      "title": "Cặp 12: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 12",
+      "content": "Việc chiếm hữu, sử dụng, định đoạt tài sản chung do vợ chồng thỏa thuận",
       "analysis": {
-        "gia_dinh": "Việc chiếm hữu, sử dụng, định đoạt tài sản chung của vợ chồng.",
-        "gia_dinh_gt": "Xác định hoàn cảnh định đoạt tài sản chung trong hôn nhân.",
-        "quy_dinh": "Do vợ chồng thỏa thuận.",
-        "quy_dinh_gt": "Quy định cho phép tự do ý chí và bình đẳng giữa vợ chồng.",
-        "che_tai": "Không có.",
-        "che_tai_gt": "Quy phạm trao quyền dân sự.",
-        "hinh_thuc": "Sử dụng pháp luật."
+        "gia_dinh": "Tài sản chung\" (ngầm hiểu trong bối cảnh vợ chồng)",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "Nguyễn Văn A và Lê Thị B (25 tuổi) ký hợp đồng mua bán 2 tấn gạo giá 50 triệu, đã giao hàng và thanh toán đủ. Hỏi đây có phải quan hệ pháp luật không?",
+        "text": "Nguyễn Văn A và Lê Thị B (25 tuổi) ký hợp đồng mua bán 2 tấn gạo giá 50 triệu, đã giao hàng và thanh toán đầy đủ.\n       Đáp án:* Đây là quan hệ pháp luật (Quan hệ pháp luật dân sự - hợp đồng mua bán tài sản).",
         "elements": [
           {
-            "name": "Chủ thể",
-            "detail": "Bên bán A và bên mua B (đều 25 tuổi, có đầy đủ năng lực hành vi dân sự)."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Lợi ích vật chất: 2 tấn gạo và số tiền 50 triệu đồng."
-          },
-          {
-            "name": "Nội dung",
-            "detail": "Quyền nhận tiền và nghĩa vụ giao gạo của A; quyền nhận gạo và nghĩa vụ trả tiền của B."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "Đây là quan hệ pháp luật dân sự hợp pháp."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Nguyễn Văn A và Lê Thị B (25 tuổi) ký hợp đồng mua bán 2 tấn gạo giá 50 triệu, đã giao hàng và thanh toán đầy đủ.\n       Đáp án:* Đây là quan hệ pháp luật (Quan hệ pháp luật dân sự - hợp đồng mua bán tài sản)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-13",
-      "title": "Cặp 13: Tội sản xuất ma túy & Tung tin giả Covid-19 trục lợi",
-      "clause": "Khoản 1 Điều 248 Bộ luật Hình sự 2015",
+      "title": "Cặp 13: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 13",
       "content": "Người nào sản xuất trái phép chất ma túy dưới bất kỳ hình thức nào, thì bị phạt tù từ 02 năm đến 07 năm.",
       "analysis": {
-        "gia_dinh": "Người nào sản xuất trái phép chất ma túy dưới bất kỳ hình thức nào.",
-        "gia_dinh_gt": "Xác định chủ thể và hành vi sản xuất ma túy trái phép.",
-        "quy_dinh": "Cấm sản xuất trái phép chất ma túy.",
-        "quy_dinh_gt": "Mệnh lệnh cấm đoán.",
-        "che_tai": "Bị phạt tù từ 02 năm đến 07 năm.",
-        "che_tai_gt": "Chế tài hình sự.",
-        "hinh_thuc": "Tuân thủ pháp luật."
+        "gia_dinh": "Xác định trong điều luật",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "Chị T (33 tuổi) đăng tin giả chính quyền phong tỏa chợ Q lên Facebook để bán hàng, bị phạt 10 triệu đồng. Phân tích các yếu tố cấu thành.",
+        "text": "Chị T (33 tuổi) đăng tin giả phong tỏa chợ Q lên Facebook để bán hàng, bị phạt 10 triệu đồng.\n       Cấu thành:* Hành vi tung tin giả (khách quan), lỗi cố ý (chủ quan), xâm hại trật tự quản lý hành chính nhà nước trong môi trường mạng (khách thể), chị T có đầy đủ năng lực hành vi (chủ thể).",
         "elements": [
           {
-            "name": "Mặt khách quan",
-            "detail": "Hành vi đăng tin giả sai sự thật lên Facebook ngày 03/4/2020 gây hoang mang trong nhân dân."
-          },
-          {
-            "name": "Mặt chủ quan",
-            "detail": "Lỗi cố ý; Động cơ: trục lợi bán hàng thực phẩm dự trữ."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Trật tự quản lý nhà nước về thông tin trên môi trường mạng."
-          },
-          {
-            "name": "Chủ thể",
-            "detail": "Chị T (33 tuổi, có năng lực trách nhiệm hành chính)."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "Vi phạm pháp luật hành chính (Nghị định 15/2020/NĐ-CP)."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Chị T (33 tuổi) đăng tin giả phong tỏa chợ Q lên Facebook để bán hàng, bị phạt 10 triệu đồng.\n       Cấu thành:* Hành vi tung tin giả (khách quan), lỗi cố ý (chủ quan), xâm hại trật tự quản lý hành chính nhà nước trong môi trường mạng (khách thể), chị T có đầy đủ năng lực hành vi (chủ thể)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-14",
-      "title": "Cặp 14: Bảo vệ an toàn du lịch & Bạo hành trẻ em tử vong",
-      "clause": "Khoản 2 Điều 13 Luật Du lịch 2017",
-      "content": "Tổ chức, cá nhân quản lý khu du lịch, điểm du lịch có biện pháp phòng, tránh rủi ro và tổ chức bộ phận bảo vệ, cứu hộ, cứu nạn cho khách du lịch.",
+      "title": "Cặp 14: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 14",
+      "content": "Tổ chức, cá nhân quản lý khu du lịch, điểm du lịch có biện pháp phòng, tránh rủi ro và tổ chức bộ phận bảo vệ, cứu hộ, cứu nạn cho khách du lịch",
       "analysis": {
-        "gia_dinh": "Tổ chức, cá nhân quản lý khu du lịch, điểm du lịch.",
-        "gia_dinh_gt": "Xác định chủ thể quản lý điểm/khu du lịch.",
-        "quy_dinh": "Có biện pháp phòng, tránh rủi ro và tổ chức bộ phận bảo vệ, cứu hộ, cứu nạn cho khách du lịch.",
-        "quy_dinh_gt": "Quy định nghĩa vụ bắt buộc phải làm.",
-        "che_tai": "Không có.",
-        "che_tai_gt": "Quy phạm giao nhiệm vụ.",
-        "hinh_thuc": "Thi hành pháp luật."
+        "gia_dinh": "Tổ chức, cá nhân quản lý khu du lịch, điểm du lịch",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "Chị Y (31 tuổi) bực mình cháu K (3 tuổi, con riêng của chồng) quấy khóc, lấy kim châm và đánh đập cháu bé bất tỉnh dẫn đến tử vong. Phân tích hành vi của Y.",
+        "text": "Chị Y bạo hành con riêng của chồng (bé K, 3 tuổi) bằng cách lấy kim châm và đánh đập khiến cháu tử vong.\n       Phân tích:* Đây là hành vi vi phạm pháp luật hình sự đặc biệt nghiêm trọng (tội Giết người hoặc Cố ý gây thương tích dẫn đến chết người với tình tiết tăng nặng phạm tội với người dưới 16 tuổi).",
         "elements": [
           {
-            "name": "Mặt khách quan",
-            "detail": "Hành vi dùng kim châm và đánh đập trẻ em; Hậu quả: cháu K tử vong."
-          },
-          {
-            "name": "Mặt chủ quan",
-            "detail": "Lỗi cố ý trực tiếp (đối với bạo hành) và cố ý gián tiếp (đối với hậu quả tử vong)."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Quyền được bảo vệ về sức khỏe, tính mạng của trẻ em."
-          },
-          {
-            "name": "Chủ thể",
-            "detail": "Chị Y (31 tuổi, nhận thức bình thường, đủ năng lực TNHS)."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "Vi phạm pháp luật hình sự đặc biệt nghiêm trọng (Tội giết người với tình tiết phạm tội với người dưới 16 tuổi - Điều 123 BLHS)."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Chị Y bạo hành con riêng của chồng (bé K, 3 tuổi) bằng cách lấy kim châm và đánh đập khiến cháu tử vong.\n       Phân tích:* Đây là hành vi vi phạm pháp luật hình sự đặc biệt nghiêm trọng (tội Giết người hoặc Cố ý gây thương tích dẫn đến chết người với tình tiết tăng nặng phạm tội với người dưới 16 tuổi)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-15",
-      "title": "Cặp 15: Tội đánh tráo trẻ em & Hợp đồng mua bán đất đai 3 tỷ",
-      "clause": "Khoản 1 Điều 152 Bộ luật Hình sự 2015 (sửa đổi, bổ sung 2017)",
-      "content": "Người nào đánh tráo người dưới 01 tuổi này với người dưới 01 tuổi khác, thì bị phạt tù từ 02 năm đến 05 năm.",
+      "title": "Cặp 15: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 15",
+      "content": "Người nào đánh tráo người dưới 01 tuổi, thì bị phạt tù từ 02 năm đến 05 năm",
       "analysis": {
-        "gia_dinh": "Người nào đánh tráo người dưới 01 tuổi này với người dưới 01 tuổi khác.",
-        "gia_dinh_gt": "Xác định chủ thể và hành vi đánh tráo trẻ dưới 1 tuổi.",
-        "quy_dinh": "Cấm đánh tráo người dưới 01 tuổi.",
-        "quy_dinh_gt": "Mệnh lệnh cấm đoán.",
-        "che_tai": "Bị phạt tù từ 02 năm đến 05 năm.",
-        "che_tai_gt": "Chế tài hình sự.",
-        "hinh_thuc": "Tuân thủ pháp luật."
+        "gia_dinh": "Người nào đánh tráo người dưới 01 tuổi",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "Ông H (35 tuổi) bán cho bà D (32 tuổi) 100m2 đất kèm nhà trị giá 3 tỷ đồng, thỏa thuận bên bán chịu mọi khoản thuế phí chuyển nhượng. Phân tích cấu trúc quan hệ pháp luật.",
+        "text": "Ông H bán cho bà D 100m2 đất thổ cư kèm nhà trị giá 3 tỷ đồng, thỏa thuận bên bán chịu mọi khoản thuế phí chuyển nhượng.\n       Phân tích cấu trúc quan hệ pháp luật:*\n           Chủ thể:* Ông H và bà D.\n           Khách thể:* Quyền sử dụng đất 100m2 và quyền sở hữu căn nhà, số tiền 3 tỷ đồng.\n           Nội dung:* Quyền đòi nhận tiền và nghĩa vụ giao đất, nộp thuế phí của ông H; quyền đòi nhận đất và nghĩa vụ trả tiền của bà D.",
         "elements": [
           {
-            "name": "Chủ thể",
-            "detail": "Bên bán Ông H và bên mua Bà D (đều có đủ năng lực hành vi dân sự)."
-          },
-          {
-            "name": "Khách thể",
-            "detail": "Quyền sử dụng đất 100m2, quyền sở hữu căn nhà và số tiền 3 tỷ đồng."
-          },
-          {
-            "name": "Nội dung",
-            "detail": "Quyền nhận tiền, nghĩa vụ giao đất, nộp thuế phí của ông H; Quyền nhận đất, nghĩa vụ thanh toán của bà D."
-          },
-          {
-            "name": "Kết luận",
-            "detail": "Quan hệ pháp luật dân sự hợp pháp."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Ông H bán cho bà D 100m2 đất thổ cư kèm nhà trị giá 3 tỷ đồng, thỏa thuận bên bán chịu mọi khoản thuế phí chuyển nhượng.\n       Phân tích cấu trúc quan hệ pháp luật:*\n           Chủ thể:* Ông H và bà D.\n           Khách thể:* Quyền sử dụng đất 100m2 và quyền sở hữu căn nhà, số tiền 3 tỷ đồng.\n           Nội dung:* Quyền đòi nhận tiền và nghĩa vụ giao đất, nộp thuế phí của ông H; quyền đòi nhận đất và nghĩa vụ trả tiền của bà D."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-16",
-      "title": "Cặp 16: Trưng cầu ý dân (Hiến pháp) & Học sinh 15 tuổi đua xe",
-      "clause": "Điều 29 Hiến pháp 2013",
+      "title": "Cặp 16: Cấu trúc QPPL & Giải quyết tình huống thực tế",
+      "clause": "Điều luật Cặp 16",
       "content": "Công dân đủ mười tám tuổi trở lên có quyền biểu quyết khi Nhà nước tổ chức trưng cầu ý dân.",
       "analysis": {
-        "gia_dinh": "Công dân đủ mười tám tuổi trở lên.",
-        "gia_dinh_gt": "Xác định chủ thể là công dân Việt Nam đủ 18 tuổi trở lên.",
-        "quy_dinh": "Có quyền biểu quyết khi Nhà nước tổ chức trưng cầu ý dân.",
-        "quy_dinh_gt": "Quy định trao quyền chính trị.",
-        "che_tai": "Không có.",
-        "che_tai_gt": "Quy phạm trao quyền.",
-        "hinh_thuc": "Sử dụng pháp luật."
+        "gia_dinh": "Công dân đủ mười tám tuổi trở lên",
+        "gia_dinh_gt": "Xác định chủ thể, điều kiện, hoàn cảnh áp dụng của quy phạm.",
+        "quy_dinh": "Quy định cấm đoán hoặc cho phép theo điều luật",
+        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự bắt buộc hoặc cho phép của chủ thể.",
+        "che_tai": "Chế tài theo khung hình phạt của điều luật",
+        "che_tai_gt": "Biện pháp cưỡng chế nhà nước áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật"
       },
       "situation": {
-        "text": "Em N (15 tuổi, học lớp 9) lấy xe máy của bố tham gia đua xe trái phép gây tai nạn thương nhẹ cho bà X. 1) Ai phải chịu trách nhiệm hành chính? 2) Nếu bà X chết thì N phải chịu trách nhiệm gì?",
+        "text": "Em N (15 tuổi, học lớp 9) lấy xe máy của bố tham gia đua xe trái phép gây tai nạn thương nhẹ cho bà X.\n       Phân tích trách nhiệm:*\n        *   N chưa đủ tuổi chịu trách nhiệm hành chính trực tiếp về hành vi điều khiển xe máy phân khối lớn tham gia giao thông. Bố của N (chủ phương tiện) sẽ bị xử phạt hành chính về hành vi giao xe cho người không đủ điều kiện điều khiển. Bố mẹ N phải chịu trách nhiệm bồi thường dân sự cho bà X.\n        *   Nếu gây tai nạn làm chết người (bà X chết): N đủ 15 tuổi có thể phải chịu trách nhiệm hình sự về tội vi phạm quy định về tham gia giao thông đường bộ nếu lỗi cố ý/vô ý nghiêm trọng.\n\n---",
         "elements": [
           {
-            "name": "Trách nhiệm hành chính",
-            "detail": "N từ đủ 14 tuổi đến dưới 16 tuổi bị xử phạt hành chính về vi phạm hành chính do cố ý (Điều 5 Luật Xử lý VPHC). Bố của N bị phạt về hành vi giao xe cho người không đủ điều kiện điều khiển."
-          },
-          {
-            "name": "Trách nhiệm dân sự",
-            "detail": "Bố mẹ N có trách nhiệm bồi thường thiệt hại cho bà X theo Điều 586 BLDS 2015."
-          },
-          {
-            "name": "Nếu bà X tử vong",
-            "detail": "Hành vi đua xe gây chết người cấu thành tội phạm rất nghiêm trọng hoặc đặc biệt nghiêm trọng. N đủ 15 tuổi phải chịu trách nhiệm hình sự theo Khoản 2 Điều 12 BLHS 2015."
+            "name": "Phân tích và Giải quyết",
+            "detail": "Em N (15 tuổi, học lớp 9) lấy xe máy của bố tham gia đua xe trái phép gây tai nạn thương nhẹ cho bà X.\n       Phân tích trách nhiệm:*\n        *   N chưa đủ tuổi chịu trách nhiệm hành chính trực tiếp về hành vi điều khiển xe máy phân khối lớn tham gia giao thông. Bố của N (chủ phương tiện) sẽ bị xử phạt hành chính về hành vi giao xe cho người không đủ điều kiện điều khiển. Bố mẹ N phải chịu trách nhiệm bồi thường dân sự cho bà X.\n        *   Nếu gây tai nạn làm chết người (bà X chết): N đủ 15 tuổi có thể phải chịu trách nhiệm hình sự về tội vi phạm quy định về tham gia giao thông đường bộ nếu lỗi cố ý/vô ý nghiêm trọng.\n\n---"
           }
         ]
       }
@@ -1981,126 +1611,68 @@ window.PLDC_DATA = {
       ]
     },
     {
-      "id": "tk-bt1",
-      "title": "Bài 1 (Phần II): Tình huống ông Hùng và anh Cường (Con thiểu năng bẩm sinh & Di chúc cho bồ)",
-      "problem": "Ông Hùng và bà Lan kết hôn có 4 con: Cường (1978), Hải (1980), Đức (1986), Hồng (1991, bị thiểu năng trí tuệ bẩm sinh). Ông Hùng có 1 con riêng là Long (1997) với bà Mai. Cường lấy Thu sinh 2 con là Minh (2005) và Mến (2007). Năm 2019, ông Hùng và Cường chết cùng thời điểm trong tai nạn. Ông Hùng di chúc cho bà Mai 500tr, Long 300tr. Tài sản chung Hùng - Lan là 2 tỷ, tài sản riêng ông Hùng 300tr, mai táng ông Hùng 30tr. Tài sản riêng của Cường là 500tr. Hãy chia thừa kế theo BLDS 2015.",
-      "diagram": "Ông Hùng (+) === Bà Lan             Ông Hùng (+) === Bà Mai\n       |                                    |\n Cường (+), Hải, Đức, Hồng (thiểu năng)   Long\n   (vợ Thu, con Minh, Mến)",
+      "id": "tk-v2-b1",
+      "title": "Bài 1 (v2): Tình huống ông Hùng và anh Cường",
+      "problem": "Ông Hùng và bà Lan kết hôn với nhau sinh được 4 người con là Cường (1978), Hải (1980), Đức (1986), Hồng (1991, bị thiểu năng trí tuệ bẩm sinh). Sau thời gian chung sống ông Hùng cặp bồ với bà Mai sinh được 1 đứa con là Long (1997). Cường kết hôn với Thu sinh được hai con là Minh (2005) và Mến (2007).\nNăm 2019, ông Hùng và anh Cường trên đường về quê bị tai nạn và qua đời. Trước khi chết ông Hùng có để lại di chúc hợp pháp cho bà Mai 500tr, Long 300tr. Hãy chia thừa kế của ông Hùng và anh Cường biết tài sản chung của ông Hùng và bà Lan là 2 tỷ, tài sản riêng của ông Hùng là 300tr, tiền mai táng cho ông Hùng là 30tr. Tài sản riêng của Cường là 500tr.",
       "steps": [
         {
-          "title": "Bước 1: Xác định và chia di sản của ông Hùng",
-          "content": "• Di sản của ông Hùng = 2 tỷ / 2 (chung) + 300tr (riêng) - 30tr (mai táng) = 1 tỷ 270 triệu đồng.\n• Theo di chúc: Bà Mai = 500 triệu, Long = 300 triệu (Tổng di chúc = 800 triệu).\n• Phần di sản còn lại chưa định đoạt chia theo pháp luật = 1.270 - 800 = 470 triệu đồng.\n• Hàng thừa kế thứ nhất theo luật của ông Hùng gồm: Bà Lan (vợ), suất thế vị của Cường (Minh + Mến), Hải, Đức, Hồng, Long = 6 suất.\n• Mỗi suất theo luật từ phần 470tr = 470 / 6 = 78,33 triệu đồng.\n• Xét Điều 644 BLDS 2015 cho Bà Lan (vợ) và Hồng (con bị thiểu năng không có khả năng lao động):\n  - Một suất thừa kế theo luật nếu chia toàn bộ di sản = 1.270 / 6 = 211,67 triệu.\n  - Suất Điều 644 = 2/3 x 211,67 = 141,11 triệu đồng.\n  - Bà Lan và Hồng mới nhận 78,33tr -> Mỗi người thiếu: 141,11 - 78,33 = 62,78 triệu đồng (Tổng thiếu = 125,56 triệu).\n  - Trích bù từ bà Mai và Long theo tỷ lệ nhận di chúc (500 : 300 = 5 : 3):\n    + Bà Mai bị trích: 125,56 x (5/8) = 78,48 triệu -> Mai còn: 500 - 78,48 = 421,52 triệu đồng.\n    + Long bị trích: 125,56 x (3/8) = 47,08 triệu -> Long nhận: (300 - 47,08) + 78,33tr (phần luật) = 331,25 triệu đồng."
-        },
-        {
-          "title": "Bước 2: Chia di sản của anh Cường (500 triệu)",
-          "content": "• Cường chết cùng thời điểm với ông Hùng nên không hưởng di sản của ông Hùng.\n• Di sản 500 triệu của Cường chia đều cho 4 người: Vợ Thu, con Minh, con Mến, mẹ đẻ Lan.\n• Mỗi người nhận: 500 / 4 = 125 triệu đồng."
-        },
-        {
-          "title": "Bước 3: Kết luận",
-          "content": "• Bà Lan nhận: 141,11tr (từ Hùng) + 125tr (từ Cường) = 266,11 triệu đồng (+ 1 tỷ TS riêng).\n• Hồng (con thiểu năng) = 141,11 triệu đồng.\n• Hải = Đức = 78,33 triệu đồng.\n• Minh = Mến = (78,33 / 2) + 125tr = 164,17 triệu đồng mỗi cháu.\n• Bà Mai = 421,52 triệu đồng.\n• Long = 331,25 triệu đồng.\n• Chị Thu = 125 triệu đồng."
+          "title": "Lời giải chi tiết từng bước",
+          "content": "1. Giải quyết di sản và phân chia thừa kế của ông Hùng:\n*   Xác định di sản của ông Hùng:\n    *   Tài sản chung của ông Hùng và bà Lan là 2 tỷ đồng. Theo quy định, phần của ông Hùng trong khối tài sản chung là:\n        2  tỷ / 2 = 1  tỷ đồng\n    *   Tài sản riêng của ông Hùng là 300 triệu đồng.\n    *   Nghĩa vụ tài sản (chi phí mai táng) của ông Hùng là 30 triệu đồng (khấu trừ trực tiếp vào di sản).\n    *   Tổng di sản thực tế của ông Hùng dùng để chia thừa kế là:\n        Di sản của ông Hùng = 1  tỷ (chung) + 300  triệu (riêng) - 30  triệu (mai táng) = 1  tỷ 270 triệu đồng (1.270 triệu)\n\n*   Chia di sản theo di chúc:\n    *   Theo di chúc hợp pháp của ông Hùng, bà Mai được hưởng 500 triệu đồng, Long được hưởng 300 triệu đồng.\n    *   Tổng số di sản được định đoạt theo di chúc là:\n        500  triệu + 300  triệu = 800  triệu đồng\n    *   Phần di sản còn lại không được định đoạt trong di chúc sẽ được phân chia theo pháp luật:\n        Di sản chia theo pháp luật = 1.270  triệu - 800  triệu = 470  triệu đồng\n\n*   Chia di sản còn lại (470 triệu) theo pháp luật:\n    *   Hàng thừa kế thứ nhất của ông Hùng gồm: bà Lan (vợ), anh Cường (con, đã chết cùng thời điểm với ông Hùng nên hai con của Cường là Minh và Mến được thừa kế thế vị hưởng chung suất của Cường), anh Hải (con), anh Đức (con), chị Hồng (con), anh Long (con).\n        (Bà Mai không thuộc hàng thừa kế pháp luật của ông Hùng).\n    *   Hàng thừa kế thứ nhất của ông Hùng gồm 6 suất: bà Lan, suất thế vị của Cường (chia đều cho Minh và Mến), Hải, Đức, Hồng, Long.\n    *   Mỗi suất được hưởng:\n        470  triệu / 6  người = 78,333,333  đồng (xấp xỉ 78,33 triệu đồng)\n    *   Suất thế vị của Cường được chia đều cho hai con Minh và Mến:\n        Minh = Mến = 78,33  triệu / 2 = 39,17  triệu đồng\n\n*   Tính toán suất thừa kế bắt buộc không phụ thuộc nội dung di chúc (Điều 644 BLDS 2015):\n    *   Những người thuộc đối tượng được bảo vệ thừa kế bắt buộc gồm: vợ bà Lan và con đẻ Hồng (bị thiểu năng trí tuệ bẩm sinh, không có khả năng lao động).\n    *   Trị giá một suất thừa kế theo pháp luật nếu toàn bộ di sản 1.270 triệu đồng của ông Hùng được chia theo pháp luật (cho 6 người):\n        1 suất pháp luật = 1.270  triệu / 6  suất = 211,67  triệu đồng\n    *   Trị giá suất thừa kế bắt buộc tối thiểu (bằng 2/3 một suất pháp luật) là:\n        Suất bắt buộc = \\frac{2{3 \\times 211,67  triệu = 141,11  triệu đồng\n    *   Thực tế, theo di chúc kết hợp chia pháp luật phần dư, bà Lan và chị Hồng mỗi người mới nhận được 78,33 triệu đồng.\n    *   Số tiền còn thiếu của bà Lan và chị Hồng mỗi người là:\n        141,11  triệu - 78,33  triệu = 62,78  triệu đồng (làm tròn là 63 triệu đồng trong đề cương)\n    *   Tổng số tiền thiếu cần bù cho bà Lan và chị Hồng là:\n        63  triệu \\times 2 = 126  triệu đồng\n    *   Số tiền 126 triệu đồng này được trích và tỷ lệ từ những người nhận tài sản theo di chúc là bà Mai (500 triệu) và anh Long (300 triệu). Tỷ lệ nhận di chúc là Mai/Long = 500/300 = 5/3 (Tổng số phần là 8):\n        -   Khấu trừ từ phần của anh Long:\n            126  triệu \\times \\frac{3{8 = 47,25  triệu đồng\n        -   Khấu trừ từ phần của bà Mai:\n            126  triệu \\times \\frac{5{8 = 78,75  triệu đồng\n\n*   Kết quả phân chia di sản của ông Hùng sau khi điều chỉnh:\n    -   Bà Lan (vợ): Nhận 141,11 triệu đồng\n    -   Chị Hồng (con bị thiểu năng): Nhận 141,11 triệu đồng\n    -   Bà Mai (bồ): Nhận 500  triệu - 78,75  triệu = 421,25 triệu đồng\n    -   Anh Long (con bà Mai): Nhận theo di chúc 300  triệu - 47,25  triệu + nhận theo pháp luật phần dư 78,33  triệu = 331,08 triệu đồng\n    -   Anh Hải (con đẻ): Nhận theo pháp luật = 78,33 triệu đồng\n    -   Anh Đức (con đẻ): Nhận theo pháp luật = 78,33 triệu đồng\n    -   Cháu Minh (con anh Cường, thế vị): Nhận 39,17 triệu đồng\n    -   Cháu Mến (con anh Cường, thế vị): Nhận 39,17 triệu đồng\n\n2. Giải quyết di sản và phân chia thừa kế của anh Cường:\n*   Anh Cường chết cùng thời điểm với ông Hùng nên anh Cường không được hưởng di sản của ông Hùng.\n*   Di sản của anh Cường là tài sản riêng trị giá 500 triệu đồng. Do anh Cường không có di chúc, di sản được chia hoàn toàn theo pháp luật.\n*   Hàng thừa kế thứ nhất của anh Cường gồm: bà Lan (mẹ đẻ), chị Thu (vợ), cháu Minh (con), cháu Mến (con). (Tổng cộng 4 người).\n*   Mỗi người được nhận phần di sản bằng nhau:\n    Phần nhận mỗi người = 500  triệu / 4 = 125  triệu đồng\n\n---"
         }
       ]
     },
     {
-      "id": "tk-bt2",
-      "title": "Bài 2 (Phần II): Tình huống ông Sơn (Di chúc cho trại trẻ mồ côi X 1/2 tài sản)",
-      "problem": "Ông Sơn kết hôn với bà Mai có 2 con là Lan, My (đều đã thành niên có việc làm). Ông Sơn có mẹ già là bà Hồng. Năm 2016 ông Sơn chết, di chúc cho Trại trẻ mồ côi X 1/2 tài sản. Tài sản chung nhà của ông Sơn và bà Mai là 1,2 tỷ, sổ tiết kiệm riêng ông Sơn 200 triệu, mai táng hết 40 triệu. Hãy chia thừa kế theo BLDS 2015.",
-      "diagram": "Bà Hồng (mẹ già)\n       |\nÔng Sơn (+) === Bà Mai\n       |------------|\n      Lan          My",
+      "id": "tk-v2-b2",
+      "title": "Bài 2 (v2): Tình huống ông Sơn",
+      "problem": "Ông Sơn kết hôn với bà Mai sinh được 2 người con chung là Lan, My (cả hai đều đã thành niên và có việc làm). Ông Sơn có mẹ già là bà Hồng. Năm 2016, ông Sơn bị bệnh nặng chết. Trước khi chết để lại di chúc cho trại trẻ mồ côi X 1/2 tài sản. Biết trong quá trình chung sống ông Sơn và bà Mai có tạo lập được căn nhà trị giá 1,2 tỷ đồng, ông Sơn có một sổ tiết kiệm của riêng 200 triệu đồng, tiền mai táng của ông Sơn hết 40 triệu đồng.",
       "steps": [
         {
-          "title": "Bước 1: Tính khối di sản của ông Sơn",
-          "content": "• Di sản của ông Sơn = 1,2 tỷ / 2 (TS chung) + 200tr (TS riêng) - 40tr (mai táng) = 760 triệu đồng.\n• Theo di chúc: Trại trẻ mồ côi X hưởng 1/2 di sản = 760 / 2 = 380 triệu đồng.\n• Phần còn lại chia theo pháp luật = 760 - 380 = 380 triệu đồng."
-        },
-        {
-          "title": "Bước 2: Chia phần 380 triệu theo pháp luật & Áp dụng Điều 644",
-          "content": "• Hàng thừa kế thứ nhất gồm: Mẹ Hồng, Vợ Mai, Con Lan, Con My (4 người).\n• Mỗi người nhận theo luật: 380 / 4 = 95 triệu đồng.\n• Xét Điều 644 BLDS 2015 cho mẹ Hồng và vợ Mai:\n  - Nếu không có di chúc, 1 suất luật = 760 / 4 = 190 triệu.\n  - Suất Điều 644 = 2/3 x 190 = 126,67 triệu đồng.\n  - Mẹ Hồng và Vợ Mai mới nhận 95tr -> Mỗi người thiếu: 126,67 - 95 = 31,67 triệu đồng (Tổng thiếu = 63,34 triệu).\n  - Trích bù 63,34 triệu từ phần di chúc của Trại trẻ mồ côi X:\n    + Trại trẻ mồ côi X còn: 380 - 63,34 = 316,66 triệu đồng."
-        },
-        {
-          "title": "Bước 3: Kết luận",
-          "content": "• Bà Hồng (mẹ già) = 126,67 triệu đồng.\n• Bà Mai (vợ) = 126,67 triệu đồng (+ 600tr tài sản riêng).\n• Lan = My = 95 triệu đồng mỗi người.\n• Trại trẻ mồ côi X = 316,66 triệu đồng."
+          "title": "Lời giải chi tiết từng bước",
+          "content": "1.  Xác định di sản của ông Sơn:\n    *   Căn nhà trị giá 1,2 tỷ đồng là tài sản chung của vợ chồng ông Sơn và bà Mai. Phần tài sản riêng của ông Sơn là:\n        1,2  tỷ / 2 = 600  triệu đồng\n    *   Sổ tiết kiệm riêng của ông Sơn trị giá 200 triệu đồng.\n    *   Chi phí mai táng là 40 triệu đồng (khấu trừ vào di sản).\n    *   Tổng di sản thực tế của ông Sơn là:\n        Di sản của ông Sơn = 600  triệu (chung) + 200  triệu (riêng) - 40  triệu (mai táng) = 760  triệu đồng\n\n2.  Chia di sản theo di chúc:\n    *   Theo di chúc: Trại trẻ mồ côi X được hưởng 1/2 tổng tài sản của ông Sơn:\n        Trại trẻ mồ côi X = 760  triệu / 2 = 380  triệu đồng\n    *   Di sản còn lại chưa định đoạt được chia theo pháp luật:\n        Di sản chia theo pháp luật = 760  triệu - 380  triệu = 380  triệu đồng\n\n3.  Chia di sản còn lại (380 triệu) theo pháp luật:\n    *   Hàng thừa kế thứ nhất của ông Sơn gồm 4 người: bà Hồng (mẹ đẻ), bà Mai (vợ), chị Lan (con), chị My (con).\n    *   Mỗi người nhận:\n        380  triệu / 4 = 95  triệu đồng\n\n4.  Xét thừa kế bắt buộc (Điều 644 BLDS 2015):\n    *   Những người được bảo vệ: mẹ đẻ bà Hồng và vợ bà Mai.\n    *   Trị giá một suất thừa kế theo pháp luật nếu không có di chúc:\n        1 suất pháp luật = 760  triệu / 4  suất = 190  triệu đồng\n    *   Trị giá suất thừa kế bắt buộc tối thiểu (bằng 2/3 một suất pháp luật):\n        Suất bắt buộc = \\frac{2{3 \\times 190  triệu = 126,67  triệu đồng\n    *   Thực tế, bà Hồng và bà Mai mới nhận được 95 triệu đồng từ chia theo pháp luật phần dư.\n    *   Số tiền còn thiếu của bà Hồng và bà Mai mỗi người là:\n        126,67  triệu - 95  triệu = 31,67  triệu đồng\n    *   Tổng số tiền thiếu cần bù:\n        31,67  triệu \\times 2 = 63,34  triệu đồng\n    *   Số tiền thiếu này được khấu trừ trực tiếp từ phần di sản được định đoạt theo di chúc cho trại trẻ mồ côi X.\n    *   Phần di sản thực tế còn lại của trại trẻ mồ côi X là:\n        380  triệu - 63,34  triệu = 316,66  triệu đồng (xấp xỉ 316,67 triệu đồng)\n\n5.  Kết luận phân chia tài sản cuối cùng:\n    -   Bà Hồng (mẹ đẻ): Nhận 126,67 triệu đồng\n    -   Bà Mai (vợ): Nhận 126,67 triệu đồng\n    -   Trại trẻ mồ côi X: Nhận 316,66 triệu đồng\n    -   Chị Lan (con): Nhận 95 triệu đồng\n    -   Chị My (con): Nhận 95 triệu đồng\n\n---"
         }
       ]
     },
     {
-      "id": "tk-bt3",
-      "title": "Bài 3 (Phần II): Tình huống ông A và anh X (Chết cùng thời điểm & Di chúc cho 4 mẹ con)",
-      "problem": "Ông A kết hôn với bà B sinh được 3 con là X, Y, Z. X lấy K sinh được 2 con là P và Q. Năm 2019, ông A và anh X trên đường đi công việc bị tai nạn và chết cùng thời điểm. Trước khi chết ông A di chúc cho 4 mẹ con B, X, Y, Z toàn bộ tài sản. X không để lại di chúc. Tài sản chung của A và B là 2 tỷ, tài sản riêng của A là 200 triệu, mai táng của ông A là 30 triệu. Tài sản riêng của X là 500 triệu. Hãy chia thừa kế theo BLDS 2015.",
-      "diagram": "Ông A (+) === Bà B\n       |------------|------------|\n    Anh X (+)       Y            Z\n (vợ K, con P, Q)",
+      "id": "tk-v2-b3",
+      "title": "Bài 3 (v2): Tình huống ông A và anh X",
+      "problem": "A kết hôn với B sinh được ba người con là X, Y, Z. X lấy vợ là K sinh được hai con là P và Q. Năm 2019, A và X trên đường đi công việc bị tai nạn và chết cùng thời điểm. Trước khi chết ông A để lại di chúc cho bốn mẹ con là B, X, Y, Z toàn bộ tài sản. X không để lại di chúc. Hãy chia thừa kế của ông A và X trong tình huống trên biết tài sản chung của A và B là 2 tỷ, tài sản riêng của A là 200tr, tiền mai táng của ông A là 30tr, tài sản riêng của X là 500tr.",
       "steps": [
         {
-          "title": "Bước 1: Xác định và chia di sản của ông A",
-          "content": "• Di sản của ông A = 2 tỷ / 2 (chung) + 200tr (riêng) - 30tr (mai táng) = 1 tỷ 170 triệu đồng.\n• Theo di chúc chia đều cho 4 mẹ con: B = X = Y = Z = 1.170 / 4 = 292,5 triệu đồng.\n• Vì X chết cùng thời điểm với A nên phần di chúc của X (292,5tr) bị hủy và chuyển sang chia theo pháp luật (Điều 651, 652 BLDS 2015):\n  - Hàng thừa kế chia phần 292,5tr gồm: Bà B, suất thế vị của X (P + Q), Y, Z = 4 suất bằng nhau.\n  - Mỗi suất = 292,5 / 4 = 73,125 triệu đồng.\n  - P = Q = 73,125 / 2 = 36,56 triệu đồng mỗi cháu.\n• Bà B nhận: 292,5 + 73,125 = 365,625 triệu đồng.\n• Y = Z nhận: 292,5 + 73,125 = 365,625 triệu đồng mỗi người."
-        },
-        {
-          "title": "Bước 2: Chia di sản của anh X (500 triệu)",
-          "content": "• Di sản của X 500 triệu chia theo luật cho hàng thừa kế thứ nhất gồm: Vợ K, con P, con Q, mẹ đẻ B (4 người).\n• Mỗi người nhận: 500 / 4 = 125 triệu đồng."
-        },
-        {
-          "title": "Bước 3: Kết luận",
-          "content": "• Bà B nhận: 365,625tr (từ A) + 125tr (từ X) = 490,625 triệu đồng (+ 1 tỷ TS riêng).\n• Y = Z = 365,625 triệu đồng mỗi người.\n• Chị K = 125 triệu đồng.\n• Cháu P = 36,56tr + 125tr = 161,56 triệu đồng.\n• Cháu Q = 36,56tr + 125tr = 161,56 triệu đồng."
+          "title": "Lời giải chi tiết từng bước",
+          "content": "1.  Giải quyết di sản và phân chia thừa kế của ông A:\n    *   Xác định di sản của ông A:\n        *   Tài sản chung của ông A và bà B là 2 tỷ đồng => Phần tài sản của ông A là 1 tỷ đồng.\n        *   Tài sản riêng của ông A là 200 triệu đồng.\n        *   Chi phí mai táng cho ông A là 30 triệu đồng.\n        *   Tổng di sản thực tế của ông A dùng để chia thừa kế là:\n            Di sản của A = 1  tỷ (chung) + 200  triệu (riêng) - 30  triệu (mai táng) = 1  tỷ 170 triệu đồng (1.170 triệu)\n    *   Chia di sản theo di chúc:\n        *   Ông A lập di chúc cho 4 người: bà B (vợ), anh X (con), chị Y (con), chị Z (con) toàn bộ tài sản. Ban đầu di sản được chia đều làm 4 phần, mỗi người nhận:\n            1.170  triệu / 4 = 292,5  triệu đồng / mỗi người\n        *   Do anh X và ông A bị chết cùng một thời điểm, căn cứ Điều 619 BLDS 2015, phần di chúc định đoạt cho X bị vô hiệu. Do đó, phần tài sản trị giá 292,5 triệu đồng của X sẽ được phân chia theo pháp luật.\n    *   Chia phần tài sản bị vô hiệu của X (292,5 triệu) theo pháp luật:\n        *   Hàng thừa kế thứ nhất của ông A gồm: bà B (vợ), chị Y (con), chị Z (con), và các con của anh X là P và Q thừa kế thế vị suất của bố X.\n        *   Suất thừa kế pháp luật được chia làm 4 phần bằng nhau cho: bà B, chị Y, chị Z, và suất thế vị của X. Mỗi suất trị giá:\n            292,5  triệu / 4 = 73,125  triệu đồng\n        *   Suất thế vị của X được chia đều cho hai con P và Q:\n            P = Q = 73,125  triệu / 2 = 36,5625  triệu đồng\n    *   Xét thừa kế bắt buộc đối với di sản ông A:\n        *   Bà B là người thuộc diện hưởng thừa kế bắt buộc.\n        *   Một suất thừa kế theo pháp luật nếu chia đều toàn bộ di sản của A (cho 4 suất):\n            1 suất pháp luật = 1.170  triệu / 4 = 292,5  triệu đồng\n        *   Suất bắt buộc của bà B (bằng 2/3 một suất pháp luật):\n            Suất bắt buộc = \\frac{2{3 \\times 292,5  triệu = 195  triệu đồng\n        *   Thực tế bà B đã nhận được 292,5  triệu (di chúc) + 73,125  triệu (pháp luật) = 365,625  triệu (lớn hơn nhiều so với suất bắt buộc 195 triệu). Do đó bà B không bị thiếu tài sản.\n    *   Kết luận phân chia di sản của ông A:\n        -   Bà B (vợ): Nhận 292,5  triệu + 73,125  triệu = 365,625 triệu đồng\n        -   Chị Y (con): Nhận 292,5  triệu + 73,125  triệu = 365,625 triệu đồng\n        -   Chị Z (con): Nhận 292,5  triệu + 73,125  triệu = 365,625 triệu đồng\n        -   Cháu P (cháu nội thế vị): Nhận 36,5625 triệu đồng\n        -   Cháu Q (cháu nội thế vị): Nhận 36,5625 triệu đồng\n\n2.  Giải quyết di sản và phân chia thừa kế của anh X:\n    *   Anh X chết cùng thời điểm với ông A nên không được hưởng di sản của ông A.\n    *   Di sản của anh X là tài sản riêng trị giá 500 triệu đồng. Do anh X chết không di chúc, di sản được chia hoàn toàn theo pháp luật.\n    *   Hàng thừa kế thứ nhất của anh X gồm 4 người: bà K (vợ), cháu P (con), cháu Q (con), và bà B (mẹ đẻ của X).\n    *   Di sản được chia đều cho 4 người thừa kế:\n        Phần nhận mỗi người = 500  triệu / 4 = 125  triệu đồng\n\n3.  Tổng hợp tài sản thực nhận cuối cùng của các chủ thể:\n    -   Bà B (vợ A, mẹ X): Nhận từ A (365,625 triệu) + nhận từ X (125 triệu) = 490,625 triệu đồng\n    -   Bà K (vợ X): Nhận từ X = 125 triệu đồng\n    -   Chị Y (con A): Nhận từ A = 365,625 triệu đồng\n    -   Chị Z (con A): Nhận từ A = 365,625 triệu đồng\n    -   Cháu P (con X, cháu nội A): Nhận từ A thế vị (36,5625 triệu) + nhận từ bố X (125 triệu) = 161,5625 triệu đồng\n    -   Cháu Q (con X, cháu nội A): Nhận từ A thế vị (36,5625 triệu) + nhận từ bố X (125 triệu) = 161,5625 triệu đồng\n\n---"
         }
       ]
     },
     {
-      "id": "tk-bt4",
-      "title": "Bài 4 (Phần II): Tình huống ông Dương và anh Hiệp (Chết khác thời điểm & Thế vị)",
-      "problem": "Ông Dương và bà Hoa có 2 con là Dũng và Hiệp (đều đã thành niên). Hiệp lấy Hạnh có 3 con là Huyền (13t), Hồng (11t), Hiếu (9t). Tháng 6/2018, ông Dương và Hiệp bị tai nạn giao thông: Hiệp chết tại chỗ, ông Dương chết trên đường đi cấp cứu. Ông Dương di chúc cho Dũng và dì Tương toàn bộ tài sản. Tài sản chung Dương - Hoa là nhà 1,6 tỷ, sổ tiết kiệm riêng ông Dương 200 triệu, mai táng ông Dương 40 triệu. Di sản của anh Hiệp là 900 triệu. Hãy chia thừa kế theo BLDS 2015.",
-      "diagram": "Ông Dương (+) [chết sau] === Bà Hoa\n        |--------------------|\n     Dũng                 Hiệp (+) [chết trước]\n                          (vợ Hạnh, con Huyền, Hồng, Hiếu)",
+      "id": "tk-v2-b4",
+      "title": "Bài 4 (v2): Tình huống ông Dương và anh Hiệp",
+      "problem": "Ông Dương và bà Hoa kết hôn với nhau có hai người con chung là: Dũng và Hiệp (cả hai đều đã thành niên). Năm 1999 anh Hiệp kết hôn với chị Hạnh, có 3 người con chung là Huyền (13 tuổi), Hồng (11 tuổi), Hiếu (9 tuổi). Tháng 6/2018 ông Dương và Hiệp bị tai nạn giao thông. Anh Hiệp chết ngay tại nơi xảy ra tai nạn còn ông Dương chết trên đường đưa đi cấp cứu. Ông Dương có để lại di chúc định đoạt toàn bộ tài sản của mình cho Dũng và bà dì tên Tương. Ông Dương và bà Hoa có tạo lập được một căn nhà trị giá 1,6 tỷ đồng và 1 sổ tiết kiệm của riêng ông Dương trị giá 200 triệu đồng, tiền mai táng hết 40 triệu đồng. Di sản của anh Hiệp là 900 triệu đồng.",
       "steps": [
         {
-          "title": "Bước 1: Chia di sản của anh Hiệp trước (do Hiệp chết trước)",
-          "content": "• Di sản của anh Hiệp = 900 triệu đồng.\n• Hiệp chết không có di chúc nên chia đều theo pháp luật (Điều 651 BLDS 2015):\n• Hàng thừa kế thứ nhất của Hiệp gồm 6 người: Cha đẻ (Ông Dương), Mẹ đẻ (Bà Hoa), Vợ (Hạnh), 3 con (Huyền, Hồng, Hiếu).\n• Mỗi suất thừa kế = 900 / 6 = 150 triệu đồng."
-        },
-        {
-          "title": "Bước 2: Xác định và chia di sản của ông Dương (chết sau)",
-          "content": "• Di sản của ông Dương = 1,6 tỷ / 2 (TS chung) + 200tr (TS riêng) + 150tr (thừa kế nhận từ Hiệp) - 40tr (mai táng) = 1 tỷ 110 triệu đồng.\n• Di chúc ông Dương chia cho Dũng và dì Tương mỗi người 1/2 = 1.110 / 2 = 555 triệu đồng.\n• Xét Điều 644 BLDS 2015 cho Bà Hoa (vợ):\n  - Nếu chia theo luật, hàng thừa kế thứ nhất gồm: Bà Hoa, Dũng, và suất thế vị của Hiệp (Huyền + Hồng + Hiếu) = 3 suất.\n  - Một suất theo luật = 1.110 / 3 = 370 triệu đồng.\n  - Bà Hoa được hưởng tối thiểu = 2/3 x 370 = 246,67 triệu đồng.\n  - Rút bù từ Dũng và dì Tương mỗi người: 246,67 / 2 = 123,33 triệu đồng.\n  - Dũng = Dì Tương còn lại: 555 - 123,33 = 431,67 triệu đồng."
-        },
-        {
-          "title": "Bước 3: Kết luận",
-          "content": "• Bà Hoa = 246,67tr (từ Dương) + 150tr (từ Hiệp) = 396,67 triệu đồng (+ 800tr TS riêng).\n• Dũng = 431,67 triệu đồng.\n• Dì Tương = 431,67 triệu đồng.\n• Chị Hạnh = 150 triệu đồng.\n• Huyền = Hồng = Hiếu = 150 triệu đồng mỗi cháu."
+          "title": "Lời giải chi tiết từng bước",
+          "content": "Câu a: Bản di chúc của ông Dương là hợp pháp. Hãy chia thừa kế?\n1.  Giải quyết di sản của anh Hiệp trước (Hiệp chết trước ông Dương):\n    *   Di sản của anh Hiệp là 900 triệu đồng. Anh Hiệp không di chúc nên di sản chia hoàn toàn theo pháp luật.\n    *   Hàng thừa kế thứ nhất của anh Hiệp gồm 6 người: ông Dương (bố đẻ), bà Hoa (mẹ đẻ), chị Hạnh (vợ), cháu Huyền (con), cháu Hồng (con), cháu Hiếu (con).\n    *   Mỗi người nhận:\n        900  triệu / 6 = 150  triệu đồng\n\n2.  Giải quyết di sản của ông Dương (chết sau trên đường đi cấp cứu):\n    *   Xác định di sản của ông Dương:\n        *   Phần tài sản trong nhà chung vợ chồng với bà Hoa: 1,6  tỷ / 2 = 800  triệu đồng.\n        *   Sổ tiết kiệm riêng: 200 triệu đồng.\n        *   Chi phí mai táng trừ vào di sản: 40 triệu đồng.\n        *   Phần di sản nhận từ thừa kế của con trai Hiệp: 150 triệu đồng.\n        *   Tổng di sản thực tế của ông Dương là:\n            Di sản ông Dương = 800  triệu + 200  triệu - 40  triệu + 150  triệu = 1  tỷ 110 triệu đồng (1.110 triệu)\n    *   Chia di sản theo di chúc:\n        *   Theo di chúc: Ông Dương định đoạt để lại toàn bộ tài sản cho Dũng (con) và bà dì Tương hưởng bằng nhau:\n            Dũng = Tương = 1.110  triệu / 2 = 555  triệu đồng / mỗi người\n    *   Xét thừa kế bắt buộc không phụ thuộc nội dung di chúc (Điều 644 BLDS 2015):\n        *   Đối tượng được bảo vệ: vợ đẻ bà Hoa.\n        *   Tính một suất thừa kế theo pháp luật của ông Dương nếu toàn bộ di sản được chia theo pháp luật:\n            *   Hàng thừa kế thứ nhất của ông Dương gồm 3 suất: bà Hoa (vợ), anh Dũng (con), và suất thế vị của anh Hiệp (con, đã chết trước ông Dương, do ba con là Huyền, Hồng, Hiếu thế vị hưởng chung).\n            *   Trị giá một suất thừa kế theo pháp luật là:\n                1 suất pháp luật = 1.110  triệu / 3  suất = 370  triệu đồng\n            *   Trị giá suất thừa kế bắt buộc tối thiểu của bà Hoa (bằng 2/3 một suất pháp luật):\n                Suất bắt buộc = \\frac{2{3 \\times 370  triệu = 246,67  triệu đồng\n        *   Thực tế bà Hoa nhận được 0 đồng theo di chúc. Do đó bà Hoa bị thiếu đúng bằng 246,67 triệu đồng.\n        *   Số tiền bù cho bà Hoa được khấu trừ đều từ phần di chúc của Dũng và Tương:\n            -   Trích từ phần của anh Dũng: 246,67  triệu / 2 = 123,335  triệu đồng (xấp xỉ 123,34 triệu)\n            -   Trích từ phần của bà dì Tương: 246,67  triệu / 2 = 123,335  triệu đồng (xấp xỉ 123,34 triệu)\n        *   Sau khi trích bù, di sản thực tế của Dũng và Tương nhận được là:\n            Dũng = Tương = 555  triệu - 123,34  triệu = 431,66  triệu đồng\n\n3.  Kết quả phân chia tài sản cuối cùng ở câu a:\n    -   Bà Hoa (vợ ông Dương): Nhận từ anh Hiệp (150 triệu) + nhận bắt buộc từ ông Dương (246,67 triệu) = 396,67 triệu đồng\n    -   Anh Dũng (con): Nhận từ ông Dương = 431,66 triệu đồng\n    -   Bà dì Tương: Nhận từ ông Dương = 431,66 triệu đồng\n    -   Chị Hạnh (vợ anh Hiệp): Nhận từ anh Hiệp = 150 triệu đồng\n    -   Cháu Huyền (con anh Hiệp): Nhận từ anh Hiệp = 150 triệu đồng\n    -   Cháu Hồng (con anh Hiệp): Nhận từ anh Hiệp = 150 triệu đồng\n    -   Cháu Hiếu (con anh Hiệp): Nhận từ anh Hiệp = 150 triệu đồng\n\nCâu b: Giả sử ông Dương chết không di chúc, anh Hiệp để lại di chúc cho Huyền 200 triệu, Hiếu 100 triệu. Hãy chia di sản?\n1.  Chia di sản của anh Hiệp trước (Hiệp chết trước ông Dương):\n    *   Di sản của anh Hiệp là 900 triệu đồng.\n    *   Theo di chúc: Cháu Huyền được hưởng 200 triệu đồng, cháu Hiếu được hưởng 100 triệu đồng.\n    *   Di sản còn lại chia theo pháp luật:\n        Di sản chia pháp luật = 900  triệu - (200  triệu + 100  triệu) = 600  triệu đồng\n    *   Hàng thừa kế thứ nhất của anh Hiệp gồm 6 người: ông Dương (bố), bà Hoa (mẹ), chị Hạnh (vợ), Huyền (con), Hồng (con), Hiếu (con).\n    *   Mỗi người nhận phần pháp luật từ di sản còn lại là:\n        600  triệu / 6 = 100  triệu đồng\n    *   Xét thừa kế bắt buộc đối với di sản của anh Hiệp (Điều 644):\n        *   Những người được bảo vệ gồm: Huyền (13 tuổi), Hồng (11 tuổi), Hiếu (9 tuổi) - là các con chưa thành niên.\n        *   Một suất pháp luật nếu toàn bộ di sản 900 triệu chia theo pháp luật là:\n            1 suất pháp luật = 900  triệu / 6 = 150  triệu đồng\n        *   Suất thừa kế bắt buộc tối thiểu (bằng 2/3 một suất pháp luật):\n            Suất bắt buộc = \\frac{2{3 \\times 150  triệu = 100  triệu đồng\n        *   Thực tế nhận của các con:\n            -   Huyền nhận: 200  triệu (di chúc) + 100  triệu (pháp luật) = 300  triệu (đạt yêu cầu)\n            -   Hiếu nhận: 100  triệu (di chúc) + 100  triệu (pháp luật) = 200  triệu (đạt yêu cầu)\n            -   Hồng nhận: 0  (di chúc) + 100  triệu (pháp luật) = 100  triệu (đạt yêu cầu)\n        *   Do không có ai thuộc diện bảo vệ bị thiếu suất bắt buộc nên di sản của anh Hiệp giữ nguyên kết quả chia trên.\n    *   Kết quả chia di sản của anh Hiệp:\n        -   Ông Dương (bố đẻ): Nhận 100 triệu đồng\n        -   Bà Hoa (mẹ đẻ): Nhận 100 triệu đồng\n        -   Chị Hạnh (vợ): Nhận 100 triệu đồng\n        -   Cháu Huyền (con): Nhận 200 + 100 = 300 triệu đồng\n        -   Cháu Hiếu (con): Nhận 100 + 100 = 200 triệu đồng\n        -   Cháu Hồng (con): Nhận 100 triệu đồng\n\n2.  Chia di sản của ông Dương (chết sau, không để lại di chúc):\n    *   Xác định di sản của ông Dương:\n        *   Phần tài sản trong nhà chung: 1,6  tỷ / 2 = 800  triệu đồng.\n        *   Sổ tiết kiệm riêng: 200 triệu đồng.\n        *   Chi phí mai táng trừ vào di sản: 40 triệu đồng.\n        *   Phần di sản nhận từ thừa kế của con trai Hiệp: 100 triệu đồng.\n        *   Tổng di sản thực tế của ông Dương là:\n            Di sản ông Dương = 800  triệu + 200  triệu - 40  triệu + 100  triệu = 1  tỷ 060 triệu đồng (1.060 triệu)\n    *   Chia di sản theo pháp luật:\n        *   Do ông Dương không di chúc, di sản 1.060 triệu được chia theo pháp luật cho hàng thừa kế thứ nhất gồm 3 suất: bà Hoa (vợ), anh Dũng (con), và suất thế vị của anh Hiệp (con, đã chết trước ông Dương, do 3 con là Huyền, Hồng, Hiếu thế vị hưởng chung).\n        *   Mỗi suất thừa kế trị giá:\n            Phần nhận mỗi suất = 1.060  triệu / 3  suất = 353,33  triệu đồng\n        *   Suất thế vị của Hiệp được chia đều cho ba cháu Huyền, Hồng, Hiếu:\n            Huyền = Hồng = Hiếu = 353,33  triệu / 3 = 117,78  triệu đồng / mỗi cháu\n\n3.  Tổng hợp tài sản nhận được cuối cùng ở câu b:\n    -   Bà Hoa (vợ ông Dương): Nhận từ anh Hiệp (100 triệu) + nhận từ ông Dương (353,33 triệu) = 453,33 triệu đồng\n    -   Anh Dũng (con): Nhận từ ông Dương = 353,33 triệu đồng\n    -   Chị Hạnh (vợ anh Hiệp): Nhận từ anh Hiệp = 100 triệu đồng\n    -   Cháu Huyền (con anh Hiệp): Nhận từ anh Hiệp (300 triệu) + nhận thế vị từ ông nội Dương (117,78 triệu) = 417,78 triệu đồng\n    -   Cháu Hiếu (con anh Hiệp): Nhận từ anh Hiệp (200 triệu) + nhận thế vị từ ông nội Dương (117,78 triệu) = 317,78 triệu đồng\n    -   Cháu Hồng (con anh Hiệp): Nhận từ anh Hiệp (100 triệu) + nhận thế vị từ ông nội Dương (117,78 triệu) = 217,78 triệu đồng\n\n---"
         }
       ]
     },
     {
-      "id": "tk-bt5",
-      "title": "Bài 5 (Phần II): Tình huống bà B và anh X (Con riêng M & Di chúc cho từ thiện)",
-      "problem": "Ông A và bà B có 2 con chung là X (1992), Y (2005). Bà B có con riêng là M (1990). X lấy H có 2 con là P và Q. Năm 2018, bà B và X cùng chết trong tai nạn. Trước khi chết bà B di chúc cho M 100 triệu, quỹ từ thiện 200 triệu. Tài sản chung A và B là 600 triệu, tài sản riêng bà B là 180 triệu. X có tài sản riêng 400 triệu. Hãy chia thừa kế theo BLDS 2015.",
-      "diagram": "Ông A === Bà B (+)\n    |-------|-------|\n X (1992) Y (2005) M (1990 - con riêng của B)\n(vợ H, con P, Q)",
+      "id": "tk-v2-b5",
+      "title": "Bài 5 (v2): Tình huống bà B và anh X",
+      "problem": "Ông A và bà B kết hôn với nhau có hai người con chung là X (1992), Y (2005). Bà B có một người con riêng là M (1990). X lấy H sinh được hai người con là P và Q. Năm 2018, bà B và X trên đường về quê bị tai nạn và qua đời. Trước khi chết bà B có để lại di chúc cho M 100 triệu, quỹ từ thiện 200 triệu. Biết ông A và bà B có tài sản chung là 600 triệu, bà B có tài sản riêng là 180 triệu. X có tài sản riêng là 400 triệu. Hãy chia thừa kế của bà B và X theo đúng quy định của pháp luật.",
       "steps": [
         {
-          "title": "Bước 1: Tính khối di sản của bà B",
-          "content": "• Di sản của bà B = 600tr / 2 (chung) + 180tr (riêng) = 480 triệu đồng.\n• Di chúc định đoạt: M = 100tr, Quỹ từ thiện = 200tr (Tổng di chúc = 300tr).\n• Phần còn lại chưa định đoạt chia theo pháp luật = 480 - 300 = 180 triệu đồng.\n• Hàng thừa kế chia phần 180tr gồm: Ông A (chồng), Y (con), M (con riêng của B), và suất thế vị của X (P + Q) = 4 suất.\n• Mỗi suất theo luật từ phần 180tr = 180 / 4 = 45 triệu đồng."
-        },
-        {
-          "title": "Bước 2: Áp dụng Điều 644 BLDS 2015 cho ông A và Y (chưa thành niên)",
-          "content": "• Ông A (chồng) và Y (sinh năm 2005, năm 2018 mới 13 tuổi) thuộc diện thừa kế bắt buộc.\n• Một suất thừa kế theo luật nếu chia toàn bộ di sản = 480 / 4 = 120 triệu đồng.\n• Suất Điều 644 = 2/3 x 120 = 80 triệu đồng.\n• Ông A và Y mới nhận 45tr -> Mỗi người thiếu: 80 - 45 = 35 triệu đồng (Tổng thiếu = 70 triệu).\n• Trích bù 70 triệu từ những người nhận di chúc (M và Quỹ từ thiện) theo tỷ lệ 100 : 200 (1 : 2):\n  - Trích từ M: 70 x (1/3) = 23,33 triệu -> M nhận di chúc: 100 - 23,33 = 76,67 triệu + 45tr (phần luật) = 121,67 triệu đồng.\n  - Trích từ Quỹ từ thiện: 70 x (2/3) = 46,67 triệu -> Quỹ từ thiện còn: 200 - 46,67 = 153,33 triệu đồng."
-        },
-        {
-          "title": "Bước 3: Chia di sản của anh X (400 triệu)",
-          "content": "• X chết cùng thời điểm với bà B nên không hưởng di sản của bà B.\n• Di sản 400 triệu của X chia đều theo pháp luật cho hàng thừa kế thứ nhất gồm: Vợ H, con P, con Q, cha đẻ A (4 người).\n• Mỗi người nhận: 400 / 4 = 100 triệu đồng."
-        },
-        {
-          "title": "Bước 4: Kết luận",
-          "content": "• Ông A nhận: 80tr (từ B) + 100tr (từ X) = 180 triệu đồng (+ 300tr TS riêng).\n• Y (con 13t) nhận: 80 triệu đồng.\n• M (con riêng) nhận: 121,67 triệu đồng.\n• Quỹ từ thiện: 153,33 triệu đồng.\n• Chị H = 100 triệu đồng.\n• Cháu P = (45 / 2) + 100 = 122,5 triệu đồng.\n• Cháu Q = (45 / 2) + 100 = 122,5 triệu đồng."
+          "title": "Lời giải chi tiết từng bước",
+          "content": "1. Giải quyết di sản và phân chia thừa kế của bà B (chết năm 2018 cùng thời điểm với X):\n*   Xác định di sản của bà B:\n    *   Tài sản chung của ông A và bà B là 600 triệu đồng. Phần của bà B trong khối tài sản chung là:\n        600  triệu / 2 = 300  triệu đồng\n    *   Tài sản riêng của bà B là 180 triệu đồng.\n    *   Tổng di sản thực tế của bà B dùng để chia thừa kế là:\n        Di sản của B = 300  triệu (chung) + 180  triệu (riêng) = 480  triệu đồng\n\n*   Chia di sản theo di chúc:\n    *   Theo di chúc: M được hưởng 100 triệu đồng, quỹ từ thiện được hưởng 200 triệu đồng.\n    *   Tổng số di sản được định đoạt theo di chúc là:\n        100  triệu + 200  triệu = 300  triệu đồng\n    *   Phần di sản còn lại chưa định đoạt được chia theo pháp luật:\n        Di sản chia theo pháp luật = 480  triệu - 300  triệu = 180  triệu đồng\n\n*   Chia phần di sản còn lại (180 triệu) theo pháp luật:\n    *   Hàng thừa kế thứ nhất của bà B gồm: ông A (chồng), anh X (con, đã chết cùng thời điểm với bà B nên hai con của X là P và Q được thừa kế thế vị hưởng chung suất của X), em Y (con, sinh năm 2005 - lúc này mới 13 tuổi), anh M (con riêng, được coi là thuộc hàng thừa kế thứ nhất do có quan hệ nuôi dưỡng, chăm sóc như mẹ con).\n    *   Hàng thừa kế thứ nhất của bà B gồm 4 suất: ông A, suất thế vị của X (P và Q), em Y, anh M.\n    *   Mỗi suất được hưởng pháp luật từ phần dư là:\n        180  triệu / 4  suất = 45  triệu đồng\n    *   Suất thế vị của X được chia đều cho hai con P và Q:\n        P = Q = 45  triệu / 2 = 22,5  triệu đồng / mỗi cháu\n\n*   Tính toán suất thừa kế bắt buộc không phụ thuộc di chúc (Điều 644 BLDS 2015):\n    *   Những đối tượng được bảo vệ thừa kế bắt buộc gồm: chồng ông A và con đẻ Y (chưa thành niên).\n    *   Trị giá một suất thừa kế theo pháp luật nếu toàn bộ di sản 480 triệu đồng của bà B được chia theo pháp luật (cho 4 suất):\n        1 suất pháp luật = 480  triệu / 4  suất = 120  triệu đồng\n    *   Trị giá suất thừa kế bắt buộc tối thiểu (bằng 2/3 một suất pháp luật):\n        Suất bắt buộc = \\frac{2{3 \\times 120  triệu = 80  triệu đồng\n    *   Thực tế, ông A và em Y mới nhận được 45 triệu đồng từ phần chia theo pháp luật.\n    *   Số tiền còn thiếu của ông A và em Y mỗi người là:\n        80  triệu - 45  triệu = 35  triệu đồng\n    *   Tổng số tiền thiếu cần bù là:\n        35  triệu \\times 2 = 70  triệu đồng\n    *   Số tiền 70 triệu đồng này được trích và tỷ lệ từ những người nhận tài sản theo di chúc là M (100 triệu) và quỹ từ thiện (200 triệu). Tỷ lệ nhận di chúc là M/quỹ = 100/200 = 1/2 (Tổng số phần là 3):\n        -   Khấu trừ từ phần của M:\n            70  triệu \\times \\frac{1{3 = 23,33  triệu đồng\n        -   Khấu trừ từ quỹ từ thiện:\n            70  triệu \\times \\frac{2{3 = 46,67  triệu đồng\n\n*   Kết quả phân chia di sản của bà B:\n    -   Ông A (chồng): Nhận 80 triệu đồng (thừa kế bắt buộc)\n    -   Em Y (con nhỏ): Nhận 80 triệu đồng (thừa kế bắt buộc)\n    -   Anh M (con riêng): Nhận theo di chúc 100  triệu - 23,33  triệu + nhận theo pháp luật 45  triệu = 121,67 triệu đồng\n    -   Quỹ từ thiện: Nhận theo di chúc 200  triệu - 46,67  triệu = 153,33 triệu đồng\n    -   Cháu P (cháu ngoại thế vị): Nhận 22,5 triệu đồng\n    -   Cháu Q (cháu ngoại thế vị): Nhận 22,5 triệu đồng\n\n2. Giải quyết di sản và phân chia thừa kế của anh X (chết năm 2018 cùng thời điểm với B):\n*   Anh X chết cùng thời điểm với bà B nên anh X không được hưởng thừa kế của bà B.\n*   Di sản của anh X là tài sản riêng trị giá 400 triệu đồng. Do anh X chết không di chúc, di sản được chia hoàn toàn theo pháp luật.\n*   Hàng thừa kế thứ nhất của anh X gồm: ông A (bố đẻ), bà B (mẹ đẻ, đã chết cùng thời điểm nên không nhận), chị H (vợ), cháu P (con), cháu Q (con). (Tổng cộng 4 người được nhận).\n*   Mỗi người được nhận phần di sản bằng nhau:\n    Phần nhận mỗi người = 400  triệu / 4 = 100  triệu đồng\n\n3. Tổng hợp tài sản thực nhận của từng chủ thể:\n*   Ông A (chồng bà B, bố đẻ anh X): Nhận từ bà B (80 triệu) + nhận từ anh X (100 triệu) = 180 triệu đồng\n*   Chị H (vợ anh X): Nhận từ anh X = 100 triệu đồng\n*   Em Y (con bà B): Nhận từ bà B = 80 triệu đồng\n*   Anh M (con riêng bà B): Nhận từ bà B = 121,67 triệu đồng\n*   Cháu P (con anh X, cháu bà B): Nhận từ bà B thế vị (22,5 triệu) + nhận từ bố X (100 triệu) = 122,5 triệu đồng\n*   Cháu Q (con anh X, cháu bà B): Nhận từ bà B thế vị (22,5 triệu) + nhận từ bố X (100 triệu) = 122,5 triệu đồng\n*   Quỹ từ thiện: Nhận từ bà B = 153,33 triệu đồng\n\n---"
         }
       ]
     },
     {
-      "id": "tk-bt6",
-      "title": "Bài 6 (Phần II): Tình huống ông Chuẩn và bà Thanh (Truất quyền thừa kế của vợ ly thân)",
-      "problem": "Ông Chuẩn và bà Thanh là vợ chồng (ly thân đã lâu), có 3 con là Kiên, Hậu, Mai (đều đã thành niên). Năm 2018 ông Chuẩn chết, di chúc truất quyền thừa kế của bà Thanh và để toàn bộ tài sản cho 3 con. Mai táng hết 6 triệu lấy từ tài sản chung. Tài sản chung sau mai táng là 820 triệu, tài sản riêng ông Chuẩn là 20 triệu. Hãy chia thừa kế theo BLDS 2015.",
-      "diagram": "Ông Chuẩn (+) === Bà Thanh (ly thân, bị truất quyền)\n       |------------|------------|\n      Kiên         Hậu          Mai",
+      "id": "tk-v2-b6",
+      "title": "Bài 6 (v2): Tình huống ông Chuẩn và bà Thanh",
+      "problem": "Ông Chuẩn và bà Thanh là hai vợ chồng, họ có 3 người con chung là Kiên, Hậu và Mai. Ông Chuẩn và bà Thanh ly thân đã lâu. Năm 2018, ông Chuẩn bị tai nạn giao thông và qua đời, trước khi chết ông để lại di chúc truất quyền thừa kế của vợ là bà Thanh và dành toàn bộ tài sản cho các con. Khi ông Chuẩn qua đời bà Thanh mai táng cho ông hết 6 triệu đồng, lấy từ tài sản chung của ông bà. Bà Thanh khởi kiện lên tòa đòi chia thừa kế di sản của ông Chuẩn. Tòa xác định được: tài sản chung của ông Chuẩn và bà Thanh sau khi trừ chi phí mai táng của ông Chuẩn là 820 triệu đồng. Tài sản riêng của ông Chuẩn là 20 triệu đồng.",
       "steps": [
         {
-          "title": "Bước 1: Tính di sản của ông Chuẩn",
-          "content": "• Di sản của ông Chuẩn = 820 triệu / 2 (TS chung) + 20 triệu (TS riêng) = 430 triệu đồng.\n• Theo di chúc: 3 con Kiên, Hậu, Mai hưởng toàn bộ = 430 / 3 = 143,33 triệu/người."
-        },
-        {
-          "title": "Bước 2: Áp dụng Điều 644 BLDS 2015 cho bà Thanh",
-          "content": "• Mặc dù hai vợ chồng ly thân và ông Chuẩn có di chúc truất quyền thừa kế của bà Thanh, nhưng họ chưa ly hôn hợp pháp tại Tòa án nên bà Thanh vẫn là vợ hợp pháp của ông Chuẩn.\n• Bà Thanh thuộc diện người thừa kế không phụ thuộc nội dung di chúc (Điều 644 BLDS 2015).\n• Hàng thừa kế thứ nhất gồm 4 người: Vợ Thanh, 3 con Kiên, Hậu, Mai.\n• Một suất theo luật = 430 / 4 = 107,5 triệu đồng.\n• Suất của bà Thanh theo Điều 644 = 2/3 x 107,5 = 71,67 triệu đồng.\n• Trích đều từ 3 con (mỗi người trích: 71,67 / 3 = 23,89 triệu)."
-        },
-        {
-          "title": "Bước 3: Kết luận",
-          "content": "• Bà Thanh nhận: 71,67 triệu đồng (+ 410 triệu tài sản riêng của bà).\n• Kiên = Hậu = Mai nhận: 143,33 - 23,89 = 119,44 triệu đồng mỗi người."
+          "title": "Lời giải chi tiết từng bước",
+          "content": "Câu a: Hãy chia thừa kế trong trường hợp trên.\n1.  Xác định di sản của ông Chuẩn:\n    *   Tài sản chung còn lại sau khi trừ chi phí mai táng là 820 triệu đồng. Phần tài sản riêng của ông Chuẩn trong tài sản chung là:\n        820  triệu / 2 = 410  triệu đồng\n    *   Tài sản riêng của ông Chuẩn là 20 triệu đồng.\n    *   Tổng di sản thực tế của ông Chuẩn là:\n        Di sản của ông Chuẩn = 410  triệu (chung) + 20  triệu (riêng) = 430  triệu đồng\n\n2.  Chia di sản theo di chúc:\n    *   Theo di chúc: Ông Chuẩn truất quyền thừa kế của bà Thanh, dành toàn bộ di sản cho 3 con chung là Kiên, Hậu, Mai hưởng bằng nhau:\n        Kiên = Hậu = Mai = 430  triệu / 3 = 143,33  triệu đồng / mỗi con\n\n3.  Xét thừa kế bắt buộc không phụ thuộc nội dung di chúc (Điều 644 BLDS 2015):\n    *   Bà Thanh dù bị ông Chuẩn truất quyền thừa kế trong di chúc, nhưng do vẫn là vợ hợp pháp của ông Chuẩn tại thời điểm mở thừa kế (hai người mới ly thân, chưa ly hôn), bà Thanh thuộc đối tượng hưởng thừa kế bắt buộc.\n    *   Tính một suất thừa kế theo pháp luật của ông Chuẩn nếu không có di chúc (chia đều cho 4 người thuộc hàng thứ nhất: bà Thanh, Kiên, Hậu, Mai):\n        1 suất pháp luật = 430  triệu / 4 = 107,5  triệu đồng\n    *   Trị giá suất thừa kế bắt buộc tối thiểu mà bà Thanh phải nhận (bằng 2/3 một suất pháp luật) là:\n        Suất bắt buộc của bà Thanh = \\frac{2{3 \\times 107,5  triệu = 71,67  triệu đồng\n    *   Thực tế, theo di chúc bà Thanh nhận được 0 đồng. Do đó bà Thanh bị thiếu đúng bằng 71,67 triệu đồng.\n    *   Số tiền này sẽ được khấu trừ đều từ phần của các con Kiên, Hậu, Mai (mỗi người bị khấu trừ 1/3 số tiền thiếu):\n        Khoản khấu trừ mỗi con = 71,67  triệu / 3 = 23,89  triệu đồng\n    *   Phần di sản thực nhận của các con sau khi điều chỉnh:\n        Kiên = Hậu = Mai = 143,33  triệu - 23,89  triệu = 119,44  triệu đồng\n\n4.  Kết luận phân chia di sản ở câu a:\n    -   Bà Thanh (vợ): Nhận 71,67 triệu đồng (thừa kế bắt buộc)\n    -   Anh Kiên (con): Nhận 119,44 triệu đồng\n    -   Chị Hậu (con): Nhận 119,44 triệu đồng\n    -   Chị Mai (con): Nhận 119,44 triệu đồng\n\nCâu b: Giả sử ông Chuẩn chết đột ngột không để lại di chúc thì giải quyết thế nào?\n*   Khi ông Chuẩn chết không di chúc, toàn bộ di sản 430 triệu đồng được chia đều cho hàng thừa kế thứ nhất gồm 4 người: bà Thanh (vợ), anh Kiên (con), chị Hậu (con), chị Mai (con).\n*   Phần nhận được của mỗi người là bằng nhau và trị giá:\n    Bà Thanh = Kiên = Hậu = Mai = 430  triệu / 4 = 107,5  triệu đồng / mỗi người"
         }
       ]
     }
