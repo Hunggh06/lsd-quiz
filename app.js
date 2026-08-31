@@ -55,15 +55,15 @@
 
   var PLDC_RANKS = [
     { key: "1",  name: "Hạng Sắt",        min: 0 },
-    { key: "2",  name: "Hạng Đồng",       min: 10 },
-    { key: "3",  name: "Hạng Bạc",        min: 20 },
-    { key: "4",  name: "Hạng Vàng",       min: 35 },
-    { key: "5",  name: "Hạng Bạch Kim",   min: 50 },
-    { key: "6",  name: "Hạng Lục Bảo",    min: 65 },
-    { key: "7",  name: "Hạng Kim Cương",  min: 75 },
-    { key: "8",  name: "Hạng Cao Thủ",    min: 85 },
-    { key: "9",  name: "Hạng Đại Cao Thủ", min: 95 },
-    { key: "10", name: "Hạng Thách Đấu",  min: 100 }
+    { key: "2",  name: "Hạng Đồng",       min: 30 },
+    { key: "3",  name: "Hạng Bạc",        min: 60 },
+    { key: "4",  name: "Hạng Vàng",       min: 100 },
+    { key: "5",  name: "Hạng Bạch Kim",   min: 150 },
+    { key: "6",  name: "Hạng Lục Bảo",    min: 200 },
+    { key: "7",  name: "Hạng Kim Cương",  min: 250 },
+    { key: "8",  name: "Hạng Cao Thủ",    min: 300 },
+    { key: "9",  name: "Hạng Đại Cao Thủ", min: 350 },
+    { key: "10", name: "Hạng Thách Đấu",  min: 400 }
   ];
 
   var lsdMode = "trac_nghiem"; // "trac_nghiem" | "tu_luan"
