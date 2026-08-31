@@ -142,6 +142,38 @@
     });
   }
 
+  var WRONG_TAUNTS = [
+    "{name} ơi là {name}, sai be bét rồi! Mở sách ra học lại đi!",
+    "Trời ơi {name}, câu dễ thế mà cũng tạch à? Ngáo à?",
+    "{name} ngáo ngơ à, đáp án lù lù kia mà chọn trượt!",
+    "Học hành kiểu gì vậy {name}? Sai tè le luôn!",
+    "Ủa {name}, não lag à? Câu dễ ợt mà cũng sai được!",
+    "{name} tỉnh lại đi, sai nữa là đội sổ đấy!",
+    "Ôi {name} của tôi, sai cú này đau tim quá!",
+    "{name} à, chọn bừa đúng không? Sai không trượt phát nào!",
+    "Chán {name} ghê, câu cho điểm mà cũng để mất!",
+    "Sai nữa là rớt môn đấy {name} ơi, học lại đi!",
+    "{name} mắt để đâu vậy? Đáp án sờ sờ kia kìa!",
+    "Thua luôn {name} ạ, sai mà tự tin thế!",
+    "Ngáo đá à {name}? Câu này mà cũng sai được sao?",
+    "{name} làm ơn học lại đi, sai hoài nhục lắm!",
+    "Toang rồi {name} ơi, sai câu này là mất gốc luôn đấy!"
+  ];
+  function showWrongTaunt() {
+    try {
+      var name = (playerName || "").trim() || "bạn";
+      var raw = WRONG_TAUNTS[Math.floor(Math.random()*WRONG_TAUNTS.length)];
+      var msg = raw.replace(/\{name\}/g, name);
+      showToast(msg);
+      if ("speechSynthesis" in window) {
+        try { window.speechSynthesis.cancel(); } catch(e){}
+        var u = new SpeechSynthesisUtterance(msg);
+        u.lang = "vi-VN"; u.rate = 1.05; u.pitch = 1.0; u.volume = 0.9;
+        window.speechSynthesis.speak(u);
+      }
+    } catch(e){}
+  }
+
   function esc(s) {
     return String(s || "")
       .replace(/&/g, "&amp;")
@@ -949,7 +981,7 @@
       var fbBox = document.createElement("div");
       fbBox.className = "feedback";
 
-      function updateCard(selectedVal) {
+      function updateCard(selectedVal, isRestore) {
         if (btnD.classList.contains("locked") || btnS.classList.contains("locked")) return;
         var isCorrect = (selectedVal === q.answer || (selectedVal === "Đ" && q.answer === "Đúng") || (selectedVal === "S" && q.answer === "Sai"));
         btnD.classList.add("locked");
@@ -982,6 +1014,7 @@
         } else {
           currentStreak = 0;
           playWrong();
+          if (!isRestore) showWrongTaunt();
         }
         updateCombo();
         updateRank();
@@ -1000,7 +1033,7 @@
 
       var saved = pldcResults[q.id];
       if (saved && saved.selected) {
-        updateCard(saved.selected);
+        updateCard(saved.selected, true);
       }
 
       content.appendChild(card);
@@ -1282,6 +1315,7 @@
     } else {
       currentStreak = 0;
       playWrong();
+      showWrongTaunt();
     }
 
     updateCombo();
