@@ -816,7 +816,7 @@ window.PLDC_DATA = {
       "ch": "Đề cương trọng tâm",
       "q": "Tuân theo pháp luật là hình thức thực hiện pháp luật trong đó cá nhân, tổ chức thực hiện đầy đủ nghĩa vụ của mình thông qua những hành động tích cực.",
       "answer": "S",
-      "explain": "Định nghĩa trên là của hình thức **Thi hành pháp luật**. Tuân thủ pháp luật là kiềm chế không thực hiện những hành vi mà pháp luật cấm.",
+      "explain": "Định nghĩa trên là của hình thức Thi hành pháp luật. Tuân thủ pháp luật là kiềm chế không thực hiện những hành vi mà pháp luật cấm.",
       "isDoubt": false,
       "doubtNote": ""
     },
@@ -879,7 +879,7 @@ window.PLDC_DATA = {
       "ch": "Đề cương trọng tâm",
       "q": "Tuân theo pháp luật là hình thức thực hiện pháp luật trong đó chủ thể xử sự đúng những gì pháp luật quy định phải làm.",
       "answer": "S",
-      "explain": "Đó là hình thức **Thi hành pháp luật**.",
+      "explain": "Đó là hình thức Thi hành pháp luật.",
       "isDoubt": false,
       "doubtNote": ""
     },
@@ -888,7 +888,7 @@ window.PLDC_DATA = {
       "ch": "Đề cương trọng tâm",
       "q": "Điều lệ của Đảng Cộng sản Việt Nam là văn bản quy phạm pháp luật.",
       "answer": "S",
-      "explain": "*(Giống câu 5)*",
+      "explain": "(Giống câu 5)",
       "isDoubt": false,
       "doubtNote": ""
     },
@@ -933,7 +933,7 @@ window.PLDC_DATA = {
       "ch": "Đề cương trọng tâm",
       "q": "Khi tham gia giao thông, anh A điều khiển xe mô tô có đội mũ bảo hiểm. Trong trường hợp này anh A đã tuân theo pháp luật.",
       "answer": "S",
-      "explain": "Việc chủ động đội mũ bảo hiểm là thực hiện nghĩa vụ mà pháp luật bắt buộc phải làm, đây thuộc hình thức **Thi hành pháp luật**.",
+      "explain": "Việc chủ động đội mũ bảo hiểm là thực hiện nghĩa vụ mà pháp luật bắt buộc phải làm, đây thuộc hình thức Thi hành pháp luật.",
       "isDoubt": false,
       "doubtNote": ""
     },
@@ -942,7 +942,7 @@ window.PLDC_DATA = {
       "ch": "Đề cương trọng tâm",
       "q": "Pháp luật chỉ được bảo đảm thực hiện bằng biện pháp cưỡng chế nhà nước.",
       "answer": "S",
-      "explain": "*(Giống câu 11)*",
+      "explain": "(Giống câu 11)",
       "isDoubt": false,
       "doubtNote": ""
     },
@@ -951,7 +951,7 @@ window.PLDC_DATA = {
       "ch": "Đề cương trọng tâm",
       "q": "Điều luật và quy phạm pháp luật là hai khái niệm đồng nhất.",
       "answer": "S",
-      "explain": "*(Giống câu 2)*",
+      "explain": "(Giống câu 2)",
       "isDoubt": false,
       "doubtNote": ""
     },
@@ -1059,7 +1059,7 @@ window.PLDC_DATA = {
       "ch": "Đề cương trọng tâm",
       "q": "Chấp hành pháp luật là hình thức thực hiện pháp luật trong đó chủ thể không làm những điều mà pháp luật cấm.",
       "answer": "S",
-      "explain": "Không làm điều cấm là **Tuân thủ pháp luật**. Chấp hành (hay thi hành) là thực hiện chủ động điều pháp luật yêu cầu phải làm.",
+      "explain": "Không làm điều cấm là Tuân thủ pháp luật. Chấp hành (hay thi hành) là thực hiện chủ động điều pháp luật yêu cầu phải làm.",
       "isDoubt": false,
       "doubtNote": ""
     },
@@ -1340,384 +1340,616 @@ window.PLDC_DATA = {
   "qppl": [
     {
       "id": "qppl-cap-1",
-      "title": "Cặp 1: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 1",
-      "content": "Người nào quảng cáo gian dối về hàng hóa, dịch vụ, đã bị xử phạt vi phạm hành chính về hành vi này hoặc đã bị kết án về tội này, chưa được xóa án tích mà còn vi phạm, thì bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng hoặc phạt cải tạo không giam giữ đến 03 năm",
+      "title": "Cặp 1: Tội quảng cáo gian dối & Tình huống bỏ thuốc độc vào nồi nước dùng",
+      "clause": "Khoản 1 Điều 197 BLHS 2015 (sửa đổi, bổ sung 2017)",
+      "content": "Người nào quảng cáo gian dối về hàng hóa, dịch vụ, đã bị xử phạt vi phạm hành chính về hành vi này hoặc đã bị kết án về tội này, chưa được xóa án tích mà còn vi phạm, thì bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng hoặc phạt cải tạo không giam giữ đến 03 năm.",
       "analysis": {
-        "gia_dinh": "Người nào quảng cáo gian dối về hàng hóa, dịch vụ, đã bị xử phạt vi phạm hành chính về hành vi này hoặc đã bị kết án về tội này, chưa được xóa án tích mà còn vi phạm",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "thì bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng hoặc phạt cải tạo không giam giữ đến 03 năm",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ pháp luật"
+        "gia_dinh": "Người nào quảng cáo gian dối về hàng hóa, dịch vụ, đã bị xử phạt vi phạm hành chính về hành vi này hoặc đã bị kết án về tội này, chưa được xóa án tích mà còn vi phạm.",
+        "gia_dinh_gt": "Xác định chủ thể (người quảng cáo gian dối) và điều kiện, hoàn cảnh (đã bị xử phạt VPHC hoặc kết án chưa xóa án tích mà còn vi phạm).",
+        "quy_dinh": "Cấm quảng cáo gian dối về hàng hóa, dịch vụ.",
+        "quy_dinh_gt": "Quy tắc xử sự cấm chủ thể thực hiện hành vi nêu tại phần giả định.",
+        "che_tai": "Bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng hoặc phạt cải tạo không giam giữ đến 03 năm.",
+        "che_tai_gt": "Biện pháp cưỡng chế hình sự áp dụng khi chủ thể vi phạm phần quy định.",
+        "hinh_thuc": "Tuân thủ pháp luật (Kiềm chế không thực hiện hành vi pháp luật cấm)."
       },
       "situation": {
-        "text": "Chị H (SN 1987) lén bỏ thuốc độc vào nồi nước dùng của quán ăn đối thủ làm 1 nhân viên và 3 khách hàng tử vong.     *   *Kết luận:* Đây là hành vi **Vi phạm pháp luật đặc biệt nghiêm trọng** (tội Giết người).     *   *Phân tích 4 dấu hiệu:* (1) Là hành vi xác định của con người (hành động lén bỏ thuốc độc); (2) Trái pháp luật (xâm hại tính mạng con người); (3) Có lỗi (lỗi cố ý trực tiếp); (4) Do chủ thể có năng lực trách nhiệm pháp lý thực hiện (chị H 32 tuổi, nhận thức bình thường).",
+        "text": "Chị H (sinh năm 1987) mở quán ăn sáng cạnh quán đối thủ. Ngày 02/3/2019, H lén bỏ thuốc độc vào nồi nước dùng của đối thủ làm 1 nhân viên và 3 khách ăn tử vong. Phân tích các dấu hiệu vi phạm pháp luật của H.",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Chị H (SN 1987) lén bỏ thuốc độc vào nồi nước dùng của quán ăn đối thủ làm 1 nhân viên và 3 khách hàng tử vong.     *   *Kết luận:* Đây là hành vi **Vi phạm pháp luật đặc biệt nghiêm trọng** (tội Giết người).     *   *Phân tích 4 dấu hiệu:* (1) Là hành vi xác định của con người (hành động lén bỏ thuốc độc); (2) Trái pháp luật (xâm hại tính mạng con người); (3) Có lỗi (lỗi cố ý trực tiếp); (4) Do chủ thể có năng lực trách nhiệm pháp lý thực hiện (chị H 32 tuổi, nhận thức bình thường)."
+            "name": "Mặt khách quan",
+            "detail": "Hành động bỏ thuốc độc vào nồi nước dùng của quán ăn; Hậu quả: 4 người tử vong; Quan hệ nhân quả trực tiếp."
+          },
+          {
+            "name": "Mặt chủ quan",
+            "detail": "Lỗi cố ý trực tiếp (hoặc cố ý gián tiếp): H nhận thức rõ thuốc độc gây chết người, mong muốn hoặc bỏ mặc hậu quả xảy ra; Động cơ: triệt hạ đối thủ kinh doanh."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Quyền được bảo vệ tính mạng con người được pháp luật hình sự bảo vệ."
+          },
+          {
+            "name": "Chủ thể",
+            "detail": "Chị H (32 tuổi, nhận thức bình thường, có đầy đủ năng lực trách nhiệm hình sự)."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "Hành vi của H cấu thành tội phạm đặc biệt nghiêm trọng (Tội giết người - Điều 123 BLHS)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-2",
-      "title": "Cặp 2: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 2",
+      "title": "Cặp 2: Tội sản xuất ma túy & Quan hệ pháp luật xe đạp điện mất trộm",
+      "clause": "Khoản 1 Điều 248 BLHS 2015",
       "content": "Người nào sản xuất trái phép chất ma túy dưới bất kỳ hình thức nào, thì bị phạt tù từ 02 năm đến 07 năm.",
       "analysis": {
-        "gia_dinh": "Người nào sản xuất trái phép chất ma túy dưới bất kỳ hình thức nào",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "thì bị phạt tù từ 02 năm đến 07 năm",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ pháp luật"
+        "gia_dinh": "Người nào sản xuất trái phép chất ma túy dưới bất kỳ hình thức nào.",
+        "gia_dinh_gt": "Xác định chủ thể (người có năng lực TNHS) và hoàn cảnh (sản xuất ma túy trái phép).",
+        "quy_dinh": "Cấm sản xuất trái phép chất ma túy dưới bất kỳ hình thức nào.",
+        "quy_dinh_gt": "Mệnh lệnh cấm đoán của Nhà nước.",
+        "che_tai": "Bị phạt tù từ 02 năm đến 07 năm.",
+        "che_tai_gt": "Chế tài hình sự phạt tù có thời hạn.",
+        "hinh_thuc": "Tuân thủ pháp luật."
       },
       "situation": {
-        "text": "Sinh viên A bị mất xe đạp điện, phát hiện xe của mình tại cửa hàng của T (T mua lại từ kẻ gian). A xin lại nhưng T từ chối.     *   *Kết luận:* Giữa A và T **có phát sinh quan hệ pháp luật** (Quan hệ tranh chấp quyền sở hữu tài sản).     *   *Phân tích cấu thành:*         *   *Chủ thể:* Sinh viên A và chủ cửa hàng T (đều có năng lực chủ thể).         *   *Khách thể:* Chiếc xe đạp điện bị mất trị giá 13 triệu đồng (lợi ích vật chất).         *   *Nội dung:* Quyền đòi lại tài sản từ người chiếm hữu không có căn cứ pháp luật của A (Điều 166 BLDS) và quyền/nghĩa vụ chứng minh tính hợp pháp của việc mua bán của T.",
+        "text": "A (sinh viên ĐH) bị mất trộm xe đạp điện 13 triệu đồng. Sau đó A phát hiện xe của mình tại cửa hàng bán xe cũ của T (T mua lại từ kẻ gian). A xin lại nhưng T từ chối. Phân tích quan hệ pháp luật giữa A và T.",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Sinh viên A bị mất xe đạp điện, phát hiện xe của mình tại cửa hàng của T (T mua lại từ kẻ gian). A xin lại nhưng T từ chối.     *   *Kết luận:* Giữa A và T **có phát sinh quan hệ pháp luật** (Quan hệ tranh chấp quyền sở hữu tài sản).     *   *Phân tích cấu thành:*         *   *Chủ thể:* Sinh viên A và chủ cửa hàng T (đều có năng lực chủ thể).         *   *Khách thể:* Chiếc xe đạp điện bị mất trị giá 13 triệu đồng (lợi ích vật chất).         *   *Nội dung:* Quyền đòi lại tài sản từ người chiếm hữu không có căn cứ pháp luật của A (Điều 166 BLDS) và quyền/nghĩa vụ chứng minh tính hợp pháp của việc mua bán của T."
+            "name": "Chủ thể",
+            "detail": "A (chủ sở hữu bị mất tài sản) và T (người đang chiếm hữu tài sản). Cả hai đều có năng lực chủ thể dân sự."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Lợi ích vật chất: Quyền sở hữu đối với chiếc xe đạp điện 13 triệu đồng."
+          },
+          {
+            "name": "Nội dung",
+            "detail": "Quyền của A: Yêu cầu đòi lại tài sản từ người chiếm hữu không có căn cứ pháp luật (Điều 166 BLDS 2015); Nghĩa vụ của A: Chứng minh xe thuộc sở hữu của mình; Nghĩa vụ của T: Trả lại xe khi A chứng minh được; Quyền của T: Yêu cầu người bán bồi thường thiệt hại."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-3",
-      "title": "Cặp 3: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 3",
-      "content": "Công dân Việt Nam làm việc cho các tổ chức nước ngoài tại Việt Nam... phải tuân theo pháp luật Việt Nam và được pháp luật bảo vệ.",
+      "title": "Cặp 3: Quy định lao động nước ngoài & Cố ý gây thương tích 32%",
+      "clause": "Khoản 2 Điều 150 Bộ luật Lao động 2019",
+      "content": "Công dân Việt Nam làm việc cho các tổ chức nước ngoài tại Việt Nam, trong khu công nghiệp, khu kinh tế, khu chế xuất, khu công nghệ cao hoặc làm việc cho cá nhân là công dân nước ngoài tại Việt Nam phải tuân theo pháp luật Việt Nam và được pháp luật bảo vệ.",
       "analysis": {
-        "gia_dinh": "Công dân Việt Nam làm việc cho các tổ chức nước ngoài tại Việt Nam, trong khu công nghiệp, khu kinh tế, khu chế xuất, khu công nghệ cao hoặc làm việc cho cá nhân là công dân nước ngoài tại Việt Nam",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ / Thi hành / Sử dụng pháp luật"
+        "gia_dinh": "Công dân Việt Nam làm việc cho các tổ chức nước ngoài tại Việt Nam, trong khu công nghiệp, khu kinh tế, khu chế xuất, khu công nghệ cao hoặc làm việc cho cá nhân là công dân nước ngoài tại Việt Nam.",
+        "gia_dinh_gt": "Xác định chủ thể và hoàn cảnh làm việc cụ thể.",
+        "quy_dinh": "Phải tuân theo pháp luật Việt Nam và được pháp luật bảo vệ.",
+        "quy_dinh_gt": "Quy định vừa nêu nghĩa vụ bắt buộc vừa nêu quyền được bảo vệ.",
+        "che_tai": "Không có chế tài trực tiếp trong điều khoản này.",
+        "che_tai_gt": "Chế tài xử lý vi phạm được dẫn chiếu ở các điều luật tương ứng khác.",
+        "hinh_thuc": "Thi hành pháp luật (thực hiện nghĩa vụ) và Sử dụng pháp luật (hưởng quyền)."
       },
       "situation": {
-        "text": "Nguyễn Văn A (35 tuổi) dùng gậy đánh em trai B thương tật 32% do mâu thuẫn lối đi chung.     *   *Phân tích dấu hiệu VPPL:* Hành vi dùng gậy đánh người của A trái pháp luật (xâm phạm sức khỏe), có lỗi cố ý trực tiếp, do chủ thể có đầy đủ năng lực trách nhiệm hình sự thực hiện.",
+        "text": "Nguyễn Văn A (35 tuổi) mâu thuẫn lối đi chung với em trai Nguyễn Văn B, A dùng gậy đánh B gây thương tật 32%. A bị khởi tố theo Điều 134 BLHS. Phân tích 4 yếu tố cấu thành vi phạm pháp luật của A.",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Nguyễn Văn A (35 tuổi) dùng gậy đánh em trai B thương tật 32% do mâu thuẫn lối đi chung.     *   *Phân tích dấu hiệu VPPL:* Hành vi dùng gậy đánh người của A trái pháp luật (xâm phạm sức khỏe), có lỗi cố ý trực tiếp, do chủ thể có đầy đủ năng lực trách nhiệm hình sự thực hiện."
+            "name": "Mặt khách quan",
+            "detail": "Hành vi dùng gậy đánh người liên tiếp; Hậu quả: B bị tổn thương cơ thể 32%; Quan hệ nhân quả trực tiếp."
+          },
+          {
+            "name": "Mặt chủ quan",
+            "detail": "Lỗi cố ý trực tiếp (nhận thức rõ hành vi nguy hiểm, mong muốn gây thương tích); Động cơ: mâu thuẫn tranh chấp lối đi."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Quyền bất khả xâm phạm về sức khỏe, thân thể của công dân được pháp luật hình sự bảo vệ."
+          },
+          {
+            "name": "Chủ thể",
+            "detail": "Nguyễn Văn A (35 tuổi, không mắc bệnh tâm thần, có đầy đủ năng lực TNHS)."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "Vi phạm pháp luật hình sự (Tội cố ý gây thương tích - Điều 134 BLHS)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-4",
-      "title": "Cặp 4: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 4",
-      "content": "Người nào rủ rê, dụ dỗ, xúi giục... lôi kéo người khác sử dụng trái phép chất ma túy, thì bị phạt tù từ 01 năm đến 05 năm.",
+      "title": "Cặp 4: Tội lôi kéo dùng ma túy & Vi phạm vượt đèn đỏ",
+      "clause": "Khoản 1 Điều 258 BLHS 2015 (sửa đổi, bổ sung 2017)",
+      "content": "Người nào rủ rê, dụ dỗ, xúi giục hoặc bằng các thủ đoạn khác nhằm lôi kéo người khác sử dụng trái phép chất ma túy, thì bị phạt tù từ 01 năm đến 05 năm.",
       "analysis": {
-        "gia_dinh": "Nêu trong điều luật",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ pháp luật"
+        "gia_dinh": "Người nào rủ rê, dụ dỗ, xúi giục hoặc bằng các thủ đoạn khác nhằm lôi kéo người khác sử dụng trái phép chất ma túy.",
+        "gia_dinh_gt": "Xác định chủ thể và hành vi lôi kéo người khác dùng ma túy.",
+        "quy_dinh": "Cấm rủ rê, dụ dỗ, xúi giục lôi kéo người khác dùng ma túy.",
+        "quy_dinh_gt": "Mệnh lệnh cấm đoán của Nhà nước.",
+        "che_tai": "Bị phạt tù từ 01 năm đến 05 năm.",
+        "che_tai_gt": "Chế tài hình sự phạt tù có thời hạn.",
+        "hinh_thuc": "Tuân thủ pháp luật."
       },
       "situation": {
-        "text": "Chị A (28 tuổi) vượt đèn đỏ để kịp đón con, bị lập biên bản phạt hành chính.     *   *Cấu thành vi phạm pháp luật:*         *   *Mặt khách quan:* Hành vi vượt đèn đỏ tại ngã tư Khuất Duy Tiến ngày 20/2/2020.         *   *Mặt chủ quan:* Lỗi cố ý trực tiếp (hoặc cố ý gián tiếp), động cơ vội đi đón con.         *   *Chủ thể:* Chị A (28 tuổi, có năng lực trách nhiệm hành chính).         *   *Khách thể:* Trật tự quản lý hành chính nhà nước trong lĩnh vực an toàn giao thông đường bộ.",
+        "text": "Chị A (28 tuổi) vội đón con nên vượt đèn đỏ tại ngã tư và bị CSGT lập biên bản xử phạt hành chính. Phân tích các yếu tố cấu thành vi phạm pháp luật.",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Chị A (28 tuổi) vượt đèn đỏ để kịp đón con, bị lập biên bản phạt hành chính.     *   *Cấu thành vi phạm pháp luật:*         *   *Mặt khách quan:* Hành vi vượt đèn đỏ tại ngã tư Khuất Duy Tiến ngày 20/2/2020.         *   *Mặt chủ quan:* Lỗi cố ý trực tiếp (hoặc cố ý gián tiếp), động cơ vội đi đón con.         *   *Chủ thể:* Chị A (28 tuổi, có năng lực trách nhiệm hành chính).         *   *Khách thể:* Trật tự quản lý hành chính nhà nước trong lĩnh vực an toàn giao thông đường bộ."
+            "name": "Mặt khách quan",
+            "detail": "Hành vi điều khiển xe vượt đèn đỏ tại ngã tư Khuất Duy Tiến ngày 20/2/2020."
+          },
+          {
+            "name": "Mặt chủ quan",
+            "detail": "Lỗi cố ý trực tiếp; Động cơ: vội về đón con."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Trật tự quản lý nhà nước về an toàn giao thông đường bộ."
+          },
+          {
+            "name": "Chủ thể",
+            "detail": "Chị A (28 tuổi, có năng lực trách nhiệm hành chính)."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "Vi phạm pháp luật hành chính."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-5",
-      "title": "Cặp 5: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 5",
-      "content": "Người nào dùng vũ lực, đe dọa dùng vũ lực hoặc dùng thủ đoạn khác nhằm chiếm đoạt tàu bay hoặc tàu thủy, thì bị phạt tù từ 07 năm đến 15 năm",
+      "title": "Cặp 5: Chiếm đoạt tàu bay & Đốt rác gây cháy rừng phòng hộ",
+      "clause": "Điều 282 Bộ luật Hình sự 2015",
+      "content": "Người nào dùng vũ lực, đe dọa dùng vũ lực hoặc dùng thủ đoạn khác nhằm chiếm đoạt tàu bay hoặc tàu thủy, thì bị phạt tù từ 07 năm đến 15 năm.",
       "analysis": {
-        "gia_dinh": "Người nào dùng vũ lực, đe dọa dùng vũ lực hoặc dùng thủ đoạn khác nhằm chiếm đoạt tàu bay hoặc tàu thủy",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ / Thi hành / Sử dụng pháp luật"
+        "gia_dinh": "Người nào dùng vũ lực, đe dọa dùng vũ lực hoặc dùng thủ đoạn khác nhằm chiếm đoạt tàu bay hoặc tàu thủy.",
+        "gia_dinh_gt": "Xác định đối tượng và hành vi dự liệu.",
+        "quy_dinh": "Cấm dùng vũ lực hoặc thủ đoạn nhằm chiếm đoạt tàu bay, tàu thủy.",
+        "quy_dinh_gt": "Quy định cấm đoán ngầm.",
+        "che_tai": "Bị phạt tù từ 07 năm đến 15 năm.",
+        "che_tai_gt": "Chế tài hình sự rất nghiêm khắc.",
+        "hinh_thuc": "Tuân thủ pháp luật."
       },
       "situation": {
-        "text": "Phan Đình Thành đốt rác tại vườn nhà gặp gió lớn cháy lan sang rừng phòng hộ gây thiệt hại 50ha.     *   *Phân tích lỗi:* Đây là hành vi vi phạm pháp luật hình sự. Lỗi của Thành là **Lỗi vô ý do cẩu thả** (không nhận thức được khả năng gây cháy rừng dù phải nhận thức được hoặc có thể nhận thức được) hoặc **Vô ý vì quá tự tin**.",
+        "text": "Phan Đình Thành (46 tuổi) đốt rác trong vườn nhà lúc gió to, lửa cháy lan sang rừng phòng hộ gây thiệt hại gần 50ha rừng. Phân tích lỗi và trách nhiệm pháp lý.",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Phan Đình Thành đốt rác tại vườn nhà gặp gió lớn cháy lan sang rừng phòng hộ gây thiệt hại 50ha.     *   *Phân tích lỗi:* Đây là hành vi vi phạm pháp luật hình sự. Lỗi của Thành là **Lỗi vô ý do cẩu thả** (không nhận thức được khả năng gây cháy rừng dù phải nhận thức được hoặc có thể nhận thức được) hoặc **Vô ý vì quá tự tin**."
+            "name": "Mặt khách quan",
+            "detail": "Hành vi đốt rác gây cháy 50ha rừng phòng hộ."
+          },
+          {
+            "name": "Mặt chủ quan",
+            "detail": "Lỗi vô ý do cẩu thả (hoặc vô ý vì quá tự tin) khi đốt rác trong điều kiện gió mạnh."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Quy định quản lý an toàn PCCC và tài nguyên rừng của Nhà nước."
+          },
+          {
+            "name": "Chủ thể",
+            "detail": "Phan Đình Thành (46 tuổi, đủ năng lực trách nhiệm hình sự)."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "Vi phạm pháp luật hình sự (Điều 313 BLHS) và trách nhiệm bồi thường thiệt hại dân sự."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-6",
-      "title": "Cặp 6: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 6",
-      "content": "Người nào sản xuất, mua bán, trao đổi hoặc tặng cho công cụ, thiết bị, phần mềm có tính năng tấn công mạng... thì bị phạt tiền từ 20.000.000đ đến 100.000.000đ...",
+      "title": "Cặp 6: Tấn công mạng & Thuê người tự gây thương tích",
+      "clause": "Điều 285 Bộ luật Hình sự 2015",
+      "content": "Người nào sản xuất, mua bán, trao đổi hoặc tặng cho công cụ, thiết bị, phần mềm có tính năng tấn công mạng máy tính, mạng viễn thông, phương tiện điện tử để sử dụng vào mục đích trái pháp luật, thì bị phạt tiền từ 20.000.000 đồng đến 100.000.000 đồng, phạt cải tạo không giam giữ đến 02 năm hoặc phạt tù từ 03 tháng đến 02 năm.",
       "analysis": {
-        "gia_dinh": "Người nào sản xuất, mua bán, trao đổi hoặc tặng cho công cụ, thiết bị, phần mềm có tính năng tấn công mạng máy tính, mạng viễn thông, phương tiện điện tử để sử dụng vào mục đích trái pháp luật",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ / Thi hành / Sử dụng pháp luật"
+        "gia_dinh": "Người nào sản xuất, mua bán, trao đổi hoặc tặng cho công cụ, thiết bị, phần mềm có tính năng tấn công mạng máy tính, mạng viễn thông, phương tiện điện tử để sử dụng vào mục đích trái pháp luật.",
+        "gia_dinh_gt": "Chủ thể và hành vi mua bán/chuyển giao công cụ tấn công mạng trái phép.",
+        "quy_dinh": "Cấm sản xuất, mua bán, trao đổi, tặng cho công cụ tấn công mạng trái pháp luật.",
+        "quy_dinh_gt": "Mệnh lệnh cấm đoán.",
+        "che_tai": "Bị phạt tiền từ 20.000.000đ đến 100.000.000đ, phạt cải tạo không giam giữ đến 02 năm hoặc phạt tù từ 03 tháng đến 02 năm.",
+        "che_tai_gt": "Chế tài hình sự.",
+        "hinh_thuc": "Tuân thủ pháp luật."
       },
       "situation": {
-        "text": "Chị N thuê anh Đoàn Văn D (1995) tự gây thương tích cho mình với số tiền 50 triệu đồng để trục lợi (hoặc lý do khác).     *   *Phân tích:* Anh D có hành vi gây thương tích cho người khác (dù được thuê). Hành vi của D cấu thành tội cố ý gây thương tích (Lỗi cố ý trực tiếp).",
+        "text": "Chị N thuê Doãn Văn D (1995) tự gây thương tích cho mình với số tiền 50 triệu đồng để trục lợi (thương tật 60%). Phân tích hành vi của D.",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Chị N thuê anh Đoàn Văn D (1995) tự gây thương tích cho mình với số tiền 50 triệu đồng để trục lợi (hoặc lý do khác).     *   *Phân tích:* Anh D có hành vi gây thương tích cho người khác (dù được thuê). Hành vi của D cấu thành tội cố ý gây thương tích (Lỗi cố ý trực tiếp)."
+            "name": "Mặt khách quan",
+            "detail": "Hành vi dùng hung khí gây thương tích cho N (tỷ lệ thương tật 60%)."
+          },
+          {
+            "name": "Mặt chủ quan",
+            "detail": "Lỗi cố ý trực tiếp; Động cơ: nhận 50 triệu đồng thù lao."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Sức khỏe, thân thể của con người được pháp luật bảo vệ."
+          },
+          {
+            "name": "Chủ thể",
+            "detail": "Doãn Văn D (21 tuổi, có đầy đủ năng lực trách nhiệm hình sự)."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "D cấu thành tội cố ý gây thương tích (Điều 134 BLHS)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-7",
-      "title": "Cặp 7: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 7",
-      "content": "Lực lượng vũ trang nhân dân tuyệt đối trung thành với Tổ quốc... bảo vệ Nhân dân và thực hiện nghĩa vụ quốc tế",
+      "title": "Cặp 7: Lực lượng vũ trang (Hiến pháp) & Cắt phanh xe đồng nghiệp",
+      "clause": "Điều 65 Hiến pháp 2013",
+      "content": "Lực lượng vũ trang nhân dân tuyệt đối trung thành với Tổ quốc, Nhân dân, với Đảng và Nhà nước, có nhiệm vụ bảo vệ độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ của Tổ quốc, an ninh quốc gia và trật tự, an toàn xã hội; bảo vệ Nhân dân, Đảng, Nhà nước và chế độ xã hội chủ nghĩa; cùng toàn dân xây dựng đất nước và thực hiện nghĩa vụ quốc tế.",
       "analysis": {
-        "gia_dinh": "Lực lượng vũ trang nhân dân",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ / Thi hành / Sử dụng pháp luật"
+        "gia_dinh": "Lực lượng vũ trang nhân dân.",
+        "gia_dinh_gt": "Xác định chủ thể điều chỉnh của quy phạm.",
+        "quy_dinh": "Tuyệt đối trung thành với Tổ quốc, Nhân dân, với Đảng và Nhà nước, có nhiệm vụ bảo vệ độc lập, chủ quyền... và thực hiện nghĩa vụ quốc tế.",
+        "quy_dinh_gt": "Quy định nhiệm vụ và nghĩa vụ chính trị của lực lượng vũ trang.",
+        "che_tai": "Không có.",
+        "che_tai_gt": "Quy phạm Hiến pháp mang tính nguyên tắc.",
+        "hinh_thuc": "Thi hành pháp luật."
       },
       "situation": {
-        "text": "Nguyễn Văn A mâu thuẫn cá nhân, cắt phanh xe của B khiến B gặp tai nạn tử vong trên đường đi làm về.     *   *Cấu thành vi phạm pháp luật:*         *   *Mặt khách quan:* Hành vi lén lút cắt phanh xe của B, hậu quả B tử vong.         *   *Mặt chủ quan:* Lỗi cố ý trực tiếp (A nhận thức rõ hành vi cắt phanh xe có thể gây tai nạn chết người, mong muốn hoặc để mặc hậu quả xảy ra).         *   *Chủ thể:* Nguyễn Văn A (đầy đủ năng lực trách nhiệm hình sự).         *   *Khách thể:* Quyền được sống, quyền được bảo hộ tính mạng của công dân B.",
+        "text": "Nguyễn Văn A dùng dao cắt phanh xe của đồng nghiệp B do mâu thuẫn cá nhân khiến B gặp tai nạn tử vong trên đường đi làm về. Phân tích các yếu tố cấu thành vi phạm pháp luật.",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Nguyễn Văn A mâu thuẫn cá nhân, cắt phanh xe của B khiến B gặp tai nạn tử vong trên đường đi làm về.     *   *Cấu thành vi phạm pháp luật:*         *   *Mặt khách quan:* Hành vi lén lút cắt phanh xe của B, hậu quả B tử vong.         *   *Mặt chủ quan:* Lỗi cố ý trực tiếp (A nhận thức rõ hành vi cắt phanh xe có thể gây tai nạn chết người, mong muốn hoặc để mặc hậu quả xảy ra).         *   *Chủ thể:* Nguyễn Văn A (đầy đủ năng lực trách nhiệm hình sự).         *   *Khách thể:* Quyền được sống, quyền được bảo hộ tính mạng của công dân B."
+            "name": "Mặt khách quan",
+            "detail": "Hành vi lén lút cắt phanh xe của B; Hậu quả: B tử vong; Quan hệ nhân quả trực tiếp."
+          },
+          {
+            "name": "Mặt chủ quan",
+            "detail": "Lỗi cố ý trực tiếp; Động cơ: trả thù do mâu thuẫn cá nhân; Mục đích: tước đoạt tính mạng B."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Quyền sống, tính mạng của công dân B."
+          },
+          {
+            "name": "Chủ thể",
+            "detail": "Nguyễn Văn A (đầy đủ năng lực trách nhiệm hình sự)."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "Vi phạm pháp luật hình sự (Tội giết người - Điều 123 BLHS) và trách nhiệm bồi thường dân sự."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-8",
-      "title": "Cặp 8: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 8",
+      "title": "Cặp 8: Giao dịch dân sự do lừa dối & Đâm chết người do mâu thuẫn",
+      "clause": "Điều 127 Bộ luật Dân sự 2015",
       "content": "Khi một bên tham gia giao dịch dân sự do bị lừa dối hoặc bị đe dọa, cưỡng ép thì có quyền yêu cầu Tòa án tuyên bố giao dịch dân sự đó là vô hiệu.",
       "analysis": {
-        "gia_dinh": "Khi một bên tham gia giao dịch dân sự do bị lừa dối hoặc bị đe dọa, cưỡng ép",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ / Thi hành / Sử dụng pháp luật"
+        "gia_dinh": "Khi một bên tham gia giao dịch dân sự do bị lừa dối hoặc bị đe dọa, cưỡng ép.",
+        "gia_dinh_gt": "Điều kiện, hoàn cảnh ý chí tham gia giao dịch bị khiếm khuyết.",
+        "quy_dinh": "Có quyền yêu cầu Tòa án tuyên bố giao dịch dân sự đó là vô hiệu.",
+        "quy_dinh_gt": "Trao quyền tự định đoạt cho bên bị lừa dối/đe dọa.",
+        "che_tai": "Không có.",
+        "che_tai_gt": "Quy phạm trao quyền.",
+        "hinh_thuc": "Sử dụng pháp luật."
       },
       "situation": {
-        "text": "X (SN 1980) dùng dao đâm chết Y tại chỗ lúc 21h30 do mâu thuẫn cá nhân.     *   *Cấu thành:* Hành vi đâm chết người trái pháp luật, lỗi cố ý trực tiếp, xâm phạm quyền sống của Y. X phạm tội Giết người (Vi phạm pháp luật hình sự).",
+        "text": "X (sinh năm 1980) chặn đường và dùng dao đâm chết Y tại chỗ lúc 21h30 ngày 23/3/2020 do mâu thuẫn cá nhân. Phân tích cấu thành vi phạm pháp luật.",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "X (SN 1980) dùng dao đâm chết Y tại chỗ lúc 21h30 do mâu thuẫn cá nhân.     *   *Cấu thành:* Hành vi đâm chết người trái pháp luật, lỗi cố ý trực tiếp, xâm phạm quyền sống của Y. X phạm tội Giết người (Vi phạm pháp luật hình sự)."
+            "name": "Mặt khách quan",
+            "detail": "Hành vi dùng dao tấn công nhiều nhát; Hậu quả: Y tử vong tại chỗ; Thời gian 21h30 ngày 23/3/2020."
+          },
+          {
+            "name": "Mặt chủ quan",
+            "detail": "Lỗi cố ý trực tiếp; Động cơ: trả thù; Mục đích: tước đoạt tính mạng Y."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Tính mạng con người được pháp luật hình sự bảo vệ."
+          },
+          {
+            "name": "Chủ thể",
+            "detail": "X (40 tuổi, có đầy đủ năng lực trách nhiệm hình sự)."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "Vi phạm pháp luật hình sự (Tội giết người - Điều 123 BLHS)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-9",
-      "title": "Cặp 9: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 9",
-      "content": "Người phạm tội trong tình trạng mất khả năng nhận thức... do dùng rượu, bia... thì vẫn phải chịu trách nhiệm hình sự.",
+      "title": "Cặp 9: Say rượu bia phạm tội & Đầu độc hàng xóm bằng thuốc chuột",
+      "clause": "Điều 13 Bộ luật Hình sự 2015",
+      "content": "Người phạm tội trong tình trạng mất khả năng nhận thức hoặc khả năng điều khiển hành vi của mình do dùng rượu, bia hoặc chất kích thích mạnh khác, thì vẫn phải chịu trách nhiệm hình sự.",
       "analysis": {
-        "gia_dinh": "Người phạm tội trong tình trạng mất khả năng nhận thức hoặc khả năng điều khiển hành vi của mình do dùng rượu, bia hoặc chất kích thích mạnh khác",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Phải chấp hành hình phạt hình sự.",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ / Thi hành / Sử dụng pháp luật"
+        "gia_dinh": "Người phạm tội trong tình trạng mất khả năng nhận thức hoặc khả năng điều khiển hành vi của mình do dùng rượu, bia hoặc chất kích thích mạnh khác.",
+        "gia_dinh_gt": "Xác định chủ thể phạm tội và tình trạng say rượu/chất kích thích.",
+        "quy_dinh": "Phải chấp hành hình phạt hình sự (không được miễn trừ trách nhiệm).",
+        "quy_dinh_gt": "Quy tắc xác định nghĩa vụ pháp lý hình sự.",
+        "che_tai": "Bị áp dụng các chế tài hình sự tương ứng với tội danh đã thực hiện.",
+        "che_tai_gt": "Chế tài hình sự theo tội danh vi phạm.",
+        "hinh_thuc": "Thi hành pháp luật / Áp dụng pháp luật."
       },
       "situation": {
-        "text": "Nghĩa rắc thuốc chuột vào nồi canh nhà anh Trang làm vợ và con anh Trang tử vong, anh Trang ngộ độc nặng.     *   *Cấu thành:* Hành vi bỏ thuốc độc của Nghĩa (mặt khách quan), lỗi cố ý trực tiếp giết người (mặt chủ quan), xâm phạm tính mạng người khác (khách thể), Nghĩa 35 tuổi có năng lực hành vi (chủ thể).",
+        "text": "Nghĩa (35 tuổi) lẻn vào bếp rắc thuốc chuột vào nồi canh nhà hàng xóm Trang làm vợ và con anh Trang tử vong, anh Trang ngộ độc nặng. Phân tích các yếu tố cấu thành.",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Nghĩa rắc thuốc chuột vào nồi canh nhà anh Trang làm vợ và con anh Trang tử vong, anh Trang ngộ độc nặng.     *   *Cấu thành:* Hành vi bỏ thuốc độc của Nghĩa (mặt khách quan), lỗi cố ý trực tiếp giết người (mặt chủ quan), xâm phạm tính mạng người khác (khách thể), Nghĩa 35 tuổi có năng lực hành vi (chủ thể)."
+            "name": "Mặt khách quan",
+            "detail": "Hành vi rắc thuốc chuột vào nồi canh; Hậu quả: 2 người chết, 1 người ngộ độc nặng; Quan hệ nhân quả trực tiếp."
+          },
+          {
+            "name": "Mặt chủ quan",
+            "detail": "Lỗi cố ý trực tiếp; Động cơ: trả thù tranh chấp đất đai; Mục đích: giết người."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Tính mạng, sức khỏe của các thành viên gia đình anh Trang."
+          },
+          {
+            "name": "Chủ thể",
+            "detail": "Nghĩa (35 tuổi, nhận thức bình thường, đủ năng lực TNHS)."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "Vi phạm pháp luật hình sự (Tội giết người - Điều 123 BLHS)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-10",
-      "title": "Cặp 10: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 10",
-      "content": "Người nào đe dọa giết người, nếu có căn cứ làm cho người bị đe dọa lo sợ... thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm",
+      "title": "Cặp 10: Đe dọa giết người & Đánh trả gây tử vong do xuất huyết não",
+      "clause": "Khoản 1 Điều 133 Bộ luật Hình sự 2015",
+      "content": "Người nào đe dọa giết người, nếu có căn cứ làm cho người bị đe dọa lo sợ rằng việc đe dọa này sẽ được thực hiện, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm.",
       "analysis": {
-        "gia_dinh": "Người nào đe dọa giết người, nếu có căn cứ làm cho người bị đe dọa lo sợ rằng việc đe dọa này sẽ được thực hiện",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ / Thi hành / Sử dụng pháp luật"
+        "gia_dinh": "Người nào đe dọa giết người, nếu có căn cứ làm cho người bị đe dọa lo sợ rằng việc đe dọa này sẽ được thực hiện.",
+        "gia_dinh_gt": "Xác định chủ thể và hành vi đe dọa có căn cứ gây lo sợ.",
+        "quy_dinh": "Cấm đe dọa giết người.",
+        "quy_dinh_gt": "Mệnh lệnh cấm đoán.",
+        "che_tai": "Bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm.",
+        "che_tai_gt": "Chế tài hình sự.",
+        "hinh_thuc": "Tuân thủ pháp luật."
       },
       "situation": {
-        "text": "Vêu dùng gậy đánh Ngán, Ngao xông vào giật gậy đánh lại vào đầu Vêu khiến Vêu tử vong.     *   *Phân tích:* Hành vi của Ngao vượt quá giới hạn phòng vệ chính đáng hoặc cố ý gây thương tích dẫn đến chết người. Lỗi cố ý đối với hành vi đánh người, vô ý đối với hậu quả chết người.",
+        "text": "Vêu dùng gậy chặn đánh Ngán, Ngao (20 tuổi) xông vào giật gậy đánh nhiều nhát vào đầu Vêu khiến Vêu tử vong do xuất huyết não. Phân tích hành vi của Ngao.",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Vêu dùng gậy đánh Ngán, Ngao xông vào giật gậy đánh lại vào đầu Vêu khiến Vêu tử vong.     *   *Phân tích:* Hành vi của Ngao vượt quá giới hạn phòng vệ chính đáng hoặc cố ý gây thương tích dẫn đến chết người. Lỗi cố ý đối với hành vi đánh người, vô ý đối với hậu quả chết người."
+            "name": "Mặt khách quan",
+            "detail": "Hành vi giật gậy đánh nhiều nhát vào đầu Vêu; Hậu quả: Vêu tử vong do chấn thương sọ não."
+          },
+          {
+            "name": "Mặt chủ quan",
+            "detail": "Lỗi cố ý đối với hành vi đánh người, vô ý đối với hậu quả tử vong (hoặc cố ý gián tiếp); Động cơ: cứu bạn."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Tính mạng, sức khỏe của Vêu."
+          },
+          {
+            "name": "Chủ thể",
+            "detail": "Ngao (20 tuổi, có đầy đủ năng lực trách nhiệm hình sự)."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "Tội cố ý gây thương tích dẫn đến chết người (Điều 134 BLHS) hoặc Giết người do vượt quá giới hạn phòng vệ chính đáng (Điều 126 BLHS)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-11",
-      "title": "Cặp 11: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 11",
-      "content": "Người nào cướp giật tài sản của người khác thì bị phạt tù từ 01 năm đến 05 năm",
+      "title": "Cặp 11: Cướp giật tài sản & Đột nhập kho trộm tài sản",
+      "clause": "Khoản 1 Điều 171 Bộ luật Hình sự 2015",
+      "content": "Người nào cướp giật tài sản của người khác, thì bị phạt tù từ 01 năm đến 05 năm.",
       "analysis": {
-        "gia_dinh": "Người nào cướp giật tài sản của người khác",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ / Thi hành / Sử dụng pháp luật"
+        "gia_dinh": "Người nào cướp giật tài sản của người khác.",
+        "gia_dinh_gt": "Xác định chủ thể và hành vi cướp giật tài sản.",
+        "quy_dinh": "Cấm cướp giật tài sản của người khác.",
+        "quy_dinh_gt": "Mệnh lệnh cấm đoán.",
+        "che_tai": "Bị phạt tù từ 01 năm đến 05 năm.",
+        "che_tai_gt": "Chế tài hình sự phạt tù có thời hạn.",
+        "hinh_thuc": "Tuân thủ pháp luật."
       },
       "situation": {
-        "text": "A và B (20 tuổi) phá khóa đột nhập kho X trộm tài sản trị giá 30 triệu nhưng kho rỗng nên đi về thì bị bắt.     *   *Phân tích:* Hành vi của A và B **có dấu hiệu của vi phạm pháp luật hình sự** (tội Trộm cắp tài sản ở giai đoạn phạm tội chưa đạt).",
+        "text": "A và B (20 tuổi) phá khóa đột nhập kho X trộm tài sản 30 triệu nhưng kho rỗng nên đi về thì bị phát hiện. Hỏi hành vi có dấu hiệu vi phạm pháp luật không?",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "A và B (20 tuổi) phá khóa đột nhập kho X trộm tài sản trị giá 30 triệu nhưng kho rỗng nên đi về thì bị bắt.     *   *Phân tích:* Hành vi của A và B **có dấu hiệu của vi phạm pháp luật hình sự** (tội Trộm cắp tài sản ở giai đoạn phạm tội chưa đạt)."
+            "name": "Mặt khách quan",
+            "detail": "Hành vi phá khóa đột nhập vào kho X nhằm mục đích trộm cắp tài sản."
+          },
+          {
+            "name": "Mặt chủ quan",
+            "detail": "Lỗi cố ý trực tiếp; Mục đích: chiếm đoạt tài sản trị giá 30 triệu đồng."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Quyền sở hữu tài sản của cơ quan X được pháp luật bảo vệ."
+          },
+          {
+            "name": "Chủ thể",
+            "detail": "A và B (20 tuổi, nhận thức bình thường, có đầy đủ năng lực TNHS)."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "Cấu thành Tội trộm cắp tài sản ở giai đoạn phạm tội chưa đạt (Điều 15, Điều 173 BLHS)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-12",
-      "title": "Cặp 12: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 12",
-      "content": "Việc chiếm hữu, sử dụng, định đoạt tài sản chung do vợ chồng thỏa thuận",
+      "title": "Cặp 12: Tài sản chung vợ chồng & Hợp đồng mua bán 2 tấn gạo",
+      "clause": "Khoản 1 Điều 35 Luật Hôn nhân và Gia đình 2014",
+      "content": "Việc chiếm hữu, sử dụng, định đoạt tài sản chung do vợ chồng thỏa thuận.",
       "analysis": {
-        "gia_dinh": "Tài sản chung\" (ngầm hiểu trong bối cảnh vợ chồng)",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ / Thi hành / Sử dụng pháp luật"
+        "gia_dinh": "Việc chiếm hữu, sử dụng, định đoạt tài sản chung của vợ chồng.",
+        "gia_dinh_gt": "Xác định hoàn cảnh định đoạt tài sản chung trong hôn nhân.",
+        "quy_dinh": "Do vợ chồng thỏa thuận.",
+        "quy_dinh_gt": "Quy định cho phép tự do ý chí và bình đẳng giữa vợ chồng.",
+        "che_tai": "Không có.",
+        "che_tai_gt": "Quy phạm trao quyền dân sự.",
+        "hinh_thuc": "Sử dụng pháp luật."
       },
       "situation": {
-        "text": "Nguyễn Văn A và Lê Thị B (25 tuổi) ký hợp đồng mua bán 2 tấn gạo giá 50 triệu, đã giao hàng và thanh toán đầy đủ.     *   *Đáp án:* Đây **là quan hệ pháp luật** (Quan hệ pháp luật dân sự - hợp đồng mua bán tài sản).",
+        "text": "Nguyễn Văn A và Lê Thị B (25 tuổi) ký hợp đồng mua bán 2 tấn gạo giá 50 triệu, đã giao hàng và thanh toán đủ. Hỏi đây có phải quan hệ pháp luật không?",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Nguyễn Văn A và Lê Thị B (25 tuổi) ký hợp đồng mua bán 2 tấn gạo giá 50 triệu, đã giao hàng và thanh toán đầy đủ.     *   *Đáp án:* Đây **là quan hệ pháp luật** (Quan hệ pháp luật dân sự - hợp đồng mua bán tài sản)."
+            "name": "Chủ thể",
+            "detail": "Bên bán A và bên mua B (đều 25 tuổi, có đầy đủ năng lực hành vi dân sự)."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Lợi ích vật chất: 2 tấn gạo và số tiền 50 triệu đồng."
+          },
+          {
+            "name": "Nội dung",
+            "detail": "Quyền nhận tiền và nghĩa vụ giao gạo của A; quyền nhận gạo và nghĩa vụ trả tiền của B."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "Đây là quan hệ pháp luật dân sự hợp pháp."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-13",
-      "title": "Cặp 13: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 13",
+      "title": "Cặp 13: Tội sản xuất ma túy & Tung tin giả Covid-19 trục lợi",
+      "clause": "Khoản 1 Điều 248 Bộ luật Hình sự 2015",
       "content": "Người nào sản xuất trái phép chất ma túy dưới bất kỳ hình thức nào, thì bị phạt tù từ 02 năm đến 07 năm.",
       "analysis": {
-        "gia_dinh": "Nêu trong điều luật",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ / Thi hành / Sử dụng pháp luật"
+        "gia_dinh": "Người nào sản xuất trái phép chất ma túy dưới bất kỳ hình thức nào.",
+        "gia_dinh_gt": "Xác định chủ thể và hành vi sản xuất ma túy trái phép.",
+        "quy_dinh": "Cấm sản xuất trái phép chất ma túy.",
+        "quy_dinh_gt": "Mệnh lệnh cấm đoán.",
+        "che_tai": "Bị phạt tù từ 02 năm đến 07 năm.",
+        "che_tai_gt": "Chế tài hình sự.",
+        "hinh_thuc": "Tuân thủ pháp luật."
       },
       "situation": {
-        "text": "Chị T (33 tuổi) đăng tin giả phong tỏa chợ Q lên Facebook để bán hàng, bị phạt 10 triệu đồng.     *   *Cấu thành:* Hành vi tung tin giả (khách quan), lỗi cố ý (chủ quan), xâm hại trật tự quản lý hành chính nhà nước trong môi trường mạng (khách thể), chị T có đầy đủ năng lực hành vi (chủ thể).",
+        "text": "Chị T (33 tuổi) đăng tin giả chính quyền phong tỏa chợ Q lên Facebook để bán hàng, bị phạt 10 triệu đồng. Phân tích các yếu tố cấu thành.",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Chị T (33 tuổi) đăng tin giả phong tỏa chợ Q lên Facebook để bán hàng, bị phạt 10 triệu đồng.     *   *Cấu thành:* Hành vi tung tin giả (khách quan), lỗi cố ý (chủ quan), xâm hại trật tự quản lý hành chính nhà nước trong môi trường mạng (khách thể), chị T có đầy đủ năng lực hành vi (chủ thể)."
+            "name": "Mặt khách quan",
+            "detail": "Hành vi đăng tin giả sai sự thật lên Facebook ngày 03/4/2020 gây hoang mang trong nhân dân."
+          },
+          {
+            "name": "Mặt chủ quan",
+            "detail": "Lỗi cố ý; Động cơ: trục lợi bán hàng thực phẩm dự trữ."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Trật tự quản lý nhà nước về thông tin trên môi trường mạng."
+          },
+          {
+            "name": "Chủ thể",
+            "detail": "Chị T (33 tuổi, có năng lực trách nhiệm hành chính)."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "Vi phạm pháp luật hành chính (Nghị định 15/2020/NĐ-CP)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-14",
-      "title": "Cặp 14: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 14",
-      "content": "Tổ chức, cá nhân quản lý khu du lịch, điểm du lịch có biện pháp phòng, tránh rủi ro và tổ chức bộ phận bảo vệ, cứu hộ, cứu nạn cho khách du lịch",
+      "title": "Cặp 14: Bảo vệ an toàn du lịch & Bạo hành trẻ em tử vong",
+      "clause": "Khoản 2 Điều 13 Luật Du lịch 2017",
+      "content": "Tổ chức, cá nhân quản lý khu du lịch, điểm du lịch có biện pháp phòng, tránh rủi ro và tổ chức bộ phận bảo vệ, cứu hộ, cứu nạn cho khách du lịch.",
       "analysis": {
-        "gia_dinh": "Tổ chức, cá nhân quản lý khu du lịch, điểm du lịch",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ / Thi hành / Sử dụng pháp luật"
+        "gia_dinh": "Tổ chức, cá nhân quản lý khu du lịch, điểm du lịch.",
+        "gia_dinh_gt": "Xác định chủ thể quản lý điểm/khu du lịch.",
+        "quy_dinh": "Có biện pháp phòng, tránh rủi ro và tổ chức bộ phận bảo vệ, cứu hộ, cứu nạn cho khách du lịch.",
+        "quy_dinh_gt": "Quy định nghĩa vụ bắt buộc phải làm.",
+        "che_tai": "Không có.",
+        "che_tai_gt": "Quy phạm giao nhiệm vụ.",
+        "hinh_thuc": "Thi hành pháp luật."
       },
       "situation": {
-        "text": "Chị Y bạo hành con riêng của chồng (bé K, 3 tuổi) bằng cách lấy kim châm và đánh đập khiến cháu tử vong.     *   *Phân tích:* Đây là hành vi vi phạm pháp luật hình sự đặc biệt nghiêm trọng (tội Giết người hoặc Cố ý gây thương tích dẫn đến chết người với tình tiết tăng nặng phạm tội với người dưới 16 tuổi).",
+        "text": "Chị Y (31 tuổi) bực mình cháu K (3 tuổi, con riêng của chồng) quấy khóc, lấy kim châm và đánh đập cháu bé bất tỉnh dẫn đến tử vong. Phân tích hành vi của Y.",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Chị Y bạo hành con riêng của chồng (bé K, 3 tuổi) bằng cách lấy kim châm và đánh đập khiến cháu tử vong.     *   *Phân tích:* Đây là hành vi vi phạm pháp luật hình sự đặc biệt nghiêm trọng (tội Giết người hoặc Cố ý gây thương tích dẫn đến chết người với tình tiết tăng nặng phạm tội với người dưới 16 tuổi)."
+            "name": "Mặt khách quan",
+            "detail": "Hành vi dùng kim châm và đánh đập trẻ em; Hậu quả: cháu K tử vong."
+          },
+          {
+            "name": "Mặt chủ quan",
+            "detail": "Lỗi cố ý trực tiếp (đối với bạo hành) và cố ý gián tiếp (đối với hậu quả tử vong)."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Quyền được bảo vệ về sức khỏe, tính mạng của trẻ em."
+          },
+          {
+            "name": "Chủ thể",
+            "detail": "Chị Y (31 tuổi, nhận thức bình thường, đủ năng lực TNHS)."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "Vi phạm pháp luật hình sự đặc biệt nghiêm trọng (Tội giết người với tình tiết phạm tội với người dưới 16 tuổi - Điều 123 BLHS)."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-15",
-      "title": "Cặp 15: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 15",
-      "content": "Người nào đánh tráo người dưới 01 tuổi, thì bị phạt tù từ 02 năm đến 05 năm",
+      "title": "Cặp 15: Tội đánh tráo trẻ em & Hợp đồng mua bán đất đai 3 tỷ",
+      "clause": "Khoản 1 Điều 152 Bộ luật Hình sự 2015 (sửa đổi, bổ sung 2017)",
+      "content": "Người nào đánh tráo người dưới 01 tuổi này với người dưới 01 tuổi khác, thì bị phạt tù từ 02 năm đến 05 năm.",
       "analysis": {
-        "gia_dinh": "Người nào đánh tráo người dưới 01 tuổi",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ / Thi hành / Sử dụng pháp luật"
+        "gia_dinh": "Người nào đánh tráo người dưới 01 tuổi này với người dưới 01 tuổi khác.",
+        "gia_dinh_gt": "Xác định chủ thể và hành vi đánh tráo trẻ dưới 1 tuổi.",
+        "quy_dinh": "Cấm đánh tráo người dưới 01 tuổi.",
+        "quy_dinh_gt": "Mệnh lệnh cấm đoán.",
+        "che_tai": "Bị phạt tù từ 02 năm đến 05 năm.",
+        "che_tai_gt": "Chế tài hình sự.",
+        "hinh_thuc": "Tuân thủ pháp luật."
       },
       "situation": {
-        "text": "Ông H bán cho bà D 100m2 đất thổ cư kèm nhà trị giá 3 tỷ đồng, thỏa thuận bên bán chịu mọi khoản thuế phí chuyển nhượng.     *   *Phân tích cấu trúc quan hệ pháp luật:*         *   *Chủ thể:* Ông H và bà D.         *   *Khách thể:* Quyền sử dụng đất 100m2 và quyền sở hữu căn nhà, số tiền 3 tỷ đồng.         *   *Nội dung:* Quyền đòi nhận tiền và nghĩa vụ giao đất, nộp thuế phí của ông H; quyền đòi nhận đất và nghĩa vụ trả tiền của bà D.",
+        "text": "Ông H (35 tuổi) bán cho bà D (32 tuổi) 100m2 đất kèm nhà trị giá 3 tỷ đồng, thỏa thuận bên bán chịu mọi khoản thuế phí chuyển nhượng. Phân tích cấu trúc quan hệ pháp luật.",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Ông H bán cho bà D 100m2 đất thổ cư kèm nhà trị giá 3 tỷ đồng, thỏa thuận bên bán chịu mọi khoản thuế phí chuyển nhượng.     *   *Phân tích cấu trúc quan hệ pháp luật:*         *   *Chủ thể:* Ông H và bà D.         *   *Khách thể:* Quyền sử dụng đất 100m2 và quyền sở hữu căn nhà, số tiền 3 tỷ đồng.         *   *Nội dung:* Quyền đòi nhận tiền và nghĩa vụ giao đất, nộp thuế phí của ông H; quyền đòi nhận đất và nghĩa vụ trả tiền của bà D."
+            "name": "Chủ thể",
+            "detail": "Bên bán Ông H và bên mua Bà D (đều có đủ năng lực hành vi dân sự)."
+          },
+          {
+            "name": "Khách thể",
+            "detail": "Quyền sử dụng đất 100m2, quyền sở hữu căn nhà và số tiền 3 tỷ đồng."
+          },
+          {
+            "name": "Nội dung",
+            "detail": "Quyền nhận tiền, nghĩa vụ giao đất, nộp thuế phí của ông H; Quyền nhận đất, nghĩa vụ thanh toán của bà D."
+          },
+          {
+            "name": "Kết luận",
+            "detail": "Quan hệ pháp luật dân sự hợp pháp."
           }
         ]
       }
     },
     {
       "id": "qppl-cap-16",
-      "title": "Cặp 16: Phân tích QPPL & Tình huống thực tế",
-      "clause": "Điều luật Cặp 16",
+      "title": "Cặp 16: Trưng cầu ý dân (Hiến pháp) & Học sinh 15 tuổi đua xe",
+      "clause": "Điều 29 Hiến pháp 2013",
       "content": "Công dân đủ mười tám tuổi trở lên có quyền biểu quyết khi Nhà nước tổ chức trưng cầu ý dân.",
       "analysis": {
-        "gia_dinh": "Công dân đủ mười tám tuổi trở lên",
-        "gia_dinh_gt": "Bộ phận xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
-        "quy_dinh": "Nêu trong điều luật",
-        "quy_dinh_gt": "Quy tắc xử sự nêu cách thức xử sự của chủ thể.",
-        "che_tai": "Nêu trong điều luật",
-        "che_tai_gt": "Biện pháp tác động cưỡng chế nhà nước áp dụng khi vi phạm.",
-        "hinh_thuc": "Tuân thủ / Thi hành / Sử dụng pháp luật"
+        "gia_dinh": "Công dân đủ mười tám tuổi trở lên.",
+        "gia_dinh_gt": "Xác định chủ thể là công dân Việt Nam đủ 18 tuổi trở lên.",
+        "quy_dinh": "Có quyền biểu quyết khi Nhà nước tổ chức trưng cầu ý dân.",
+        "quy_dinh_gt": "Quy định trao quyền chính trị.",
+        "che_tai": "Không có.",
+        "che_tai_gt": "Quy phạm trao quyền.",
+        "hinh_thuc": "Sử dụng pháp luật."
       },
       "situation": {
-        "text": "Em N (15 tuổi, học lớp 9) lấy xe máy của bố tham gia đua xe trái phép gây tai nạn thương nhẹ cho bà X.     *   *Phân tích trách nhiệm:*         *   N chưa đủ tuổi chịu trách nhiệm hành chính trực tiếp về hành vi điều khiển xe máy phân khối lớn tham gia giao thông. Bố của N (chủ phương tiện) sẽ bị xử phạt hành chính về hành vi giao xe cho người không đủ điều kiện điều khiển. Bố mẹ N phải chịu trách nhiệm bồi thường dân sự cho bà X.         *   Nếu gây tai nạn làm chết người (bà X chết): N đủ 15 tuổi có thể phải chịu trách nhiệm hình sự về tội vi phạm quy định về tham gia giao thông đường bộ nếu lỗi cố ý/vô ý nghiêm trọng.  ---",
+        "text": "Em N (15 tuổi, học lớp 9) lấy xe máy của bố tham gia đua xe trái phép gây tai nạn thương nhẹ cho bà X. 1) Ai phải chịu trách nhiệm hành chính? 2) Nếu bà X chết thì N phải chịu trách nhiệm gì?",
         "elements": [
           {
-            "name": "Giải quyết tình huống",
-            "detail": "Em N (15 tuổi, học lớp 9) lấy xe máy của bố tham gia đua xe trái phép gây tai nạn thương nhẹ cho bà X.     *   *Phân tích trách nhiệm:*         *   N chưa đủ tuổi chịu trách nhiệm hành chính trực tiếp về hành vi điều khiển xe máy phân khối lớn tham gia giao thông. Bố của N (chủ phương tiện) sẽ bị xử phạt hành chính về hành vi giao xe cho người không đủ điều kiện điều khiển. Bố mẹ N phải chịu trách nhiệm bồi thường dân sự cho bà X.         *   Nếu gây tai nạn làm chết người (bà X chết): N đủ 15 tuổi có thể phải chịu trách nhiệm hình sự về tội vi phạm quy định về tham gia giao thông đường bộ nếu lỗi cố ý/vô ý nghiêm trọng.  ---"
+            "name": "Trách nhiệm hành chính",
+            "detail": "N từ đủ 14 tuổi đến dưới 16 tuổi bị xử phạt hành chính về vi phạm hành chính do cố ý (Điều 5 Luật Xử lý VPHC). Bố của N bị phạt về hành vi giao xe cho người không đủ điều kiện điều khiển."
+          },
+          {
+            "name": "Trách nhiệm dân sự",
+            "detail": "Bố mẹ N có trách nhiệm bồi thường thiệt hại cho bà X theo Điều 586 BLDS 2015."
+          },
+          {
+            "name": "Nếu bà X tử vong",
+            "detail": "Hành vi đua xe gây chết người cấu thành tội phạm rất nghiêm trọng hoặc đặc biệt nghiêm trọng. N đủ 15 tuổi phải chịu trách nhiệm hình sự theo Khoản 2 Điều 12 BLHS 2015."
           }
         ]
       }
