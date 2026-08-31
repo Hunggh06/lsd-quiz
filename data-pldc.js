@@ -1342,6 +1342,86 @@ window.PLDC_DATA = {
           "content": "• Bà Thanh: Nhận 71,67 triệu đồng (+ 410 triệu tài sản riêng của bà).\n• Anh Kiên = Anh Hậu = Chị Mai: Nhận 119,44 triệu đồng mỗi người."
         }
       ]
+    },
+    {
+      "id": "tk-4dang-1",
+      "title": "Dạng 1: Chết trước, chết sau (4 Dạng Cơ Bản - Ví dụ C/H/J/K/M)",
+      "problem": "A lấy vợ là B sinh được 3 người con: C, D, E. C lấy vợ là H sinh 2 con J, K. D lấy vợ là T sinh 1 con M. E đã trưởng thành ở riêng. Năm 2018, C chết không di chúc. Năm 2019, A chết, di chúc cho M được 20 triệu. Xác định hàng thừa kế và chia thừa kế biết TS chung của A&B là 800tr; của C&H là 400tr, di chúc hợp pháp, không ai từ chối nhận di sản.",
+      "diagram": "A === B\n |---|---|---\n C   D   E\n |   |\n H   T\n |   |\nJ,K  M",
+      "steps": [
+        {
+          "title": "Bước 1: Năm 2018, C chết trước - Mở thừa kế của C",
+          "content": "• Di sản của C = 400tr / 2 (TS chung C&H) = 200tr.\n• Không có di chúc nên chia theo pháp luật (Điều 650, 651 BLDS 2015): Hàng TK1 của C gồm: Cha A, Mẹ B, Vợ H, Con J, Con K = 5 người.\n• Mỗi suất = 200tr / 5 = 40tr.\n• Kết luận: A = B = H = J = K = 40tr."
+        },
+        {
+          "title": "Bước 2: Năm 2019, A chết sau - Mở thừa kế của A",
+          "content": "• Di sản của A = 40tr (nhận từ C năm 2018) + 800tr / 2 (TS chung A&B) = 440tr.\n• Di chúc: M = 20tr, còn lại 420tr chia theo pháp luật (Điều 650).\n• Hàng TK1 của A sau khi C đã chết: Vợ B, suất thế vị của C (J+K), D, E = 4 suất.\n• Mỗi suất = 420tr / 4 = 105tr.\n• Do C đã chết nên J, K được thế vị theo Điều 652 BLDS: J = K = 105tr / 2 = 52.5tr."
+        },
+        {
+          "title": "Bước 3: Kết luận tổng hợp",
+          "content": "• Năm 2018 C chết: A, B, H, J, K mỗi người 40tr.\n• Năm 2019 A chết: Di chúc M = 20tr; Hàng TK1: B = D = E = 105tr; Thế vị: J = K = 52.5tr (cộng với 40tr đã nhận từ cha C năm 2018)."
+        }
+      ]
+    },
+    {
+      "id": "tk-4dang-2",
+      "title": "Dạng 2: Chết cùng một lúc (A và C chết cùng lúc - 4 Dạng Cơ Bản)",
+      "problem": "A lấy vợ là B sinh được 3 người con: C, D, E. C lấy vợ là H sinh 2 con J, K. D lấy vợ là T sinh 1 con M. E đã trưởng thành ở riêng. Năm 2018, A và C bị tai nạn chết cùng một lúc, trước đó A có di chúc cho M được 20tr. Xác định hàng thừa kế và chia thừa kế biết TS chung của A&B là 800tr; của C&H là 400tr.",
+      "diagram": "A + C chết cùng lúc 2018\nA === B\n |---|---|---\n C   D   E\n |   |\n H   T\nJ,K  M",
+      "steps": [
+        {
+          "title": "Bước 1: Mở thừa kế của C (chết cùng lúc với A)",
+          "content": "• Di sản của C = 400tr / 2 = 200tr.\n• Không có di chúc nên chia theo pháp luật: Hàng TK1 của C gồm: Vợ H, Con J, Con K, Mẹ B = 4 người (Cha A chết cùng lúc nên không được hưởng).\n• Mỗi suất = 200tr / 4 = 50tr.\n• Kết luận: B = H = J = K = 50tr."
+        },
+        {
+          "title": "Bước 2: Mở thừa kế của A (chết cùng lúc với C)",
+          "content": "• Di sản của A = 800tr / 2 = 400tr (không cộng 40tr từ C vì chết cùng lúc, C không truyền di sản cho A theo Điều 619 BLDS).\n• Di chúc: M = 20tr, còn lại 380tr chia theo pháp luật.\n• Hàng TK1 của A: Vợ B, suất thế vị của C (J+K), D, E = 4 suất.\n• Mỗi suất = 380tr / 4 = 95tr.\n• Thế vị: J = K = 95tr / 2 = 47.5tr."
+        },
+        {
+          "title": "Bước 3: Kết luận tổng hợp",
+          "content": "• Năm 2018 C chết: B, H, J, K mỗi người 50tr.\n• Năm 2018 A chết: Di chúc M = 20tr; Hàng TK1: B = D = E = 95tr; Thế vị: J = K = 47.5tr.\n• Lưu ý khác biệt với Dạng 1: A không được hưởng 40tr từ C vì chết cùng thời điểm."
+        }
+      ]
+    },
+    {
+      "id": "tk-4dang-3",
+      "title": "Dạng 3: Không được hưởng - Người thừa kế không phụ thuộc di chúc (Điều 644)",
+      "problem": "A lấy vợ là B sinh được C, D, E. Năm 2019 A ốm chết, di chúc cho M toàn bộ tài sản. Định giá tài sản của A có giá trị 800tr. Hãy chia thừa kế, biết khi A chết các con của A có: C 25 tuổi bị tâm thần; D 19 tuổi; E 16 tuổi.",
+      "diagram": "A === B\n |---|---\n C(25t-tâm thần) D(19t) E(16t) + M (người ngoài di chúc)",
+      "steps": [
+        {
+          "title": "Bước 1: Xác định di sản và di chúc",
+          "content": "• Di sản của A = 800tr (không có TS chung cần chia).\n• Di chúc: M = 800tr (toàn bộ).\n• Hàng TK1 theo luật của A gồm: Vợ B, Con C, D, E = 4 người."
+        },
+        {
+          "title": "Bước 2: Áp dụng Điều 644 BLDS 2015 (bảo vệ người không phụ thuộc di chúc)",
+          "content": "• Đối tượng được bảo vệ Điều 644: B (vợ), C (con 25t bị tâm thần mất khả năng lao động), E (con 16t chưa thành niên). D (19t đã thành niên, minh mẫn) không được bảo vệ.\n• Nếu không có di chúc, một suất TKPL = 800tr / 4 = 200tr.\n• Mỗi người thuộc Điều 644 được hưởng ít nhất 2/3 suất TKPL = 2/3 * 200tr = 133.33tr.\n• Tổng bảo vệ: B + C + E = 3 * 133.33tr = 400tr.\n• Phần còn lại cho M = 800tr - 400tr = 400tr."
+        },
+        {
+          "title": "Bước 3: Kết luận",
+          "content": "• Năm 2019 A chết: M = 400tr; B = C = E = 133.33tr (2/3 * 200tr); D = 0tr (đã thành niên, không thuộc 644)."
+        }
+      ]
+    },
+    {
+      "id": "tk-4dang-4",
+      "title": "Dạng 4: Hưởng ít hơn - Di chúc cho một nửa, còn lại chia luật (Điều 644)",
+      "problem": "A lấy vợ là B sinh được C, D, E. Năm 2019 A ốm chết, di chúc cho M một nửa tài sản. Định giá tài sản của A có giá trị 800tr. Hãy chia thừa kế, biết khi A chết các con: C 25 tuổi bị tâm thần; D 19 tuổi; E 16 tuổi.",
+      "diagram": "A === B\n |---|---\n C(25t-tâm thần) D(19t) E(16t) + M (1/2 di sản)",
+      "steps": [
+        {
+          "title": "Bước 1: Xác định di sản và phân chia theo di chúc + luật",
+          "content": "• Di sản của A = 800tr.\n• Di chúc: M = 1/2 * 800tr = 400tr.\n• Phần còn lại 400tr chia theo pháp luật cho Hàng TK1: B, C, D, E = 4 người.\n• Mỗi suất từ phần luật = 400tr / 4 = 100tr.\n• Tạm tính: B = C = D = E = 100tr; M = 400tr."
+        },
+        {
+          "title": "Bước 2: Áp dụng Điều 644 BLDS 2015 để kiểm tra",
+          "content": "• Đối tượng bảo vệ: B, C (tâm thần), E (16t chưa thành niên) = 3 người.\n• Một suất TKPL nếu toàn bộ di sản chia luật = 800tr / 4 = 200tr.\n• Suất 644 = 2/3 * 200tr = 133.33tr.\n• Mỗi người B, C, E mới nhận 100tr -> thiếu: 133.33 - 100 = 33.33tr/người.\n• Tổng thiếu = 3 * 33.33 = 100tr.\n• Trích bù từ M: M còn = 400tr - 100tr = 300tr."
+        },
+        {
+          "title": "Bước 3: Kết luận",
+          "content": "• Năm 2019 A chết: M = 300tr; B = C = E = 133.33tr (2/3 * 200tr); D = 100tr."
+        }
+      ]
     }
   ],
   "qppl_dieu_luat": [
@@ -2041,6 +2121,32 @@ window.PLDC_DATA = {
             "+ N có đủ năng lực chủ thể vì đang học lớp 9 tại một trường trung học cơ sở",
             "- Khách thể: Hành vi của N đã xâm phạm đến quy tắc quản lý Nhà nước trong lĩnh vực giao thông đường bộ.",
             "* N phải chịu trách nhiệm nhiệm Hình sự, Dân sự"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "th-l2-a25-situ",
+      "title": "Tình huống L2: A 25 tuổi - Mất xe - Gây thương tích 32% tại cửa hàng T",
+      "problem": "A 25 tuổi là công nhân, thuê nhà tại Đông Anh. Ngày 18/04/2021, A ngủ trưa quên khóa cửa nên bị mất xe đạp điện 12tr. A rủ B đi tìm xe, phát hiện xe tại cửa hàng của T, xin lại không được nên A xông vào gây thương tích cho T tỷ lệ 32%. Phân tích dấu hiệu VPPL và cấu thành VPPL.",
+      "answer_raw": "• Dạng 1: Dấu hiệu VPPL:\n- Hành vi xác định: gây thương tích cho T (hành động).\n- Trái pháp luật: xâm hại quyền bảo vệ sức khỏe.\n- Lỗi cố ý trực tiếp.\n- Chủ thể A 25 tuổi có NLTNPL.\n• Dạng 2: Cấu thành VPPL:\n- Mặt khách quan: Hành vi gây thương tích cho T, hậu quả 32%, MQH nhân quả trực tiếp, thời gian 18/04/2021, địa điểm cửa hàng T.\n- Mặt chủ quan: Lỗi cố ý trực tiếp, động cơ trả thù, mục đích gây thương tích.\n- Chủ thể: A 25 tuổi đủ NLTNPL.\n- Khách thể: Quyền được bảo vệ sức khỏe.",
+      "sections": [
+        {
+          "heading": "Dạng 1: Dấu hiệu VPPL của A",
+          "items": [
+            "Hành vi xác định: gây thương tích cho T (hành động)",
+            "Trái pháp luật: xâm hại quyền bảo vệ sức khỏe",
+            "Lỗi cố ý trực tiếp (nhận thức trái PL, mong muốn hậu quả)",
+            "Chủ thể A 25 tuổi, công nhân, đủ NLTNPL"
+          ]
+        },
+        {
+          "heading": "Dạng 2: Cấu thành VPPL",
+          "items": [
+            "Mặt khách quan: Hành vi gây thương tích cho T, hậu quả 32%, MQH nhân quả trực tiếp, thời gian 18/04/2021, địa điểm cửa hàng T",
+            "Mặt chủ quan: Lỗi cố ý trực tiếp, động cơ trả thù, mục đích gây thương tích",
+            "Chủ thể: A 25 tuổi đủ tuổi và khả năng nhận thức, đủ NLTNPL",
+            "Khách thể: Quyền được bảo vệ sức khỏe của con người"
           ]
         }
       ]
