@@ -75,6 +75,8 @@
   var lastPldcRankKey = null;
   var lastUploadedLsd = -1;
   var lastUploadedPldc = -1;
+  var lastShownRank = null;
+  var lastShownScore = 0;
 
   /* ---------- Rank LADDERS ---------- */
   var LSD_RANKS = [
@@ -291,11 +293,13 @@
     var lastKey = currentSubject === "lsd" ? lastLsdRankKey : lastPldcRankKey;
 
     if (lastKey && lastKey !== rInfo.current.key) {
-      showRankUpAnim(rInfo.current);
+      showRankUpAnim(rInfo.current, rInfo.correct);
       playRankUp(parseInt(rInfo.current.key, 10));
     }
     if (currentSubject === "lsd") lastLsdRankKey = rInfo.current.key;
     else lastPldcRankKey = rInfo.current.key;
+    lastShownRank = rInfo.current;
+    lastShownScore = rInfo.correct;
 
     var el = document.getElementById("rankBig");
     if (!el) return;
@@ -319,13 +323,15 @@
     uploadScore();
   }
 
-  function showRankUpAnim(rank) {
+  function showRankUpAnim(rank, score) {
     var fx = document.getElementById("rankUpFx");
     if (!fx) return;
-    fx.innerHTML = "<div class='ru-card'><img src='ranks/" + rank.key + ".png' alt='" + rank.name + "'>" +
-      "<div class='ru-title'>THĂNG HẠNG!</div><div class='ru-name'>" + rank.name + "</div></div>";
+    var sc = typeof score === "number" ? score : lastShownScore;
+    fx.innerHTML = "<div class='ru-card'><img src='ranks/" + rank.key + ".png' alt='" + esc(rank.name) + "'>" +
+      "<div class='ru-title'>THĂNG HẠNG!</div><div class='ru-name'>" + esc(rank.name) + "</div>" +
+      "<div class='ru-score'>" + sc + " điểm</div></div>";
     fx.classList.remove("show"); void fx.offsetWidth; fx.classList.add("show");
-    setTimeout(function () { fx.classList.remove("show"); }, 1800);
+    setTimeout(function () { fx.classList.remove("show"); }, 5000);
   }
 
   function uploadScore() {
@@ -1545,7 +1551,11 @@
   /* ---------- Player Name ---------- */
   function renderPlayerName() {
     var el = document.getElementById("playerName");
-    if (el) el.textContent = playerName ? ("👤 " + playerName) : "";
+    if (el) {
+      el.textContent = playerName ? ("👤 " + playerName + "  ↻") : "";
+      el.style.cursor = "pointer";
+      el.title = "Bấm để xem lại hiệu ứng thăng hạng";
+    }
   }
   function ensureName() {
     if (playerName) { renderPlayerName(); return; }
@@ -1602,6 +1612,18 @@
   document.getElementById("btnNameOk").onclick = submitName;
   document.getElementById("nameInput").addEventListener("keydown", function (e) { if (e.key === "Enter") submitName(); });
   document.getElementById("btnMenu").onclick = function () { document.getElementById("sidebar").classList.toggle("open"); };
+  var playerNameEl = document.getElementById("playerName");
+  if (playerNameEl) {
+    playerNameEl.onclick = function(){
+      if (lastShownRank) {
+        showRankUpAnim(lastShownRank, lastShownScore);
+        playRankUp(parseInt(lastShownRank.key,10));
+      } else {
+        var rInfo = currentSubject === "lsd" ? computeRankLSD() : computeRankPLDC();
+        showRankUpAnim(rInfo.current, rInfo.correct);
+      }
+    };
+  }
 
   document.getElementById("btnResetAll").onclick = function () {
     if (confirm("Xóa TOÀN BỘ tiến độ môn " + (currentSubject === "lsd" ? "Lịch sử Đảng" : "Pháp luật đại cương") + "?")) {
