@@ -3,40 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Hệ Thống Ôn Tập Môn Học — Đại Học Công Nghiệp Hà Nội</title>
+<title>Hệ Thống Ôn Tập Môn Học — HAUI</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
-<body data-subject="lsd">
-<header class="top-header">
-  <div class="top-header-inner">
-    <div class="site-logo">
-      <span class="logo-badge">HAUI</span>
-      <span class="logo-title">Ôn Thi Đại Cương &amp; Chuyên Ngành</span>
-    </div>
-    <div class="subject-switcher">
-      <button id="btnSubjectLSD" class="subject-btn active" title="Ôn tập Lịch sử Đảng">
-        <span class="sb-icon">🏛️</span>
-        <div class="sb-info">
-          <strong>Lịch sử Đảng</strong>
-          <span>Trắc nghiệm &amp; Tự luận</span>
-        </div>
-      </button>
-      <button id="btnSubjectPLDC" class="subject-btn" title="Ôn tập Pháp luật đại cương">
-        <span class="sb-icon">⚖️</span>
-        <div class="sb-info">
-          <strong>Pháp luật đại cương</strong>
-          <span>4 Dạng bài &amp; Chia thừa kế</span>
-        </div>
-      </button>
-    </div>
-  </div>
-</header>
-
+<body>
 <div id="app">
-  <!-- SIDEBAR -->
   <aside id="sidebar">
     <div class="brand">
       <div id="brandMark" class="brand-mark">ĐCSVN</div>
@@ -44,6 +18,10 @@
         <strong id="brandTitle">Lịch sử Đảng</strong>
         <span id="brandSub">Trắc nghiệm &amp; Tự luận</span>
       </div>
+    </div>
+    <div class="sidebar-subject-tabs">
+      <button id="btnSubjectLSD" class="subj-tab active">🏛️ Lịch sử Đảng</button>
+      <button id="btnSubjectPLDC" class="subj-tab">⚖️ Pháp luật ĐC</button>
     </div>
     <div id="sidebarModeTabs" class="sidebar-mode-tabs">
       <button id="tabTracNghiem" class="mode-tab active">🎯 Trắc nghiệm</button>
@@ -69,7 +47,6 @@
     </div>
   </aside>
 
-  <!-- MAIN -->
   <main id="main">
     <button id="btnMenu" class="ghost-btn mobile-only mobile-menu-fab">☰ Danh mục</button>
 
@@ -79,7 +56,6 @@
     </section>
   </main>
 
-  <!-- QUESTION NAVIGATOR -->
   <aside id="qnav" class="qnav hidden">
     <div class="qnav-head">
       <div class="qnav-title" id="qnavTitle">Bảng câu hỏi</div>
@@ -89,7 +65,6 @@
   </aside>
 </div>
 
-<!-- DASHBOARD MODAL -->
 <div id="dashModal" class="modal hidden">
   <div class="modal-card">
     <div class="modal-head">

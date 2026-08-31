@@ -66,7 +66,6 @@
     { key: "10", name: "Hạng Thách Đấu",  min: 200 }
   ];
 
-  /* Active mode within subject */
   var lsdMode = "trac_nghiem"; // "trac_nghiem" | "tu_luan"
   var pldcMode = "trac_nghiem"; // "trac_nghiem" | "dung_sai" | "qppl" | "thua_ke"
   var currentView = null; // { type: 'lsd_bai', ci: 0 } or { type: 'pldc_tn', ci: 0 } etc.
@@ -241,11 +240,11 @@
     }
 
     el.innerHTML =
-      "<img src='ranks/" + rInfo.current.key + ".png' alt='" + esc(rInfo.current.name) + "' class='rb-img'>" +
+      "<img src='ranks/" + rInfo.current.key + ".png' alt='" + esc(rInfo.current.name) + "' class='rb-emblem'>" +
       "<div class='rb-info'>" +
-      "<div class='rb-tier'>" + esc(rInfo.current.name) + "</div>" +
+      "<div class='rb-name'>" + esc(rInfo.current.name) + "</div>" +
       "<div class='rb-sub'>" + rInfo.correct + "/" + rInfo.total + " câu đúng (" + nextText + ")</div>" +
-      "<div class='rb-bar'><div class='rb-bar-fill' style='width:" + pct + "%'></div></div>" +
+      "<div class='rb-track'><span class='rb-fill' style='width:" + pct + "%'></span></div>" +
       "</div>";
 
     uploadScore();
@@ -281,7 +280,6 @@
   function setSubject(subj) {
     currentSubject = subj;
     localStorage.setItem(SUBJ_KEY, subj);
-    document.body.setAttribute("data-subject", subj);
 
     if (subj === "lsd") {
       btnSubjectLSD.classList.add("active");
@@ -295,7 +293,7 @@
       btnSubjectLSD.classList.remove("active");
       brandMark.textContent = "PLDC";
       brandTitle.textContent = "Pháp luật đại cương";
-      brandSub.textContent = "HAUI - 4 Dạng ôn tập";
+      brandSub.textContent = "Trắc nghiệm & Tình huống";
       renderPldcModeTabs();
     }
 
@@ -330,10 +328,10 @@
 
   function renderPldcModeTabs() {
     sidebarModeTabs.innerHTML =
-      "<button id='tabPldcTN' class='mode-tab " + (pldcMode === "trac_nghiem" ? "active" : "") + "'>🎯 Trắc nghiệm ABCD</button>" +
-      "<button id='tabPldcDS' class='mode-tab " + (pldcMode === "dung_sai" ? "active" : "") + "'>⚖️ Nhận định Đúng/Sai</button>" +
-      "<button id='tabPldcQPPL' class='mode-tab " + (pldcMode === "qppl" ? "active" : "") + "'>📜 Cấu trúc QPPL & VPPL</button>" +
-      "<button id='tabPldcTK' class='mode-tab " + (pldcMode === "thua_ke" ? "active" : "") + "'>💼 Chia thừa kế & Tình huống</button>";
+      "<button id='tabPldcTN' class='mode-tab " + (pldcMode === "trac_nghiem" ? "active" : "") + "'>🎯 Trắc nghiệm</button>" +
+      "<button id='tabPldcDS' class='mode-tab " + (pldcMode === "dung_sai" ? "active" : "") + "'>⚖️ Đúng / Sai</button>" +
+      "<button id='tabPldcQPPL' class='mode-tab " + (pldcMode === "qppl" ? "active" : "") + "'>📜 Cấu trúc QPPL</button>" +
+      "<button id='tabPldcTK' class='mode-tab " + (pldcMode === "thua_ke" ? "active" : "") + "'>💼 Chia thừa kế</button>";
 
     document.getElementById("tabPldcTN").onclick = function () {
       pldcMode = "trac_nghiem";
@@ -475,35 +473,16 @@
       if (bWe) bWe.onclick = selectLsdEssay;
     } else {
       welcome.innerHTML =
-        '<div class="welcome-essay-banner" style="background:linear-gradient(135deg,#eff6ff,#dbeafe);border-color:#93c5fd">' +
+        '<div class="welcome-essay-banner" id="btnWelcomePLDC">' +
           '<div class="web-content">' +
-            '<span class="web-tag" style="background:#1e3a8a">⚖️ Môn học Pháp luật đại cương</span>' +
-            '<h2 style="color:#1e3a8a">💼 Tổng hợp Đề cương &amp; 4 Dạng bài Ôn tập Chuẩn (HAUI)</h2>' +
-            '<p style="color:#1e40af">Hệ thống đầy đủ Trắc nghiệm ABCD, nhận định Đúng/Sai có giải thích, phân tích Cấu trúc QPPL và Hướng dẫn giải chi tiết Bài tập Chia thừa kế (Điều 644, 651, 652 BLDS 2015).</p>' +
+            '<span class="web-tag">⚖️ Môn học Pháp luật đại cương</span>' +
+            '<h2>💼 Tổng hợp Đề cương &amp; 4 Dạng bài Ôn tập Chuẩn (HAUI)</h2>' +
+            '<p>Hệ thống đầy đủ Trắc nghiệm ABCD, nhận định Đúng/Sai có giải thích, phân tích Cấu trúc QPPL và Hướng dẫn giải chi tiết Bài tập Chia thừa kế (Điều 644, 651, 652 BLDS 2015).</p>' +
           '</div>' +
+          '<button class="ghost-btn web-btn">Vào ôn Trắc nghiệm ngay →</button>' +
         '</div>' +
-        '<div class="welcome-pldc-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:24px">' +
-          '<div class="welcome-card" id="btnWkTN" style="background:#fff;border:1.5px solid #bfdbfe;border-radius:14px;padding:18px;cursor:pointer;transition:all .2s;box-shadow:0 2px 6px rgba(0,0,0,0.04)">' +
-            '<div style="font-size:26px;margin-bottom:8px">🎯</div>' +
-            '<div style="font-weight:700;font-size:15.5px;color:#1e3a8a;margin-bottom:4px">Trắc nghiệm ABCD</div>' +
-            '<div style="font-size:12.5px;color:#64748b">Luyện các câu hỏi trắc nghiệm chia theo chương</div>' +
-          '</div>' +
-          '<div class="welcome-card" id="btnWkDS" style="background:#fff;border:1.5px solid #bbf7d0;border-radius:14px;padding:18px;cursor:pointer;transition:all .2s;box-shadow:0 2px 6px rgba(0,0,0,0.04)">' +
-            '<div style="font-size:26px;margin-bottom:8px">⚖️</div>' +
-            '<div style="font-weight:700;font-size:15.5px;color:#166534;margin-bottom:4px">Nhận định Đúng / Sai</div>' +
-            '<div style="font-size:12.5px;color:#64748b">Hơn 30+ câu khẳng định then chốt có giải thích</div>' +
-          '</div>' +
-          '<div class="welcome-card" id="btnWkQP" style="background:#fff;border:1.5px solid #fed7aa;border-radius:14px;padding:18px;cursor:pointer;transition:all .2s;box-shadow:0 2px 6px rgba(0,0,0,0.04)">' +
-            '<div style="font-size:26px;margin-bottom:8px">📜</div>' +
-            '<div style="font-weight:700;font-size:15.5px;color:#9a3412;margin-bottom:4px">Cấu trúc QPPL &amp; VPPL</div>' +
-            '<div style="font-size:12.5px;color:#64748b">Phân tích Giả định - Quy định - Chế tài</div>' +
-          '</div>' +
-          '<div class="welcome-card" id="btnWkTK" style="background:#fff;border:1.5px solid #ddd6fe;border-radius:14px;padding:18px;cursor:pointer;transition:all .2s;box-shadow:0 2px 6px rgba(0,0,0,0.04)">' +
-            '<div style="font-size:26px;margin-bottom:8px">💼</div>' +
-            '<div style="font-weight:700;font-size:15.5px;color:#5b21b6;margin-bottom:4px">Chia thừa kế &amp; Tình huống</div>' +
-            '<div style="font-size:12.5px;color:#64748b">Sơ đồ gia phả và các bước tính toán di sản</div>' +
-          '</div>' +
-        '</div>' +
+        '<h1>Ôn tập Pháp luật đại cương</h1>' +
+        '<p>Cấu trúc ôn tập 4 dạng bài bám sát đề thi kết thúc học phần:</p>' +
         '<ul class="welcome-tips">' +
           '<li>🎯 <b>Trắc nghiệm 4 lựa chọn (ABCD):</b> Đầy đủ các chương kèm giải thích điều luật cụ thể.</li>' +
           '<li>⚖️ <b>Nhận định Đúng / Sai:</b> Luyện nhận định nhanh kèm căn cứ pháp lý và phân tích điểm mấu chốt.</li>' +
@@ -512,14 +491,8 @@
           '<li>⚠️ <b>Tag [Nghi vấn kết quả]:</b> Tự động cảnh báo và đối chiếu các câu có đáp án tài liệu cũ mâu thuẫn hoặc căn cứ luật đã sửa đổi.</li>' +
         '</ul>';
 
-      var bWkTN = document.getElementById("btnWkTN");
-      if (bWkTN) bWkTN.onclick = function() { pldcMode = "trac_nghiem"; renderPldcModeTabs(); selectPldcTN(0); };
-      var bWkDS = document.getElementById("btnWkDS");
-      if (bWkDS) bWkDS.onclick = function() { pldcMode = "dung_sai"; renderPldcModeTabs(); selectPldcDS(); };
-      var bWkQP = document.getElementById("btnWkQP");
-      if (bWkQP) bWkQP.onclick = function() { pldcMode = "qppl"; renderPldcModeTabs(); selectPldcQPPL(); };
-      var bWkTK = document.getElementById("btnWkTK");
-      if (bWkTK) bWkTK.onclick = function() { pldcMode = "thua_ke"; renderPldcModeTabs(); selectPldcTK(); };
+      var bWp = document.getElementById("btnWelcomePLDC");
+      if (bWp) bWp.onclick = function () { selectPldcTN(0); };
     }
   }
 
@@ -583,7 +556,7 @@
     ch.questions.forEach(function (q, qi) {
       var cell = document.createElement("div");
       var r = lsdResults[q.id];
-      cell.className = "qnav-cell" + (r ? (r.status === "correct" ? " ok" : " bad") : "");
+      cell.className = "qnav-cell" + (r ? (r.status === "correct" ? " done" : " miss") : "");
       cell.textContent = qi + 1;
       cell.onclick = function () {
         var cards = content.querySelectorAll(".q-card");
@@ -601,7 +574,7 @@
       var cell = qnavCells[qi];
       if (!cell) return;
       var r = lsdResults[q.id];
-      cell.className = "qnav-cell" + (r ? (r.status === "correct" ? " ok" : " bad") : "");
+      cell.className = "qnav-cell" + (r ? (r.status === "correct" ? " done" : " miss") : "");
     });
   }
 
@@ -634,8 +607,8 @@
     hero.innerHTML =
       '<div class="essay-hero-head"><span class="essay-hero-badge">ĐỀ CƯƠNG TRỌNG TÂM</span>' +
       '<span style="font-size:12px;color:var(--gold);font-weight:700">KỲ II NĂM HỌC 2025 - 2026</span></div>' +
-      '<h1>📝 8 Câu hỏi Tự luận Lịch sử Đảng</h1>' +
-      '<p>Đề cương rút gọn, gạch đầu dòng then chốt, tích hợp phân tích Đúng/Sai và liên hệ thực tế sinh viên.</p>';
+      '<h1 class="essay-hero-title">📝 8 Câu hỏi Tự luận Lịch sử Đảng</h1>' +
+      '<p class="essay-hero-sub">Đề cương rút gọn, gạch đầu dòng then chốt, tích hợp phân tích Đúng/Sai và liên hệ thực tế sinh viên.</p>';
     container.appendChild(hero);
 
     qs.forEach(function (q) {
@@ -704,7 +677,7 @@
     qTitle("Tự luận 8 câu");
     qs.forEach(function (q) {
       var cell = document.createElement("div");
-      cell.className = "qnav-cell" + (essayLearned[q.id] ? " ok" : "");
+      cell.className = "qnav-cell" + (essayLearned[q.id] ? " done" : "");
       cell.textContent = "C" + q.id;
       cell.onclick = function () {
         var card = document.getElementById("essayCard_" + q.id);
@@ -723,7 +696,7 @@
     qs.forEach(function (q, qi) {
       var cell = qnavCells[qi];
       if (!cell) return;
-      cell.className = "qnav-cell" + (essayLearned[q.id] ? " ok" : "");
+      cell.className = "qnav-cell" + (essayLearned[q.id] ? " done" : "");
     });
   }
 
@@ -772,7 +745,7 @@
   }
 
   function selectPldcTK() {
-    currentView = { type: "pldc_tk" };
+    currentView = { type: "pldc_thua_ke" };
     welcome.style.display = "none";
     renderTree();
     renderPldcTK();
@@ -810,7 +783,7 @@
     ch.questions.forEach(function (q, qi) {
       var cell = document.createElement("div");
       var r = pldcResults[q.id];
-      cell.className = "qnav-cell" + (r ? (r.status === "correct" ? " ok" : " bad") : "");
+      cell.className = "qnav-cell" + (r ? (r.status === "correct" ? " done" : " miss") : "");
       cell.textContent = qi + 1;
       cell.onclick = function () {
         var cards = content.querySelectorAll(".q-card");
@@ -828,7 +801,7 @@
       var cell = qnavCells[qi];
       if (!cell) return;
       var r = pldcResults[q.id];
-      cell.className = "qnav-cell" + (r ? (r.status === "correct" ? " ok" : " bad") : "");
+      cell.className = "qnav-cell" + (r ? (r.status === "correct" ? " done" : " miss") : "");
     });
   }
 
@@ -864,47 +837,48 @@
       card.className = "ds-card";
       card.id = "dsCard_" + q.id;
 
-      var qTitleDiv = document.createElement("div");
-      qTitleDiv.className = "ds-q-text";
-      qTitleDiv.innerHTML = "<b>Câu " + (qi + 1) + ":</b> " + esc(q.q) +
-        (q.isDoubt ? " <span class='tag-doubt'>⚠️ Nghi vấn kết quả</span>" : "");
-      card.appendChild(qTitleDiv);
+      var qNo = document.createElement("span");
+      qNo.className = "q-no";
+      qNo.textContent = "Câu " + (qi + 1);
+      card.appendChild(qNo);
 
-      var btnGroup = document.createElement("div");
-      btnGroup.className = "ds-btn-group";
+      var qText = document.createElement("div");
+      qText.className = "ds-q-text";
+      var doubtTag = q.isDoubt ? " <span class='tag-doubt'>⚠️ Nghi vấn</span>" : "";
+      qText.innerHTML = esc(q.q) + doubtTag;
+      card.appendChild(qText);
+
+      var btnWrap = document.createElement("div");
+      btnWrap.className = "ds-btn-wrap";
 
       var btnD = document.createElement("button");
-      btnD.className = "ds-btn";
-      btnD.textContent = "Đúng (Đ)";
+      btnD.className = "ds-opt-btn";
+      btnD.innerHTML = "<span class='key' style='background:#e3f3e8;color:#1f7a44'>Đ</span> Đúng";
 
       var btnS = document.createElement("button");
-      btnS.className = "ds-btn";
-      btnS.textContent = "Sai (S)";
+      btnS.className = "ds-opt-btn";
+      btnS.innerHTML = "<span class='key' style='background:#fbe7e5;color:#b3261e'>S</span> Sai";
 
-      var explainBox = document.createElement("div");
-      explainBox.className = "ds-explain-box";
-      explainBox.style.display = "none";
+      var fbBox = document.createElement("div");
+      fbBox.className = "feedback";
 
-      var doubtBox = "";
-      if (q.isDoubt && q.doubtNote) {
-        doubtBox = "<div class='doubt-box'><strong>⚠️ Phân tích nghi vấn:</strong> " + esc(q.doubtNote) + "</div>";
-      }
-
-      function updateCardState(selectedVal) {
+      function updateCard(selectedVal) {
         var isCorrect = (selectedVal === q.answer || (selectedVal === "Đ" && q.answer === "Đúng") || (selectedVal === "S" && q.answer === "Sai"));
-        btnD.disabled = true;
-        btnS.disabled = true;
+        btnD.classList.add("locked");
+        btnS.classList.add("locked");
 
         if (selectedVal === "Đ") {
-          btnD.classList.add(isCorrect ? "selected-correct" : "selected-wrong");
-          if (!isCorrect) btnS.classList.add("selected-correct");
+          btnD.classList.add(isCorrect ? "correct" : "wrong");
+          if (!isCorrect) btnS.classList.add("correct");
         } else {
-          btnS.classList.add(isCorrect ? "selected-correct" : "selected-wrong");
-          if (!isCorrect) btnD.classList.add("selected-correct");
+          btnS.classList.add(isCorrect ? "correct" : "wrong");
+          if (!isCorrect) btnD.classList.add("correct");
         }
 
-        explainBox.style.display = "block";
-        explainBox.innerHTML = "<strong>Đáp án: " + (q.answer === "Đ" ? "ĐÚNG" : "SAI") + "</strong>. " + esc(q.explain) + doubtBox;
+        fbBox.className = "feedback show " + (isCorrect ? "ok" : "bad");
+        var doubtBox = (q.isDoubt && q.doubtNote) ? "<div class='doubt-box'><strong>⚠️ Phân tích nghi vấn:</strong> " + esc(q.doubtNote) + "</div>" : "";
+        fbBox.innerHTML = "<span class='fb-title'>" + (isCorrect ? "Chính xác! Đáp án là " + (q.answer === "Đ" ? "ĐÚNG" : "SAI") : "Đáp án đúng là " + (q.answer === "Đ" ? "ĐÚNG" : "SAI")) + "</span>" +
+          "<div>" + esc(q.explain) + "</div>" + doubtBox;
 
         pldcResults[q.id] = {
           selected: selectedVal,
@@ -928,17 +902,17 @@
         refreshPldcDSQnav();
       }
 
-      btnD.onclick = function () { updateCardState("Đ"); };
-      btnS.onclick = function () { updateCardState("S"); };
+      btnD.onclick = function () { updateCard("Đ"); };
+      btnS.onclick = function () { updateCard("S"); };
 
-      btnGroup.appendChild(btnD);
-      btnGroup.appendChild(btnS);
-      card.appendChild(btnGroup);
-      card.appendChild(explainBox);
+      btnWrap.appendChild(btnD);
+      btnWrap.appendChild(btnS);
+      card.appendChild(btnWrap);
+      card.appendChild(fbBox);
 
       var saved = pldcResults[q.id];
       if (saved && saved.selected) {
-        updateCardState(saved.selected);
+        updateCard(saved.selected);
       }
 
       content.appendChild(card);
@@ -954,7 +928,7 @@
     qs.forEach(function (q, qi) {
       var cell = document.createElement("div");
       var r = pldcResults[q.id];
-      cell.className = "qnav-cell" + (r ? (r.status === "correct" ? " ok" : " bad") : "");
+      cell.className = "qnav-cell" + (r ? (r.status === "correct" ? " done" : " miss") : "");
       cell.textContent = qi + 1;
       cell.onclick = function () {
         var card = document.getElementById("dsCard_" + q.id);
@@ -971,7 +945,7 @@
       var cell = qnavCells[qi];
       if (!cell) return;
       var r = pldcResults[q.id];
-      cell.className = "qnav-cell" + (r ? (r.status === "correct" ? " ok" : " bad") : "");
+      cell.className = "qnav-cell" + (r ? (r.status === "correct" ? " done" : " miss") : "");
     });
   }
 
@@ -995,93 +969,110 @@
   function renderPldcQPPL() {
     content.innerHTML = "";
     var list = PLDC_DATA.qppl || [];
+    var container = document.createElement("div");
+    container.className = "essay-container";
 
     var hero = document.createElement("div");
-    hero.className = "lesson-heading";
-    hero.textContent = "📜 Phân tích Cấu trúc QPPL & Vi phạm Pháp luật";
-    content.appendChild(hero);
+    hero.className = "essay-hero";
+    hero.innerHTML =
+      '<div class="essay-hero-head"><span class="essay-hero-badge">CẤU TRÚC QPPL &amp; VI PHẠM PL</span></div>' +
+      '<h1 class="essay-hero-title">📜 Phân tích Cấu trúc QPPL &amp; Vi phạm Pháp luật</h1>' +
+      '<p class="essay-hero-sub">Phân tích rõ ràng 3 bộ phận Giả định - Quy định - Chế tài, xác định hình thức thực hiện pháp luật và 4 yếu tố cấu thành vi phạm pháp luật.</p>';
+    container.appendChild(hero);
 
     list.forEach(function (item, idx) {
       var card = document.createElement("div");
-      card.className = "qppl-card";
+      card.className = "essay-card";
 
       var head = document.createElement("div");
-      head.className = "qppl-head";
-      head.innerHTML = "<h3>" + esc(item.title) + "</h3><span>▼ Mở rộng</span>";
+      head.className = "essay-card-header";
+      head.innerHTML =
+        "<div class='ec-no'># " + (idx + 1) + "</div>" +
+        "<div class='ec-title-wrap'>" +
+        "<div class='ec-title'>" + esc(item.title) + "</div>" +
+        "<div class='ec-tags'><span class='ec-tag'>" + esc(item.clause) + "</span></div>" +
+        "</div>" +
+        "<div class='ec-actions'><span class='ec-chev'>▼</span></div>";
 
       var body = document.createElement("div");
-      body.className = "qppl-body";
+      body.className = "essay-card-body";
 
       var a = item.analysis || {};
       var sit = item.situation || {};
 
-      body.innerHTML =
-        "<div class='clause-box'><strong>Điều luật: " + esc(item.clause) + "</strong><br>" + esc(item.content) + "</div>" +
-        "<div class='analysis-grid'>" +
-        "<div class='analysis-item'><div class='analysis-label'>📍 Giả định:</div><div class='analysis-detail'>" + esc(a.gia_dinh) + "<br><em>" + esc(a.gia_dinh_gt) + "</em></div></div>" +
-        "<div class='analysis-item'><div class='analysis-label'>📝 Quy định:</div><div class='analysis-detail'>" + esc(a.quy_dinh) + "<br><em>" + esc(a.quy_dinh_gt) + "</em></div></div>" +
-        "<div class='analysis-item'><div class='analysis-label'>⚖️ Chế tài:</div><div class='analysis-detail'>" + esc(a.che_tai) + "<br><em>" + esc(a.che_tai_gt) + "</em></div></div>" +
-        "<div class='analysis-item' style='background:#f0fdf4;border-color:#bbf7d0'><div class='analysis-label' style='color:#166534'>🎯 Hình thức thực hiện pháp luật:</div><div class='analysis-detail'><b>" + esc(a.hinh_thuc) + "</b></div></div>" +
-        "</div>" +
-        (sit.text ?
-          "<div class='problem-box'><strong>⚡ Tình huống thực tế:</strong><p>" + esc(sit.text) + "</p>" +
-          "<div style='margin-top:10px;display:grid;gap:8px'>" +
-          (sit.elements || []).map(function (el) {
-            return "<div><b>• " + esc(el.name) + ":</b> " + esc(el.detail) + "</div>";
-          }).join("") +
-          "</div></div>" : "");
+      var clauseHtml = "<div class='essay-short-box'><div class='esb-title'>📖 Trích dẫn điều luật:</div><p style='margin:0;line-height:1.6;font-size:16px'>" + esc(item.content) + "</p></div>";
 
-      head.onclick = function () {
-        var isOpen = body.style.display !== "none";
-        body.style.display = isOpen ? "none" : "grid";
-        head.querySelector("span").textContent = isOpen ? "▼ Mở rộng" : "▲ Thu gọn";
-      };
+      var analysisHtml = "<div class='essay-sections-wrap'>" +
+        "<div class='essay-sec'><div class='essay-sec-head'>📍 1. Giả định</div><div class='essay-sec-items'><b>Nội dung:</b> " + esc(a.gia_dinh) + "<br><em>Giải thích: " + esc(a.gia_dinh_gt) + "</em></div></div>" +
+        "<div class='essay-sec'><div class='essay-sec-head'>📝 2. Quy định</div><div class='essay-sec-items'><b>Nội dung:</b> " + esc(a.quy_dinh) + "<br><em>Giải thích: " + esc(a.quy_dinh_gt) + "</em></div></div>" +
+        "<div class='essay-sec'><div class='essay-sec-head'>⚖️ 3. Chế tài</div><div class='essay-sec-items'><b>Nội dung:</b> " + esc(a.che_tai) + "<br><em>Giải thích: " + esc(a.che_tai_gt) + "</em></div></div>" +
+        "<div class='essay-sec sec-lienhe'><div class='essay-sec-head'>🎯 Hình thức thực hiện pháp luật</div><div class='essay-sec-items'><b>" + esc(a.hinh_thuc) + "</b></div></div>" +
+        (sit.text ?
+          "<div class='essay-sec sec-tips'><div class='essay-sec-head'>⚡ Tình huống thực tế &amp; Cấu thành VPPL</div><div class='essay-sec-items'><p><b>Đề bài:</b> " + esc(sit.text) + "</p>" +
+          (sit.elements || []).map(function (el) { return "<div><b>• " + esc(el.name) + ":</b> " + esc(el.detail) + "</div>"; }).join("") +
+          "</div></div>" : "") +
+        "</div>";
+
+      body.innerHTML = clauseHtml + analysisHtml;
+
+      head.onclick = function () { card.classList.toggle("open"); };
 
       card.appendChild(head);
       card.appendChild(body);
-      content.appendChild(card);
+      container.appendChild(card);
     });
+
+    content.appendChild(container);
   }
 
   function renderPldcTK() {
     content.innerHTML = "";
     var list = PLDC_DATA.thua_ke || [];
+    var container = document.createElement("div");
+    container.className = "essay-container";
 
     var hero = document.createElement("div");
-    hero.className = "lesson-heading";
-    hero.textContent = "💼 Bài tập Chia thừa kế & Tình huống (Theo BLDS 2015)";
-    content.appendChild(hero);
+    hero.className = "essay-hero";
+    hero.innerHTML =
+      '<div class="essay-hero-head"><span class="essay-hero-badge">CHIA THỪA KẾ (BLDS 2015)</span></div>' +
+      '<h1 class="essay-hero-title">💼 Bài tập Chia thừa kế &amp; Tình huống thực tế</h1>' +
+      '<p class="essay-hero-sub">Phương pháp giải từng bước: Tính di sản, phân định di chúc/pháp luật, áp dụng Điều 644 (người thừa kế không phụ thuộc di chúc) và thừa kế thế vị Điều 652.</p>';
+    container.appendChild(hero);
 
     list.forEach(function (item, idx) {
       var card = document.createElement("div");
-      card.className = "thua-ke-card";
+      card.className = "essay-card";
 
       var head = document.createElement("div");
-      head.className = "thua-ke-head";
-      head.innerHTML = "<h3>" + esc(item.title) + "</h3><span>▼ Xem lời giải</span>";
+      head.className = "essay-card-header";
+      head.innerHTML =
+        "<div class='ec-no'>Bài " + (idx + 1) + "</div>" +
+        "<div class='ec-title-wrap'><div class='ec-title'>" + esc(item.title) + "</div></div>" +
+        "<div class='ec-actions'><span class='ec-chev'>▼</span></div>";
 
       var body = document.createElement("div");
-      body.className = "thua-ke-body";
+      body.className = "essay-card-body";
 
-      body.innerHTML =
-        "<div class='problem-box'><strong>Đề bài:</strong><br>" + esc(item.problem) + "</div>" +
-        (item.diagram ? "<div class='diagram-box'><strong>Sơ đồ gia phả:</strong>\\n" + esc(item.diagram) + "</div>" : "") +
-        "<div style='display:grid;gap:12px'>" +
+      var probHtml = "<div class='essay-short-box'><div class='esb-title'>📋 Đề bài:</div><p style='margin:0;line-height:1.6;font-size:16px'>" + esc(item.problem) + "</p></div>";
+      var diagHtml = item.diagram ? "<div class='diagram-paper-box'><strong>Sơ đồ gia phả:</strong>\n" + esc(item.diagram) + "</div>" : "";
+
+      var stepsHtml = "<div class='essay-sections-wrap'>" +
         (item.steps || []).map(function (st) {
-          return "<div class='step-box'><div class='step-title'>" + esc(st.title) + "</div><div class='step-content'>" + esc(st.content) + "</div></div>";
+          return "<div class='essay-sec'><div class='essay-sec-head'>" + esc(st.title) + "</div>" +
+            "<div class='essay-sec-items' style='white-space:pre-line'>" + esc(st.content) + "</div></div>";
         }).join("") +
         "</div>";
 
-      head.onclick = function () {
-        var isOpen = body.style.display !== "none";
-        body.style.display = isOpen ? "none" : "grid";
-        head.querySelector("span").textContent = isOpen ? "▼ Xem lời giải" : "▲ Thu gọn";
-      };
+      body.innerHTML = probHtml + diagHtml + stepsHtml;
+
+      head.onclick = function () { card.classList.toggle("open"); };
 
       card.appendChild(head);
       card.appendChild(body);
-      content.appendChild(card);
+      container.appendChild(card);
     });
+
+    content.appendChild(container);
   }
 
   /* ========================================================
@@ -1092,30 +1083,22 @@
     card.className = "q-card";
     card.id = "qCard_" + q.id;
 
-    var head = document.createElement("div");
-    head.className = "q-head";
+    var qNo = document.createElement("span");
+    qNo.className = "q-no";
+    qNo.textContent = "Câu " + (qi + 1);
+    card.appendChild(qNo);
 
-    var doubtBadge = q.isDoubt ? " <span class='tag-doubt'>⚠️ Nghi vấn kết quả</span>" : "";
-    head.innerHTML = "<span class='q-num'>Câu " + (qi + 1) + "</span>" +
-      "<div class='q-text'>" + esc(q.q) + doubtBadge + "</div>";
-    card.appendChild(head);
+    var qText = document.createElement("div");
+    qText.className = "q-text";
+    var doubtTag = q.isDoubt ? " <span class='tag-doubt'>⚠️ Nghi vấn kết quả</span>" : "";
+    qText.innerHTML = esc(q.q) + doubtTag;
+    card.appendChild(qText);
 
     var optWrap = document.createElement("div");
-    optWrap.className = "q-options";
+    optWrap.className = "options";
 
-    var expBox = document.createElement("div");
-    expBox.className = "q-explain";
-    expBox.style.display = "none";
-
-    var hintBox = document.createElement("div");
-    hintBox.className = "q-hint";
-    hintBox.style.display = "none";
-    if (q.hint) hintBox.innerHTML = "💡 <b>Gợi ý nhớ:</b> " + esc(q.hint);
-
-    var doubtBox = "";
-    if (q.isDoubt && q.doubtNote) {
-      doubtBox = "<div class='doubt-box'><strong>⚠️ Phân tích nghi vấn:</strong> " + esc(q.doubtNote) + "</div>";
-    }
+    var fbBox = document.createElement("div");
+    fbBox.className = "feedback";
 
     var store = subj === "lsd" ? lsdResults : pldcResults;
     var r = store[q.id];
@@ -1124,8 +1107,8 @@
     for (var k in q.options) {
       (function (optKey) {
         var btn = document.createElement("button");
-        btn.className = "opt-btn";
-        btn.innerHTML = "<span class='opt-key'>" + optKey + "</span><span class='opt-val'>" + esc(q.options[optKey]) + "</span>";
+        btn.className = "opt";
+        btn.innerHTML = "<span class='key'>" + optKey + "</span><span class='oval'>" + esc(q.options[optKey]) + "</span>";
         btn.onclick = function () {
           if (card.classList.contains("answered-ok")) return;
           onSelect(optKey);
@@ -1135,11 +1118,10 @@
       })(k);
     }
     card.appendChild(optWrap);
-    card.appendChild(hintBox);
-    card.appendChild(expBox);
+    card.appendChild(fbBox);
 
     if (r) {
-      applyCardResult(card, q, r, btnMap, expBox, hintBox, doubtBox);
+      applyCardResult(card, q, r, btnMap, fbBox);
     }
 
     return card;
@@ -1173,43 +1155,46 @@
 
     var card = document.getElementById("qCard_" + q.id);
     if (card) {
-      var expBox = card.querySelector(".q-explain");
-      var hintBox = card.querySelector(".q-hint");
+      var fbBox = card.querySelector(".feedback");
       var btnMap = {};
-      card.querySelectorAll(".opt-btn").forEach(function (b) {
-        var k = b.querySelector(".opt-key").textContent.trim();
+      card.querySelectorAll(".opt").forEach(function (b) {
+        var k = b.querySelector(".key").textContent.trim();
         btnMap[k] = b;
       });
-      var doubtBox = (q.isDoubt && q.doubtNote) ? "<div class='doubt-box'><strong>⚠️ Phân tích nghi vấn:</strong> " + esc(q.doubtNote) + "</div>" : "";
-      applyCardResult(card, q, store[q.id], btnMap, expBox, hintBox, doubtBox);
+      applyCardResult(card, q, store[q.id], btnMap, fbBox);
     }
 
     if (onDone) onDone();
   }
 
-  function applyCardResult(card, q, r, btnMap, expBox, hintBox, doubtBox) {
+  function applyCardResult(card, q, r, btnMap, fbBox) {
     for (var k in btnMap) {
-      btnMap[k].classList.remove("chosen-ok", "chosen-bad", "reveal-ok");
+      btnMap[k].classList.remove("correct", "wrong", "dim");
     }
+    var doubtBox = (q.isDoubt && q.doubtNote) ? "<div class='doubt-box'><strong>⚠️ Phân tích nghi vấn:</strong> " + esc(q.doubtNote) + "</div>" : "";
+
     if (r.status === "correct") {
       card.classList.add("answered-ok");
-      card.classList.remove("answered-bad");
-      if (btnMap[r.selected]) btnMap[r.selected].classList.add("chosen-ok");
-      if (expBox) {
-        expBox.style.display = "block";
-        expBox.innerHTML = "<strong>Chính xác!</strong> " + esc(q.explain) + (doubtBox || "");
+      if (btnMap[r.selected]) btnMap[r.selected].classList.add("correct");
+      for (var optK in btnMap) {
+        if (optK !== r.selected) btnMap[optK].classList.add("dim");
       }
-      if (hintBox) hintBox.style.display = "none";
+      if (fbBox) {
+        fbBox.className = "feedback show ok";
+        fbBox.innerHTML = "<span class='fb-title'>✓ Chính xác!</span><div>" + esc(q.explain) + "</div>" + doubtBox;
+      }
     } else {
       card.classList.remove("answered-ok");
-      card.classList.add("answered-bad");
-      if (btnMap[r.selected]) btnMap[r.selected].classList.add("chosen-bad");
-      if (btnMap[q.answer]) btnMap[q.answer].classList.add("reveal-ok");
-      if (expBox) {
-        expBox.style.display = "block";
-        expBox.innerHTML = "<strong>Đáp án đúng là " + q.answer + ".</strong> " + esc(q.explain) + (doubtBox || "");
+      if (btnMap[r.selected]) btnMap[r.selected].classList.add("wrong");
+      if (btnMap[q.answer]) btnMap[q.answer].classList.add("correct");
+      for (var optKey in btnMap) {
+        if (optKey !== r.selected && optKey !== q.answer) btnMap[optKey].classList.add("dim");
       }
-      if (hintBox && q.hint) hintBox.style.display = "block";
+      if (fbBox) {
+        fbBox.className = "feedback show bad";
+        var hintHtml = q.hint ? "<div style='margin-top:6px;color:var(--hint)'>💡 <b>Gợi ý:</b> " + esc(q.hint) + "</div>" : "";
+        fbBox.innerHTML = "<span class='fb-title'>✗ Chưa chính xác (Đáp án đúng là " + q.answer + ")</span><div>" + esc(q.explain) + "</div>" + hintHtml + doubtBox;
+      }
     }
   }
 
@@ -1305,13 +1290,21 @@
       var rInfo = computeRankLSD();
       dashBody.innerHTML =
         "<h3>📊 Tiến độ Lịch sử Đảng</h3>" +
-        "<p>Tổng số câu đúng: <b>" + rInfo.correct + "/" + rInfo.total + "</b> (" + (rInfo.total ? Math.round((rInfo.correct / rInfo.total) * 100) : 0) + "%)</p>" +
+        "<div class='stat-grid'>" +
+        "<div class='stat'><div class='n'>" + rInfo.correct + "</div><div class='l'>Câu đúng</div></div>" +
+        "<div class='stat'><div class='n'>" + rInfo.total + "</div><div class='l'>Tổng câu</div></div>" +
+        "<div class='stat'><div class='n'>" + (rInfo.total ? Math.round((rInfo.correct / rInfo.total) * 100) : 0) + "%</div><div class='l'>Hoàn thành</div></div>" +
+        "</div>" +
         "<p>Hạng hiện tại: <b>" + rInfo.current.name + "</b></p>";
     } else {
       var rInfoP = computeRankPLDC();
       dashBody.innerHTML =
         "<h3>📊 Tiến độ Pháp luật đại cương</h3>" +
-        "<p>Tổng số câu đúng (Trắc nghiệm + Đúng/Sai): <b>" + rInfoP.correct + "/" + rInfoP.total + "</b> (" + (rInfoP.total ? Math.round((rInfoP.correct / rInfoP.total) * 100) : 0) + "%)</p>" +
+        "<div class='stat-grid'>" +
+        "<div class='stat'><div class='n'>" + rInfoP.correct + "</div><div class='l'>Câu đúng</div></div>" +
+        "<div class='stat'><div class='n'>" + rInfoP.total + "</div><div class='l'>Tổng câu</div></div>" +
+        "<div class='stat'><div class='n'>" + (rInfoP.total ? Math.round((rInfoP.correct / rInfoP.total) * 100) : 0) + "%</div><div class='l'>Hoàn thành</div></div>" +
+        "</div>" +
         "<p>Hạng hiện tại: <b>" + rInfoP.current.name + "</b></p>";
     }
   }
@@ -1323,13 +1316,14 @@
     var modal = document.getElementById("rankModal");
     var body = document.getElementById("rankBody");
     body.innerHTML =
-      "<p>Môn hiện tại: <b>" + (currentSubject === "lsd" ? "Lịch sử Đảng" : "Pháp luật đại cương") + "</b></p>" +
+      "<p style='margin:0 0 12px;color:var(--ink-soft)'>Môn hiện tại: <b>" + (currentSubject === "lsd" ? "Lịch sử Đảng" : "Pháp luật đại cương") + "</b></p>" +
       "<div class='rank-list'>" +
       ranks.map(function (rk) {
         var isCur = (rk.key === rInfo.current.key) ? " cur" : "";
-        return "<div class='rank-item" + isCur + "'>" +
-          "<img src='ranks/" + rk.key + ".png' alt='" + rk.name + "'>" +
-          "<div><strong>" + rk.name + "</strong><span>Từ " + rk.min + " câu đúng</span></div>" +
+        return "<div class='rank-row" + isCur + "'>" +
+          "<img src='ranks/" + rk.key + ".png' alt='" + rk.name + "' class='rank-emblem-sm'>" +
+          "<div class='rr-meta'><span class='rr-name'>" + rk.name + "</span><span class='rr-min'>Từ " + rk.min + " câu đúng</span></div>" +
+          (isCur ? "<span class='rr-badge'>Hiện tại</span>" : "") +
           "</div>";
       }).join("") +
       "</div>";
