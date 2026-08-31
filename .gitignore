@@ -1,5 +1,5 @@
 .DS_Store
 *.log
 node_modules
-scores.json
+scores*.json
 package-lock.json
