@@ -1,8 +1,8 @@
 window.PLDC_DATA = {
   "metadata": {
     "title": "Pháp luật đại cương (v2)",
-    "description": "Ngân hàng 473 câu trắc nghiệm PLDC (18 bộ đề thi, chương lý thuyết & chuyên đề tình huống) + Đúng/Sai + QPPL + Chia thừa kế",
-    "updated": "2026-09-01 update 473c"
+    "description": "Ngân hàng 473 câu trắc nghiệm PLDC (18 bộ đề) + 139 câu Đúng/Sai (5 chương & đề thi) + QPPL + Chia thừa kế",
+    "updated": "2026-09-01 update 473c-TN + 139c-DS"
   },
   "trac_nghiem": [
     {
@@ -6758,6 +6758,762 @@ window.PLDC_DATA = {
       "q": "Uỷ ban nhân dân địa phương có quyền ban hành quyết định, chỉ thị, công văn mang tính quy phạm pháp luật.",
       "answer": "S",
       "explain": "Sai. Theo Luật Ban hành văn bản quy phạm pháp luật, UBND chỉ ban hành quyết định quy phạm, còn chỉ thị và công văn chỉ là văn bản hành chính cá biệt, không mang tính quy phạm pháp luật phổ biến."
+    },
+    {
+      "id": "ds-56",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Ba lần phân công lao động cuối thời kỳ công xã nguyên thủy là nguyên nhân trực tiếp dẫn đến sự ra đời của nhà nước.",
+      "answer": "S",
+      "explain": "Ba lần phân công lao động dẫn đến sự xuất hiện của chế độ tư hữu và sự phân hóa giai cấp đối kháng; mâu thuẫn giai cấp gay gắt không thể điều hòa được mới là nguyên nhân trực tiếp dẫn đến sự ra đời của nhà nước.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-57",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Chủ quyền quốc gia chỉ là quyền độc lập tự quyết của một quốc gia trong lĩnh vực đối nội.",
+      "answer": "S",
+      "explain": "Chủ quyền quốc gia là quyền tối cao của quốc gia trong phạm vi lãnh thổ của mình về đối nội và quyền độc lập tự quyết trong quan hệ quốc tế (đối ngoại).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-58",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Uỷ ban nhân dân các cấp có quyền ban hành quyết định, chỉ thị, công văn đều là văn bản quy phạm pháp luật.",
+      "answer": "S",
+      "explain": "Theo Luật Ban hành VBQPPL 2015 (sửa đổi 2020), UBND chỉ ban hành Quyết định là văn bản quy phạm pháp luật. Chỉ thị, công văn chỉ là văn bản hành chính cá biệt, không phải văn bản QPPL.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-59",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Người bị điên, mắc bệnh tâm thần nặng làm mất khả năng nhận thức là người đương nhiên bị coi là mất năng lực hành vi dân sự mà không cần Tòa án tuyên bố.",
+      "answer": "S",
+      "explain": "Theo Điều 22 BLDS 2015, người mắc bệnh tâm thần chỉ bị coi là mất năng lực hành vi dân sự khi có quyết định tuyên bố mất năng lực hành vi dân sự của Tòa án dựa trên kết luận giám định pháp y tâm thần.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-60",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Cơ quan quyền lực nhà nước ở địa phương là Hội đồng nhân dân các cấp.",
+      "answer": "Đ",
+      "explain": "Điều 113 Hiến pháp 2013 quy định Hội đồng nhân dân là cơ quan quyền lực nhà nước ở địa phương, đại diện cho ý chí, nguyện vọng và quyền làm chủ của Nhân dân địa phương.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-61",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Nhà nước có chủ quyền quốc gia là một trong những đặc trưng cơ bản của nhà nước.",
+      "answer": "Đ",
+      "explain": "Nhà nước là tổ chức duy nhất nắm giữ chủ quyền quốc gia, có quyền tối cao trong đối nội và độc lập trong đối ngoại.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-62",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Tất cả các hành vi trái pháp luật đều là hành vi vi phạm pháp luật.",
+      "answer": "S",
+      "explain": "Hành vi trái pháp luật chỉ là một dấu hiệu. Để cấu thành vi phạm pháp luật cần thêm 3 dấu hiệu: có lỗi, do chủ thể có năng lực trách nhiệm pháp lý thực hiện, và xâm phạm khách thể được pháp luật bảo vệ (Ví dụ: người điên gây hại là hành vi trái luật nhưng không có lỗi/không có năng lực TNPL nên không phải là VPPL).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-63",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Chế định pháp luật là yếu tố nhỏ nhất cấu thành nên hệ thống pháp luật.",
+      "answer": "S",
+      "explain": "Quy phạm pháp luật mới là yếu tố (tế bào) nhỏ nhất cấu thành nên hệ thống pháp luật. Tập hợp các quy phạm pháp luật cùng điều chỉnh một nhóm quan hệ xã hội tương ứng mới tạo thành Chế định pháp luật.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-64",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Phương pháp điều chỉnh của Luật Dân sự là phương pháp quyền uy, mệnh lệnh.",
+      "answer": "S",
+      "explain": "Phương pháp điều chỉnh của Luật Dân sự là phương pháp bình đẳng, thỏa thuận, tự định đoạt và tự chịu trách nhiệm. Phương pháp quyền uy mệnh lệnh là của Luật Hành chính và Hình sự.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-65",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Thực hiện pháp luật luôn là hành vi hợp pháp của các chủ thể pháp luật.",
+      "answer": "Đ",
+      "explain": "Thực hiện pháp luật là quá trình hoạt động có mục đích làm cho những quy định của pháp luật đi vào cuộc sống, trở thành hành vi hợp pháp của các chủ thể pháp luật.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-66",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Nhà nước có bản chất giai cấp và bản chất xã hội.",
+      "answer": "Đ",
+      "explain": "Mọi nhà nước trong lịch sử đều có hai thuộc tính bản chất: tính giai cấp (bảo vệ lợi ích giai cấp thống trị) và tính xã hội (quản lý trật tự chung, giải quyết các công việc chung của xã hội).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-67",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Bộ phận chế tài là bộ phận không thể thiếu trong mọi cấu trúc của quy phạm pháp luật thực tế.",
+      "answer": "S",
+      "explain": "Trong thực tế, rất nhiều quy phạm pháp luật chỉ có bộ phận Giả định và Quy định (quy phạm định nghĩa, quy phạm trao quyền, quy phạm nhiệm vụ) mà không có bộ phận chế tài trực tiếp.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-68",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Nghị quyết của Chính phủ là văn bản quy phạm pháp luật.",
+      "answer": "S",
+      "explain": "Theo Luật Ban hành VBQPPL 2015, văn bản quy phạm pháp luật của Chính phủ là Nghị định. Nghị quyết của Chính phủ là văn bản điều hành hành chính cá biệt (trừ Nghị quyết liên tịch).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-69",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Chỉ có chủ sở hữu tài sản mới có quyền chiếm hữu tài sản.",
+      "answer": "S",
+      "explain": "Người không phải là chủ sở hữu nhưng được chủ sở hữu ủy quyền, chuyển giao thông qua hợp đồng thuê, mượn, giữ tài sản hoặc chiếm hữu ngay tình vẫn có quyền chiếm hữu hợp pháp tài sản (Điều 186, 187 BLDS 2015).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-70",
+      "ch": "Mã đề thi kết thúc học phần",
+      "q": "Hành vi phòng vệ chính đáng là hành vi trái pháp luật.",
+      "answer": "S",
+      "explain": "Căn cứ Điều 22 BLHS 2015: Phòng vệ chính đáng là hành vi của người vì bảo vệ quyền hoặc lợi ích chính đáng của mình, của người khác hoặc lợi ích của Nhà nước, của cơ quan, tổ chức mà chống trả lại một cách cần thiết người đang có hành vi xâm phạm. Phòng vệ chính đáng không phải là tội phạm và là hành vi hợp pháp.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-71",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Nhà nước phân chia và quản lý dân cư theo quan hệ huyết thống, dòng tộc.",
+      "answer": "S",
+      "explain": "Nhà nước phân chia và quản lý dân cư theo đơn vị hành chính lãnh thổ (địa giới hành chính). Thị tộc, bộ lạc thời nguyên thủy mới phân chia theo huyết thống.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-72",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Một trong những đặc trưng cơ bản của Nhà nước là thiết lập hệ thống thu thuế bắt buộc đối với cư dân.",
+      "answer": "Đ",
+      "explain": "Nhà nước là tổ chức duy nhất có quyền quy định và thu các loại thuế bắt buộc để duy trì bộ máy và thực hiện các chức năng công.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-73",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Quyền lực trong xã hội cộng sản nguyên thủy mang tính chất xã hội và phục vụ lợi ích chung của toàn bộ cộng đồng.",
+      "answer": "Đ",
+      "explain": "Trong xã hội CSNT chưa có giai cấp và nhà nước, quyền lực do toàn thể thị tộc bầu ra, mang tính xã hội tự quản và phục vụ toàn bộ thành viên.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-74",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Quyền lực nhà nước hòa nhập tuyệt đối vào dân cư như trong xã hội nguyên thủy.",
+      "answer": "S",
+      "explain": "Quyền lực nhà nước là quyền lực chính trị công cộng đặc biệt, tách rời khỏi dân cư và đứng trên xã hội, có bộ máy cưỡng chế chuyên nghiệp (quân đội, cảnh sát, nhà tù).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-75",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Nhà nước là chủ thể duy nhất trong xã hội có chủ quyền quốc gia.",
+      "answer": "Đ",
+      "explain": "Chỉ có Nhà nước mới là đại diện chính thức và duy nhất cho toàn bộ quốc gia, dân tộc nắm giữ chủ quyền quốc gia thiêng liêng.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-76",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Nhà nước quân chủ tuyệt đối thời phong kiến không có hiến pháp thành văn.",
+      "answer": "Đ",
+      "explain": "Trong chế độ quân chủ chuyên chế tuyệt đối, quyền lực của vua là vô hạn, lời vua là luật, không có bản Hiến pháp để giới hạn quyền lực của vua.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-77",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Trong chính thể quân chủ tuyệt đối, toàn bộ quyền lực nhà nước tối cao tập trung vào tay một người duy nhất là người đứng đầu nhà nước (vua/hoàng đế).",
+      "answer": "Đ",
+      "explain": "Chính thể quân chủ tuyệt đối đặc trưng bởi việc toàn bộ quyền lập pháp, hành pháp và tư pháp tập trung tuyệt đối vào tay nhà vua.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-78",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Trong mọi nhà nước có vua (quân chủ), vua đều nắm giữ quyền lực nhà nước tuyệt đối.",
+      "answer": "S",
+      "explain": "Trong chính thể quân chủ hạn chế (quân chủ lập hiến/quân chủ đại nghị như Anh, Nhật Bản), quyền lực của vua bị hạn chế bởi Hiến pháp và Nghị viện, vua chỉ mang tính chất tượng trưng.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-79",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Nhà nước thực hiện hai chức năng cơ bản là chức năng đối nội và chức năng đối ngoại.",
+      "answer": "Đ",
+      "explain": "Căn cứ vào phạm vi hoạt động, mọi nhà nước đều thực hiện chức năng đối nội (quản lý trong nước) và chức năng đối ngoại (quan hệ quốc tế, bảo vệ tổ quốc).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-80",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Bản chất của nhà nước chỉ duy nhất mang tính giai cấp mà không mang tính xã hội.",
+      "answer": "S",
+      "explain": "Nhà nước là hiện tượng vừa mang tính giai cấp (bảo vệ giai cấp thống trị) vừa mang tính xã hội (duy trì trật tự chung và phục vụ lợi ích chung của cộng đồng).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-81",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Chiếm hữu nô lệ là tên gọi của một kiểu nhà nước trong lịch sử.",
+      "answer": "S",
+      "explain": "Chiếm hữu nô lệ là hình thái kinh tế - xã hội. Kiểu nhà nước tương ứng có tên gọi chính xác là 'Kiểu nhà nước chủ nô' (gồm 4 kiểu nhà nước: Chủ nô, Phong kiến, Tư sản, XHCN).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-82",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Tư bản chủ nghĩa là tên gọi của một kiểu nhà nước.",
+      "answer": "S",
+      "explain": "Tư bản chủ nghĩa là hình thái kinh tế - xã hội. Kiểu nhà nước tương ứng là 'Kiểu nhà nước tư sản'.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-83",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Nhà nước thể hiện ý chí bình đẳng của mọi giai cấp và tầng lớp trong xã hội.",
+      "answer": "S",
+      "explain": "Nhà nước trước hết thể hiện ý chí của giai cấp thống trị trong xã hội, thông qua nhà nước để hợp pháp hóa ý chí của giai cấp thống trị thành ý chí nhà nước.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-84",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Nhà nước là một bộ máy cưỡng chế đặc biệt do giai cấp thống trị lập ra và sử dụng.",
+      "answer": "Đ",
+      "explain": "Theo chủ nghĩa Mác-Lênin, nhà nước là công cụ bạo lực sắc bén và bộ máy cưỡng chế đặc biệt của giai cấp thống trị để duy trì sự thống trị giai cấp.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-85",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Nhà nước ra đời nhằm mục đích giải quyết và dập tắt hoàn toàn mọi mâu thuẫn trong xã hội.",
+      "answer": "S",
+      "explain": "Nhà nước ra đời không phải để triệt tiêu mâu thuẫn giai cấp mà là để giữ cho các cuộc xung đột giai cấp nằm trong vòng 'trật tự' có lợi cho giai cấp thống trị.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-86",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Trong Nhà nước CHXHCN Việt Nam, Nhân dân là chủ thể tối cao của quyền lực nhà nước.",
+      "answer": "Đ",
+      "explain": "Điều 2 Hiến pháp 2013 khẳng định: Nước CHXHCN Việt Nam do Nhân dân làm chủ; tất cả quyền lực nhà nước thuộc về Nhân dân.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-87",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Nhà nước CHXHCN Việt Nam là nhà nước đại diện cho khối đại đoàn kết toàn dân tộc.",
+      "answer": "Đ",
+      "explain": "Nhà nước Việt Nam là nhà nước của Nhân dân, do Nhân dân, vì Nhân dân, dựa trên nền tảng liên minh giữa giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức dưới sự lãnh đạo của Đảng.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-88",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Nhiệm kỳ của Chủ tịch nước CHXHCN Việt Nam theo quy định của Hiến pháp là 5 năm và theo nhiệm kỳ của Quốc hội.",
+      "answer": "Đ",
+      "explain": "Điều 87 Hiến pháp 2013 quy định nhiệm kỳ của Chủ tịch nước theo nhiệm kỳ của Quốc hội (5 năm).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-89",
+      "ch": "Chương 1: Lý luận Nhà nước",
+      "q": "Thẩm quyền công bố Hiến pháp, Luật, Pháp lệnh thuộc về Chủ tịch nước.",
+      "answer": "Đ",
+      "explain": "Căn cứ Khoản 1 Điều 88 Hiến pháp 2013, Chủ tịch nước có nhiệm vụ và quyền hạn công bố Hiến pháp, luật, pháp lệnh.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-90",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Mọi quy tắc ứng xử tồn tại trong xã hội đều là pháp luật.",
+      "answer": "S",
+      "explain": "Xã hội có nhiều loại quy phạm xã hội: đạo đức, tập quán, tín điều tôn giáo, điều lệ hội... Chỉ những quy tắc do nhà nước ban hành hoặc thừa nhận mới là pháp luật.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-91",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Chỉ có pháp luật mới mang tính quy phạm.",
+      "answer": "S",
+      "explain": "Mọi quy tắc ứng xử xã hội (đạo đức, tôn giáo, phong tục) đều mang tính quy phạm (khuôn mẫu hành vi). Pháp luật mang tính 'quy phạm phổ biến' và bắt buộc chung.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-92",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Pháp luật mang tính quy phạm phổ biến so với các quy phạm xã hội khác.",
+      "answer": "Đ",
+      "explain": "Tính quy phạm phổ biến thể hiện ở chỗ pháp luật có hiệu lực bắt buộc chung với mọi chủ thể trong phạm vi toàn quốc và được áp dụng nhiều lần trong đời sống.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-93",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Một trong những thuộc tính cơ bản của pháp luật là tính xác định chặt chẽ về hình thức.",
+      "answer": "Đ",
+      "explain": "Pháp luật được thể hiện bằng ngôn ngữ pháp lý rõ ràng, chính xác, cấu trúc chặt chẽ và trong các hình thức văn bản luật xác định.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-94",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Một trong những thuộc tính của pháp luật là tính được bảo đảm thực hiện bằng quyền lực và sức mạnh cưỡng chế của nhà nước.",
+      "answer": "Đ",
+      "explain": "Nhà nước bảo đảm thực hiện pháp luật bằng các biện pháp thuyết phục, giáo dục và cưỡng chế nhà nước khi cần thiết.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-95",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Chủ thể của quan hệ pháp luật có thể là cá nhân hoặc tổ chức.",
+      "answer": "Đ",
+      "explain": "Chủ thể của quan hệ pháp luật gồm cá nhân (công dân, người nước ngoài, người không quốc tịch) và tổ chức (pháp nhân, cơ quan nhà nước, tổ chức kinh tế...).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-96",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Năng lực pháp luật của cá nhân phát sinh kể từ khi cá nhân được sinh ra và chấm dứt khi cá nhân chết.",
+      "answer": "Đ",
+      "explain": "Khoản 3 Điều 16 BLDS 2015 quy định: Năng lực pháp luật dân sự của cá nhân có từ khi người đó sinh ra và chấm dứt khi người đó chết.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-97",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Năng lực pháp luật và năng lực hành vi của tổ chức (pháp nhân) xuất hiện đồng thời và chấm dứt đồng thời.",
+      "answer": "Đ",
+      "explain": "Khác với cá nhân, tổ chức có năng lực pháp luật và năng lực hành vi phát sinh cùng lúc khi được thành lập/cho phép và chấm dứt cùng lúc khi giải thể/phá sản (Điều 86 BLDS 2015).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-98",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Quy phạm pháp luật bắt buộc phải có đủ cả ba bộ phận: Giả định, quy định, chế tài.",
+      "answer": "S",
+      "explain": "Trong kỹ thuật lập pháp, một quy phạm pháp luật cụ thể không bắt buộc phải có đủ cả 3 bộ phận mà có thể khuyết quy định hoặc khuyết chế tài.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-99",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Một hành vi vi phạm pháp luật chỉ có thể bị áp dụng một loại trách nhiệm pháp lý duy nhất.",
+      "answer": "S",
+      "explain": "Một hành vi vi phạm pháp luật có thể phải gánh chịu đồng thời nhiều loại trách nhiệm pháp lý khác nhau (ví dụ: phạm tội trộm cắp vừa chịu TN hình sự phạt tù, vừa chịu TN dân sự bồi thường thiệt hại).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-100",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Thiệt hại về vật chất là dấu hiệu bắt buộc phải có của mọi hành vi vi phạm pháp luật.",
+      "answer": "S",
+      "explain": "Nhiều vi phạm pháp luật không gây ra thiệt hại vật chất cụ thể mà xâm phạm trật tự quản lý, an ninh quốc gia, danh dự nhân phẩm (ví dụ: vượt đèn đỏ, xúc phạm danh dự...).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-101",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Vi phạm pháp luật bắt buộc phải hội tụ đủ 4 dấu hiệu: là hành vi của con người, trái pháp luật, có lỗi và chủ thể có năng lực trách nhiệm pháp lý.",
+      "answer": "Đ",
+      "explain": "Đây là 4 dấu hiệu đặc trưng không thể thiếu để xác định một hiện tượng thực tế là vi phạm pháp luật.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-102",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Vi phạm pháp luật là con người cụ thể thực hiện hành vi sai trái.",
+      "answer": "S",
+      "explain": "Vi phạm pháp luật là 'hành vi' xác định của con người biểu hiện ra thế giới khách quan, không phải là bản thân con người.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-103",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Hành vi vi phạm pháp luật chỉ do cá nhân thực hiện.",
+      "answer": "S",
+      "explain": "Tổ chức (pháp nhân) cũng có thể là chủ thể của vi phạm hành chính, vi phạm dân sự và pháp nhân thương mại có thể là chủ thể của tội phạm hình sự (Điều 74 BLHS 2015).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-104",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Hình thức pháp luật xuất hiện sớm nhất trong lịch sử loài người là văn bản quy phạm pháp luật.",
+      "answer": "S",
+      "explain": "Tập quán pháp là hình thức pháp luật xuất hiện sớm nhất trong lịch sử khi nhà nước thừa nhận các tập quán có sẵn trong xã hội nguyên thủy.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-105",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Bộ phận Quy định là bộ phận trung tâm, chứa đựng quy tắc xử sự của quy phạm pháp luật.",
+      "answer": "Đ",
+      "explain": "Quy định là hạt nhân của quy phạm pháp luật, chỉ ra quyền và nghĩa vụ xử sự cho các chủ thể khi ở vào hoàn cảnh của giả định.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-106",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Bản án, quyết định của Tòa án nhân dân là văn bản quy phạm pháp luật.",
+      "answer": "S",
+      "explain": "Bản án, quyết định của Tòa án là văn bản áp dụng pháp luật (văn bản cá biệt), không phải là văn bản quy phạm pháp luật (trừ phần được Hội đồng Thẩm phán tuyển chọn thành Án lệ).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-107",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Bộ luật là văn bản quy phạm pháp luật có hiệu lực pháp lý cao nhất trong hệ thống pháp luật Việt Nam.",
+      "answer": "S",
+      "explain": "Hiến pháp mới là văn bản quy phạm pháp luật có hiệu lực pháp lý cao nhất; Bộ luật và Luật phải phù hợp với Hiến pháp.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-108",
+      "ch": "Chương 2: Pháp luật & QPPL",
+      "q": "Phương pháp điều chỉnh của ngành Luật Hành chính là phương pháp thỏa thuận, bình đẳng.",
+      "answer": "S",
+      "explain": "Phương pháp điều chỉnh của Luật Hành chính là phương pháp mệnh lệnh - phục tùng (quyền uy), thể hiện quan hệ bất bình đẳng giữa cơ quan quản lý nhà nước và đối tượng quản lý.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-109",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Độ tuổi được phép kết hôn theo Luật Hôn nhân và gia đình 2014 là nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên.",
+      "answer": "Đ",
+      "explain": "Điểm a Khoản 1 Điều 8 Luật HNGĐ 2014 quy định điều kiện về tuổi kết hôn: Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-110",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Vợ chồng có quyền có tài sản riêng hợp pháp trong thời kỳ hôn nhân.",
+      "answer": "Đ",
+      "explain": "Điều 43 Luật HNGĐ 2014 quy định tài sản riêng của vợ, chồng gồm tài sản có trước khi kết hôn, tài sản được thừa kế riêng, tặng cho riêng trong thời kỳ hôn nhân...",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-111",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Pháp luật hiện hành cấm anh, chị, em nuôi kết hôn với nhau.",
+      "answer": "S",
+      "explain": "Luật HNGĐ 2014 cấm kết hôn giữa cha mẹ nuôi với con nuôi, nhưng KHÔNG cấm kết hôn giữa anh chị em nuôi với nhau nếu không cùng dòng máu trực hệ và không có họ trong phạm vi 3 đời.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-112",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Pháp luật hôn nhân gia đình cấm kết hôn giữa những người đã từng là cha mẹ nuôi với con nuôi.",
+      "answer": "Đ",
+      "explain": "Điểm d Khoản 2 Điều 5 Luật HNGĐ 2014 cấm kết hôn giữa cha, mẹ nuôi với con nuôi; giữa người đã từng là cha, mẹ nuôi với con nuôi.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-113",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Pháp luật cấm kết hôn giữa bố dượng với con riêng của vợ, giữa mẹ kế với con riêng của chồng.",
+      "answer": "Đ",
+      "explain": "Điểm d Khoản 2 Điều 5 Luật HNGĐ 2014 nghiêm cấm kết hôn giữa bố dượng với con riêng của vợ, mẹ kế với con riêng của chồng.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-114",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Pháp luật Việt Nam hiện hành nghiêm cấm hành vi kết hôn giữa những người cùng giới tính.",
+      "answer": "S",
+      "explain": "Khoản 2 Điều 8 Luật HNGĐ 2014 quy định: 'Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính', tức là không đăng ký kết hôn nhưng không cấm đoán, xử phạt việc họ sống chung.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-115",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Pháp luật Việt Nam thừa nhận và cấp giấy chứng nhận đăng ký kết hôn cho những người đồng giới.",
+      "answer": "S",
+      "explain": "Luật HNGĐ 2014 không thừa nhận hôn nhân đồng giới, do đó cơ quan nhà nước không cấp đăng ký kết hôn cho người cùng giới tính.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-116",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Pháp luật cấm kết hôn giữa bố chồng với con dâu, giữa mẹ vợ với con rể.",
+      "answer": "Đ",
+      "explain": "Điểm d Khoản 2 Điều 5 Luật HNGĐ 2014 cấm kết hôn giữa bố chồng với con dâu, mẹ vợ với con rể, bố dượng với con riêng của vợ, mẹ kế với con riêng của chồng.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-117",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Pháp luật cấm kết hôn giữa những người có họ trong phạm vi bốn đời.",
+      "answer": "S",
+      "explain": "Điểm d Khoản 2 Điều 5 Luật HNGĐ 2014 chỉ cấm kết hôn giữa những người có họ trong phạm vi 'ba đời'. Từ đời thứ tư trở đi được phép kết hôn.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-118",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Pháp luật cấm kết hôn giữa những người cùng dòng máu về trực hệ.",
+      "answer": "Đ",
+      "explain": "Những người cùng dòng máu trực hệ là cha mẹ với con, ông bà với cháu... tuyệt đối bị cấm kết hôn theo Điểm d Khoản 2 Điều 5 Luật HNGĐ.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-119",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Mọi tài sản phát sinh trong thời kỳ hôn nhân đều đương nhiên là tài sản chung của vợ chồng.",
+      "answer": "S",
+      "explain": "Tài sản được thừa kế riêng, được tặng cho riêng hoặc tài sản hình thành từ tài sản riêng của vợ/chồng trong thời kỳ hôn nhân vẫn là tài sản riêng (Điều 43 Luật HNGĐ 2014).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-120",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Tài sản có trước thời kỳ hôn nhân luôn luôn là tài sản riêng của vợ chồng trong mọi trường hợp.",
+      "answer": "S",
+      "explain": "Vợ chồng có quyền thỏa thuận sáp nhập tài sản riêng có trước hôn nhân vào khối tài sản chung của vợ chồng (Điều 43, 44 Luật HNGĐ 2014).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-121",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Tài sản chung của vợ chồng thuộc hình thức sở hữu chung theo phần.",
+      "answer": "S",
+      "explain": "Theo Điều 213 BLDS 2015 và Điều 33 Luật HNGĐ 2014: Sở hữu chung của vợ chồng là sở hữu chung hợp nhất có thể phân chia, không phải sở hữu chung theo phần xác định trước.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-122",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Quan hệ tài sản do Luật Dân sự điều chỉnh là quan hệ giữa người với người thông qua một tài sản nhất định.",
+      "answer": "Đ",
+      "explain": "Quan hệ tài sản là quan hệ kinh tế - xã hội giữa các chủ thể về việc chiếm hữu, sử dụng, định đoạt và chuyển giao các loại tài sản.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-123",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Quyền nhân thân do Luật Dân sự điều chỉnh là quyền gắn liền với mỗi cá nhân và không thể bị chuyển giao cho người khác, trừ trường hợp luật có quy định khác.",
+      "answer": "Đ",
+      "explain": "Khoản 1 Điều 25 BLDS 2015 quy định quyền nhân thân gắn liền với mỗi cá nhân, không thể là đối tượng chuyển giao trong các giao dịch, trừ trường hợp luật khác có quy định.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-124",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Mọi sự thỏa thuận giữa các bên trong đời sống đều là hợp đồng dân sự.",
+      "answer": "S",
+      "explain": "Chỉ những thỏa thuận hợp pháp nhằm xác lập, thay đổi hoặc chấm dứt quyền, nghĩa vụ dân sự theo quy định tại Điều 385 BLDS 2015 mới là hợp đồng dân sự (thỏa thuận rủ nhau đi chơi, đi ăn không phải hợp đồng).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-125",
+      "ch": "Chương 4: Dân sự & HNGĐ",
+      "q": "Quyền sở hữu tài sản bao gồm ba quyền năng: quyền chiếm hữu, quyền sử dụng và quyền định đoạt.",
+      "answer": "Đ",
+      "explain": "Điều 158 BLDS 2015 quy định: Quyền sở hữu bao gồm quyền chiếm hữu, quyền sử dụng và quyền định đoạt tài sản của chủ sở hữu theo quy định của luật.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-126",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Quan hệ học nghề, tập nghề là quan hệ có liên quan trực tiếp đến quan hệ lao động.",
+      "answer": "Đ",
+      "explain": "Luật Lao động điều chỉnh quan hệ lao động và các quan hệ liên quan trực tiếp đến quan hệ lao động gồm: học nghề, tập nghề, việc làm, bảo hiểm xã hội, giải quyết tranh chấp lao động...",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-127",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Quan hệ giải quyết tranh chấp lao động là quan hệ liên quan đến quan hệ lao động do Luật Lao động điều chỉnh.",
+      "answer": "Đ",
+      "explain": "Tranh chấp lao động phát sinh trực tiếp từ quan hệ lao động và là đối tượng điều chỉnh quan trọng của Luật Lao động.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-128",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Hợp đồng lao động bắt buộc phải được lập thành văn bản trong mọi trường hợp.",
+      "answer": "S",
+      "explain": "Hợp đồng lao động có thời hạn dưới 01 tháng được phép giao kết bằng lời nói theo Khoản 2 Điều 14 Bộ luật Lao động 2019.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-129",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng trở lên thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc.",
+      "answer": "Đ",
+      "explain": "Căn cứ Điểm b Khoản 1 Điều 2 Luật BHXH 2014, người làm việc theo HĐLĐ có thời hạn từ đủ 01 tháng trở lên thuộc diện tham gia BHXH bắt buộc.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-130",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Mục đích vụ lợi là dấu hiệu bắt buộc trong mặt chủ quan của mọi hành vi tham nhũng.",
+      "answer": "Đ",
+      "explain": "Khoản 1 Điều 2 Luật PCTN 2018 định nghĩa: Tham nhũng là hành vi của người có chức vụ, quyền hạn đã lợi dụng chức vụ, quyền hạn đó vì vụ lợi.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-131",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Lỗi của chủ thể thực hiện hành vi tham nhũng có thể là lỗi cố ý hoặc lỗi vô ý.",
+      "answer": "S",
+      "explain": "Chủ thể tham nhũng nhận thức rõ hành vi của mình là lợi dụng chức vụ, quyền hạn và mong muốn đạt được lợi ích vụ lợi bất chính nên lỗi của hành vi tham nhũng luôn luôn là lỗi cố ý trực tiếp.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-132",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Chủ thể của hành vi tham nhũng bắt buộc phải là người có chức vụ, quyền hạn.",
+      "answer": "Đ",
+      "explain": "Chỉ người có chức vụ, quyền hạn (trong khu vực nhà nước hoặc khu vực ngoài nhà nước) mới có thể là chủ thể của hành vi tham nhũng.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-133",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Hành vi trộm cắp tài sản công của cơ quan nhà nước do bảo vệ thực hiện luôn là hành vi tham nhũng.",
+      "answer": "S",
+      "explain": "Nếu người bảo vệ không được giao quyền quản lý tài sản đó mà chỉ lén lút lấy cắp như người ngoài thì đó là tội trộm cắp tài sản thông thường, không phải hành vi tham nhũng (tham ô tài sản).",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-134",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Khách thể duy nhất bị xâm hại của hành vi tham nhũng là quyền sở hữu tài sản của Nhà nước.",
+      "answer": "S",
+      "explain": "Khách thể của tham nhũng gồm hoạt động đúng đắn của cơ quan, tổ chức, uy tín của bộ máy nhà nước và phẩm chất đạo đức của cán bộ, công chức, bên cạnh quyền sở hữu tài sản.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-135",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Người có hành vi tham nhũng đã nghỉ hưu hoặc chuyển công tác thì không bị xử lý trách nhiệm theo quy định pháp luật.",
+      "answer": "S",
+      "explain": "Luật PCTN 2018 quy định người có hành vi tham nhũng dù đã nghỉ hưu, thôi việc hoặc chuyển công tác vẫn bị xử lý nghiêm minh theo quy định pháp luật (không có 'vùng cấm').",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-136",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Chỉ có cán bộ, công chức, viên chức trong khu vực nhà nước mới có thể là chủ thể của hành vi tham nhũng.",
+      "answer": "S",
+      "explain": "Luật PCTN 2018 đã mở rộng phạm vi điều chỉnh sang khu vực ngoài nhà nước đối với một số hành vi tham nhũng của người có chức vụ trong doanh nghiệp, tổ chức tín dụng ngoài nhà nước.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-137",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Hành vi tham nhũng theo Luật Phòng, chống tham nhũng 2018 chỉ có thể xảy ra trong khu vực nhà nước.",
+      "answer": "S",
+      "explain": "Luật PCTN 2018 quy định các hành vi tham nhũng trong khu vực ngoài nhà nước (Điều 80) như tham ô tài sản, nhận hối lộ, đưa hối lộ trong các doanh nghiệp, tổ chức ngoài nhà nước.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-138",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Người tiêu dùng theo Luật Bảo vệ quyền lợi người tiêu dùng là người mua, sử dụng sản phẩm, hàng hóa, dịch vụ cho mục đích tiêu dùng, sinh hoạt của cá nhân, gia đình, tổ chức.",
+      "answer": "Đ",
+      "explain": "Khoản 1 Điều 3 Luật Bảo vệ quyền lợi người tiêu dùng quy định người tiêu dùng là người mua, sử dụng sản phẩm, hàng hóa, dịch vụ cho mục đích tiêu dùng, sinh hoạt của cá nhân, gia đình, tổ chức.",
+      "isDoubt": false,
+      "doubtNote": ""
+    },
+    {
+      "id": "ds-139",
+      "ch": "Chương 5: Lao động, Hình sự & PCTN",
+      "q": "Pháp nhân thương mại có thể là chủ thể chịu trách nhiệm hình sự về một số tội phạm quy định tại Bộ luật Hình sự.",
+      "answer": "Đ",
+      "explain": "Điều 74, 76 BLHS 2015 quy định pháp nhân thương mại phải chịu trách nhiệm hình sự về các tội phạm cụ thể được liệt kê trong Bộ luật Hình sự (tội phạm kinh tế, môi trường...).",
+      "isDoubt": false,
+      "doubtNote": ""
     }
   ],
   "thua_ke": [
