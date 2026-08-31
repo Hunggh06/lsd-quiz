@@ -999,7 +999,7 @@
     hero.innerHTML =
       '<div class="essay-hero-head"><span class="essay-hero-badge">CẤU TRÚC ĐIỀU LUẬT (QPPL)</span></div>' +
       '<h1 class="essay-hero-title">📜 16 Câu hỏi Cấu trúc Quy phạm pháp luật</h1>' +
-      '<p class="essay-hero-sub">Đề bài và đáp án biểu điểm chuẩn xác 100% theo đề cương ôn thi HaUI.</p>';
+      '<p class="essay-hero-sub">Phân tích rõ Giả định - Quy định - Chế tài và Hình thức thực hiện pháp luật chuẩn theo đề cương.</p>';
     container.appendChild(hero);
 
     list.forEach(function (item, idx) {
@@ -1010,18 +1010,27 @@
       head.className = "essay-card-header";
       head.innerHTML =
         "<div class='ec-no'>Câu " + (idx + 1) + "</div>" +
-        "<div class='ec-title-wrap'>" +
-        "<div class='ec-title'>" + esc(item.title) + "</div>" +
-        "</div>" +
+        "<div class='ec-title-wrap'><div class='ec-title'>" + esc(item.title) + "</div></div>" +
         "<div class='ec-actions'><span class='ec-chev'>▼</span></div>";
 
       var body = document.createElement("div");
       body.className = "essay-card-body";
 
-      var qHtml = "<div class='essay-short-box'><div class='esb-title'>📖 Đề bài:</div><p style='margin:0;line-height:1.6;font-size:16px;white-space:pre-line'>" + esc(item.question) + "</p></div>";
-      var ansHtml = "<div class='essay-sections-wrap'><div class='essay-sec'><div class='essay-sec-head'>📝 Đáp án &amp; Phân tích cấu trúc</div><div class='essay-sec-items' style='white-space:pre-line;line-height:1.7'>" + esc(item.answer_raw) + "</div></div></div>";
+      var qHtml = "<div class='essay-short-box'><div class='esb-title'>📖 Đề bài điều luật:</div><p style='margin:0;line-height:1.6;font-size:16px;white-space:pre-line'>" + esc(item.question) + "</p></div>";
 
-      body.innerHTML = qHtml + ansHtml;
+      var secHtml = "<div class='essay-sections-wrap'>" +
+        (item.sections || []).map(function (s) {
+          var cls = "essay-sec";
+          if (s.heading && s.heading.indexOf("Hình thức") !== -1) cls += " sec-lienhe";
+          if (s.heading && s.heading.indexOf("Chế tài") !== -1) cls += " sec-tips";
+          return "<div class='" + cls + "'><div class='essay-sec-head'>" + esc(s.heading) + "</div>" +
+            "<div class='essay-sec-items'>" +
+            (s.items || []).map(function (it) { return "<div>" + esc(it) + "</div>"; }).join("") +
+            "</div></div>";
+        }).join("") +
+        "</div>";
+
+      body.innerHTML = qHtml + secHtml;
       head.onclick = function () { card.classList.toggle("open"); };
 
       card.appendChild(head);
@@ -1043,7 +1052,7 @@
     hero.innerHTML =
       '<div class="essay-hero-head"><span class="essay-hero-badge">TÌNH HUỐNG THỰC TẾ</span></div>' +
       '<h1 class="essay-hero-title">⚡ 16 Bài tập Tình huống Vi phạm PL &amp; Quan hệ PL</h1>' +
-      '<p class="essay-hero-sub">Đề bài và biểu điểm giải quyết tình huống chuẩn xác 100% theo đề cương ôn thi HaUI.</p>';
+      '<p class="essay-hero-sub">Phân tích các yếu tố cấu thành vi phạm pháp luật và quan hệ pháp luật chuẩn theo đề cương.</p>';
     container.appendChild(hero);
 
     list.forEach(function (item, idx) {
@@ -1054,18 +1063,27 @@
       head.className = "essay-card-header";
       head.innerHTML =
         "<div class='ec-no'>TH " + (idx + 1) + "</div>" +
-        "<div class='ec-title-wrap'>" +
-        "<div class='ec-title'>" + esc(item.title) + "</div>" +
-        "</div>" +
+        "<div class='ec-title-wrap'><div class='ec-title'>" + esc(item.title) + "</div></div>" +
         "<div class='ec-actions'><span class='ec-chev'>▼</span></div>";
 
       var body = document.createElement("div");
       body.className = "essay-card-body";
 
       var probHtml = "<div class='essay-short-box'><div class='esb-title'>📋 Đề bài tình huống:</div><p style='margin:0;line-height:1.6;font-size:16px;white-space:pre-line'>" + esc(item.problem) + "</p></div>";
-      var ansHtml = "<div class='essay-sections-wrap'><div class='essay-sec sec-tips'><div class='essay-sec-head'>🎯 Đáp án &amp; Phân tích cấu thành</div><div class='essay-sec-items' style='white-space:pre-line;line-height:1.7'>" + esc(item.answer_raw) + "</div></div></div>";
 
-      body.innerHTML = probHtml + ansHtml;
+      var secHtml = "<div class='essay-sections-wrap'>" +
+        (item.sections || []).map(function (s) {
+          var cls = "essay-sec";
+          if (s.heading && (s.heading.indexOf("Khách quan") !== -1 || s.heading.indexOf("Chủ thể") !== -1)) cls += " sec-tips";
+          if (s.heading && (s.heading.indexOf("Nội dung") !== -1 || s.heading.indexOf("Trách nhiệm") !== -1 || s.heading.indexOf("Kết luận") !== -1 || s.heading.indexOf("Có VPPL") !== -1)) cls += " sec-lienhe";
+          return "<div class='" + cls + "'><div class='essay-sec-head'>" + esc(s.heading) + "</div>" +
+            "<div class='essay-sec-items'>" +
+            (s.items || []).map(function (it) { return "<div>" + esc(it) + "</div>"; }).join("") +
+            "</div></div>";
+        }).join("") +
+        "</div>";
+
+      body.innerHTML = probHtml + secHtml;
       head.onclick = function () { card.classList.toggle("open"); };
 
       card.appendChild(head);
