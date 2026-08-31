@@ -548,6 +548,15 @@
     h.className = "lesson-heading";
     h.textContent = ch.title + (ch.subtitle ? " — " + ch.subtitle : "");
     content.appendChild(h);
+    var toolbarLsd = document.createElement("div");
+    toolbarLsd.style.cssText = "display:flex;gap:8px;margin:0 0 14px;flex-wrap:wrap";
+    var clearBtnLsd = document.createElement("button");
+    clearBtnLsd.className = "ghost-btn danger";
+    clearBtnLsd.style.cssText = "font-size:12px;padding:6px 10px";
+    clearBtnLsd.textContent = "🗑 Xóa đáp án bài này";
+    clearBtnLsd.onclick = function(){ clearLsdChapter(ci); };
+    toolbarLsd.appendChild(clearBtnLsd);
+    content.appendChild(toolbarLsd);
 
     ch.questions.forEach(function (q, qi) {
       var card = createQuestionCard(q, qi, "lsd", function (optKey) {
@@ -774,6 +783,44 @@
     qnav.classList.add("hidden");
   }
 
+  function clearPldcChapter(ci) {
+    if (!confirm("Xóa toàn bộ đáp án đã làm trong bài này?")) return;
+    var ch = PLDC_DATA.trac_nghiem[ci];
+    if (!ch) return;
+    ch.questions.forEach(function(q){ delete pldcResults[q.id]; });
+    saveResults(PLDC_STORE_KEY, pldcResults);
+    currentStreak = 0; prevStreak = 0; updateCombo();
+    renderPldcTN(ci);
+    renderPldcTNQnav(ci);
+    updatePldcTNProgress(ci);
+    renderTree();
+    updateRank();
+  }
+  function clearPldcDSAll() {
+    if (!confirm("Xóa toàn bộ đáp án phần Đúng/Sai?")) return;
+    (PLDC_DATA.dung_sai || []).forEach(function(q){ delete pldcResults[q.id]; });
+    saveResults(PLDC_STORE_KEY, pldcResults);
+    currentStreak = 0; prevStreak = 0; updateCombo();
+    renderPldcDS();
+    renderPldcDSQnav();
+    updatePldcDSProgress();
+    renderTree();
+    updateRank();
+  }
+  function clearLsdChapter(ci) {
+    if (!confirm("Xóa toàn bộ đáp án đã làm trong bài này?")) return;
+    var ch = LSD_DATA.chapters[ci];
+    if (!ch) return;
+    ch.questions.forEach(function(q){ delete lsdResults[q.id]; });
+    saveResults(LSD_STORE_KEY, lsdResults);
+    currentStreak = 0; prevStreak = 0; updateCombo();
+    renderLsdBai(ci);
+    renderLsdQnav(ci);
+    updateLsdProgress(ci);
+    renderTree();
+    updateRank();
+  }
+
   function renderPldcTN(ci) {
     content.innerHTML = "";
     var ch = PLDC_DATA.trac_nghiem[ci];
@@ -783,6 +830,15 @@
     h.className = "lesson-heading";
     h.textContent = ch.title + (ch.subtitle ? " — " + ch.subtitle : "");
     content.appendChild(h);
+    var toolbar = document.createElement("div");
+    toolbar.style.cssText = "display:flex;gap:8px;margin:0 0 14px;flex-wrap:wrap";
+    var clearBtn = document.createElement("button");
+    clearBtn.className = "ghost-btn danger";
+    clearBtn.style.cssText = "font-size:12px;padding:6px 10px";
+    clearBtn.textContent = "🗑 Xóa đáp án bài này";
+    clearBtn.onclick = function(){ clearPldcChapter(ci); };
+    toolbar.appendChild(clearBtn);
+    content.appendChild(toolbar);
 
     ch.questions.forEach(function (q, qi) {
       var card = createQuestionCard(q, qi, "pldc", function (optKey) {
@@ -853,6 +909,15 @@
     hero.className = "lesson-heading";
     hero.textContent = "⚖️ Nhận định Đúng / Sai — Toàn bộ học phần";
     content.appendChild(hero);
+    var toolbarDS = document.createElement("div");
+    toolbarDS.style.cssText = "display:flex;gap:8px;margin:0 0 14px;flex-wrap:wrap";
+    var clearBtnDS = document.createElement("button");
+    clearBtnDS.className = "ghost-btn danger";
+    clearBtnDS.style.cssText = "font-size:12px;padding:6px 10px";
+    clearBtnDS.textContent = "🗑 Xóa đáp án phần này";
+    clearBtnDS.onclick = function(){ clearPldcDSAll(); };
+    toolbarDS.appendChild(clearBtnDS);
+    content.appendChild(toolbarDS);
 
     qs.forEach(function (q, qi) {
       var card = document.createElement("div");
@@ -885,6 +950,7 @@
       fbBox.className = "feedback";
 
       function updateCard(selectedVal) {
+        if (btnD.classList.contains("locked") || btnS.classList.contains("locked")) return;
         var isCorrect = (selectedVal === q.answer || (selectedVal === "Đ" && q.answer === "Đúng") || (selectedVal === "S" && q.answer === "Sai"));
         btnD.classList.add("locked");
         btnS.classList.add("locked");
@@ -1179,7 +1245,7 @@
         btn.className = "opt";
         btn.innerHTML = "<span class='key'>" + optKey + "</span><span class='oval'>" + esc(q.options[optKey]) + "</span>";
         btn.onclick = function () {
-          if (card.classList.contains("answered-ok")) return;
+          if (card.classList.contains("answered-ok") || card.classList.contains("answered-bad")) return;
           onSelect(optKey);
         };
         btnMap[optKey] = btn;
@@ -1244,9 +1310,11 @@
 
     if (r.status === "correct") {
       card.classList.add("answered-ok");
+      card.classList.remove("answered-bad");
       if (btnMap[r.selected]) btnMap[r.selected].classList.add("correct");
       for (var optK in btnMap) {
         if (optK !== r.selected) btnMap[optK].classList.add("dim");
+        btnMap[optK].classList.add("locked");
       }
       if (fbBox) {
         fbBox.className = "feedback show ok";
@@ -1254,10 +1322,12 @@
       }
     } else {
       card.classList.remove("answered-ok");
+      card.classList.add("answered-bad");
       if (btnMap[r.selected]) btnMap[r.selected].classList.add("wrong");
       if (btnMap[q.answer]) btnMap[q.answer].classList.add("correct");
       for (var optKey in btnMap) {
         if (optKey !== r.selected && optKey !== q.answer) btnMap[optKey].classList.add("dim");
+        btnMap[optKey].classList.add("locked");
       }
       if (fbBox) {
         fbBox.className = "feedback show bad";
