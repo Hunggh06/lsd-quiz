@@ -998,8 +998,8 @@
     hero.className = "essay-hero";
     hero.innerHTML =
       '<div class="essay-hero-head"><span class="essay-hero-badge">CẤU TRÚC ĐIỀU LUẬT (QPPL)</span></div>' +
-      '<h1 class="essay-hero-title">📜 Phân tích Cấu trúc 16 Điều luật Mẫu</h1>' +
-      '<p class="essay-hero-sub">Phân tích chuyên sâu 3 bộ phận Giả định - Quy định - Chế tài và xác định chính xác Hình thức thực hiện pháp luật (Tuân thủ / Thi hành / Sử dụng / Áp dụng).</p>';
+      '<h1 class="essay-hero-title">📜 16 Câu hỏi Cấu trúc Quy phạm pháp luật</h1>' +
+      '<p class="essay-hero-sub">Đề bài và đáp án biểu điểm chuẩn xác 100% theo đề cương ôn thi HaUI.</p>';
     container.appendChild(hero);
 
     list.forEach(function (item, idx) {
@@ -1009,27 +1009,19 @@
       var head = document.createElement("div");
       head.className = "essay-card-header";
       head.innerHTML =
-        "<div class='ec-no'>Điều " + (idx + 1) + "</div>" +
+        "<div class='ec-no'>Câu " + (idx + 1) + "</div>" +
         "<div class='ec-title-wrap'>" +
         "<div class='ec-title'>" + esc(item.title) + "</div>" +
-        "<div class='ec-tags'><span class='ec-tag'>" + esc(item.clause) + "</span></div>" +
         "</div>" +
         "<div class='ec-actions'><span class='ec-chev'>▼</span></div>";
 
       var body = document.createElement("div");
       body.className = "essay-card-body";
 
-      var clauseHtml = "<div class='essay-short-box'><div class='esb-title'>📖 Trích dẫn điều luật:</div><p style='margin:0;line-height:1.6;font-size:16px'>" + esc(item.content) + "</p></div>";
+      var qHtml = "<div class='essay-short-box'><div class='esb-title'>📖 Đề bài:</div><p style='margin:0;line-height:1.6;font-size:16px;white-space:pre-line'>" + esc(item.question) + "</p></div>";
+      var ansHtml = "<div class='essay-sections-wrap'><div class='essay-sec'><div class='essay-sec-head'>📝 Đáp án &amp; Phân tích cấu trúc</div><div class='essay-sec-items' style='white-space:pre-line;line-height:1.7'>" + esc(item.answer_raw) + "</div></div></div>";
 
-      var analysisHtml = "<div class='essay-sections-wrap'>" +
-        "<div class='essay-sec'><div class='essay-sec-head'>📍 1. Giả định</div><div class='essay-sec-items'><b>Nội dung:</b> " + esc(item.gia_dinh) + "<br><em>Giải thích: " + esc(item.gia_dinh_gt) + "</em></div></div>" +
-        "<div class='essay-sec'><div class='essay-sec-head'>📝 2. Quy định</div><div class='essay-sec-items'><b>Nội dung:</b> " + esc(item.quy_dinh) + "<br><em>Giải thích: " + esc(item.quy_dinh_gt) + "</em></div></div>" +
-        "<div class='essay-sec'><div class='essay-sec-head'>⚖️ 3. Chế tài</div><div class='essay-sec-items'><b>Nội dung:</b> " + esc(item.che_tai) + "<br><em>Giải thích: " + esc(item.che_tai_gt) + "</em></div></div>" +
-        "<div class='essay-sec sec-lienhe'><div class='essay-sec-head'>🎯 4. Hình thức thực hiện pháp luật</div><div class='essay-sec-items'><b>" + esc(item.hinh_thuc) + "</b><br><em>Giải thích: " + esc(item.hinh_thuc_gt) + "</em></div></div>" +
-        (item.vi_du ? "<div class='essay-sec sec-tips'><div class='essay-sec-head'>💡 5. Ví dụ minh họa thực tế</div><div class='essay-sec-items'><div>" + esc(item.vi_du) + "</div></div></div>" : "") +
-        "</div>";
-
-      body.innerHTML = clauseHtml + analysisHtml;
+      body.innerHTML = qHtml + ansHtml;
       head.onclick = function () { card.classList.toggle("open"); };
 
       card.appendChild(head);
@@ -1051,47 +1043,29 @@
     hero.innerHTML =
       '<div class="essay-hero-head"><span class="essay-hero-badge">TÌNH HUỐNG THỰC TẾ</span></div>' +
       '<h1 class="essay-hero-title">⚡ 16 Bài tập Tình huống Vi phạm PL &amp; Quan hệ PL</h1>' +
-      '<p class="essay-hero-sub">Phân tích rành mạch 4 yếu tố cấu thành vi phạm pháp luật (Mặt khách quan, Mặt chủ quan, Khách thể, Chủ thể) và 3 yếu tố cấu thành quan hệ pháp luật (Chủ thể, Khách thể, Nội dung).</p>';
+      '<p class="essay-hero-sub">Đề bài và biểu điểm giải quyết tình huống chuẩn xác 100% theo đề cương ôn thi HaUI.</p>';
     container.appendChild(hero);
 
     list.forEach(function (item, idx) {
       var card = document.createElement("div");
       card.className = "essay-card";
 
-      var typeBadge = item.type === "vppl" ? "Vi phạm pháp luật" : "Quan hệ pháp luật";
       var head = document.createElement("div");
       head.className = "essay-card-header";
       head.innerHTML =
         "<div class='ec-no'>TH " + (idx + 1) + "</div>" +
         "<div class='ec-title-wrap'>" +
         "<div class='ec-title'>" + esc(item.title) + "</div>" +
-        "<div class='ec-tags'><span class='ec-tag'>" + typeBadge + "</span></div>" +
         "</div>" +
         "<div class='ec-actions'><span class='ec-chev'>▼</span></div>";
 
       var body = document.createElement("div");
       body.className = "essay-card-body";
 
-      var probHtml = "<div class='essay-short-box'><div class='esb-title'>📋 Đề bài tình huống:</div><p style='margin:0;line-height:1.6;font-size:16px'>" + esc(item.problem) + "</p></div>";
+      var probHtml = "<div class='essay-short-box'><div class='esb-title'>📋 Đề bài tình huống:</div><p style='margin:0;line-height:1.6;font-size:16px;white-space:pre-line'>" + esc(item.problem) + "</p></div>";
+      var ansHtml = "<div class='essay-sections-wrap'><div class='essay-sec sec-tips'><div class='essay-sec-head'>🎯 Đáp án &amp; Phân tích cấu thành</div><div class='essay-sec-items' style='white-space:pre-line;line-height:1.7'>" + esc(item.answer_raw) + "</div></div></div>";
 
-      var conclusionHtml = item.conclusion ?
-        "<div class='essay-sec sec-tips'><div class='essay-sec-head'>🎯 Kết luận trách nhiệm pháp lý</div><div class='essay-sec-items'><b>" + esc(item.conclusion) + "</b></div></div>" : "";
-
-      var elementsHtml = "<div class='essay-sections-wrap'>" +
-        conclusionHtml +
-        (item.elements || []).map(function (el) {
-          var cls = "essay-sec";
-          if (el.label && (el.label.includes("Khách quan") || el.label.includes("Chủ thể"))) cls += " sec-tips";
-          if (el.label && (el.label.includes("Nội dung") || el.label.includes("Trách nhiệm"))) cls += " sec-lienhe";
-          var itemsList = el.items || (el.content ? [el.content] : []);
-          return "<div class='" + cls + "'><div class='essay-sec-head'>" + esc(el.label) + "</div>" +
-            "<div class='essay-sec-items'>" +
-            itemsList.map(function (it) { return "<div>" + esc(it) + "</div>"; }).join("") +
-            "</div></div>";
-        }).join("") +
-        "</div>";
-
-      body.innerHTML = probHtml + elementsHtml;
+      body.innerHTML = probHtml + ansHtml;
       head.onclick = function () { card.classList.toggle("open"); };
 
       card.appendChild(head);
