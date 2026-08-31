@@ -1,10 +1,715 @@
 window.PLDC_DATA = {
   "metadata": {
     "title": "Pháp luật đại cương (v2)",
-    "description": "Ngân hàng 350 câu trắc nghiệm PLDC (9 chương) + Đúng/Sai + QPPL + Chia thừa kế",
-    "updated": "2026-08-31 350c update"
+    "description": "Ngân hàng 401 câu trắc nghiệm PLDC (51 câu đề thi & chương cũ + 350 câu 9 chương mới) + Đúng/Sai + QPPL + Chia thừa kế",
+    "updated": "2026-08-31 merge 401c"
   },
   "trac_nghiem": [
+    {
+      "id": "tn-de4777",
+      "title": "Đề thi Mẫu 4777 (Trắc nghiệm)",
+      "subtitle": "10 câu trắc nghiệm mã đề thi kết thúc học phần 4777",
+      "questions": [
+        {
+          "id": "de4777-1",
+          "q": "Độ tuổi tối thiểu mà công dân có thể tham gia ứng cử đại biểu Quốc hội nước CHXHCN Việt Nam là:",
+          "options": {
+            "A": "Đủ 18 tuổi",
+            "B": "Đủ 20 tuổi",
+            "C": "Đủ 21 tuổi",
+            "D": "Đủ 23 tuổi"
+          },
+          "answer": "C",
+          "explain": "Căn cứ Điều 27 Hiến pháp 2013 và Luật Bầu cử: Công dân đủ 18 tuổi trở lên có quyền bầu cử và đủ 21 tuổi trở lên có quyền ứng cử vào Quốc hội, HĐND.",
+          "hint": "Bầu cử đủ 18 tuổi, ứng cử đủ 21 tuổi."
+        },
+        {
+          "id": "de4777-2",
+          "q": "Ông B xây nhà lấn chiếm lối đi của khu phố, bị cơ quan có thẩm quyền yêu cầu phá bỏ phần lấn chiếm để trả lại lối đi. Đây là biện pháp chế tài:",
+          "options": {
+            "A": "Chế tài dân sự",
+            "B": "Chế tài hình sự",
+            "C": "Chế tài hành chính",
+            "D": "Chế tài kỷ luật"
+          },
+          "answer": "A",
+          "explain": "Biện pháp buộc khôi phục lại tình trạng ban đầu của tài sản/lối đi chung là biện pháp chế tài dân sự (khôi phục tình trạng ban đầu theo Điều 11 BLDS).",
+          "hint": "Buộc khôi phục tình trạng ban đầu."
+        },
+        {
+          "id": "de4777-3",
+          "q": "Xã hội cộng sản nguyên thủy là xã hội:",
+          "options": {
+            "A": "Có giai cấp mâu thuẫn đối kháng nhau",
+            "B": "Không có giai cấp mâu thuẫn đối kháng nhau",
+            "C": "Do nhà nước quản lý",
+            "D": "Do các cơ quan lập pháp quản lý"
+          },
+          "answer": "B",
+          "explain": "Xã hội cộng sản nguyên thủy dựa trên chế độ công hữu về tư liệu sản xuất, chưa có giai cấp và mâu thuẫn giai cấp đối kháng.",
+          "hint": "Chưa có giai cấp đối kháng."
+        },
+        {
+          "id": "de4777-4",
+          "q": "Hành vi vi phạm pháp luật không thể là:",
+          "options": {
+            "A": "Lời nói",
+            "B": "Một tư tưởng xấu xa",
+            "C": "Một kế hoạch",
+            "D": "Cả A, B, C"
+          },
+          "answer": "B",
+          "explain": "Vi phạm pháp luật bắt buộc phải là hành vi biểu hiện ra bên ngoài thế giới khách quan. Tư tưởng trong đầu chưa biểu hiện ra ngoài không phải là vi phạm.",
+          "hint": "Tư tưởng trong đầu chưa biểu hiện ra hành vi."
+        },
+        {
+          "id": "de4777-5",
+          "q": "Chủ thể của hành vi tham nhũng bắt buộc phải là:",
+          "options": {
+            "A": "Người có chức vụ quyền hạn trong xã hội",
+            "B": "Bất kỳ công dân nào có hành vi trộm cắp",
+            "C": "Người có chức vụ, quyền hạn",
+            "D": "Người không có chức vụ nhưng có nhiều tiền"
+          },
+          "answer": "C",
+          "explain": "Điều 2 Luật PCTN 2018: Chủ thể tham nhũng bắt buộc phải là người có chức vụ, quyền hạn đã lợi dụng chức vụ, quyền hạn đó vì vụ lợi.",
+          "hint": "Người có chức vụ, quyền hạn."
+        },
+        {
+          "id": "de4777-6",
+          "q": "Nguyên tắc áp dụng hình phạt trong pháp luật hình sự Việt Nam:",
+          "options": {
+            "A": "Có thể áp dụng một lúc nhiều hình phạt chính và nhiều hình phạt bổ sung",
+            "B": "Chỉ có thể áp dụng một lúc nhiều hình phạt chính và chỉ một hình phạt bổ sung",
+            "C": "Chỉ có thể áp dụng một hình phạt chính và một hình phạt bổ sung",
+            "D": "Đối với mỗi tội phạm, người phạm tội chỉ bị áp dụng một hình phạt chính và có thể bị áp dụng một hoặc một số hình phạt bổ sung"
+          },
+          "answer": "D",
+          "explain": "Điều 32 BLHS 2015: Đối với mỗi tội phạm, chỉ bị áp dụng một hình phạt chính và có thể bị áp dụng một hoặc nhiều hình phạt bổ sung.",
+          "hint": "Chỉ 1 hình phạt chính, có thể kèm nhiều hình phạt bổ sung."
+        },
+        {
+          "id": "de4777-7",
+          "q": "Khẳng định nào sau đây là đúng về sự kiện pháp lý?",
+          "options": {
+            "A": "Sự kiện pháp lý là sự cụ thể hóa phần giả định của quy phạm pháp luật trong thực tiễn",
+            "B": "Sự kiện pháp lý là sự cụ thể hóa phần giả định và quy định của quy phạm pháp luật trong thực tiễn",
+            "C": "Sự kiện pháp lý là sự cụ thể hóa phần giả định, quy định và chế tài của quy phạm pháp luật trong thực tiễn",
+            "D": "Cả A, B và C đều đúng"
+          },
+          "answer": "A",
+          "explain": "Sự kiện pháp lý là những sự kiện thực tế làm phát sinh, thay đổi hoặc chấm dứt quan hệ pháp luật khi trùng khớp với điều kiện ở phần giả định.",
+          "hint": "Sự kiện thực tế khớp với phần giả định của điều luật."
+        },
+        {
+          "id": "de4777-8",
+          "q": "Khẳng định nào sau đây đúng về Áp dụng pháp luật?",
+          "options": {
+            "A": "Áp dụng pháp luật là việc thực hiện pháp luật của công dân",
+            "B": "Áp dụng pháp luật là việc thực hiện pháp luật mang tính quyền lực của cơ quan nhà nước và người có thẩm quyền",
+            "C": "Áp dụng pháp luật là việc thực hiện pháp luật của mọi tổ chức kinh tế",
+            "D": "Cả A, B và C đều đúng"
+          },
+          "answer": "B",
+          "explain": "Áp dụng pháp luật là hình thức thực hiện pháp luật mang tính quyền lực nhà nước, chỉ do cơ quan nhà nước, người có thẩm quyền tiến hành.",
+          "hint": "Hoạt động mang tính quyền lực nhà nước."
+        },
+        {
+          "id": "de4777-9",
+          "q": "Đâu không phải là một ngành luật độc lập trong hệ thống pháp luật Việt Nam?",
+          "options": {
+            "A": "Luật xây dựng",
+            "B": "Luật Hôn nhân và gia đình",
+            "C": "Luật Dân sự",
+            "D": "Luật Hình sự"
+          },
+          "answer": "A",
+          "explain": "'Luật Xây dựng' chỉ là một đạo luật cụ thể thuộc ngành Luật Hành chính/Kinh tế, không phải ngành luật độc lập.",
+          "hint": "Văn bản luật chuyên ngành cụ thể, không phải ngành luật lớn."
+        },
+        {
+          "id": "de4777-10",
+          "q": "Ở xã hội cộng sản nguyên thủy:",
+          "options": {
+            "A": "Chưa xuất hiện chế độ tư hữu, chưa xuất hiện giai cấp nên nhà nước chưa xuất hiện",
+            "B": "Xuất hiện chế độ tư hữu, xuất hiện các giai cấp khác nhau nhưng chưa xuất hiện nhà nước",
+            "C": "Đã xuất hiện nhà nước và bộ máy tư pháp",
+            "D": "Xuất hiện mâu thuẫn giai cấp gay gắt"
+          },
+          "answer": "A",
+          "explain": "Xã hội CSNT chưa có chế độ tư hữu về tư liệu sản xuất và chưa phân chia giai cấp đối kháng, do đó nhà nước chưa xuất hiện.",
+          "hint": "Chưa có tư hữu, chưa có giai cấp."
+        }
+      ]
+    },
+    {
+      "id": "tn-de4775",
+      "title": "Đề thi Mẫu 4775 & 4776 (Trắc nghiệm)",
+      "subtitle": "10 câu trắc nghiệm mã đề 4775 và 4776",
+      "questions": [
+        {
+          "id": "de4775-1",
+          "q": "Tội phạm nghiêm trọng theo Bộ luật Hình sự Việt Nam có mức cao nhất của khung hình phạt là:",
+          "options": {
+            "A": "Đến 3 năm tù",
+            "B": "Đến 5 năm tù",
+            "C": "Đến 7 năm tù",
+            "D": "Đến 15 năm tù"
+          },
+          "answer": "C",
+          "explain": "Điều 9 BLHS 2015: Tội phạm ít nghiêm trọng (đến 3 năm); Tội phạm nghiêm trọng (từ trên 3 năm đến 7 năm); Tội phạm rất nghiêm trọng (trên 7 đến 15 năm); Đặc biệt nghiêm trọng (trên 15 năm, chung thân, tử hình).",
+          "hint": "Khung phạt tù từ trên 3 năm đến 7 năm."
+        },
+        {
+          "id": "de4775-2",
+          "q": "Bộ phận 'Quy định' có ý nghĩa như thế nào trong quy phạm pháp luật?",
+          "options": {
+            "A": "Xác định chủ thể, điều kiện, hoàn cảnh chịu sự tác động của quy phạm",
+            "B": "Xác định các cách thức xử sự (được làm, phải làm, không được làm) của các chủ thể",
+            "C": "Xác định biện pháp cưỡng chế xử lý đối với chủ thể vi phạm",
+            "D": "Tùy từng trường hợp mà là một trong các ý nghĩa nêu trên"
+          },
+          "answer": "B",
+          "explain": "Quy định là bộ phận trung tâm xác định mô hình hành vi, quyền và nghĩa vụ của các chủ thể.",
+          "hint": "Xác định cách thức xử sự của chủ thể."
+        },
+        {
+          "id": "de4775-3",
+          "q": "Trong bộ máy Nhà nước CHXHCN Việt Nam, Quốc hội là:",
+          "options": {
+            "A": "Cơ quan quyền lực nhà nước cao nhất",
+            "B": "Cơ quan đại biểu cao nhất của Nhân dân",
+            "C": "Cơ quan có quyền lập hiến và lập pháp",
+            "D": "Cả A, B, C đều đúng"
+          },
+          "answer": "D",
+          "explain": "Điều 69 Hiến pháp 2013 quy định Quốc hội là cơ quan đại biểu cao nhất, cơ quan quyền lực cao nhất, thực hiện quyền lập hiến, lập pháp.",
+          "hint": "Cả 3 thuộc tính trên."
+        },
+        {
+          "id": "de4775-4",
+          "q": "Việc các chủ thể khi tham gia giao thông không phóng nhanh, vượt ẩu thuộc hình thức thực hiện pháp luật nào?",
+          "options": {
+            "A": "Tuân thủ pháp luật",
+            "B": "Áp dụng pháp luật",
+            "C": "Sử dụng pháp luật",
+            "D": "Thi hành pháp luật"
+          },
+          "answer": "A",
+          "explain": "Tuân thủ pháp luật là kiềm chế bản thân không thực hiện những hành vi mà pháp luật ngăn cấm.",
+          "hint": "Kiềm chế không làm điều cấm."
+        },
+        {
+          "id": "de4775-5",
+          "q": "Xét về độ tuổi theo pháp luật Việt Nam, người chưa thành niên là người:",
+          "options": {
+            "A": "Dưới 6 tuổi",
+            "B": "Dưới 14 tuổi",
+            "C": "Dưới 15 tuổi",
+            "D": "Chưa đủ 18 tuổi"
+          },
+          "answer": "D",
+          "explain": "Điều 21 Bộ luật Dân sự 2015: Người chưa thành niên là người chưa đủ 18 tuổi.",
+          "hint": "Chưa đủ 18 tuổi."
+        },
+        {
+          "id": "de4775-6",
+          "q": "Quy phạm: 'Cấm tảo hôn, cưỡng ép kết hôn, lừa dối kết hôn, cản trở kết hôn' bao gồm bộ phận nào?",
+          "options": {
+            "A": "Quy định",
+            "B": "Giả định",
+            "C": "Chế tài",
+            "D": "Cả A, B, C đều đúng"
+          },
+          "answer": "A",
+          "explain": "Đây là quy tắc xử sự mang tính cấm đoán (bộ phận Quy định), khuyết giả định và chế tài trực tiếp.",
+          "hint": "Nêu mệnh lệnh cấm đoán -> Quy định."
+        },
+        {
+          "id": "de4775-7",
+          "q": "Cô, dì, chú, bác, cậu ruột của người chết thuộc hàng thừa kế theo pháp luật thứ mấy?",
+          "options": {
+            "A": "Hàng thừa kế thứ nhất",
+            "B": "Hàng thừa kế thứ hai",
+            "C": "Hàng thừa kế thứ ba",
+            "D": "Không thuộc hàng thừa kế nào"
+          },
+          "answer": "C",
+          "explain": "Điều 651 BLDS 2015: Cô dì chú bác cậu ruột người chết thuộc hàng thừa kế thứ ba.",
+          "hint": "Hàng thừa kế thứ ba."
+        },
+        {
+          "id": "de4775-8",
+          "q": "Văn bản quy phạm pháp luật được áp dụng bao nhiêu lần trong thực tiễn đời sống?",
+          "options": {
+            "A": "Chỉ áp dụng một lần duy nhất",
+            "B": "Chỉ áp dụng hai lần",
+            "C": "Được áp dụng nhiều lần đối với nhiều chủ thể",
+            "D": "Tùy thuộc vào quyết định của đương sự"
+          },
+          "answer": "C",
+          "explain": "VBQPPL mang tính quy phạm phổ biến, được áp dụng nhiều lần trong đời sống cho đến khi bị thay thế/bãi bỏ.",
+          "hint": "Được áp dụng nhiều lần."
+        },
+        {
+          "id": "de4775-9",
+          "q": "Cơ sở duy nhất để truy cứu trách nhiệm pháp lý là:",
+          "options": {
+            "A": "Nhân chứng",
+            "B": "Vật chứng",
+            "C": "Có hành vi vi phạm pháp luật xảy ra",
+            "D": "Ý kiến của người bị hại"
+          },
+          "answer": "C",
+          "explain": "Có hành vi vi phạm pháp luật xảy ra trên thực tế là cơ sở duy nhất để truy cứu trách nhiệm pháp lý.",
+          "hint": "Phải có vi phạm pháp luật xảy ra."
+        },
+        {
+          "id": "de4775-10",
+          "q": "Hình thức thể hiện của di chúc hợp pháp có thể là:",
+          "options": {
+            "A": "Di chúc bằng văn bản",
+            "B": "Di chúc miệng (trong trường hợp tính mạng bị đe dọa)",
+            "C": "Di chúc bằng văn bản có hoặc không có người làm chứng",
+            "D": "Cả A, B, C đều đúng"
+          },
+          "answer": "D",
+          "explain": "Căn cứ Điều 627, 628, 629 BLDS 2015: Di chúc có thể bằng văn bản hoặc di chúc miệng khi tính mạng bị đe dọa.",
+          "hint": "Cả văn bản và di chúc miệng hợp pháp."
+        }
+      ]
+    },
+    {
+      "id": "tn-de1727",
+      "title": "Đề thi Mẫu 1727 & Tổng hợp (Trắc nghiệm)",
+      "subtitle": "10 câu trắc nghiệm mã đề 1727 và câu hỏi tổng hợp",
+      "questions": [
+        {
+          "id": "de1727-1",
+          "q": "Chế độ phân chia dân cư theo đơn vị hành chính lãnh thổ tồn tại trong kiểu nhà nước nào?",
+          "options": {
+            "A": "Kiểu nhà nước chủ nô",
+            "B": "Kiểu nhà nước phong kiến",
+            "C": "Kiểu nhà nước tư sản và XHCN",
+            "D": "Cả A, B và C đều đúng"
+          },
+          "answer": "D",
+          "explain": "Phân chia và quản lý dân cư theo lãnh thổ là đặc trưng cơ bản của mọi kiểu nhà nước trong lịch sử.",
+          "hint": "Đặc trưng của mọi kiểu nhà nước."
+        },
+        {
+          "id": "de1727-2",
+          "q": "Nguồn của pháp luật nói chung theo hệ thống pháp lý hiện đại bao gồm:",
+          "options": {
+            "A": "Chỉ có văn bản quy phạm pháp luật",
+            "B": "Văn bản quy phạm pháp luật và học thuyết pháp lý",
+            "C": "Văn bản quy phạm pháp luật, tập quán pháp và tiền lệ pháp (án lệ)",
+            "D": "Các quy tắc tôn giáo và đạo đức"
+          },
+          "answer": "C",
+          "explain": "Nguồn pháp luật gồm: Văn bản quy phạm pháp luật, Tập quán pháp, và Tiền lệ pháp (Án lệ).",
+          "hint": "Văn bản QPPL, Tập quán pháp và Án lệ."
+        },
+        {
+          "id": "de1727-3",
+          "q": "Theo quy định của Bộ luật Lao động Việt Nam, xét về độ tuổi lao động thông thường:",
+          "options": {
+            "A": "Người sử dụng lao động phải từ đủ 18 tuổi, người lao động phải từ đủ 15 tuổi",
+            "B": "Người sử dụng lao động và người lao động đều phải từ đủ 18 tuổi",
+            "C": "Người sử dụng lao động và người lao động đều phải từ đủ 21 tuổi",
+            "D": "Người sử dụng lao động và người lao động đều từ đủ 15 tuổi"
+          },
+          "answer": "A",
+          "explain": "Điều 3 BLLĐ 2019: Người lao động từ đủ 15 tuổi; Người sử dụng lao động cá nhân từ đủ 18 tuổi.",
+          "hint": "Người lao động đủ 15, người sử dụng LĐ cá nhân đủ 18."
+        },
+        {
+          "id": "de1727-4",
+          "q": "Tuân thủ pháp luật là hình thức thực hiện pháp luật trong đó:",
+          "options": {
+            "A": "Chủ thể thực hiện các quy phạm pháp luật không cấm",
+            "B": "Chủ thể thực hiện các quy phạm pháp luật bắt buộc phải làm",
+            "C": "Chủ thể kiềm chế không thực hiện các quy phạm pháp luật cấm đoán",
+            "D": "Cơ quan nhà nước áp dụng chế tài"
+          },
+          "answer": "C",
+          "explain": "Tuân thủ pháp luật là kiềm chế bản thân không tiến hành những hoạt động mà pháp luật ngăn cấm.",
+          "hint": "Kiềm chế không làm điều pháp luật cấm."
+        },
+        {
+          "id": "de1727-5",
+          "q": "Về mặt cấu trúc kỹ thuật lập pháp thực tế, mỗi quy phạm pháp luật:",
+          "options": {
+            "A": "Bắt buộc phải có cả ba bộ phận cấu thành: giả định, quy định và chế tài",
+            "B": "Thường có ít nhất hai bộ phận cấu thành trong một điều luật",
+            "C": "Chỉ cần duy nhất một từ",
+            "D": "Không cần bộ phận nào"
+          },
+          "answer": "B",
+          "explain": "Trong điều luật thực tế thường khuyết một bộ phận (Giả định + Quy định hoặc Giả định + Chế tài).",
+          "hint": "Thường gồm 2 bộ phận trong một điều luật."
+        },
+        {
+          "id": "de1727-6",
+          "q": "Anh B (17 tuổi) có tài sản riêng tích lũy do lao động. Hỏi anh B có thể tự mình mua căn hộ chung cư không?",
+          "options": {
+            "A": "Có thể tự mình đứng tên mua không cần ai đồng ý",
+            "B": "Không, vì mua bất động sản là giao dịch lớn của người chưa thành niên phải được người đại diện theo pháp luật đồng ý",
+            "C": "Chỉ được mua nếu có sự đồng ý của UBND xã",
+            "D": "Không được phép sở hữu bất động sản"
+          },
+          "answer": "B",
+          "explain": "Điều 21 BLDS 2015: Người từ đủ 15 tuổi đến dưới 18 tuổi mua bất động sản phải được người đại diện theo pháp luật đồng ý.",
+          "hint": "Bất động sản phải có người đại diện theo pháp luật đồng ý."
+        },
+        {
+          "id": "de1727-7",
+          "q": "Ông Hùng và bà Lan có tài sản chung 800 triệu. Ông Hùng và con gái Hồng chết cùng thời điểm trong tai nạn. Ông Hùng không có di chúc. Di sản ông Hùng được chia cho ai?",
+          "options": {
+            "A": "Chỉ chia cho bà Lan",
+            "B": "Chia đều cho bà Lan, các con còn sống và các cháu con của Hồng thừa kế thế vị",
+            "C": "Tịch thu nộp ngân sách nhà nước",
+            "D": "Chia cho dòng họ bên nội"
+          },
+          "answer": "B",
+          "explain": "Di sản chia theo pháp luật cho vợ Lan, các con còn sống và các con của Hồng hưởng thừa kế thế vị suất của Hồng (Điều 652 BLDS).",
+          "hint": "Bà Lan, các con còn sống và con của Hồng thế vị."
+        },
+        {
+          "id": "de1727-8",
+          "q": "Chế tài của quy phạm pháp luật bao gồm các loại chính nào?",
+          "options": {
+            "A": "Chế tài hình sự, chế tài hành chính, chế tài dân sự, chế tài kỷ luật",
+            "B": "Chế tài quân sự, chế tài tài chính",
+            "C": "Chế tài đạo đức, chế tài tôn giáo",
+            "D": "Chế tài tự do và chế tài bắt buộc"
+          },
+          "answer": "A",
+          "explain": "4 loại chế tài pháp lý: Chế tài hình sự, Chế tài hành chính, Chế tài dân sự, Chế tài kỷ luật.",
+          "hint": "Hình sự, Hành chính, Dân sự, Kỷ luật."
+        },
+        {
+          "id": "de1727-9",
+          "q": "A thuê X đánh dằn mặt B với thỏa thuận đánh gãy chân trả 15 triệu. X tìm đánh B gãy tay. Hỏi lỗi của A là gì?",
+          "options": {
+            "A": "Lỗi vô ý vì cẩu thả",
+            "B": "Lỗi vô ý vì quá tự tin",
+            "C": "Lỗi cố ý trực tiếp",
+            "D": "Không có lỗi vì X đánh gãy tay chứ không phải gãy chân"
+          },
+          "answer": "C",
+          "explain": "A nhận thức rõ hành vi thuê người đánh B là nguy hiểm, mong muốn gây thương tích cho B -> Lỗi cố ý trực tiếp.",
+          "hint": "Chủ động thuê người đánh -> Cố ý trực tiếp."
+        },
+        {
+          "id": "de1727-10",
+          "q": "Theo Bộ luật Dân sự 2015, người thừa kế không phụ thuộc vào nội dung di chúc (Điều 644) được hưởng bao nhiêu?",
+          "options": {
+            "A": "1/2 một suất thừa kế theo pháp luật",
+            "B": "2/3 một suất thừa kế theo pháp luật",
+            "C": "Bằng đúng một suất thừa kế theo pháp luật",
+            "D": "Toàn bộ di sản"
+          },
+          "answer": "B",
+          "explain": "Điều 644 BLDS 2015: Được hưởng phần di sản bằng 2/3 suất của một người thừa kế theo pháp luật.",
+          "hint": "2/3 suất của một người thừa kế theo pháp luật."
+        }
+      ]
+    },
+    {
+      "id": "tn-ch1",
+      "title": "Chương 1: Những vấn đề cơ bản về Nhà nước",
+      "subtitle": "Nguồn gốc, bản chất, chức năng và bộ máy nhà nước",
+      "questions": [
+        {
+          "id": "tn1-1",
+          "q": "Theo quan điểm của chủ nghĩa Mác - Lênin, xã hội loài người phát triển qua mấy hình thái kinh tế - xã hội?",
+          "options": {
+            "A": "2 hình thái",
+            "B": "3 hình thái",
+            "C": "4 hình thái",
+            "D": "5 hình thái"
+          },
+          "answer": "D",
+          "explain": "5 hình thái: Cộng sản nguyên thủy, Chiếm hữu nô lệ, Phong kiến, TBCN và CSCN.",
+          "hint": "5 hình thái: CSNT - CHNL - PK - TBCN - CSCN."
+        },
+        {
+          "id": "tn1-2",
+          "q": "Nhà nước cổ đại phương Tây nào xuất hiện do sự phân hóa giai cấp sâu sắc và đấu tranh giai cấp gay gắt?",
+          "options": {
+            "A": "Nhà nước Ai Cập cổ đại",
+            "B": "Nhà nước Aten (Athens)",
+            "C": "Nhà nước Lưỡng Hà",
+            "D": "Nhà nước Trung Hoa cổ đại"
+          },
+          "answer": "B",
+          "explain": "Aten là hình thức nhà nước ra đời thuần túy nhất từ mâu thuẫn giai cấp nội bộ thị tộc.",
+          "hint": "Nhà nước dân chủ chủ nô ở Hy Lạp cổ đại."
+        },
+        {
+          "id": "tn1-3",
+          "q": "Quyền lực trong xã hội cộng sản nguyên thủy mang tính chất gì?",
+          "options": {
+            "A": "Quyền lực chính trị mang tính giai cấp",
+            "B": "Quyền lực xã hội phục vụ lợi ích chung của tất cả mọi người",
+            "C": "Quyền lực nhà nước chuyên chế",
+            "D": "Quyền lực tôn giáo thần quyền"
+          },
+          "answer": "B",
+          "explain": "Quyền lực hòa nhập vào dân cư, do hội đồng thị tộc quản lý vì lợi ích chung.",
+          "hint": "Quyền lực xã hội chưa có giai cấp thống trị."
+        },
+        {
+          "id": "tn1-4",
+          "q": "Tổ chức thị tộc, bộ lạc phân chia và quản lý dân cư theo:",
+          "options": {
+            "A": "Huyết thống",
+            "B": "Lãnh thổ cư trú",
+            "C": "Đơn vị hành chính",
+            "D": "Quốc tịch"
+          },
+          "answer": "A",
+          "explain": "Thị tộc quản lý theo huyết thống. Nhà nước quản lý theo lãnh thổ.",
+          "hint": "Quan hệ dòng máu, huyết thống."
+        },
+        {
+          "id": "tn1-5",
+          "q": "Cơ quan quyền lực nhà nước cao nhất của nước CHXHCN Việt Nam là:",
+          "options": {
+            "A": "Quốc hội",
+            "B": "Chính phủ",
+            "C": "Tòa án nhân dân tối cao",
+            "D": "Viện kiểm sát nhân dân tối cao"
+          },
+          "answer": "A",
+          "explain": "Điều 69 Hiến pháp 2013: Quốc hội là cơ quan đại biểu cao nhất của Nhân dân, cơ quan quyền lực nhà nước cao nhất.",
+          "hint": "Cơ quan lập pháp do cử tri cả nước bầu ra."
+        },
+        {
+          "id": "tn1-6",
+          "q": "Cơ quan hành chính nhà nước cao nhất của nước CHXHCN Việt Nam là:",
+          "options": {
+            "A": "Quốc hội",
+            "B": "Chính phủ",
+            "C": "Tòa án nhân dân tối cao",
+            "D": "Viện kiểm sát nhân dân tối cao"
+          },
+          "answer": "B",
+          "explain": "Điều 94 Hiến pháp 2013: Chính phủ là cơ quan hành chính nhà nước cao nhất, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội.",
+          "hint": "Cơ quan đứng đầu hệ thống hành pháp."
+        },
+        {
+          "id": "tn1-7",
+          "q": "Cơ quan xét xử của nước CHXHCN Việt Nam, thực hiện quyền tư pháp là:",
+          "options": {
+            "A": "Quốc hội",
+            "B": "Chủ tịch nước",
+            "C": "Chính phủ",
+            "D": "Tòa án nhân dân"
+          },
+          "answer": "D",
+          "explain": "Điều 102 Hiến pháp 2013: Tòa án nhân dân là cơ quan xét xử, thực hiện quyền tư pháp.",
+          "hint": "Cơ quan duy nhất có quyền xét xử."
+        },
+        {
+          "id": "tn1-8",
+          "q": "Lệnh, Quyết định là văn bản quy phạm pháp luật do ai ban hành?",
+          "options": {
+            "A": "Chủ tịch Quốc hội",
+            "B": "Thủ tướng Chính phủ",
+            "C": "Chủ tịch nước",
+            "D": "Chánh án Tòa án nhân dân tối cao"
+          },
+          "answer": "C",
+          "explain": "Điều 4 Luật Ban hành VBQPPL 2015: Chủ tịch nước ban hành Lệnh và Quyết định.",
+          "hint": "Người đứng đầu Nhà nước."
+        }
+      ]
+    },
+    {
+      "id": "tn-ch2",
+      "title": "Chương 2: Những vấn đề cơ bản về Pháp luật & QPPL",
+      "subtitle": "Quy phạm pháp luật, Quan hệ pháp luật và Vi phạm pháp luật",
+      "questions": [
+        {
+          "id": "tn2-1",
+          "q": "Yếu tố nhỏ nhất cấu thành nên hệ thống cấu trúc pháp luật Việt Nam là:",
+          "options": {
+            "A": "Quy phạm pháp luật",
+            "B": "Chế định pháp luật",
+            "C": "Ngành luật",
+            "D": "Văn bản quy phạm pháp luật"
+          },
+          "answer": "A",
+          "explain": "Quy phạm pháp luật -> Chế định pháp luật -> Ngành luật.",
+          "hint": "Đơn vị cơ bản nhỏ nhất."
+        },
+        {
+          "id": "tn2-2",
+          "q": "Văn bản quy phạm pháp luật có hiệu lực pháp lý cao nhất trong hệ thống pháp luật Việt Nam là:",
+          "options": {
+            "A": "Hiến pháp",
+            "B": "Bộ luật Dân sự",
+            "C": "Bộ luật Hình sự",
+            "D": "Bộ luật Lao động"
+          },
+          "answer": "A",
+          "explain": "Điều 119 Hiến pháp 2013: Hiến pháp có hiệu lực pháp lý cao nhất.",
+          "hint": "Luật cơ bản của Nhà nước."
+        },
+        {
+          "id": "tn2-3",
+          "q": "Chính phủ có thẩm quyền ban hành loại văn bản quy phạm pháp luật nào sau đây?",
+          "options": {
+            "A": "Hiến pháp",
+            "B": "Luật",
+            "C": "Nghị định",
+            "D": "Thông tư"
+          },
+          "answer": "C",
+          "explain": "Chính phủ ban hành Nghị định.",
+          "hint": "Nghị định của Chính phủ."
+        },
+        {
+          "id": "tn2-4",
+          "q": "Trong cấu trúc của quy phạm pháp luật, bộ phận trả lời cho câu hỏi: 'Ai? Trong điều kiện, hoàn cảnh nào?' là:",
+          "options": {
+            "A": "Giả định",
+            "B": "Quy định",
+            "C": "Chế tài",
+            "D": "Cả ba bộ phận trên"
+          },
+          "answer": "A",
+          "explain": "Giả định xác định chủ thể, điều kiện, hoàn cảnh áp dụng.",
+          "hint": "Chủ thể và hoàn cảnh áp dụng."
+        },
+        {
+          "id": "tn2-5",
+          "q": "Trong cấu trúc của quy phạm pháp luật, bộ phận trả lời cho câu hỏi: 'Phải làm gì? Được làm gì? Không được làm gì?' là:",
+          "options": {
+            "A": "Giả định",
+            "B": "Quy định",
+            "C": "Chế tài",
+            "D": "Cả ba bộ phận trên"
+          },
+          "answer": "B",
+          "explain": "Quy định nêu cách thức xử sự, quyền và nghĩa vụ.",
+          "hint": "Quy tắc xử sự trung tâm."
+        },
+        {
+          "id": "tn2-6",
+          "q": "Bộ phận nêu lên các biện pháp tác động cưỡng chế bất lợi mà nhà nước áp dụng đối với chủ thể vi phạm là:",
+          "options": {
+            "A": "Giả định",
+            "B": "Quy định",
+            "C": "Chế tài",
+            "D": "Cả ba bộ phận trên"
+          },
+          "answer": "C",
+          "explain": "Chế tài là hậu quả pháp lý bất lợi áp dụng khi vi phạm quy định.",
+          "hint": "Biện pháp trừng phạt, xử lý."
+        },
+        {
+          "id": "tn2-7",
+          "q": "Anh A nộp đơn khởi kiện anh B ra Tòa án đòi nợ là hình thức thực hiện pháp luật nào?",
+          "options": {
+            "A": "Tuân thủ pháp luật",
+            "B": "Sử dụng pháp luật",
+            "C": "Thi hành pháp luật",
+            "D": "Áp dụng pháp luật"
+          },
+          "answer": "B",
+          "explain": "Sử dụng pháp luật là thực hiện quyền mà pháp luật cho phép làm.",
+          "hint": "Thực hiện quyền dân sự."
+        },
+        {
+          "id": "tn2-8",
+          "q": "Cảnh sát giao thông lập biên bản và xử phạt người vi phạm là hình thức thực hiện pháp luật nào?",
+          "options": {
+            "A": "Sử dụng pháp luật",
+            "B": "Thi hành pháp luật",
+            "C": "Tuân thủ pháp luật",
+            "D": "Áp dụng pháp luật"
+          },
+          "answer": "D",
+          "explain": "Áp dụng pháp luật là hoạt động mang tính quyền lực nhà nước của cơ quan có thẩm quyền.",
+          "hint": "Nhân danh quyền lực nhà nước ra quyết định xử lý."
+        }
+      ]
+    },
+    {
+      "id": "tn-ch3",
+      "title": "Chương 3 & 4: Dân sự, Hôn nhân, Hình sự & Lao động",
+      "subtitle": "Quyền sở hữu, Kết hôn, Trách nhiệm hình sự và Hợp đồng lao động",
+      "questions": [
+        {
+          "id": "tn3-1",
+          "q": "Ông A bán chiếc xe máy của mình cho ông B. Sau khi hoàn tất giao dịch, ông B có quyền gì đối với chiếc xe đó?",
+          "options": {
+            "A": "Quyền chiếm hữu",
+            "B": "Quyền sử dụng",
+            "C": "Quyền định đoạt",
+            "D": "Quyền sở hữu"
+          },
+          "answer": "D",
+          "explain": "Mua bán hợp pháp chuyển giao trọn vẹn quyền sở hữu (chiếm hữu, sử dụng, định đoạt).",
+          "hint": "Bao gồm cả 3 quyền năng."
+        },
+        {
+          "id": "tn3-2",
+          "q": "Theo Luật Hôn nhân và Gia đình 2014, điều kiện về độ tuổi kết hôn là:",
+          "options": {
+            "A": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên",
+            "B": "Nam từ 20 tuổi, nữ từ 18 tuổi",
+            "C": "Nam và nữ đều từ đủ 18 tuổi trở lên",
+            "D": "Nam từ đủ 22 tuổi, nữ từ đủ 19 tuổi"
+          },
+          "answer": "A",
+          "explain": "Điểm a Khoản 1 Điều 8 Luật HNGĐ 2014: Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên.",
+          "hint": "Nam từ đủ 20, nữ từ đủ 18."
+        },
+        {
+          "id": "tn3-3",
+          "q": "A (17 tuổi, nhận thức bình thường) trộm cắp xe máy trị giá 20 triệu đồng là hành vi:",
+          "options": {
+            "A": "Vi phạm hành chính",
+            "B": "Vi phạm dân sự",
+            "C": "Vi phạm kỷ luật",
+            "D": "Vi phạm hình sự"
+          },
+          "answer": "D",
+          "explain": "Người từ đủ 16 tuổi chịu TNHS về mọi tội phạm. Trộm cắp trên 2 triệu là tội phạm hình sự theo Điều 173 BLHS.",
+          "hint": "Đủ tuổi chịu TNHS + tài sản > 2 triệu."
+        },
+        {
+          "id": "tn3-4",
+          "q": "Theo Bộ luật Lao động 2019, độ tuổi lao động tối thiểu thông thường của người lao động là:",
+          "options": {
+            "A": "Từ đủ 13 tuổi trở lên",
+            "B": "Từ đủ 15 tuổi trở lên",
+            "C": "Từ đủ 16 tuổi trở lên",
+            "D": "Từ đủ 18 tuổi trở lên"
+          },
+          "answer": "B",
+          "explain": "Điều 3 BLLĐ 2019: Người lao động là người từ đủ 15 tuổi trở lên.",
+          "hint": "Từ đủ 15 tuổi trở lên."
+        },
+        {
+          "id": "tn3-5",
+          "q": "Hành vi nào sau đây là hành vi tham nhũng theo Luật Phòng, chống tham nhũng 2018?",
+          "options": {
+            "A": "Trộm cắp tài sản trong cơ quan",
+            "B": "Cướp giật tài sản ngoài đường",
+            "C": "Công nhiên chiếm đoạt tài sản",
+            "D": "Tham ô tài sản (lợi dụng chức vụ, quyền hạn chiếm đoạt tài sản)"
+          },
+          "answer": "D",
+          "explain": "Tham ô tài sản là hành vi của người có chức vụ, quyền hạn vì vụ lợi.",
+          "hint": "Hành vi của người có chức vụ, quyền hạn."
+        }
+      ]
+    },
     {
       "id": "tn-350-c1",
       "title": "Chương 1: MỘT SỐ VẤN ĐỀ LÝ LUẬN CƠ BẢN VỀ NHÀ NƯỚC & NHÀ NƯỚC CHXHCN VIỆT NAM",
