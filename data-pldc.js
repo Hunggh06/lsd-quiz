@@ -1,517 +1,418 @@
-// Dữ liệu môn Pháp luật đại cương (PLDC) - Chuẩn hóa theo Pháp luật Việt Nam
 window.PLDC_DATA = {
   "metadata": {
     "title": "Pháp luật đại cương",
-    "description": "Ngân hàng câu hỏi trắc nghiệm, đúng/sai, cấu trúc QPPL và bài tập thừa kế chuẩn theo pháp luật Việt Nam",
+    "description": "Ngân hàng câu hỏi trắc nghiệm, đúng/sai, cấu trúc QPPL và bài tập thừa kế trích xuất từ tat-ca-cau-hoi-va-dap-an.md - Chuẩn hóa theo Pháp luật Việt Nam",
     "updated": "2026-08-31"
   },
   "trac_nghiem": [
     {
-      "id": "tn-ch1",
-      "title": "Chương 1: Những vấn đề cơ bản về Nhà nước",
-      "subtitle": "Nguồn gốc, bản chất, chức năng, hình thức và bộ máy Nhà nước",
+      "id": "tn-de4777",
+      "title": "Đề thi Mẫu 4777 (Trắc nghiệm)",
+      "subtitle": "10 câu trắc nghiệm mã đề thi kết thúc học phần 4777",
       "questions": [
         {
-          "id": "tn1-1",
-          "q": "Theo quan điểm của chủ nghĩa Mác - Lênin, xã hội loài người phát triển qua mấy hình thái kinh tế - xã hội?",
+          "id": "de4777-1",
+          "q": "Độ tuổi tối thiểu mà công dân có thể tham gia ứng cử đại biểu Quốc hội nước CHXHCN Việt Nam là:",
           "options": {
-            "A": "2 hình thái",
-            "B": "3 hình thái",
-            "C": "4 hình thái",
-            "D": "5 hình thái"
-          },
-          "answer": "D",
-          "explain": "Theo chủ nghĩa Mác - Lênin, lịch sử loài người trải qua 5 hình thái KT-XH: Cộng sản nguyên thủy, Chiếm hữu nô lệ, Phong kiến, Tư bản chủ nghĩa, và Cộng sản chủ nghĩa.",
-          "hint": "5 hình thái: CSNT - CHNL - PK - TBCN - CSCN."
-        },
-        {
-          "id": "tn1-2",
-          "q": "Đâu là nguyên tắc tổ chức và hoạt động của bộ máy Nhà nước CHXHCN Việt Nam?",
-          "options": {
-            "A": "Đảng Cộng sản Việt Nam giữ vai trò lãnh đạo Nhà nước và xã hội",
-            "B": "Tập trung dân chủ",
-            "C": "Pháp chế xã hội chủ nghĩa",
-            "D": "Tất cả các nguyên tắc trên đều đúng"
-          },
-          "answer": "D",
-          "explain": "Các nguyên tắc cơ bản gồm: Đảng lãnh đạo; Quyền lực nhà nước thuộc về Nhân dân; Tập trung dân chủ; Pháp chế XHCN; Kết hợp quản lý theo ngành và theo lãnh thổ.",
-          "hint": "Gồm sự lãnh đạo của Đảng, tập trung dân chủ và pháp chế XHCN."
-        },
-        {
-          "id": "tn1-3",
-          "q": "Cơ quan quyền lực nhà nước cao nhất của nước CHXHCN Việt Nam là:",
-          "options": {
-            "A": "Quốc hội",
-            "B": "Chính phủ",
-            "C": "Tòa án nhân dân tối cao",
-            "D": "Viện kiểm sát nhân dân tối cao"
-          },
-          "answer": "A",
-          "explain": "Theo Điều 69 Hiến pháp 2013: Quốc hội là cơ quan đại biểu cao nhất của Nhân dân, cơ quan quyền lực nhà nước cao nhất của nước CHXHCN Việt Nam.",
-          "hint": "Cơ quan do cử tri cả nước trực tiếp bầu ra, có quyền lập hiến và lập pháp."
-        },
-        {
-          "id": "tn1-4",
-          "q": "Cơ quan hành chính nhà nước cao nhất của nước CHXHCN Việt Nam là:",
-          "options": {
-            "A": "Quốc hội",
-            "B": "Chính phủ",
-            "C": "Tòa án nhân dân tối cao",
-            "D": "Viện kiểm sát nhân dân tối cao"
-          },
-          "answer": "B",
-          "explain": "Theo Điều 94 Hiến pháp 2013: Chính phủ là cơ quan hành chính nhà nước cao nhất của nước CHXHCN Việt Nam, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội.",
-          "hint": "Cơ quan đứng đầu hệ thống hành pháp, chấp hành của Quốc hội."
-        },
-        {
-          "id": "tn1-5",
-          "q": "Cơ quan xét xử của nước CHXHCN Việt Nam, thực hiện quyền tư pháp là:",
-          "options": {
-            "A": "Quốc hội",
-            "B": "Chủ tịch nước",
-            "C": "Chính phủ",
-            "D": "Tòa án nhân dân"
-          },
-          "answer": "D",
-          "explain": "Theo Điều 102 Hiến pháp 2013: Tòa án nhân dân là cơ quan xét xử của nước CHXHCN Việt Nam, thực hiện quyền tư pháp.",
-          "hint": "Cơ quan duy nhất có thẩm quyền xét xử và tuyên án."
-        },
-        {
-          "id": "tn1-6",
-          "q": "Chức năng đối ngoại của nhà nước bao gồm hoạt động nào sau đây?",
-          "options": {
-            "A": "Đảm bảo trật tự an toàn xã hội trong nước",
-            "B": "Phát triển kinh tế đối nội",
-            "C": "Đảm bảo an ninh chính trị nội bộ",
-            "D": "Phòng thủ đất nước, chống xâm lược và thiết lập quan hệ ngoại giao"
-          },
-          "answer": "D",
-          "explain": "Chức năng đối ngoại thể hiện vai trò của nhà nước trong mối quan hệ với các quốc gia khác, bảo vệ chủ quyền và hợp tác quốc tế.",
-          "hint": "Hoạt động liên quan đến đối ngoại, quốc tế và phòng thủ."
-        },
-        {
-          "id": "tn1-7",
-          "q": "Lệnh, Quyết định là văn bản quy phạm pháp luật do chủ thể nào sau đây ban hành?",
-          "options": {
-            "A": "Chủ tịch Quốc hội",
-            "B": "Thủ tướng Chính phủ",
-            "C": "Chủ tịch nước",
-            "D": "Chánh án Tòa án nhân dân tối cao"
+            "A": "Đủ 18 tuổi",
+            "B": "Đủ 20 tuổi",
+            "C": "Đủ 21 tuổi",
+            "D": "Đủ 23 tuổi"
           },
           "answer": "C",
-          "explain": "Theo Điều 4 Luật Ban hành văn bản QPPL 2015: Chủ tịch nước ban hành Lệnh và Quyết định.",
-          "hint": "Người đứng đầu Nhà nước, thay mặt nước CHXHCN Việt Nam về đối nội và đối ngoại."
+          "explain": "Căn cứ Điều 27 Hiến pháp 2013 và Luật Bầu cử đại biểu Quốc hội và đại biểu HĐND: Công dân đủ 18 tuổi trở lên có quyền bầu cử và đủ 21 tuổi trở lên có quyền ứng cử vào Quốc hội, HĐND.",
+          "hint": "Bầu cử đủ 18 tuổi, ứng cử đủ 21 tuổi."
         },
         {
-          "id": "tn1-8",
-          "q": "Chọn khẳng định đúng về nguyên tắc tổ chức bộ máy Nhà nước Việt Nam:",
+          "id": "de4777-2",
+          "q": "Ông B xây nhà lấn chiếm lối đi của khu phố, bị cơ quan có thẩm quyền yêu cầu phá bỏ phần lấn chiếm để trả lại lối đi. Đây là biện pháp chế tài:",
           "options": {
-            "A": "Bộ máy Nhà nước tổ chức và hoạt động theo nguyên tắc tập trung dân chủ",
-            "B": "Bộ máy Nhà nước tổ chức và hoạt động theo nguyên tắc tam quyền phân lập tuyệt đối",
-            "C": "Bộ máy Nhà nước tổ chức và hoạt động theo nguyên tắc quân chủ chuyên chế",
-            "D": "Bộ máy Nhà nước tổ chức theo nguyên tắc đối trọng và kiềm chế quyền lực kiểu phương Tây"
+            "A": "Chế tài dân sự",
+            "B": "Chế tài hình sự",
+            "C": "Chế tài hành chính",
+            "D": "Chế tài kỷ luật"
           },
           "answer": "A",
-          "explain": "Nhà nước CHXHCN Việt Nam tổ chức theo nguyên tắc quyền lực nhà nước là thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan trong việc thực hiện quyền lập pháp, hành pháp, tư pháp dưới sự lãnh đạo của Đảng, trên nền tảng tập trung dân chủ.",
-          "hint": "Nguyên tắc kết hợp giữa tập trung chỉ đạo và phát huy dân chủ."
+          "explain": "Biện pháp buộc khôi phục lại tình trạng ban đầu của tài sản/lối đi chung là biện pháp chế tài dân sự (khôi phục tình trạng ban đầu theo Điều 11 BLDS). Nếu do cơ quan quản lý áp dụng xử phạt VPHC thì là biện pháp khắc phục hậu quả hành chính, trong đề thi chọn chế tài dân sự.",
+          "hint": "Buộc khôi phục tình trạng ban đầu."
         },
         {
-          "id": "tn1-9",
-          "q": "Liên đoàn Lao động Việt Nam là tổ chức thuộc nhóm nào trong hệ thống chính trị?",
+          "id": "de4777-3",
+          "q": "Xã hội cộng sản nguyên thủy là xã hội:",
           "options": {
-            "A": "Cơ quan quản lý nhà nước",
-            "B": "Cơ quan quyền lực nhà nước",
-            "C": "Tổ chức chính trị - xã hội",
-            "D": "Cơ quan tư pháp"
+            "A": "Có giai cấp mâu thuẫn đối kháng nhau",
+            "B": "Không có giai cấp mâu thuẫn đối kháng nhau",
+            "C": "Do nhà nước quản lý",
+            "D": "Do các cơ quan lập pháp quản lý"
+          },
+          "answer": "B",
+          "explain": "Xã hội cộng sản nguyên thủy dựa trên chế độ công hữu về tư liệu sản xuất, chưa có giai cấp và mâu thuẫn giai cấp đối kháng.",
+          "hint": "Chưa có giai cấp đối kháng."
+        },
+        {
+          "id": "de4777-4",
+          "q": "Hành vi vi phạm pháp luật không thể là:",
+          "options": {
+            "A": "Lời nói",
+            "B": "Một tư tưởng xấu xa",
+            "C": "Một kế hoạch",
+            "D": "Cả A, B, C"
+          },
+          "answer": "B",
+          "explain": "Vi phạm pháp luật bắt buộc phải là hành vi biểu hiện ra bên ngoài thế giới khách quan (hành động hoặc không hành động). Tư tưởng, suy nghĩ chưa biểu hiện ra ngoài không phải là hành vi vi phạm.",
+          "hint": "Tư tưởng trong đầu chưa biểu hiện ra hành vi."
+        },
+        {
+          "id": "de4777-5",
+          "q": "Chủ thể của hành vi tham nhũng bắt buộc phải là:",
+          "options": {
+            "A": "Người có chức vụ quyền hạn trong xã hội",
+            "B": "Bất kỳ công dân nào có hành vi trộm cắp tài sản",
+            "C": "Người có chức vụ, quyền hạn",
+            "D": "Người không có chức vụ nhưng có nhiều tiền"
           },
           "answer": "C",
-          "explain": "Liên đoàn Lao động (Tổng Liên đoàn Lao động Việt Nam) là tổ chức chính trị - xã hội của giai cấp công nhân và người lao động.",
-          "hint": "Tổ chức đại diện, bảo vệ quyền lợi của người lao động."
+          "explain": "Căn cứ Điều 2 Luật Phòng, chống tham nhũng 2018: Chủ thể tham nhũng bắt buộc phải là người có chức vụ, quyền hạn đã lợi dụng chức vụ, quyền hạn đó vì vụ lợi.",
+          "hint": "Người có chức vụ, quyền hạn."
         },
         {
-          "id": "tn1-10",
-          "q": "Nhà nước cổ đại phương Tây nào xuất hiện do kết quả của sự phân hóa giai cấp sâu sắc và đấu tranh giai cấp gay gắt?",
+          "id": "de4777-6",
+          "q": "Nguyên tắc áp dụng hình phạt trong pháp luật hình sự Việt Nam:",
           "options": {
-            "A": "Nhà nước Ai Cập cổ đại",
-            "B": "Nhà nước Aten (Athens)",
-            "C": "Nhà nước Lưỡng Hà",
-            "D": "Nhà nước Trung Hoa cổ đại"
+            "A": "Có thể áp dụng một lúc nhiều hình phạt chính và nhiều hình phạt bổ sung",
+            "B": "Chỉ có thể áp dụng một lúc nhiều hình phạt chính và chỉ một hình phạt bổ sung",
+            "C": "Chỉ có thể áp dụng một hình phạt chính và một hình phạt bổ sung",
+            "D": "Đối với mỗi tội phạm, người phạm tội chỉ bị áp dụng một hình phạt chính và có thể bị áp dụng một hoặc một số hình phạt bổ sung"
           },
-          "answer": "B",
-          "explain": "Nhà nước Aten là dạng nhà nước ra đời thuần túy và điển hình nhất từ sự phát triển và phân hóa giai cấp ngay trong nội bộ xã hội thị tộc.",
-          "hint": "Nhà nước dân chủ chủ nô ở Hy Lạp cổ đại."
+          "answer": "D",
+          "explain": "Căn cứ Điều 32 Bộ luật Hình sự 2015: Đối với mỗi tội phạm, người phạm tội chỉ bị áp dụng một hình phạt chính và có thể bị áp dụng một hoặc một số hình phạt bổ sung.",
+          "hint": "Chỉ 1 hình phạt chính, có thể kèm nhiều hình phạt bổ sung."
         },
         {
-          "id": "tn1-11",
-          "q": "Quyền lực trong xã hội Cộng sản nguyên thủy mang tính chất gì?",
+          "id": "de4777-7",
+          "q": "Khẳng định nào sau đây là đúng về sự kiện pháp lý?",
           "options": {
-            "A": "Quyền lực chính trị mang tính giai cấp",
-            "B": "Quyền lực xã hội phục vụ lợi ích chung của tất cả mọi người",
-            "C": "Quyền lực nhà nước chuyên chế",
-            "D": "Quyền lực tôn giáo thần quyền"
+            "A": "Sự kiện pháp lý là sự cụ thể hóa phần giả định của quy phạm pháp luật trong thực tiễn",
+            "B": "Sự kiện pháp lý là sự cụ thể hóa phần giả định và quy định của quy phạm pháp luật trong thực tiễn",
+            "C": "Sự kiện pháp lý là sự cụ thể hóa phần giả định, quy định và chế tài của quy phạm pháp luật trong thực tiễn",
+            "D": "Cả A, B và C đều đúng"
           },
-          "answer": "B",
-          "explain": "Trong xã hội thị tộc nguyên thủy chưa có giai cấp và nhà nước, quyền lực hòa nhập vào dân cư, do hội đồng thị tộc thực hiện vì lợi ích chung của cộng đồng.",
-          "hint": "Quyền lực mang tính xã hội, chưa có giai cấp thống trị."
+          "answer": "A",
+          "explain": "Sự kiện pháp lý là những sự kiện thực tế mà khi xuất hiện trong đời sống (phù hợp với các điều kiện nêu ở phần giả định của QPPL) thì làm phát sinh, thay đổi hoặc chấm dứt quan hệ pháp luật.",
+          "hint": "Sự kiện thực tế khớp với phần giả định của điều luật."
         },
         {
-          "id": "tn1-12",
-          "q": "Các quốc gia nào sau đây có hình thức cấu trúc nhà nước liên bang?",
+          "id": "de4777-8",
+          "q": "Khẳng định nào sau đây đúng về Áp dụng pháp luật?",
           "options": {
-            "A": "Việt Nam, Lào, Pháp",
-            "B": "Nga, Hoa Kỳ, Đức, Australia",
-            "C": "Trung Quốc, Nhật Bản, Thái Lan",
-            "D": "Việt Nam, Triều Tiên, Cuba"
+            "A": "Áp dụng pháp luật là việc thực hiện pháp luật của công dân",
+            "B": "Áp dụng pháp luật là việc thực hiện pháp luật mang tính quyền lực của cơ quan nhà nước và người có thẩm quyền",
+            "C": "Áp dụng pháp luật là việc thực hiện pháp luật của mọi tổ chức kinh tế",
+            "D": "Cả A, B và C đều đúng"
           },
           "answer": "B",
-          "explain": "Nga, Hoa Kỳ, Đức, Australia, Canada, Malaysia... là các quốc gia có cấu trúc nhà nước liên bang (hợp nhất từ nhiều bang/tiểu bang thành viên).",
-          "hint": "Các nước gồm nhiều bang hợp thành như Mỹ, Nga, Đức..."
+          "explain": "Áp dụng pháp luật là hình thức thực hiện pháp luật mang tính quyền lực nhà nước, chỉ do cơ quan nhà nước, người có thẩm quyền tiến hành.",
+          "hint": "Hoạt động mang tính quyền lực nhà nước."
+        },
+        {
+          "id": "de4777-9",
+          "q": "Đâu không phải là một ngành luật độc lập trong hệ thống pháp luật Việt Nam?",
+          "options": {
+            "A": "Luật xây dựng",
+            "B": "Luật Hôn nhân và gia đình",
+            "C": "Luật Dân sự",
+            "D": "Luật Hình sự"
+          },
+          "answer": "A",
+          "explain": "Hệ thống pháp luật Việt Nam gồm các ngành luật lớn (Hiến pháp, Hành chính, Hình sự, Dân sự, Hôn nhân gia đình, Lao động, Đất đai, Tài chính, Ngân hàng...). 'Luật Xây dựng' chỉ là một đạo luật/văn bản cụ thể thuộc ngành Luật Hành chính/Kinh tế, không phải ngành luật độc lập.",
+          "hint": "Văn bản luật chuyên ngành cụ thể, không phải ngành luật lớn."
+        },
+        {
+          "id": "de4777-10",
+          "q": "Ở xã hội cộng sản nguyên thủy:",
+          "options": {
+            "A": "Chưa xuất hiện chế độ tư hữu, chưa xuất hiện giai cấp nên nhà nước chưa xuất hiện",
+            "B": "Xuất hiện chế độ tư hữu, xuất hiện các giai cấp khác nhau nhưng chưa xuất hiện nhà nước",
+            "C": "Đã xuất hiện nhà nước và bộ máy tư pháp",
+            "D": "Xuất hiện mâu thuẫn giai cấp gay gắt"
+          },
+          "answer": "A",
+          "explain": "Xã hội CSNT chưa có chế độ tư hữu về tư liệu sản xuất và chưa phân chia giai cấp đối kháng, do đó nhà nước chưa xuất hiện.",
+          "hint": "Chưa có tư hữu, chưa có giai cấp."
         }
       ]
     },
     {
-      "id": "tn-ch2",
-      "title": "Chương 2: Những vấn đề cơ bản về Pháp luật & QPPL",
-      "subtitle": "Quy phạm pháp luật, Quan hệ pháp luật, Vi phạm pháp luật và Trách nhiệm pháp lý",
+      "id": "tn-de4775",
+      "title": "Đề thi Mẫu 4775 & 4776 (Trắc nghiệm)",
+      "subtitle": "10 câu trắc nghiệm mã đề 4775 và 4776",
       "questions": [
         {
-          "id": "tn2-1",
-          "q": "Yếu tố nhỏ nhất cấu thành nên hệ thống pháp luật Việt Nam là:",
+          "id": "de4775-1",
+          "q": "Tội phạm nghiêm trọng theo Bộ luật Hình sự Việt Nam có mức cao nhất của khung hình phạt là:",
           "options": {
-            "A": "Quy phạm pháp luật",
-            "B": "Chế định pháp luật",
-            "C": "Ngành luật",
-            "D": "Văn bản quy phạm pháp luật"
-          },
-          "answer": "A",
-          "explain": "Hệ thống cấu trúc pháp luật gồm 3 cấp: Quy phạm pháp luật (nhỏ nhất) -> Chế định pháp luật -> Ngành luật (lớn nhất).",
-          "hint": "Đơn vị cơ bản, quy tắc xử sự chuẩn mực nhỏ nhất."
-        },
-        {
-          "id": "tn2-2",
-          "q": "Văn bản quy phạm pháp luật có hiệu lực pháp lý cao nhất trong hệ thống pháp luật Việt Nam là:",
-          "options": {
-            "A": "Hiến pháp",
-            "B": "Bộ luật Dân sự",
-            "C": "Bộ luật Hình sự",
-            "D": "Bộ luật Lao động"
-          },
-          "answer": "A",
-          "explain": "Theo Điều 119 Hiến pháp 2013: Hiến pháp là luật cơ bản của nước CHXHCN Việt Nam, có hiệu lực pháp lý cao nhất. Mọi văn bản pháp luật khác phải phù hợp với Hiến pháp.",
-          "hint": "Đạo luật cơ bản, mẹ của mọi đạo luật."
-        },
-        {
-          "id": "tn2-3",
-          "q": "Trong cấu trúc của quy phạm pháp luật, bộ phận trả lời cho câu hỏi 'Ai? Trong điều kiện, hoàn cảnh nào?' là:",
-          "options": {
-            "A": "Giả định",
-            "B": "Quy định",
-            "C": "Chế tài",
-            "D": "Cả ba bộ phận trên"
-          },
-          "answer": "A",
-          "explain": "Giả định xác định chủ thể, điều kiện, hoàn cảnh, thời gian, địa điểm mà nhà nước dự liệu quy phạm sẽ áp dụng.",
-          "hint": "Nêu lên chủ thể và hoàn cảnh áp dụng."
-        },
-        {
-          "id": "tn2-4",
-          "q": "Bộ phận trả lời cho câu hỏi 'Phải làm gì? Được làm gì? Không được làm gì? Làm như thế nào?' là:",
-          "options": {
-            "A": "Giả định",
-            "B": "Quy định",
-            "C": "Chế tài",
-            "D": "Cả ba bộ phận trên"
-          },
-          "answer": "B",
-          "explain": "Quy định nêu lên quy tắc xử sự, khuôn mẫu hành vi mà chủ thể được, phải hoặc không được thực hiện.",
-          "hint": "Bộ phận trung tâm thể hiện mệnh lệnh, quyền và nghĩa vụ."
-        },
-        {
-          "id": "tn2-5",
-          "q": "Bộ phận nêu lên các biện pháp tác động (cưỡng chế) bất lợi mà nhà nước dự kiến áp dụng đối với chủ thể vi phạm là:",
-          "options": {
-            "A": "Giả định",
-            "B": "Quy định",
-            "C": "Chế tài",
-            "D": "Cả ba bộ phận trên"
+            "A": "Đến 3 năm tù",
+            "B": "Đến 5 năm tù",
+            "C": "Đến 7 năm tù",
+            "D": "Đến 15 năm tù"
           },
           "answer": "C",
-          "explain": "Chế tài là bộ phận chỉ ra hậu quả pháp lý bất lợi (hình phạt, bồi thường, phạt tiền...) đối với hành vi không tuân thủ quy định.",
-          "hint": "Biện pháp xử lý, trừng phạt khi vi phạm."
+          "explain": "Căn cứ Điều 9 BLHS 2015: Tội phạm ít nghiêm trọng: phạt tiền, phạt cải tạo không giam giữ hoặc phạt tù đến 03 năm; Tội phạm nghiêm trọng: phạt tù từ trên 03 năm đến 07 năm; Tội phạm rất nghiêm trọng: từ trên 07 năm đến 15 năm; Tội phạm đặc biệt nghiêm trọng: từ trên 15 năm đến 20 năm, tù chung thân hoặc tử hình.",
+          "hint": "Khung phạt tù từ trên 3 năm đến 7 năm."
         },
         {
-          "id": "tn2-6",
-          "q": "Anh A nộp đơn khởi kiện anh B ra Tòa án yêu cầu trả nợ là hình thức thực hiện pháp luật nào?",
+          "id": "de4775-2",
+          "q": "Bộ phận 'Quy định' có ý nghĩa như thế nào trong quy phạm pháp luật?",
+          "options": {
+            "A": "Xác định chủ thể, điều kiện, hoàn cảnh chịu sự tác động của quy phạm",
+            "B": "Xác định các cách thức xử sự (được làm, phải làm, không được làm) của các chủ thể",
+            "C": "Xác định biện pháp cưỡng chế xử lý đối với chủ thể vi phạm",
+            "D": "Tùy từng trường hợp mà là một trong các ý nghĩa nêu trên"
+          },
+          "answer": "B",
+          "explain": "Quy định là bộ phận trung tâm xác định mô hình hành vi, quyền và nghĩa vụ của các chủ thể khi ở vào hoàn cảnh đã nêu ở phần giả định.",
+          "hint": "Xác định cách thức xử sự của chủ thể."
+        },
+        {
+          "id": "de4775-3",
+          "q": "Trong bộ máy Nhà nước CHXHCN Việt Nam, Quốc hội là:",
+          "options": {
+            "A": "Cơ quan quyền lực nhà nước cao nhất",
+            "B": "Cơ quan đại biểu cao nhất của Nhân dân",
+            "C": "Cơ quan có quyền lập hiến và lập pháp",
+            "D": "Cả A, B, C đều đúng"
+          },
+          "answer": "D",
+          "explain": "Điều 69 Hiến pháp 2013 quy định đầy đủ Quốc hội là cơ quan đại biểu cao nhất của Nhân dân, cơ quan quyền lực nhà nước cao nhất, thực hiện quyền lập hiến, lập pháp.",
+          "hint": "Cả 3 thuộc tính trên."
+        },
+        {
+          "id": "de4775-4",
+          "q": "Việc các chủ thể khi tham gia giao thông không phóng nhanh, vượt ẩu thuộc hình thức thực hiện pháp luật nào?",
           "options": {
             "A": "Tuân thủ pháp luật",
-            "B": "Sử dụng pháp luật",
-            "C": "Thi hành pháp luật",
-            "D": "Áp dụng pháp luật"
-          },
-          "answer": "B",
-          "explain": "Sử dụng pháp luật là hình thức chủ thể thực hiện quyền của mình (những việc pháp luật cho phép làm). Khởi kiện bảo vệ quyền lợi là quyền dân sự.",
-          "hint": "Thực hiện quyền mà pháp luật trao cho chủ thể."
-        },
-        {
-          "id": "tn2-7",
-          "q": "Cảnh sát giao thông lập biên bản và ra quyết định xử phạt người vi phạm là hình thức thực hiện pháp luật nào?",
-          "options": {
-            "A": "Sử dụng pháp luật",
-            "B": "Thi hành pháp luật",
-            "C": "Tuân thủ pháp luật",
-            "D": "Áp dụng pháp luật"
-          },
-          "answer": "D",
-          "explain": "Áp dụng pháp luật là hình thức do cơ quan, người có thẩm quyền của Nhà nước thực hiện, mang tính quyền lực nhà nước nhằm ban hành quyết định xử lý cá biệt.",
-          "hint": "Hoạt động mang tính quyền lực nhà nước của cơ quan/người có thẩm quyền."
-        },
-        {
-          "id": "tn2-8",
-          "q": "Trường hợp nào sau đây cấu thành hành vi vi phạm pháp luật?",
-          "options": {
-            "A": "A (10 tuổi) trộm xe đạp của B",
-            "B": "A (18 tuổi, mắc bệnh tâm thần nặng) đập vỡ kính xe",
-            "C": "A (18 tuổi, nhận thức bình thường) nghĩ trong đầu sẽ đánh B",
-            "D": "A (18 tuổi, nhận thức bình thường) cướp giật túi xách của B"
-          },
-          "answer": "D",
-          "explain": "Vi phạm pháp luật phải có đủ 4 dấu hiệu: Là hành vi xác định; Trái pháp luật; Có lỗi; Chủ thể có năng lực trách nhiệm pháp lý (đủ tuổi + nhận thức bình thường).",
-          "hint": "Cần hành vi thực tế + đủ tuổi + nhận thức bình thường + trái luật."
-        },
-        {
-          "id": "tn2-9",
-          "q": "Quan hệ nào sau đây là quan hệ pháp luật?",
-          "options": {
-            "A": "A yêu B",
-            "B": "A đính hôn với B",
-            "C": "A đăng ký kết hôn với B tại UBND xã",
-            "D": "A tổ chức đám cưới với B tại nhà hàng"
-          },
-          "answer": "C",
-          "explain": "Đăng ký kết hôn tại UBND là sự kiện pháp lý phát sinh quan hệ pháp luật hôn nhân và gia đình được Nhà nước bảo vệ và phát sinh quyền, nghĩa vụ vợ chồng.",
-          "hint": "Thủ tục pháp lý chính thức phát sinh quyền và nghĩa vụ được pháp luật công nhận."
-        },
-        {
-          "id": "tn2-10",
-          "q": "Chính phủ có thẩm quyền ban hành loại văn bản quy phạm pháp luật nào sau đây?",
-          "options": {
-            "A": "Hiến pháp",
-            "B": "Luật",
-            "C": "Nghị định",
-            "D": "Thông tư"
-          },
-          "answer": "C",
-          "explain": "Theo Điều 4 Luật Ban hành văn bản quy phạm pháp luật 2015: Chính phủ ban hành Nghị định. Quốc hội ban hành Luật. Bộ trưởng ban hành Thông tư.",
-          "hint": "Văn bản quy phạm pháp luật do tập thể Chính phủ ban hành."
-        }
-      ]
-    },
-    {
-      "id": "tn-ch3",
-      "title": "Chương 3: Luật Dân sự, Hôn nhân & Quyền Sở hữu",
-      "subtitle": "Quyền sở hữu, Hợp đồng, Kết hôn và Tài sản vợ chồng",
-      "questions": [
-        {
-          "id": "tn3-1",
-          "q": "Ông A bán chiếc xe máy của mình cho ông B. Sau khi hoàn tất giao dịch và nhận xe, ông B có quyền gì đối với chiếc xe đó?",
-          "options": {
-            "A": "Quyền chiếm hữu",
-            "B": "Quyền sử dụng",
-            "C": "Quyền định đoạt",
-            "D": "Quyền sở hữu"
-          },
-          "answer": "D",
-          "explain": "Mua bán hợp pháp chuyển giao toàn bộ quyền sở hữu cho người mua, bao gồm trọn vẹn cả 3 quyền năng: chiếm hữu, sử dụng và định đoạt.",
-          "hint": "Quyền năng cao nhất bao gồm cả 3 quyền bộ phận."
-        },
-        {
-          "id": "tn3-2",
-          "q": "Ông A cho ông B mượn chiếc xe máy để đi lại. Vậy ông B có những quyền năng nào đối với chiếc xe máy đó?",
-          "options": {
-            "A": "Quyền chiếm hữu và quyền sử dụng",
-            "B": "Quyền sử dụng và quyền định đoạt",
-            "C": "Quyền chiếm hữu và quyền định đoạt",
-            "D": "Quyền sở hữu và quyền sử dụng"
+            "B": "Áp dụng pháp luật",
+            "C": "Sử dụng pháp luật",
+            "D": "Thi hành pháp luật"
           },
           "answer": "A",
-          "explain": "Người mượn tài sản chỉ có quyền nắm giữ (chiếm hữu) và khai thác công dụng (sử dụng) theo hợp đồng mượn, không có quyền định đoạt (bán, tặng cho, phá hủy...).",
-          "hint": "Được giữ và được đi, nhưng không được bán."
+          "explain": "Tuân thủ pháp luật là kiềm chế bản thân không thực hiện những hành vi mà pháp luật ngăn cấm (cấm phóng nhanh, vượt ẩu).",
+          "hint": "Kiềm chế không làm điều cấm."
         },
         {
-          "id": "tn3-3",
-          "q": "Theo Luật Hôn nhân và Gia đình 2014, điều kiện về độ tuổi kết hôn là:",
+          "id": "de4775-5",
+          "q": "Xét về độ tuổi theo pháp luật Việt Nam, người chưa thành niên là người:",
           "options": {
-            "A": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên",
-            "B": "Nam từ 20 tuổi, nữ từ 18 tuổi (bước sang tuổi 20 và 18)",
-            "C": "Nam và nữ đều từ đủ 18 tuổi trở lên",
-            "D": "Nam từ đủ 22 tuổi, nữ từ đủ 19 tuổi"
+            "A": "Dưới 6 tuổi",
+            "B": "Dưới 14 tuổi",
+            "C": "Dưới 15 tuổi",
+            "D": "Chưa đủ 18 tuổi"
+          },
+          "answer": "D",
+          "explain": "Điều 21 Bộ luật Dân sự 2015: Người chưa thành niên là người chưa đủ mười tám tuổi.",
+          "hint": "Chưa đủ 18 tuổi."
+        },
+        {
+          "id": "de4775-6",
+          "q": "Quy phạm: 'Cấm tảo hôn, cưỡng ép kết hôn, lừa dối kết hôn, cản trở kết hôn' bao gồm bộ phận nào?",
+          "options": {
+            "A": "Quy định",
+            "B": "Giả định",
+            "C": "Chế tài",
+            "D": "Cả A, B, C đều đúng"
           },
           "answer": "A",
-          "explain": "Theo Điểm a Khoản 1 Điều 8 Luật HNGĐ 2014: Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên.",
-          "hint": "Lưu ý chữ 'từ đủ' (phải qua ngày sinh nhật)."
+          "explain": "Đây là quy tắc xử sự mang tính cấm đoán (bộ phận Quy định), quy phạm này khuyết giả định và chế tài trực tiếp.",
+          "hint": "Nêu mệnh lệnh cấm đoán -> Quy định."
         },
         {
-          "id": "tn3-4",
-          "q": "Pháp luật Việt Nam hiện hành quy định như thế nào về hôn nhân giữa những người cùng giới tính?",
-          "options": {
-            "A": "Nghiêm cấm kết hôn giữa những người cùng giới tính",
-            "B": "Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính",
-            "C": "Công nhận và cấp giấy chứng nhận kết hôn",
-            "D": "Xử phạt hành chính đối với những người kết hôn cùng giới"
-          },
-          "answer": "B",
-          "explain": "Theo Khoản 2 Điều 8 Luật HNGĐ 2014: 'Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính' (bỏ quy định cấm trước đây nhưng chưa công nhận giá trị pháp lý vợ chồng).",
-          "hint": "Không cấm cản, nhưng không thừa nhận về mặt pháp lý."
-        },
-        {
-          "id": "tn3-5",
-          "q": "Hợp đồng dân sự có thể được giao kết thông qua các hình thức nào?",
-          "options": {
-            "A": "Chỉ duy nhất bằng văn bản có công chứng",
-            "B": "Bằng lời nói, bằng văn bản hoặc bằng hành vi cụ thể",
-            "C": "Chỉ bằng văn bản hoặc thư điện tử",
-            "D": "Chỉ bằng lời nói có người làm chứng"
-          },
-          "answer": "B",
-          "explain": "Theo Điều 119 BLDS 2015: Giao dịch dân sự / hợp đồng được thể hiện bằng lời nói, bằng văn bản hoặc bằng hành vi cụ thể (trừ trường hợp luật quy định bắt buộc phải lập thành văn bản công chứng).",
-          "hint": "Lời nói, văn bản hoặc hành vi cụ thể."
-        },
-        {
-          "id": "tn3-6",
-          "q": "Theo quy định của Bộ luật Dân sự 2015 về thừa kế theo pháp luật, con nuôi của người để lại di sản thuộc hàng thừa kế nào?",
+          "id": "de4775-7",
+          "q": "Cô, dì, chú, bác, cậu ruột của người chết thuộc hàng thừa kế theo pháp luật thứ mấy?",
           "options": {
             "A": "Hàng thừa kế thứ nhất",
             "B": "Hàng thừa kế thứ hai",
             "C": "Hàng thừa kế thứ ba",
             "D": "Không thuộc hàng thừa kế nào"
           },
-          "answer": "A",
-          "explain": "Theo Điểm a Khoản 1 Điều 651 BLDS 2015: Hàng thừa kế thứ nhất gồm: vợ, chồng, cha đẻ, mẹ đẻ, cha nuôi, mẹ nuôi, con đẻ, con nuôi của người chết.",
-          "hint": "Con nuôi hợp pháp có quyền thừa kế bình đẳng như con đẻ ở hàng thứ nhất."
+          "answer": "C",
+          "explain": "Điều 651 BLDS 2015: Hàng thừa kế thứ nhất: vợ, chồng, cha mẹ, con; Hàng thứ hai: ông bà, anh chị em ruột, cháu ruột (gọi bằng ông bà); Hàng thứ ba: cụ, cô, dì, chú, bác, cậu ruột, cháu ruột (gọi bằng cô, dì, chú, bác, cậu ruột).",
+          "hint": "Hàng thừa kế thứ ba."
         },
         {
-          "id": "tn3-7",
-          "q": "Phương pháp điều chỉnh chủ yếu của ngành Luật Dân sự là:",
+          "id": "de4775-8",
+          "q": "Văn bản quy phạm pháp luật được áp dụng bao nhiêu lần trong thực tiễn đời sống?",
           "options": {
-            "A": "Quyền uy, phục tùng",
-            "B": "Mệnh lệnh đơn phương",
-            "C": "Bình đẳng, thỏa thuận và tự định đoạt",
-            "D": "Cưỡng chế trực tiếp"
+            "A": "Chỉ áp dụng một lần duy nhất",
+            "B": "Chỉ áp dụng hai lần",
+            "C": "Được áp dụng nhiều lần đối với nhiều chủ thể",
+            "D": "Tùy thuộc vào quyết định của đương sự"
           },
           "answer": "C",
-          "explain": "Quan hệ dân sự dựa trên sự bình đẳng về địa vị pháp lý, tự nguyện thỏa thuận và tự chịu trách nhiệm tài sản giữa các chủ thể.",
-          "hint": "Bình đẳng và tự do thỏa thuận ý chí."
+          "explain": "VBQPPL mang tính quy phạm phổ biến, có hiệu lực bắt buộc chung và được áp dụng nhiều lần trong đời sống cho đến khi bị bãi bỏ hoặc thay thế.",
+          "hint": "Được áp dụng nhiều lần."
+        },
+        {
+          "id": "de4775-9",
+          "q": "Cơ sở duy nhất để truy cứu trách nhiệm pháp lý là:",
+          "options": {
+            "A": "Nhân chứng",
+            "B": "Vật chứng",
+            "C": "Có hành vi vi phạm pháp luật xảy ra",
+            "D": "Ý kiến của người bị hại"
+          },
+          "answer": "C",
+          "explain": "Hành vi vi phạm pháp luật là cơ sở thực tế duy nhất để phát sinh và truy cứu trách nhiệm pháp lý.",
+          "hint": "Phải có vi phạm pháp luật xảy ra."
+        },
+        {
+          "id": "de4775-10",
+          "q": "Hình thức thể hiện của di chúc hợp pháp có thể là:",
+          "options": {
+            "A": "Di chúc bằng văn bản",
+            "B": "Di chúc miệng (trong trường hợp tính mạng bị đe dọa)",
+            "C": "Di chúc bằng văn bản có hoặc không có người làm chứng",
+            "D": "Cả A, B, C đều đúng"
+          },
+          "answer": "D",
+          "explain": "Căn cứ Điều 627, 628, 629 BLDS 2015: Di chúc phải được lập thành văn bản; nếu không thể lập bằng văn bản thì có thể di chúc miệng.",
+          "hint": "Cả văn bản và di chúc miệng hợp pháp."
         }
       ]
     },
     {
-      "id": "tn-ch4",
-      "title": "Chương 4: Luật Hình sự, Lao động & PCTN",
-      "subtitle": "Trách nhiệm hình sự, Hợp đồng lao động và Tội phạm tham nhũng",
+      "id": "tn-de1727",
+      "title": "Đề thi Mẫu 1727 & Tổng hợp (Trắc nghiệm)",
+      "subtitle": "10 câu trắc nghiệm mã đề 1727 và câu hỏi tổng hợp đề cương",
       "questions": [
         {
-          "id": "tn4-1",
-          "q": "A (17 tuổi, nhận thức bình thường) trộm cắp xe máy trị giá 20 triệu đồng là hành vi vi phạm gì?",
+          "id": "de1727-1",
+          "q": "Chế độ phân chia dân cư theo đơn vị hành chính lãnh thổ tồn tại trong kiểu nhà nước nào?",
           "options": {
-            "A": "Vi phạm hành chính",
-            "B": "Vi phạm dân sự",
-            "C": "Vi phạm kỷ luật",
-            "D": "Vi phạm hình sự"
+            "A": "Kiểu nhà nước chủ nô",
+            "B": "Kiểu nhà nước phong kiến",
+            "C": "Kiểu nhà nước tư sản và XHCN",
+            "D": "Cả A, B và C đều đúng"
           },
           "answer": "D",
-          "explain": "Tài sản trộm cắp có giá trị từ 2 triệu đồng trở lên, chủ thể từ đủ 16 tuổi trở lên phải chịu trách nhiệm hình sự về mọi tội phạm theo Điều 12 và Điều 173 BLHS 2015.",
-          "hint": "Đủ tuổi chịu TNHS (từ 16 tuổi trở lên) + tài sản > 2 triệu = tội phạm hình sự."
+          "explain": "Phân chia và quản lý dân cư theo lãnh thổ là đặc trưng phổ quát của mọi kiểu nhà nước trong lịch sử (khác với thị tộc nguyên thủy quản lý theo huyết thống).",
+          "hint": "Đặc trưng của mọi kiểu nhà nước."
         },
         {
-          "id": "tn4-2",
-          "q": "Theo Bộ luật Lao động 2019, độ tuổi tối thiểu thông thường của người lao động là:",
+          "id": "de1727-2",
+          "q": "Nguồn của pháp luật nói chung theo hệ thống pháp lý hiện đại bao gồm:",
           "options": {
-            "A": "Từ đủ 13 tuổi trở lên",
-            "B": "Từ đủ 15 tuổi trở lên",
-            "C": "Từ đủ 16 tuổi trở lên",
-            "D": "Từ đủ 18 tuổi trở lên"
-          },
-          "answer": "B",
-          "explain": "Theo Khoản 1 Điều 3 và Điều 143 Bộ luật Lao động 2019: Người lao động là người từ đủ 15 tuổi trở lên, có khả năng lao động và làm việc theo hợp đồng lao động.",
-          "hint": "Độ tuổi lao động chung là từ đủ 15 tuổi."
-        },
-        {
-          "id": "tn4-3",
-          "q": "Theo Bộ luật Lao động 2019, thời giờ làm việc ban đêm được tính trong khoảng thời gian nào?",
-          "options": {
-            "A": "Từ 19 giờ đến 22 giờ",
-            "B": "Từ 20 giờ đến 05 giờ sáng hôm sau",
-            "C": "Từ 22 giờ đến 06 giờ sáng hôm sau",
-            "D": "Từ 21 giờ đến 07 giờ sáng hôm sau"
+            "A": "Chỉ có văn bản quy phạm pháp luật",
+            "B": "Văn bản quy phạm pháp luật và học thuyết pháp lý",
+            "C": "Văn bản quy phạm pháp luật, tập quán pháp và tiền lệ pháp (án lệ)",
+            "D": "Các quy tắc tôn giáo và đạo đức"
           },
           "answer": "C",
-          "explain": "Theo Điều 106 BLLĐ 2019: Giờ làm việc ban đêm được tính từ 22 giờ đến 06 giờ sáng ngày hôm sau.",
-          "hint": "Khung giờ từ 22h đêm đến 6h sáng."
+          "explain": "Nguồn của pháp luật bao gồm 3 hình thức chính: Văn bản quy phạm pháp luật, Tập quán pháp, và Tiền lệ pháp (Án lệ).",
+          "hint": "Văn bản QPPL, Tập quán pháp và Án lệ."
         },
         {
-          "id": "tn4-4",
-          "q": "Trường hợp nào hợp đồng lao động có thể được giao kết bằng lời nói?",
+          "id": "de1727-3",
+          "q": "Theo quy định của Bộ luật Lao động Việt Nam, xét về độ tuổi lao động thông thường:",
           "options": {
-            "A": "Đối với công việc tạm thời có thời hạn dưới 01 tháng",
-            "B": "Đối với công việc tạm thời có thời hạn dưới 03 tháng",
-            "C": "Đối với công việc thời hạn dưới 06 tháng",
-            "D": "Mọi loại hợp đồng lao động đều bắt buộc phải lập thành văn bản"
+            "A": "Người sử dụng lao động phải từ đủ 18 tuổi, người lao động phải từ đủ 15 tuổi",
+            "B": "Người sử dụng lao động và người lao động đều phải từ đủ 18 tuổi",
+            "C": "Người sử dụng lao động và người lao động đều phải từ đủ 21 tuổi",
+            "D": "Người sử dụng lao động và người lao động đều từ đủ 15 tuổi"
           },
           "answer": "A",
-          "explain": "Theo Điều 14 BLLĐ 2019: Hai bên có thể giao kết HĐLĐ bằng lời nói đối với hợp đồng có thời hạn dưới 01 tháng (trừ một số trường hợp đặc biệt như giúp việc gia đình, người dưới 15 tuổi).",
-          "hint": "Thời hạn dưới 1 tháng."
+          "explain": "Điều 3 Bộ luật Lao động 2019: Người lao động là người từ đủ 15 tuổi trở lên; Người sử dụng lao động (cá nhân) phải là người từ đủ 18 tuổi trở lên có đầy đủ năng lực hành vi dân sự.",
+          "hint": "Người lao động đủ 15, người sử dụng LĐ cá nhân đủ 18."
         },
         {
-          "id": "tn4-5",
-          "q": "Hành vi nào sau đây là hành vi tham nhũng theo Luật Phòng, chống tham nhũng 2018?",
+          "id": "de1727-4",
+          "q": "Tuân thủ pháp luật là hình thức thực hiện pháp luật trong đó:",
           "options": {
-            "A": "Trộm cắp tài sản trong cơ quan",
-            "B": "Cướp giật tài sản của người đi đường",
-            "C": "Công nhiên chiếm đoạt tài sản",
-            "D": "Tham ô tài sản (lợi dụng chức vụ, quyền hạn chiếm đoạt tài sản)"
-          },
-          "answer": "D",
-          "explain": "Tham nhũng là hành vi của người có chức vụ, quyền hạn đã lợi dụng chức vụ, quyền hạn đó vì vụ lợi. Tham ô tài sản là một trong những hành vi tham nhũng điển hình.",
-          "hint": "Hành vi của người có chức vụ, quyền hạn nhằm vụ lợi."
-        },
-        {
-          "id": "tn4-6",
-          "q": "Chủ thể thực hiện hành vi tham nhũng có đặc điểm bắt buộc nào sau đây?",
-          "options": {
-            "A": "Phải là người có chức vụ, quyền hạn",
-            "B": "Bất kỳ ai có hành vi chiếm đoạt tài sản",
-            "C": "Chỉ có thể là cơ quan, tổ chức",
-            "D": "Chỉ bao gồm công an và kiểm sát viên"
-          },
-          "answer": "A",
-          "explain": "Theo Điều 2 Luật Phòng, chống tham nhũng 2018: Chủ thể của hành vi tham nhũng bắt buộc phải là người có chức vụ, quyền hạn (ở cả khu vực công và khu vực tư).",
-          "hint": "Yếu tố chủ thể mang chức vụ, quyền hạn là dấu hiệu đặc trưng bắt buộc."
-        },
-        {
-          "id": "tn4-7",
-          "q": "Phương pháp điều chỉnh đặc trưng của ngành Luật Lao động là:",
-          "options": {
-            "A": "Thỏa thuận bình đẳng đơn thuần",
-            "B": "Mệnh lệnh phục tùng tuyệt đối",
-            "C": "Kết hợp giữa thỏa thuận bình đẳng và mệnh lệnh, có sự tham gia của tổ chức đại diện người lao động (Công đoàn)",
-            "D": "Quyền uy đơn phương của người sử dụng lao động"
+            "A": "Chủ thể thực hiện các quy phạm pháp luật không cấm",
+            "B": "Chủ thể thực hiện các quy phạm pháp luật bắt buộc phải làm",
+            "C": "Chủ thể kiềm chế không thực hiện các quy phạm pháp luật cấm đoán",
+            "D": "Cơ quan nhà nước áp dụng chế tài"
           },
           "answer": "C",
-          "explain": "Luật Lao động kết hợp phương pháp thỏa thuận (giao kết HĐLĐ, thỏa ước) với phương pháp mệnh lệnh trong quản lý lao động, đặc biệt có sự tham gia bảo vệ quyền lợi của tổ chức Công đoàn.",
-          "hint": "Phương pháp đặc thù có sự tham gia bảo vệ của tổ chức Công đoàn."
+          "explain": "Tuân thủ pháp luật là hành vi kiềm chế không tiến hành những hoạt động mà pháp luật ngăn cấm.",
+          "hint": "Kiềm chế không làm điều pháp luật cấm."
         },
         {
-          "id": "tn4-8",
-          "q": "Bảo hiểm xã hội tự nguyện tại Việt Nam gồm có những chế độ nào?",
+          "id": "de1727-5",
+          "q": "Về mặt cấu trúc kỹ thuật lập pháp thực tế, mỗi quy phạm pháp luật:",
           "options": {
-            "A": "Ốm đau, thai sản, tai nạn lao động",
-            "B": "Hưu trí và tử tuất",
-            "C": "Thai sản, ốm đau, hưu trí",
-            "D": "Thất nghiệp và hưu trí"
+            "A": "Bắt buộc phải có cả ba bộ phận cấu thành: giả định, quy định và chế tài",
+            "B": "Thường có ít nhất hai bộ phận cấu thành trong một điều luật",
+            "C": "Chỉ cần duy nhất một từ",
+            "D": "Không cần bộ phận nào"
           },
           "answer": "B",
-          "explain": "Theo Luật Bảo hiểm xã hội: BHXH bắt buộc gồm 5 chế độ (Ốm đau, Thai sản, TNLĐ-BNN, Hưu trí, Tử tuất). BHXH tự nguyện gồm 2 chế độ: Hưu trí và Tử tuất.",
-          "hint": "Gồm 2 chế độ: Hưu trí và Tử tuất."
+          "explain": "Trong văn bản luật thực tế, các quy phạm thường khuyết một bộ phận (thường gặp điều luật gồm Giả định + Quy định hoặc Giả định + Chế tài).",
+          "hint": "Thường gồm 2 bộ phận trong một điều luật."
+        },
+        {
+          "id": "de1727-6",
+          "q": "Anh B (17 tuổi) có tài sản riêng tích lũy do lao động. Hỏi anh B có thể tự mình mua căn hộ chung cư không?",
+          "options": {
+            "A": "Có thể tự mình đứng tên mua không cần ai đồng ý",
+            "B": "Không, vì mua bất động sản là giao dịch lớn của người chưa thành niên phải được người đại diện theo pháp luật đồng ý",
+            "C": "Chỉ được mua nếu có sự đồng ý của UBND xã",
+            "D": "Không được phép sở hữu bất động sản"
+          },
+          "answer": "B",
+          "explain": "Căn cứ Điều 21 BLDS 2015: Người từ đủ 15 tuổi đến chưa đủ 18 tuổi tự mình xác lập giao dịch dân sự, trừ giao dịch liên quan đến bất động sản, động sản phải đăng ký phải được người đại diện theo pháp luật đồng ý.",
+          "hint": "Bất động sản phải có người đại diện theo pháp luật đồng ý."
+        },
+        {
+          "id": "de1727-7",
+          "q": "Ông Hùng và bà Lan có tài sản chung 800 triệu. Ông Hùng và con gái Hồng chết cùng thời điểm trong tai nạn. Ông Hùng không có di chúc. Di sản ông Hùng được chia cho ai?",
+          "options": {
+            "A": "Chỉ chia cho bà Lan",
+            "B": "Chia đều cho bà Lan, các con còn sống và các cháu con của Hồng thừa kế thế vị",
+            "C": "Tịch thu nộp ngân sách nhà nước",
+            "D": "Chia cho dòng họ bên nội"
+          },
+          "answer": "B",
+          "explain": "Di sản của ông Hùng chia theo pháp luật (Điều 651 BLDS). Con gái Hồng chết cùng thời điểm nên các con của Hồng được hưởng thừa kế thế vị suất của Hồng (Điều 652 BLDS).",
+          "hint": "Bà Lan, các con còn sống và con của Hồng thế vị."
+        },
+        {
+          "id": "de1727-8",
+          "q": "Chế tài của quy phạm pháp luật bao gồm các loại chính nào?",
+          "options": {
+            "A": "Chế tài hình sự, chế tài hành chính, chế tài dân sự, chế tài kỷ luật",
+            "B": "Chế tài quân sự, chế tài tài chính",
+            "C": "Chế tài đạo đức, chế tài tôn giáo",
+            "D": "Chế tài tự do và chế tài bắt buộc"
+          },
+          "answer": "A",
+          "explain": "4 loại chế tài pháp lý tương ứng với 4 loại vi phạm pháp luật: Chế tài hình sự, Chế tài hành chính, Chế tài dân sự, Chế tài kỷ luật.",
+          "hint": "Hình sự, Hành chính, Dân sự, Kỷ luật."
+        },
+        {
+          "id": "de1727-9",
+          "q": "A thuê X đánh dằn mặt B với thỏa thuận đánh gãy chân trả 15 triệu. X tìm đánh B gãy tay. Hỏi lỗi của A là gì?",
+          "options": {
+            "A": "Lỗi vô ý vì cẩu thả",
+            "B": "Lỗi vô ý vì quá tự tin",
+            "C": "Lỗi cố ý trực tiếp",
+            "D": "Không có lỗi vì X đánh gãy tay chứ không phải gãy chân"
+          },
+          "answer": "C",
+          "explain": "A nhận thức rõ hành vi thuê người đánh B là nguy hiểm cho xã hội, mong muốn hậu quả thương tích xảy ra đối với B và bỏ tiền thuê mướn -> Lỗi cố ý trực tiếp.",
+          "hint": "Chủ động thuê người đánh -> Cố ý trực tiếp."
+        },
+        {
+          "id": "de1727-10",
+          "q": "Theo Bộ luật Dân sự 2015, người thừa kế không phụ thuộc vào nội dung di chúc (Điều 644) được hưởng bao nhiêu?",
+          "options": {
+            "A": "1/2 một suất thừa kế theo pháp luật",
+            "B": "2/3 một suất thừa kế theo pháp luật",
+            "C": "Bằng đúng một suất thừa kế theo pháp luật",
+            "D": "Toàn bộ di sản"
+          },
+          "answer": "B",
+          "explain": "Điều 644 BLDS 2015: Những người thuộc diện này (cha mẹ, vợ chồng, con chưa thành niên hoặc con đã thành niên không có khả năng lao động) được hưởng phần di sản bằng 2/3 suất của một người thừa kế theo pháp luật nếu di sản được chia theo luật.",
+          "hint": "2/3 suất của một người thừa kế theo pháp luật."
         }
       ]
     }
@@ -519,224 +420,213 @@ window.PLDC_DATA = {
   "dung_sai": [
     {
       "id": "ds-1",
-      "ch": "Chương 1: Nhà nước",
-      "q": "Nhà nước ra đời, tồn tại và phát triển trong xã hội có giai cấp.",
-      "answer": "Đ",
-      "explain": "Đúng. Theo học thuyết Mác - Lênin, nhà nước là sản phẩm và biểu hiện của những mâu thuẫn giai cấp không thể điều hòa được."
+      "ch": "Đề cương 47 câu",
+      "q": "Nhà nước tồn tại trong mọi chế độ xã hội.",
+      "answer": "S",
+      "explain": "Sai. Nhà nước chỉ xuất hiện, tồn tại trong xã hội có giai cấp và đấu tranh giai cấp. Trong xã hội Cộng sản nguyên thủy chưa có nhà nước."
     },
     {
       "id": "ds-2",
-      "ch": "Chương 1: Nhà nước",
-      "q": "Nhà nước là ý chí của mọi giai cấp, mọi tầng lớp trong xã hội.",
+      "ch": "Đề cương 47 câu",
+      "q": "Điều luật với quy phạm pháp luật là hai khái niệm đồng nhất.",
       "answer": "S",
-      "explain": "Sai. Nhà nước trước hết thể hiện ý chí của giai cấp thống trị, đồng thời thể hiện tính xã hội ở mức độ nhất định để duy trì trật tự chung."
+      "explain": "Sai. Quy phạm pháp luật là quy tắc xử sự (nội dung), còn điều luật là hình thức văn bản chứa đựng quy phạm. Một điều luật có thể chứa nhiều quy phạm và ngược lại."
     },
     {
       "id": "ds-3",
-      "ch": "Chương 1: Nhà nước",
-      "q": "Nhà nước là bộ máy cưỡng chế đặc biệt do giai cấp thống trị lập ra để duy trì sự thống trị giai cấp.",
+      "ch": "Đề cương 47 câu",
+      "q": "Áp dụng pháp luật là hoạt động điều chỉnh mang tính cá biệt.",
       "answer": "Đ",
-      "explain": "Đúng. Đây là thuộc tính thể hiện bản chất giai cấp của nhà nước."
+      "explain": "Đúng. Áp dụng pháp luật do cơ quan có thẩm quyền thực hiện nhằm giải quyết vụ việc cụ thể đối với đối tượng cụ thể xác định."
     },
     {
       "id": "ds-4",
-      "ch": "Chương 1: Nhà nước",
-      "q": "Nhà nước ra đời nhằm mục đích giải quyết và xóa bỏ hoàn toàn mọi mâu thuẫn trong xã hội.",
+      "ch": "Đề cương 47 câu",
+      "q": "Pháp luật là phương tiện duy nhất để nhà nước quản lý xã hội.",
       "answer": "S",
-      "explain": "Sai. Nhà nước ra đời nhằm giữ cho các xung đột giai cấp nằm trong vòng trật tự, bảo vệ lợi ích giai cấp thống trị chứ không thể xóa bỏ mâu thuẫn giai cấp."
+      "explain": "Sai. Nhà nước quản lý xã hội bằng nhiều phương tiện khác như chính sách kinh tế, giáo dục đạo đức, tuyên truyền, phong trào xã hội..."
     },
     {
       "id": "ds-5",
-      "ch": "Chương 1: Nhà nước",
-      "q": "Nhà nước phân chia và quản lý dân cư theo huyết thống.",
+      "ch": "Đề cương 47 câu",
+      "q": "Điều lệ Đảng Cộng sản Việt Nam là văn bản quy phạm pháp luật.",
       "answer": "S",
-      "explain": "Sai. Thị tộc, bộ lạc nguyên thủy mới quản lý theo huyết thống. Nhà nước phân chia và quản lý dân cư theo lãnh thổ (địa hạt hành chính)."
+      "explain": "Sai. Điều lệ Đảng là văn bản quy định nội bộ của tổ chức Đảng, không phải văn bản quy phạm pháp luật do cơ quan nhà nước ban hành."
     },
     {
       "id": "ds-6",
-      "ch": "Chương 1: Nhà nước",
-      "q": "Thu thuế dưới hình thức bắt buộc là một trong những đặc trưng cơ bản của nhà nước.",
-      "answer": "Đ",
-      "explain": "Đúng. Nhà nước đặt ra và thu các khoản thuế bắt buộc để nuôi dưỡng bộ máy và thực hiện các chức năng công."
+      "ch": "Đề cương 47 câu",
+      "q": "Áp dụng pháp luật chỉ được tiến hành khi có hành vi vi phạm pháp luật xảy ra.",
+      "answer": "S",
+      "explain": "Sai. Áp dụng pháp luật còn được tiến hành khi công nhận quyền (cấp giấy chứng nhận kết hôn, khai sinh, cấp sổ đỏ) hoặc khen thưởng..."
     },
     {
       "id": "ds-7",
-      "ch": "Chương 1: Nhà nước",
-      "q": "Nhà nước là chủ thể duy nhất có chủ quyền quốc gia.",
+      "ch": "Đề cương 47 câu",
+      "q": "Áp dụng pháp luật là hoạt động mang tính tổ chức và thể hiện quyền lực nhà nước.",
       "answer": "Đ",
-      "explain": "Đúng. Chủ quyền quốc gia là quyền tối cao của nhà nước về đối nội và độc lập về đối ngoại."
+      "explain": "Đúng. Hoạt động này chỉ do cơ quan nhà nước hoặc người có thẩm quyền nhân danh quyền lực nhà nước thực hiện."
     },
     {
       "id": "ds-8",
-      "ch": "Chương 1: Nhà nước",
-      "q": "Trong nhà nước có vua, vua luôn luôn nắm giữ quyền lực nhà nước tuyệt đối.",
+      "ch": "Đề cương 47 câu",
+      "q": "Chính phủ là cơ quan nhà nước thuộc hệ thống cơ quan quyền lực nhà nước.",
       "answer": "S",
-      "explain": "Sai. Chỉ trong nhà nước Quân chủ chuyên chế (tuyệt đối) vua mới nắm quyền lực tuyệt đối. Trong nhà nước Quân chủ lập hiến (hạn chế như Anh, Nhật), quyền lực của vua bị hạn chế bởi Hiến pháp và Nghị viện."
+      "explain": "Sai. Chính phủ là cơ quan hành chính nhà nước cao nhất (hành pháp). Cơ quan quyền lực nhà nước là Quốc hội và HĐND các cấp."
     },
     {
       "id": "ds-9",
-      "ch": "Chương 1: Nhà nước",
-      "q": "Chính phủ là cơ quan hành chính nhà nước cao nhất của nước CHXHCN Việt Nam.",
+      "ch": "Đề cương 47 câu",
+      "q": "Văn bản luật là văn bản quy phạm pháp luật do cơ quan quyền lực nhà nước cao nhất (Quốc hội) ban hành.",
       "answer": "Đ",
-      "explain": "Đúng. Căn cứ Điều 94 Hiến pháp 2013: Chính phủ là cơ quan hành chính nhà nước cao nhất, cơ quan chấp hành của Quốc hội.",
-      "isDoubt": true,
-      "doubtNote": "Lưu ý: Một số tài liệu cũ ghi Sai vì nhầm lẫn với Quốc hội. Cần phân biệt rõ: Quốc hội là 'cơ quan quyền lực nhà nước cao nhất', còn Chính phủ là 'cơ quan hành chính nhà nước cao nhất'."
+      "explain": "Đúng. Chỉ có Quốc hội mới có quyền lập hiến và lập pháp để ban hành Hiến pháp, Bộ luật, Luật và Nghị quyết."
     },
     {
       "id": "ds-10",
-      "ch": "Chương 1: Nhà nước",
-      "q": "Hội đồng nhân dân các cấp là cơ quan hành chính nhà nước ở địa phương.",
+      "ch": "Đề cương 47 câu",
+      "q": "Điều lệ của Đoàn Thanh niên Cộng sản Hồ Chí Minh là văn bản quy phạm pháp luật.",
       "answer": "S",
-      "explain": "Sai. Hội đồng nhân dân là cơ quan quyền lực nhà nước ở địa phương. Ủy ban nhân dân mới là cơ quan hành chính (chấp hành) ở địa phương."
+      "explain": "Sai. Đây là văn bản nội bộ của tổ chức chính trị - xã hội Đoàn TNCS Hồ Chí Minh, không phải văn bản QPPL."
     },
     {
       "id": "ds-11",
-      "ch": "Chương 2: Pháp luật & QPPL",
-      "q": "Mọi quy tắc xử sự trong xã hội đều là pháp luật.",
+      "ch": "Đề cương 47 câu",
+      "q": "Cưỡng chế nhà nước là biện pháp duy nhất để bảo đảm cho pháp luật được thực hiện.",
       "answer": "S",
-      "explain": "Sai. Trong xã hội còn có quy phạm đạo đức, quy phạm tôn giáo, phong tục tập quán, điều lệ tổ chức..."
+      "explain": "Sai. Nhà nước còn dùng các biện pháp giáo dục, tuyên truyền, thuyết phục và khuyến khích lợi ích để nhân dân tự giác thi hành."
     },
     {
       "id": "ds-12",
-      "ch": "Chương 2: Pháp luật & QPPL",
-      "q": "Chỉ có pháp luật mới mang tính quy phạm.",
+      "ch": "Đề cương 47 câu",
+      "q": "Tuân theo pháp luật là hình thức trong đó cá nhân, tổ chức thực hiện đầy đủ nghĩa vụ của mình bằng hành động tích cực.",
       "answer": "S",
-      "explain": "Sai. Đạo đức, tôn giáo, tập quán cũng mang tính quy phạm (khuôn mẫu hành vi). Pháp luật mang tính 'quy phạm phổ biến' được đảm bảo bằng cưỡng chế nhà nước."
+      "explain": "Sai. Thực hiện nghĩa vụ bằng hành động tích cực là 'Thi hành pháp luật'. Tuân thủ pháp luật là kiềm chế không làm điều bị cấm."
     },
     {
       "id": "ds-13",
-      "ch": "Chương 2: Pháp luật & QPPL",
-      "q": "Năng lực pháp luật và năng lực hành vi của cá nhân xuất hiện đồng thời ngay từ khi sinh ra.",
+      "ch": "Đề cương 47 câu",
+      "q": "Mọi quy tắc xử sự chung đều là quy phạm pháp luật.",
       "answer": "S",
-      "explain": "Sai. Năng lực pháp luật của cá nhân có từ khi sinh ra, nhưng năng lực hành vi xuất hiện và phát triển dần theo độ tuổi và khả năng nhận thức.",
-      "isDoubt": true,
-      "doubtNote": "Tài liệu đề cương có câu ghi 'Đúng' khi nói chung chung về tổ chức/chủ thể. Tuy nhiên theo luật học chuẩn: Đối với cá nhân thì không đồng thời (NLHV cần độ tuổi); đối với pháp nhân thì NLPL và NLHV mới xuất hiện đồng thời."
+      "explain": "Sai. Quy tắc đạo đức, tôn giáo, tập quán cũng là quy tắc xử sự chung nhưng không phải quy phạm pháp luật do Nhà nước ban hành."
     },
     {
       "id": "ds-14",
-      "ch": "Chương 2: Pháp luật & QPPL",
-      "q": "Quy phạm pháp luật bắt buộc phải có đầy đủ cả 3 bộ phận: Giả định, Quy định và Chế tài.",
-      "answer": "S",
-      "explain": "Sai. Trong thực tế các điều luật có thể khuyết một bộ phận (thường gặp điều luật chỉ có Giả định + Quy định, hoặc Giả định + Chế tài)."
+      "ch": "Đề cương 47 câu",
+      "q": "Vi phạm pháp luật bắt buộc phải là hành vi trái pháp luật.",
+      "answer": "Đ",
+      "explain": "Đúng. Hành vi trái pháp luật là dấu hiệu khách quan bắt buộc đầu tiên của mọi vi phạm pháp luật."
     },
     {
       "id": "ds-15",
-      "ch": "Chương 2: Pháp luật & QPPL",
-      "q": "Thiệt hại về vật chất là dấu hiệu bắt buộc phải có của mọi hành vi vi phạm pháp luật.",
+      "ch": "Đề cương 47 câu",
+      "q": "Văn bản quy phạm pháp luật là hình thức duy nhất của pháp luật.",
       "answer": "S",
-      "explain": "Sai. Có những vi phạm chưa gây thiệt hại vật chất hoặc chỉ gây thiệt hại phi vật chất (xâm phạm an ninh, trật tự, danh dự nhân phẩm, vi phạm hành chính hình thức...)."
+      "explain": "Sai. Hình thức pháp luật còn có Tập quán pháp và Tiền lệ pháp (Án lệ)."
     },
     {
       "id": "ds-16",
-      "ch": "Chương 2: Pháp luật & QPPL",
-      "q": "Mọi hành vi trái pháp luật đều là hành vi vi phạm pháp luật.",
-      "answer": "S",
-      "explain": "Sai. Hành vi trái pháp luật do người mắc bệnh tâm thần hoặc người chưa đủ tuổi chịu trách nhiệm thực hiện thì không coi là vi phạm pháp luật (vì thiếu yếu tố lỗi và năng lực TNPL)."
+      "ch": "Đề cương 47 câu",
+      "q": "Pháp luật có tính xác định chặt chẽ về mặt hình thức.",
+      "answer": "Đ",
+      "explain": "Đúng. Văn bản pháp luật luôn được diễn đạt bằng ngôn ngữ chuẩn xác, có hiệu lực và hình thức cụ thể theo luật định."
     },
     {
       "id": "ds-17",
-      "ch": "Chương 2: Pháp luật & QPPL",
-      "q": "Phòng vệ chính đáng là hành vi trái pháp luật.",
+      "ch": "Đề cương 47 câu",
+      "q": "Mọi quan hệ xã hội đều là quan hệ pháp luật.",
       "answer": "S",
-      "explain": "Sai. Theo Điều 22 BLHS 2015: Phòng vệ chính đáng là hành vi hợp pháp, không phải là tội phạm."
+      "explain": "Sai. Chỉ những quan hệ xã hội được quy phạm pháp luật điều chỉnh mới trở thành quan hệ pháp luật (tình bạn, tình yêu không phải QHPL)."
     },
     {
       "id": "ds-18",
-      "ch": "Chương 2: Pháp luật & QPPL",
-      "q": "Bộ luật là văn bản quy phạm pháp luật có hiệu lực pháp lý cao nhất trong hệ thống pháp luật Việt Nam.",
-      "answer": "S",
-      "explain": "Sai. Hiến pháp mới là văn bản có hiệu lực pháp lý cao nhất."
+      "ch": "Đề cương 47 câu",
+      "q": "Trong hệ thống chính trị Việt Nam, Nhà nước giữ vị trí trung tâm, trụ cột.",
+      "answer": "Đ",
+      "explain": "Đúng. Nhà nước là tổ chức quyền lực công cộng đại diện cho toàn thể nhân dân, quản lý toàn diện đời sống xã hội."
     },
     {
       "id": "ds-19",
-      "ch": "Chương 2: Pháp luật & QPPL",
-      "q": "Bản án của Tòa án nhân dân là văn bản quy phạm pháp luật.",
+      "ch": "Đề cương 47 câu",
+      "q": "Mọi quyết định của Thủ tướng Chính phủ đều là văn bản quy phạm pháp luật.",
       "answer": "S",
-      "explain": "Sai. Bản án là văn bản áp dụng pháp luật (áp dụng cho vụ việc cụ thể đối với đối tượng cụ thể), không phải văn bản quy phạm pháp luật."
+      "explain": "Sai. Thủ tướng có thể ban hành quyết định cá biệt (bổ nhiệm, kỷ luật, khen thưởng...) không mang tính quy phạm phổ biến."
     },
     {
       "id": "ds-20",
-      "ch": "Chương 2: Pháp luật & QPPL",
-      "q": "Nguồn của pháp luật Việt Nam chỉ bao gồm duy nhất văn bản quy phạm pháp luật.",
+      "ch": "Đề cương 47 câu",
+      "q": "Mọi quy phạm pháp luật đều phải có chế tài.",
       "answer": "S",
-      "explain": "Sai. Nguồn của pháp luật Việt Nam hiện nay còn thừa nhận Tập quán và Án lệ (theo Bộ luật Dân sự 2015)."
+      "explain": "Sai. Các quy phạm định nghĩa, nguyên tắc hoặc quy phạm phân công nhiệm vụ thường khuyết chế tài trực tiếp."
     },
     {
       "id": "ds-21",
-      "ch": "Chương 3: Hôn nhân & Dân sự",
-      "q": "Pháp luật Việt Nam cấm kết hôn giữa anh chị em nuôi với nhau.",
+      "ch": "Đề cương 47 câu",
+      "q": "Khi tham gia giao thông, anh A điều khiển xe mô tô có đội mũ bảo hiểm. Trong trường hợp này anh A đã tuân theo pháp luật.",
       "answer": "S",
-      "explain": "Sai. Điều 5 Luật HNGĐ 2014 cấm kết hôn giữa cha mẹ nuôi với con nuôi; giữa người đã từng là cha mẹ nuôi với con nuôi; không cấm anh chị em nuôi kết hôn với nhau."
+      "explain": "Sai. Việc chủ động đội mũ bảo hiểm là thực hiện nghĩa vụ mà pháp luật bắt buộc -> Thuộc hình thức 'Thi hành pháp luật'."
     },
     {
       "id": "ds-22",
-      "ch": "Chương 3: Hôn nhân & Dân sự",
-      "q": "Vợ chồng có quyền có khối tài sản riêng trong thời kỳ hôn nhân.",
-      "answer": "Đ",
-      "explain": "Đúng. Căn cứ Điều 43 Luật HNGĐ 2014, tài sản được thừa kế riêng, tặng cho riêng hoặc tài sản có trước hôn nhân là tài sản riêng của vợ, chồng."
+      "ch": "Đề cương 47 câu",
+      "q": "Mọi hành vi có lỗi của chủ thể đều là vi phạm pháp luật.",
+      "answer": "S",
+      "explain": "Sai. Hành vi có lỗi nhưng không trái với quy định của pháp luật (chỉ vi phạm đạo đức hay thất hứa cá nhân) thì không phải vi phạm pháp luật."
     },
     {
       "id": "ds-23",
-      "ch": "Chương 3: Hôn nhân & Dân sự",
-      "q": "Mọi sự thỏa thuận giữa các bên đều đương nhiên trở thành hợp đồng dân sự hợp pháp.",
+      "ch": "Đề cương 47 câu",
+      "q": "A có ý định ăn cắp xe máy. Trong trường hợp này A đã vi phạm pháp luật.",
       "answer": "S",
-      "explain": "Sai. Sự thỏa thuận phải có mục đích, nội dung không vi phạm điều cấm của luật, không trái đạo đức xã hội và các bên phải có năng lực hành vi dân sự phù hợp."
+      "explain": "Sai. Ý định mới chỉ ở trong tư tưởng, chưa biểu hiện ra hành vi khách quan nên chưa vi phạm pháp luật."
     },
     {
       "id": "ds-24",
-      "ch": "Chương 4: Lao động",
-      "q": "Mọi hợp đồng lao động bắt buộc phải được giao kết bằng văn bản.",
-      "answer": "S",
-      "explain": "Sai. Hợp đồng lao động có thời hạn dưới 01 tháng có thể giao kết bằng lời nói (Điều 14 BLLĐ 2019)."
+      "ch": "Đề cương 47 câu",
+      "q": "Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam là nhà nước đơn nhất.",
+      "answer": "Đ",
+      "explain": "Đúng. Việt Nam là nhà nước đơn nhất, có chủ quyền thống nhất, một hệ thống pháp luật và một bộ máy nhà nước từ trung ương đến địa phương."
     },
     {
       "id": "ds-25",
-      "ch": "Chương 4: Lao động",
-      "q": "Người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng trở lên thuộc đối tượng tham gia BHXH bắt buộc.",
-      "answer": "Đ",
-      "explain": "Đúng. Theo Luật Bảo hiểm xã hội, hợp đồng lao động từ đủ 01 tháng trở lên thuộc diện tham gia BHXH bắt buộc."
+      "ch": "Đề cương 47 câu",
+      "q": "Mọi văn bản do Quốc hội ban hành đều là văn bản quy phạm pháp luật.",
+      "answer": "S",
+      "explain": "Sai. Quốc hội có thể ban hành các nghị quyết cá biệt về nhân sự, phê chuẩn... không chứa quy phạm pháp luật."
     },
     {
       "id": "ds-26",
-      "ch": "Chương 5: Phòng chống tham nhũng",
-      "q": "Hành vi tham nhũng chỉ có thể xảy ra ở khu vực nhà nước (khu vực công).",
-      "answer": "S",
-      "explain": "Sai. Luật Phòng, chống tham nhũng 2018 đã mở rộng phạm vi điều chỉnh sang cả khu vực ngoài nhà nước (khu vực tư) đối với các hành vi như tham ô, nhận hối lộ, đưa hối lộ..."
+      "ch": "Đề cương 47 câu",
+      "q": "Pháp luật mang bản chất của giai cấp cầm quyền.",
+      "answer": "Đ",
+      "explain": "Đúng. Pháp luật phản ánh ý chí của giai cấp thống trị được nâng lên thành ý chí nhà nước."
     },
     {
       "id": "ds-27",
-      "ch": "Chương 5: Phòng chống tham nhũng",
-      "q": "Lỗi của chủ thể thực hiện hành vi tham nhũng có thể là lỗi cố ý hoặc lỗi vô ý.",
+      "ch": "Đề cương 47 câu",
+      "q": "Chỉ Quốc hội mới có thẩm quyền ban hành văn bản quy phạm pháp luật với hình thức là Nghị quyết.",
       "answer": "S",
-      "explain": "Sai. Hành vi tham nhũng luôn luôn được thực hiện với lỗi cố ý (chủ thể nhận thức rõ hành vi vì mục đích vụ lợi)."
+      "explain": "Sai. Ủy ban Thường vụ Quốc hội, Chính phủ, Hội đồng nhân dân các cấp cũng có thẩm quyền ban hành Nghị quyết QPPL."
     },
     {
       "id": "ds-28",
-      "ch": "Chương 5: Phòng chống tham nhũng",
-      "q": "Người có hành vi tham nhũng đã nghỉ hưu hoặc chuyển công tác vẫn bị xử lý theo quy định của pháp luật.",
-      "answer": "Đ",
-      "explain": "Đúng. Pháp luật xử lý nghiêm minh mọi hành vi tham nhũng, không có 'vùng cấm' và không phụ thuộc vào việc chủ thể đã về hưu hay thôi việc."
+      "ch": "Đề cương 47 câu",
+      "q": "Trách nhiệm pháp lý chính là chế tài của quy phạm pháp luật.",
+      "answer": "S",
+      "explain": "Sai. Chế tài là dự liệu của điều luật, còn trách nhiệm pháp lý là hậu quả bất lợi thực tế mà chủ thể vi phạm phải gánh chịu."
     },
     {
       "id": "ds-29",
-      "ch": "Chương 3: Hôn nhân & Gia đình",
-      "q": "Tài sản phát sinh trong thời kỳ hôn nhân luôn luôn là tài sản chung của vợ chồng.",
+      "ch": "Đề cương 47 câu",
+      "q": "Bộ luật Hình sự của nước CHXHCN Việt Nam năm 2015 không phải là văn bản quy phạm pháp luật.",
       "answer": "S",
-      "explain": "Sai. Tài sản mà vợ, chồng được thừa kế riêng, tặng cho riêng trong thời kỳ hôn nhân vẫn là tài sản riêng của người đó (Điều 43 Luật HNGĐ 2014)."
+      "explain": "Sai. Bộ luật Hình sự là văn bản quy phạm pháp luật có hiệu lực pháp lý cao thứ hai sau Hiến pháp."
     },
     {
       "id": "ds-30",
-      "ch": "Chương 3: Hôn nhân & Gia đình",
-      "q": "Cấm kết hôn giữa những người có họ trong phạm vi 4 đời.",
+      "ch": "Đề cương 47 câu",
+      "q": "Chỉ Bộ trưởng mới có thẩm quyền ban hành văn bản quy phạm pháp luật với hình thức là Thông tư.",
       "answer": "S",
-      "explain": "Sai. Theo Điểm d Khoản 2 Điều 5 Luật HNGĐ 2014, pháp luật chỉ cấm kết hôn giữa những người có họ trong phạm vi ba đời (đến đời thứ ba), không cấm từ đời thứ 4 trở đi."
-    },
-    {
-      "id": "ds-31",
-      "ch": "Chương 3: Dân sự",
-      "q": "Chỉ có chủ sở hữu mới có quyền chiếm hữu tài sản.",
-      "answer": "S",
-      "explain": "Sai. Người không phải là chủ sở hữu vẫn có quyền chiếm hữu tài sản hợp pháp thông qua hợp đồng thuê, mượn, giữ hộ, ủy quyền quản lý tài sản..."
+      "explain": "Sai. Thủ trưởng cơ quan ngang bộ, Chánh án TAND tối cao, Viện trưởng VKSND tối cao cũng có thẩm quyền ban hành Thông tư."
     }
   ],
   "qppl": [
@@ -911,6 +801,38 @@ window.PLDC_DATA = {
           }
         ]
       }
+    },
+    {
+      "id": "qppl-6",
+      "title": "Cặp 6: Xúi giục tự sát & Trách nhiệm hình sự theo độ tuổi",
+      "clause": "Khoản 1 Điều 131 BLHS 2015",
+      "content": "“Người nào xúi giục làm người khác tự sát hoặc giúp người khác tự sát, thì bị phạt tù từ 01 năm đến 05 năm.”",
+      "analysis": {
+        "gia_dinh": "Người nào xúi giục làm người khác tự sát hoặc giúp người khác tự sát.",
+        "gia_dinh_gt": "Xác định chủ thể và hành vi xúi giục/giúp đỡ tự sát.",
+        "quy_dinh": "Cấm xúi giục hoặc giúp người khác tự sát.",
+        "quy_dinh_gt": "Quy định cấm đoán ngầm.",
+        "che_tai": "Bị phạt tù từ 01 năm đến 05 năm.",
+        "che_tai_gt": "Chế tài hình sự.",
+        "hinh_thuc": "Tuân thủ pháp luật."
+      },
+      "situation": {
+        "text": "Nguyễn Văn Hoàng 12 tuổi bẻ khóa vào nhà dân trộm cắp, thấy bé gái 8 tuổi đã dùng hung khí đánh chết em sau đó cướp của bỏ trốn. Hoàng có phải chịu trách nhiệm pháp lý không? Nếu Hoàng 14 tuổi hoặc 18 tuổi thì thế nào?",
+        "elements": [
+          {
+            "name": "Khi Hoàng 12 tuổi",
+            "detail": "Chưa đủ tuổi chịu TNHS (dưới 14 tuổi). Có thể bị áp dụng biện pháp xử lý hành chính đưa vào trường giáo dưỡng. Cha mẹ bồi thường dân sự."
+          },
+          {
+            "name": "Khi Hoàng đủ 14 tuổi",
+            "detail": "Đã đủ tuổi chịu TNHS về tội rất nghiêm trọng và đặc biệt nghiêm trọng (Khoản 2 Điều 12 BLHS). Giết người và Cướp tài sản là tội đặc biệt nghiêm trọng nên Hoàng phải chịu TNHS."
+          },
+          {
+            "name": "Khi Hoàng đủ 18 tuổi",
+            "detail": "Chịu TNHS đầy đủ của người thành niên với khung hình phạt cao nhất (kể cả tù chung thân hoặc tử hình)."
+          }
+        ]
+      }
     }
   ],
   "thua_ke": [
@@ -936,97 +858,85 @@ window.PLDC_DATA = {
     },
     {
       "id": "tk-2",
-      "title": "Bài 2: Ông Hùng và bà Lan (Đề thi mẫu Đề 02 - Di sản chết cùng thời điểm)",
-      "problem": "Ông Hùng kết hôn với bà Lan sinh được ba người con là Hồng, Cúc, Mai. Hồng kết hôn với Nam sinh được hai người con là Minh và Mến. Tháng 09/2020, Ông Hùng và Hồng trên đường đi công việc bị tai nạn và chết cùng thời điểm. Ông Hùng không để lại di chúc. Hồng có di chúc để lại toàn bộ tài sản cho Nam, Minh, Mến. Hãy chia thừa kế của ông Hùng và Hồng biết ông Hùng và bà Lan có khối tài sản chung trị giá 800 triệu đồng, Hồng và Nam có khối tài sản chung là 600 triệu đồng.",
-      "diagram": "Ông Hùng (+) === Bà Lan\n      |------------|------------|\n   Hồng (+)       Cúc          Mai\n  (chồng Nam)\n      |\n  Minh & Mến",
+      "title": "Bài 2: Vợ chồng A và B (Mã đề 4777 - Sống chung với H, con ngoài giá thú & Điều 644)",
+      "problem": "Vợ chồng A và B kết hôn năm 1959, có con chung là C, D, E, F (đều đã thành niên). Từ năm 2003, ông A chuyển ra sống chung với bà H và có hai con là K, J (đều chưa thành niên). Tháng 4/2007, A chết để lại di chúc cho H hưởng toàn bộ di sản. 2 tháng sau khi A chết, bà H cũng qua đời. Sau đó bà B kiện ra tòa yêu cầu chia thừa kế. Biết tài sản chung của A và B là 1,4 tỷ đồng. Hãy chia di sản thừa kế theo BLDS 2015.",
+      "diagram": "Ông A (+) === Bà B           Ông A (+) === Bà H (+)\n       |                          |\n   C, D, E, F (thành niên)      K, J (chưa thành niên)",
       "steps": [
         {
-          "title": "Bước 1: Xác định và chia di sản của ông Hùng",
-          "content": "• Di sản của ông Hùng = 800 triệu / 2 = 400 triệu đồng.\n• Do ông Hùng không để lại di chúc nên chia thừa kế theo pháp luật (Điều 651, 652 BLDS 2015):\n  - Hàng thừa kế thứ nhất gồm: Bà Lan, Hồng (Minh + Mến thế vị), Cúc, Mai (4 suất bằng nhau).\n  - Mỗi suất thừa kế = 400 / 4 = 100 triệu đồng.\n  - Bà Lan = 100 triệu đồng.\n  - Cúc = 100 triệu đồng.\n  - Mai = 100 triệu đồng.\n  - Minh = Mến = 100 / 2 = 50 triệu đồng."
+          "title": "Bước 1: Xác định khối di sản của ông A",
+          "content": "• Tài sản chung hợp nhất của A và B = 1,4 tỷ đồng.\n• Di sản của ông A = 1,4 tỷ / 2 = 700 triệu đồng.\n• Theo di chúc: Ông A để lại toàn bộ 700 triệu cho bà H."
         },
         {
-          "title": "Bước 2: Xác định và chia di sản của chị Hồng",
-          "content": "• Vì Hồng và ông Hùng chết cùng thời điểm nên theo Điều 619 BLDS 2015, Hồng không được hưởng di sản của ông Hùng mà các con Minh, Mến hưởng thế vị.\n• Di sản của Hồng = 600 triệu / 2 = 300 triệu đồng.\n• Hồng có di chúc để lại toàn bộ tài sản cho Nam, Minh, Mến:\n  - Chia theo di chúc: Nam = Minh = Mến = 300 / 3 = 100 triệu đồng.\n• Xét diện thừa kế không phụ thuộc nội dung di chúc (Điều 644 BLDS 2015):\n  - Bà Lan (mẹ đẻ của Hồng) còn sống. Một suất theo luật của Hồng (chia cho mẹ Lan, chồng Nam, 2 con Minh, Mến = 4 người) = 300 / 4 = 75 triệu.\n  - Suất hưởng của bà Lan theo Điều 644 = 2/3 x 75 = 50 triệu đồng.\n  - Số tiền 50 triệu được trích đều từ Nam, Minh, Mến (mỗi người trích 50 / 3 = 16,67 triệu):\n    + Nam = Minh = Mến nhận: 100 - 16,67 = 83,33 triệu đồng.\n    + Bà Lan nhận: 50 triệu đồng."
+          "title": "Bước 2: Áp dụng Điều 644 BLDS 2015 (Người thừa kế không phụ thuộc nội dung di chúc)",
+          "content": "• Những người thuộc diện được bảo vệ theo Điều 644 gồm: Bà B (vợ hợp pháp) và 2 con chưa thành niên K, J.\n• Hàng thừa kế thứ nhất theo luật của ông A gồm: Vợ B, các con C, D, E, F, K, J (7 người, bà H không phải là vợ hợp pháp nên không thuộc hàng thừa kế của A).\n• Một suất thừa kế theo luật = 700 triệu / 7 = 100 triệu đồng.\n• Một suất thừa kế bắt buộc (2/3 suất luật) = 2/3 x 100 = 66,67 triệu đồng.\n• Tổng số tiền trích cho B, K, J = 66,67 x 3 = 200 triệu đồng.\n• Số tiền còn lại bà H được nhận theo di chúc = 700 - 200 = 500 triệu đồng."
         },
         {
-          "title": "Bước 3: Kết luận tổng hợp",
-          "content": "• Bà Lan nhận: 100tr (từ Hùng) + 50tr (từ Hồng) = 150 triệu đồng (+ 400tr tài sản riêng của bà).\n• Cúc = Mai = 100 triệu đồng.\n• Anh Nam nhận: 83,33 triệu đồng (+ 300tr tài sản riêng của anh).\n• Minh = Mến = 50tr (thế vị ông Hùng) + 83,33tr (từ mẹ Hồng) = 133,33 triệu đồng mỗi cháu."
+          "title": "Bước 3: Chia di sản của bà H (chết sau ông A 2 tháng)",
+          "content": "• Di sản của bà H = 500 triệu đồng nhận từ ông A.\n• Bà H chết không để lại di chúc nên 500 triệu chia đều theo pháp luật cho các con của bà H là K và J:\n  - K = J = 500 / 2 = 250 triệu đồng."
+        },
+        {
+          "title": "Bước 4: Kết luận tổng hợp",
+          "content": "• Bà B nhận: 66,67 triệu đồng (+ 700 triệu tài sản riêng của bà).\n• Cháu K nhận: 66,67tr (từ A) + 250tr (từ mẹ H) = 316,67 triệu đồng.\n• Cháu J nhận: 66,67tr (từ A) + 250tr (từ mẹ H) = 316,67 triệu đồng.\n• C = D = E = F = 0 đồng (do không có tên trong di chúc và đã thành niên có khả năng lao động)."
         }
       ]
     },
     {
       "id": "tk-3",
-      "title": "Bài 3: Ông A và bà B (Đề thi mẫu Đề 01 - Di chúc cho X, Y, Z & X chết cùng lúc)",
-      "problem": "Ông A và bà B kết hôn với nhau sinh được ba người con là X, Y, Z. X kết hôn với K sinh được hai con M và N. Tháng 06/2020, anh X và ông A trên đường về quê bị tai nạn và chết cùng thời điểm. Trước khi chết, ông A để lại di chúc cho X, Z, Y toàn bộ tài sản. Anh X không để lại di chúc. Biết ông A và Bà B có khối tài sản chung là căn nhà trị giá 1,5 tỷ đồng. Anh X và chị K có khối tài sản chung trị giá 500 triệu đồng. Hãy chia thừa kế của ông A và anh X theo BLDS 2015.",
-      "diagram": "Ông A (+) === Bà B\n       |------------|------------|\n    Anh X (+)       Y            Z\n (vợ K, con M, N)",
+      "title": "Bài 3: Ông Hùng và anh Cường (Bài 1 Phần II - Con thiểu năng bẩm sinh & Di chúc cho bồ)",
+      "problem": "Ông Hùng và bà Lan có 4 con: Cường, Hải, Đức, Hồng (Hồng bị thiểu năng trí tuệ bẩm sinh). Ông Hùng có 1 con riêng là Long với bà Mai. Cường lấy Thu sinh 2 con là Minh và Mến. Năm 2019, ông Hùng và Cường chết cùng thời điểm trong tai nạn. Ông Hùng di chúc cho bà Mai 500tr, Long 300tr. Tài sản chung Hùng - Lan là 2 tỷ, tài sản riêng ông Hùng 300tr, mai táng ông Hùng 30tr. Tài sản riêng của Cường là 500tr. Hãy chia thừa kế theo BLDS 2015.",
+      "diagram": "Ông Hùng (+) === Bà Lan             Ông Hùng (+) === Bà Mai\n       |                                    |\n Cường (+), Hải, Đức, Hồng (thiểu năng)   Long\n   (vợ Thu, con Minh, Mến)",
       "steps": [
         {
-          "title": "Bước 1: Chia di sản của ông A (1,5 tỷ / 2 = 750 triệu)",
-          "content": "• Di sản của ông A = 1,5 tỷ / 2 = 750 triệu đồng.\n• Theo di chúc, chia cho X = Y = Z = 750 / 3 = 250 triệu đồng.\n• Vì X chết cùng thời điểm với ông A nên phần 250tr của X theo di chúc bị hủy và chia theo pháp luật (Điều 651, 652 BLDS 2015):\n  - Hàng thừa kế chia phần 250tr gồm: Bà B, suất thế vị của X (M + N), Y, Z (4 suất bằng nhau).\n  - Mỗi suất = 250 / 4 = 62,5 triệu đồng (Bà B = 62,5tr; Y = 62,5tr; Z = 62,5tr; M = N = 31,25tr).\n• Xét Điều 644 BLDS 2015 cho Bà B:\n  - Giả sử chia toàn bộ theo luật: 1 suất = 750 / 4 = 187,5 triệu.\n  - Bà B được hưởng tối thiểu: 2/3 x 187,5 = 125 triệu đồng.\n  - Bà B mới nhận 62,5tr -> Thiếu: 125 - 62,5 = 62,5 triệu đồng.\n  - Trích bù từ Y và Z (mỗi người trích 62,5 / 2 = 31,25tr):\n    + Y = Z còn lại: (250 + 62,5) - 31,25 = 281,25 triệu đồng."
+          "title": "Bước 1: Xác định và chia di sản của ông Hùng",
+          "content": "• Di sản của ông Hùng = 2 tỷ / 2 (TS chung) + 300tr (TS riêng) - 30tr (mai táng) = 1 tỷ 270 triệu đồng.\n• Theo di chúc: Bà Mai = 500 triệu, Long = 300 triệu (Tổng di chúc = 800 triệu).\n• Phần di sản còn lại chưa định đoạt chia theo pháp luật = 1.270 - 800 = 470 triệu đồng.\n• Hàng thừa kế thứ nhất theo luật của ông Hùng gồm: Bà Lan (vợ), suất thế vị của Cường (Minh + Mến), Hải, Đức, Hồng, Long = 6 suất.\n• Mỗi suất theo luật từ phần 470tr = 470 / 6 = 78,33 triệu đồng.\n• Xét Điều 644 BLDS 2015 cho người hưởng thừa kế bắt buộc: Bà Lan (vợ) và Hồng (con bị thiểu năng không có khả năng lao động).\n  - Một suất thừa kế theo luật nếu chia toàn bộ di sản = 1.270 / 6 = 211,67 triệu.\n  - Suất Điều 644 = 2/3 x 211,67 = 141,11 triệu đồng.\n  - Bà Lan và Hồng mới nhận 78,33tr -> Mỗi người thiếu: 141,11 - 78,33 = 62,78 triệu đồng (Tổng thiếu = 125,56 triệu).\n  - Trích bù từ bà Mai và Long theo tỷ lệ nhận di chúc (500 : 300 = 5 : 3):\n    + Bà Mai bị trích: 125,56 x (5/8) = 78,48 triệu -> Mai còn: 500 - 78,48 = 421,52 triệu đồng.\n    + Long bị trích: 125,56 x (3/8) = 47,08 triệu -> Long nhận di chúc: 300 - 47,08 = 252,92 triệu + 78,33tr (phần luật) = 331,25 triệu đồng."
         },
         {
-          "title": "Bước 2: Chia di sản của anh X (500 triệu / 2 = 250 triệu)",
-          "content": "• Anh X chết không để lại di chúc nên 250 triệu chia đều theo pháp luật (Điều 651 BLDS 2015):\n• Hàng thừa kế thứ nhất của X gồm: Mẹ đẻ (Bà B), Vợ (Chị K), 2 con (M và N) = 4 người.\n• Mỗi người nhận: 250 / 4 = 62,5 triệu đồng."
+          "title": "Bước 2: Chia di sản của anh Cường (500 triệu)",
+          "content": "• Do Cường chết cùng lúc với ông Hùng nên không hưởng di sản của ông Hùng.\n• Di sản của Cường 500 triệu chia theo luật cho hàng thừa kế thứ nhất gồm: Vợ Thu, con Minh, con Mến, mẹ đẻ Lan (4 người).\n• Mỗi người nhận: 500 / 4 = 125 triệu đồng."
         },
         {
-          "title": "Bước 3: Kết luận tổng hợp tài sản nhận được",
-          "content": "• Bà B nhận: 125tr (từ A) + 62,5tr (từ X) = 187,5 triệu đồng (+ 750tr tài sản riêng của bà).\n• Y = Z = 281,25 triệu đồng.\n• Chị K = 62,5 triệu đồng (+ 250tr tài sản riêng của chị).\n• Cháu M = 31,25tr + 62,5tr = 93,75 triệu đồng.\n• Cháu N = 31,25tr + 62,5tr = 93,75 triệu đồng."
+          "title": "Bước 3: Kết luận",
+          "content": "• Bà Lan nhận: 141,11tr (từ Hùng) + 125tr (từ Cường) = 266,11 triệu đồng (+ 1 tỷ TS riêng).\n• Hồng (con thiểu năng) = 141,11 triệu đồng.\n• Hải = Đức = 78,33 triệu đồng.\n• Minh = Mến = (78,33 / 2) + 125tr = 164,17 triệu đồng mỗi cháu.\n• Bà Mai = 421,52 triệu đồng.\n• Long = 331,25 triệu đồng.\n• Chị Thu = 125 triệu đồng."
         }
       ]
     },
     {
       "id": "tk-4",
-      "title": "Bài 4: Vợ chồng ông Bảy và bà Lan (Nhập tài sản riêng & Con chưa thành niên)",
-      "problem": "Vợ chồng ông Bảy, bà Lan có tài sản chung là căn nhà trị giá 550 triệu đồng. Bà Lan có tài sản riêng là căn nhà 250 triệu đồng. Năm 2015, bà Lan thực hiện thủ tục nhập tài sản riêng vào tài sản chung vợ chồng. Họ có 3 người con là Mai (20 tuổi), Hoa (17 tuổi), Dũng (đã chết năm 10 tuổi). Năm 2017, ông Bảy chết, trước đó có lập di chúc để lại toàn bộ tài sản cho bà Lan. Hãy chia thừa kế.",
-      "diagram": "Ông Bảy (+) === Bà Lan\n      |------------|------------|\n  Mai (20t)    Hoa (17t)   Dũng (mất lúc 10t)\n(Di chúc: Toàn bộ cho bà Lan)",
+      "title": "Bài 4: Ông Sơn (Bài 2 Phần II - Di chúc cho trại trẻ mồ côi X 1/2 tài sản)",
+      "problem": "Ông Sơn kết hôn với bà Mai có 2 con là Lan, My (đều đã thành niên có việc làm). Ông Sơn có mẹ già là bà Hồng. Năm 2016 ông Sơn chết, di chúc cho Trại trẻ mồ côi X 1/2 tài sản. Tài sản chung nhà của ông Sơn và bà Mai là 1,2 tỷ, sổ tiết kiệm riêng ông Sơn 200 triệu, mai táng hết 40 triệu. Hãy chia thừa kế theo BLDS 2015.",
+      "diagram": "Bà Hồng (mẹ già)\n       |\nÔng Sơn (+) === Bà Mai\n       |------------|\n      Lan          My",
       "steps": [
         {
-          "title": "Bước 1: Xác định khối tài sản chung và di sản của ông Bảy",
-          "content": "• Tổng tài sản chung sau khi nhập = 550 triệu + 250 triệu = 800 triệu đồng.\n• Di sản của ông Bảy = 800 / 2 = 400 triệu đồng.\n• Theo di chúc: Bà Lan được hưởng toàn bộ 400 triệu."
+          "title": "Bước 1: Tính khối di sản của ông Sơn",
+          "content": "• Di sản của ông Sơn = 1,2 tỷ / 2 (TS chung) + 200tr (TS riêng) - 40tr (mai táng) = 760 triệu đồng.\n• Theo di chúc: Trại trẻ mồ côi X hưởng 1/2 di sản = 760 / 2 = 380 triệu đồng.\n• Phần còn lại chia theo pháp luật = 760 - 380 = 380 triệu đồng."
         },
         {
-          "title": "Bước 2: Áp dụng Điều 644 BLDS 2015",
-          "content": "• Mai đã thành niên (20 tuổi) có khả năng lao động nên không thuộc diện Điều 644.\n• Hoa chưa thành niên (17 tuổi) được hưởng thừa kế không phụ thuộc nội dung di chúc.\n• Nếu chia theo luật, hàng thừa kế thứ nhất gồm: Bà Lan, Mai, Hoa (3 người) -> 1 suất = 400 / 3 = 133,33 triệu đồng.\n• Suất của Hoa theo Điều 644 = 2/3 x (400 / 3) = 88,89 triệu đồng.\n• Số tiền này được trích từ phần di chúc của bà Lan."
+          "title": "Bước 2: Chia phần 380 triệu theo pháp luật & Áp dụng Điều 644",
+          "content": "• Hàng thừa kế thứ nhất gồm: Mẹ Hồng, Vợ Mai, Con Lan, Con My (4 người).\n• Mỗi người nhận theo luật: 380 / 4 = 95 triệu đồng.\n• Xét Điều 644 BLDS 2015 cho mẹ Hồng và vợ Mai:\n  - Nếu không có di chúc, 1 suất luật = 760 / 4 = 190 triệu.\n  - Suất Điều 644 = 2/3 x 190 = 126,67 triệu đồng.\n  - Mẹ Hồng và Vợ Mai mới nhận 95tr -> Mỗi người thiếu: 126,67 - 95 = 31,67 triệu đồng (Tổng thiếu = 63,34 triệu).\n  - Trích bù 63,34 triệu từ phần di chúc của Trại trẻ mồ côi X:\n    + Trại trẻ mồ côi X còn: 380 - 63,34 = 316,66 triệu đồng."
         },
         {
           "title": "Bước 3: Kết luận",
-          "content": "• Hoa nhận: 88,89 triệu đồng.\n• Bà Lan nhận: 400 - 88,89 = 311,11 triệu đồng (+ 400tr tài sản riêng = 711,11 triệu đồng).\n• Mai không được hưởng di sản theo di chúc."
+          "content": "• Bà Hồng (mẹ già) = 126,67 triệu đồng.\n• Bà Mai (vợ) = 126,67 triệu đồng (+ 600tr tài sản riêng).\n• Lan = My = 95 triệu đồng mỗi người.\n• Trại trẻ mồ côi X = 316,66 triệu đồng."
         }
       ]
     },
     {
       "id": "tk-5",
-      "title": "Bài 5: Ông Dương và anh Hiệp (Chết khác thời điểm: tại chỗ và trên đường đi cấp cứu)",
-      "problem": "Ông Dương và bà Hoa có 2 con là Dũng và Hiệp (đều đã thành niên). Hiệp kết hôn với Hạnh có 3 con là Huyền (13 tuổi), Hồng (11 tuổi), Hiếu (9 tuổi). Tháng 6/2018, ông Dương và Hiệp bị tai nạn giao thông: Hiệp chết ngay tại chỗ, ông Dương chết sau đó trên đường đưa đi cấp cứu. Ông Dương để lại di chúc hợp pháp cho Dũng và bà dì Tương toàn bộ tài sản. Biết tài sản chung ông Dương và bà Hoa là nhà 1,6 tỷ, sổ tiết kiệm riêng ông Dương 200 triệu, mai táng ông Dương hết 40 triệu. Di sản của anh Hiệp là 900 triệu (không có di chúc). Hãy chia thừa kế.",
-      "diagram": "Ông Dương (+) [chết sau] === Bà Hoa\n        |--------------------|\n     Dũng                 Hiệp (+) [chết trước]\n                          (vợ Hạnh, con Huyền, Hồng, Hiếu)",
+      "title": "Bài 5: Ông Chuẩn và bà Thanh (Bài 6 Phần II - Truất quyền thừa kế của vợ ly thân)",
+      "problem": "Ông Chuẩn và bà Thanh là vợ chồng (ly thân đã lâu), có 3 con là Kiên, Hậu, Mai (đều đã thành niên). Năm 2018 ông Chuẩn chết, di chúc truất quyền thừa kế của bà Thanh và để toàn bộ tài sản cho 3 con. Mai táng hết 6 triệu lấy từ tài sản chung. Tài sản chung sau mai táng là 820 triệu, tài sản riêng ông Chuẩn là 20 triệu. Hãy chia thừa kế theo BLDS 2015.",
+      "diagram": "Ông Chuẩn (+) === Bà Thanh (ly thân, bị truất quyền)\n       |------------|------------|\n      Kiên         Hậu          Mai",
       "steps": [
         {
-          "title": "Bước 1: Chia di sản của anh Hiệp trước (do Hiệp chết trước)",
-          "content": "• Di sản của anh Hiệp = 900 triệu đồng.\n• Hiệp chết không có di chúc nên chia đều theo pháp luật (Điều 651 BLDS 2015):\n• Hàng thừa kế thứ nhất của Hiệp gồm: Cha đẻ (Ông Dương - lúc này vẫn còn sống), Mẹ đẻ (Bà Hoa), Vợ (Hạnh), 3 con (Huyền, Hồng, Hiếu) = 6 người.\n• Mỗi suất thừa kế = 900 / 6 = 150 triệu đồng.\n• Ông Dương nhận: 150 triệu; Bà Hoa = 150 triệu; Hạnh = 150 triệu; Huyền = Hồng = Hiếu = 150 triệu đồng."
+          "title": "Bước 1: Tính di sản của ông Chuẩn",
+          "content": "• Di sản của ông Chuẩn = 820 triệu / 2 (TS chung) + 20 triệu (TS riêng) = 430 triệu đồng.\n• Theo di chúc: 3 con Kiên, Hậu, Mai hưởng toàn bộ = 430 / 3 = 143,33 triệu/người."
         },
         {
-          "title": "Bước 2: Xác định và chia di sản của ông Dương (chết sau)",
-          "content": "• Di sản của ông Dương = 1/2 TS chung (1,6 tỷ / 2 = 800tr) + Sổ tiết kiệm riêng (200tr) + Thừa kế nhận từ Hiệp (150tr) - Tiền mai táng (40tr) = 1.110 triệu đồng (1 tỷ 110 triệu).\n• Di chúc ông Dương chia cho Dũng và dì Tương mỗi người 1/2 = 1.110 / 2 = 555 triệu đồng.\n• Xét Điều 644 BLDS 2015 cho Bà Hoa (vợ):\n  - Nếu chia theo luật, hàng thừa kế thứ nhất của ông Dương gồm: Bà Hoa, Dũng, và suất thế vị của Hiệp (Huyền + Hồng + Hiếu) = 3 suất.\n  - Một suất theo luật = 1.110 / 3 = 370 triệu đồng.\n  - Bà Hoa được hưởng tối thiểu = 2/3 x 370 = 246,67 triệu đồng.\n  - Rút bù từ Dũng và dì Tương mỗi người: 246,67 / 2 = 123,33 triệu đồng.\n  - Dũng = Dì Tương còn lại: 555 - 123,33 = 431,67 triệu đồng."
+          "title": "Bước 2: Áp dụng Điều 644 BLDS 2015 cho bà Thanh",
+          "content": "• Mặc dù hai vợ chồng ly thân và ông Chuẩn có di chúc truất quyền thừa kế của bà Thanh, nhưng họ chưa ly hôn hợp pháp tại Tòa án nên bà Thanh vẫn là vợ hợp pháp của ông Chuẩn.\n• Bà Thanh thuộc diện người thừa kế không phụ thuộc nội dung di chúc (Điều 644 BLDS 2015).\n• Hàng thừa kế thứ nhất gồm: Vợ Thanh, 3 con Kiên, Hậu, Mai (4 người).\n• Một suất theo luật = 430 / 4 = 107,5 triệu đồng.\n• Suất của bà Thanh theo Điều 644 = 2/3 x 107,5 = 71,67 triệu đồng.\n• Trích đều từ 3 con (mỗi người trích: 71,67 / 3 = 23,89 triệu)."
         },
         {
-          "title": "Bước 3: Kết luận tổng hợp",
-          "content": "• Bà Hoa = 246,67tr (từ Dương) + 150tr (từ Hiệp) = 396,67 triệu đồng (+ 800tr tài sản riêng).\n• Dũng = 431,67 triệu đồng.\n• Dì Tương = 431,67 triệu đồng.\n• Chị Hạnh = 150 triệu đồng.\n• Huyền = Hồng = Hiếu = 150 triệu đồng mỗi cháu."
-        }
-      ]
-    },
-    {
-      "id": "tk-6",
-      "title": "Bài 6: Tình huống thử việc không lương theo Luật Lao động",
-      "problem": "Trần Tuấn Trường có bằng đại học kỹ sư điện được Công ty TNHH Tia Chớp tuyển dụng. Công ty yêu cầu Trường phải thử việc 1 tháng không hưởng lương. Yêu cầu của công ty có hợp pháp không? Căn cứ theo Bộ luật Lao động 2019 giải thích.",
-      "diagram": "Kỹ sư Trường tuyển dụng -> Công ty yêu cầu thử việc 1 tháng không lương",
-      "steps": [
-        {
-          "title": "Bước 1: Căn cứ pháp lý về tiền lương thử việc",
-          "content": "• Căn cứ Điều 26 Bộ luật Lao động 2019 quy định về Tiền lương trong thời gian thử việc:\n  'Tiền lương của người lao động trong thời gian thử việc do hai bên thỏa thuận nhưng ít nhất phải bằng 85% mức lương của công việc đó.'"
-        },
-        {
-          "title": "Bước 2: Đánh giá tính hợp pháp",
-          "content": "• Yêu cầu thử việc 1 tháng không hưởng lương của Công ty TNHH Tia Chớp là hoàn toàn trái pháp luật.\n• Công ty có nghĩa vụ phải trả cho anh Trường ít nhất 85% mức lương của vị trí công việc kỹ sư điện trong thời gian thử việc."
+          "title": "Bước 3: Kết luận",
+          "content": "• Bà Thanh nhận: 71,67 triệu đồng (+ 410 triệu tài sản riêng của bà).\n• Kiên = Hậu = Mai nhận: 143,33 - 23,89 = 119,44 triệu đồng mỗi người."
         }
       ]
     }
