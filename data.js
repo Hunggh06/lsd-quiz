@@ -10462,8 +10462,8 @@ window.QUIZ_DATA = {
       "C": "8/11/2007",
       "D": "8/11/2008"
      },
-     "answer": "B",
-     "explain": "",
+     "answer": "C",
+     "explain": "Ngày 7/11/2006 Đại hội đồng WTO quyết định kết nạp và ngày 11/1/2007 Việt Nam chính thức trở thành thành viên thứ 150 của WTO.",
      "hint": "",
      "tiet": "",
      "id": "tc-181"
