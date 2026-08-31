@@ -16,6 +16,8 @@
   var LSD_ESSAY_KEY = "lsd_essay_learned_v1";
   var PLDC_STORE_KEY = "pldc_quiz_results_v1";
   var PNAME_KEY = "lsd_player_name";
+  var LSD_NOTES_KEY = "lsd_notes_v1";
+  var PLDC_NOTES_KEY = "pldc_notes_v1";
 
   /* ---------- Storage helpers ---------- */
   function loadResults(key) {
@@ -25,10 +27,45 @@
   function saveResults(key, r) {
     try { localStorage.setItem(key, JSON.stringify(r)); } catch (e) {}
   }
+  function getNotesStore(subj){ return subj==="lsd" ? lsdNotes : pldcNotes; }
+  function getNotesKey(subj){ return subj==="lsd" ? LSD_NOTES_KEY : PLDC_NOTES_KEY; }
+  function saveNote(subj, qid, text){
+    var store = getNotesStore(subj);
+    if (text && text.trim()) store[qid]=text;
+    else delete store[qid];
+    saveResults(getNotesKey(subj), store);
+  }
+  function createNoteUI(q, subj){
+    var wrap = document.createElement("div");
+    wrap.className = "note-wrap";
+    var btn = document.createElement("button");
+    btn.className = "ghost-btn note-toggle";
+    var store = getNotesStore(subj);
+    var hasNote = !!(store[q.id] && store[q.id].trim());
+    btn.textContent = hasNote ? "📝 Ghi chú (có nội dung) ▼" : "📝 Ghi chú";
+    var panel = document.createElement("div");
+    panel.className = "note-panel";
+    var ta = document.createElement("textarea");
+    ta.className = "note-input";
+    ta.placeholder = "Ghi chú riêng của bạn cho câu này (chỉ bạn thấy)...";
+    ta.value = store[q.id] || "";
+    ta.addEventListener("input", function(){ saveNote(subj, q.id, ta.value); btn.textContent = ta.value.trim() ? "📝 Ghi chú (có nội dung) ▼" : "📝 Ghi chú"; });
+    var hint = document.createElement("small");
+    hint.textContent = "Tự động lưu • Ấn nút Ghi chú để ẩn/hiện, làm lại vẫn giữ nguyên";
+    hint.style.cssText = "color:var(--ink-soft);font-size:11px;display:block;margin-top:4px";
+    btn.onclick = function(){ panel.classList.toggle("open"); btn.textContent = panel.classList.contains("open") ? "🙈 Ẩn ghi chú" : (ta.value.trim() ? "📝 Ghi chú (có nội dung) ▼" : "📝 Ghi chú"); };
+    panel.appendChild(ta);
+    panel.appendChild(hint);
+    wrap.appendChild(btn);
+    wrap.appendChild(panel);
+    return wrap;
+  }
 
   var lsdResults = loadResults(LSD_STORE_KEY);
   var pldcResults = loadResults(PLDC_STORE_KEY);
   var essayLearned = loadResults(LSD_ESSAY_KEY);
+  var lsdNotes = loadResults(LSD_NOTES_KEY);
+  var pldcNotes = loadResults(PLDC_NOTES_KEY);
   var playerName = "";
   try { playerName = localStorage.getItem(PNAME_KEY) || ""; } catch (e) {}
 
@@ -1030,6 +1067,7 @@
       btnWrap.appendChild(btnS);
       card.appendChild(btnWrap);
       card.appendChild(fbBox);
+      card.appendChild(createNoteUI(q, "pldc"));
 
       var saved = pldcResults[q.id];
       if (saved && saved.selected) {
@@ -1287,6 +1325,7 @@
     }
     card.appendChild(optWrap);
     card.appendChild(fbBox);
+    card.appendChild(createNoteUI(q, subj));
 
     if (r) {
       applyCardResult(card, q, r, btnMap, fbBox);

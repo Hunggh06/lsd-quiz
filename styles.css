@@ -157,6 +157,12 @@ body{
   margin-top:8px;padding:10px 12px;border-radius:8px;background:#fff9e6;border:1px solid #ecd89b;
   color:#6b4703;font-size:13px;line-height:1.5;
 }
+.note-wrap{margin-top:10px}
+.note-toggle{font-size:12px!important;padding:5px 10px!important;border-radius:6px!important}
+.note-panel{display:none;margin-top:8px}
+.note-panel.open{display:block}
+.note-input{width:100%;min-height:72px;padding:10px 12px;border:1px solid var(--line-strong);border-radius:8px;background:#fff;font-family:var(--sans);font-size:13px;color:var(--ink);resize:vertical}
+.note-input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(138,31,31,.10)}
 
 .q-card{
   background:var(--paper-2);border:1px solid var(--line);border-radius:14px;
