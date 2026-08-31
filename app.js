@@ -1002,15 +1002,29 @@
 
       var clauseHtml = "<div class='essay-short-box'><div class='esb-title'>📖 Trích dẫn điều luật:</div><p style='margin:0;line-height:1.6;font-size:16px'>" + esc(item.content) + "</p></div>";
 
+      var sitHtml = "";
+      if (sit && sit.problem) {
+        sitHtml =
+          "<div class='essay-sec sec-tips'>" +
+            "<div class='essay-sec-head'>⚡ Tình huống thực tế &amp; Phân tích cấu thành</div>" +
+            "<div class='essay-sec-items'>" +
+              "<div><b>Tình huống:</b> " + esc(sit.problem) + "</div>" +
+              (sit.conclusion ? "<div style='margin-top:6px'><b>Kết luận:</b> <span class='tag ok'>" + esc(sit.conclusion) + "</span></div>" : "") +
+              "<div style='margin-top:8px;display:grid;gap:6px'>" +
+                (sit.analysis || []).map(function (el) {
+                  return "<div><b>• " + esc(el.label) + ":</b> " + esc(el.content) + "</div>";
+                }).join("") +
+              "</div>" +
+            "</div>" +
+          "</div>";
+      }
+
       var analysisHtml = "<div class='essay-sections-wrap'>" +
         "<div class='essay-sec'><div class='essay-sec-head'>📍 1. Giả định</div><div class='essay-sec-items'><b>Nội dung:</b> " + esc(a.gia_dinh) + "<br><em>Giải thích: " + esc(a.gia_dinh_gt) + "</em></div></div>" +
         "<div class='essay-sec'><div class='essay-sec-head'>📝 2. Quy định</div><div class='essay-sec-items'><b>Nội dung:</b> " + esc(a.quy_dinh) + "<br><em>Giải thích: " + esc(a.quy_dinh_gt) + "</em></div></div>" +
         "<div class='essay-sec'><div class='essay-sec-head'>⚖️ 3. Chế tài</div><div class='essay-sec-items'><b>Nội dung:</b> " + esc(a.che_tai) + "<br><em>Giải thích: " + esc(a.che_tai_gt) + "</em></div></div>" +
         "<div class='essay-sec sec-lienhe'><div class='essay-sec-head'>🎯 Hình thức thực hiện pháp luật</div><div class='essay-sec-items'><b>" + esc(a.hinh_thuc) + "</b></div></div>" +
-        (sit.text ?
-          "<div class='essay-sec sec-tips'><div class='essay-sec-head'>⚡ Tình huống thực tế &amp; Cấu thành VPPL</div><div class='essay-sec-items'><p><b>Đề bài:</b> " + esc(sit.text) + "</p>" +
-          (sit.elements || []).map(function (el) { return "<div><b>• " + esc(el.name) + ":</b> " + esc(el.detail) + "</div>"; }).join("") +
-          "</div></div>" : "") +
+        sitHtml +
         "</div>";
 
       body.innerHTML = clauseHtml + analysisHtml;
