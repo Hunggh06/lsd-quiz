@@ -46,12 +46,7 @@
 
   <!-- MAIN -->
   <main id="main">
-    <header id="topbar">
-      <button id="btnMenu" class="ghost-btn mobile-only">☰</button>
-      <div id="crumb" class="crumb">Chọn một bài học từ danh mục bên trái</div>
-      <button id="btnToggleQnav" class="ghost-btn">🗂 Bật bảng</button>
-      <div id="lessonProgress" class="lesson-progress"></div>
-    </header>
+    <button id="btnMenu" class="ghost-btn mobile-only mobile-menu-fab">☰ Danh mục</button>
 
     <section id="content" class="content">
       <div id="welcome" class="welcome">
@@ -82,7 +77,8 @@
   <!-- QUESTION NAVIGATOR -->
   <aside id="qnav" class="qnav hidden">
     <div class="qnav-head">
-      <span class="qnav-title">Các câu</span>
+      <div class="qnav-title" id="qnavTitle">Bảng câu hỏi</div>
+      <div id="lessonProgress" class="qnav-progress"></div>
     </div>
     <div id="qnavGrid" class="qnav-grid"></div>
   </aside>

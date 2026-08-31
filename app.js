@@ -95,20 +95,10 @@
 
   /* ---------- select & render a Bài ---------- */
   var current = null;
-  var qnavOpen = true;
-  try { qnavOpen = localStorage.getItem("lsd_qnav_open") !== "0"; } catch (e) {}
   function updateQnavVisibility() {
     if (!qnav) return;
-    if (current && qnavOpen) qnav.classList.remove("hidden");
+    if (current) qnav.classList.remove("hidden");
     else qnav.classList.add("hidden");
-    syncToggleBtn();
-  }
-  function syncToggleBtn() {
-    var b = document.getElementById("btnToggleQnav");
-    if (!b) return;
-    var on = !!(current && qnavOpen);
-    b.classList.toggle("qnav-on", on);
-    b.textContent = on ? "🗂 Bảng câu" : "🗂 Bật bảng";
   }
   function showToast(msg) {
     var t = document.getElementById("toastMsg");
@@ -128,7 +118,7 @@
   function selectEssay() {
     current = { isEssay: true };
     welcome.style.display = "none";
-    crumb.textContent = "Ôn thi Tự Luận — 8 câu hỏi trọng tâm (Kỳ II 2025-2026)";
+    if (crumb) crumb.textContent = "Ôn thi Tự Luận — 8 câu hỏi trọng tâm (Kỳ II 2025-2026)";
     document.querySelectorAll(".lesson-btn").forEach(function (b) {
       b.classList.remove("active");
     });
@@ -151,7 +141,15 @@
     qs.forEach(function (q) {
       if (essayLearned[q.id]) count++;
     });
-    lessonProgress.innerHTML = "Đã thuộc <b style='color:var(--ok)'>" + count + "/" + total + "</b> câu (" + Math.round(count / total * 100) + "%)";
+    var qTitle = document.getElementById("qnavTitle");
+    if (qTitle) qTitle.textContent = "Tự luận trọng tâm";
+    if (lessonProgress) {
+      lessonProgress.innerHTML =
+        "<div class='qp-row'>" +
+        "<span class='qp-item ok'>Đã thuộc: <b>" + count + "/" + total + "</b></span>" +
+        "<span class='qp-item'>Chưa thuộc: <b>" + (total - count) + "</b></span>" +
+        "</div>";
+    }
   }
 
   function renderEssayQnav() {
@@ -482,7 +480,7 @@
     if (tabTL) tabTL.classList.remove("active");
     if (tabTN) tabTN.classList.add("active");
     var ch = DATA.chapters[ci];
-    crumb.textContent = ch.title + (ch.subtitle ? " — " + ch.subtitle : "");
+    if (crumb) crumb.textContent = ch.title + (ch.subtitle ? " — " + ch.subtitle : "");
     document.querySelectorAll(".lesson-btn").forEach(function (b) {
       b.classList.toggle("active", +b.getAttribute("data-ci") === ci);
     });
@@ -500,8 +498,17 @@
       var r = results[q.id];
       if (r) { d++; if (countsForRank(r)) c++; }
     });
-    lessonProgress.innerHTML = "Đã làm <b>" + d + "/" + t + "</b> · Đúng <b style='color:var(--ok)'>" + c +
-      "</b> · Sai <b style='color:var(--bad)'>" + (d - c) + "</b>";
+    var w = d - c;
+    var qTitle = document.getElementById("qnavTitle");
+    if (qTitle) qTitle.textContent = ch.title + (ch.subtitle ? " — " + ch.subtitle : "");
+    if (lessonProgress) {
+      lessonProgress.innerHTML =
+        "<div class='qp-row'>" +
+        "<span class='qp-item'>Đã làm: <b>" + d + "/" + t + "</b></span>" +
+        "<span class='qp-item ok'>Đúng: <b>" + c + "</b></span>" +
+        "<span class='qp-item bad'>Sai: <b>" + w + "</b></span>" +
+        "</div>";
+    }
   }
 
   /* ---------- Question Navigator ---------- */
@@ -1090,11 +1097,12 @@
 
   /* ---------- wire controls ---------- */
   document.getElementById("btnDashboard").onclick = openDashboard;
-  document.getElementById("btnToggleQnav").onclick = function () {
-    qnavOpen = !qnavOpen;
-    try { localStorage.setItem("lsd_qnav_open", qnavOpen ? "1" : "0"); } catch (e) {}
-    updateQnavVisibility();
-  };
+  var btnToggle = document.getElementById("btnToggleQnav");
+  if (btnToggle) {
+    btnToggle.onclick = function () {
+      updateQnavVisibility();
+    };
+  }
   document.getElementById("btnDashClose").onclick = function () { dashModal.classList.add("hidden"); };
   dashModal.onclick = function (e) { if (e.target === dashModal) dashModal.classList.add("hidden"); };
   document.getElementById("rankBig").addEventListener("click", openRankModal);
@@ -1105,7 +1113,7 @@
     if (confirm("Xóa TOÀN BỘ tiến độ đã làm?")) {
       results = {}; saveResults(results); renderTree();
       if (current) { renderBai(current.ci); updateBaiProgress(current.ci); refreshQnav(); }
-      else { welcome.style.display = "block"; updateQnavVisibility(); lessonProgress.innerHTML = ""; }
+      else { welcome.style.display = "block"; updateQnavVisibility(); if (lessonProgress) lessonProgress.innerHTML = ""; }
       updateRank();
     }
   };
@@ -1115,13 +1123,11 @@
   document.getElementById("nameInput").addEventListener("keydown", function (e) { if (e.key === "Enter") submitName(); });
   document.getElementById("btnNameOk").onclick = submitName;
 
-  /* ---------- init ---------- */
   renderTree();
   updateRank();
   updateCombo();
   ensureName();
   updateQnavVisibility();
-  syncToggleBtn();
 
   if (!DATA.chapters.length) {
     content.innerHTML = "<div class='welcome'><h1>Chưa có dữ liệu</h1><p>File <code>data.js</code> chưa được tạo. Hãy chạy merge để sinh dữ liệu câu hỏi.</p></div>";
