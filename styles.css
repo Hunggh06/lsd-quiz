@@ -270,6 +270,16 @@ body{
 .lb-rank img{width:26px;height:26px;object-fit:contain}
 .lb-rank span{color:var(--gold);font-weight:600}
 
+.shuffle-card{width:min(440px,100%)}
+.shuffle-body{padding:18px 20px 20px}
+.shuffle-body p{margin:0 0 16px;font-size:15px;line-height:1.6;color:var(--ink)}
+.shuffle-actions{display:flex;gap:10px;flex-wrap:wrap}
+.shuffle-btn{flex:1;min-width:140px;padding:10px 14px;border-radius:10px;border:1px solid var(--line-strong);cursor:pointer;font-size:14px;font-weight:700;font-family:var(--sans);transition:.15s}
+.shuffle-btn.yes{background:linear-gradient(135deg,var(--accent),var(--accent-soft));color:#fff;border-color:var(--accent)}
+.shuffle-btn.yes:hover{filter:brightness(1.08)}
+.shuffle-btn.no{background:var(--paper);color:var(--ink)}
+.shuffle-btn.no:hover{background:#efe6d2}
+
 .combo-badge{
   position:fixed;right:18px;bottom:18px;z-index:60;display:none;align-items:center;gap:6px;
   color:#fff;font-family:var(--serif);font-weight:700;font-size:20px;

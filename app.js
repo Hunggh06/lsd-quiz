@@ -18,6 +18,78 @@
   var PNAME_KEY = "lsd_player_name";
   var LSD_NOTES_KEY = "lsd_notes_v1";
   var PLDC_NOTES_KEY = "pldc_notes_v1";
+  var SHUFFLE_KEY = "quiz_shuffle_v1";
+  var LABELS = ["A", "B", "C", "D", "E", "F", "G", "H"];
+
+  /* ---------- Shuffle state (đảo đáp án) ---------- */
+  var shuffleState = (function () {
+    try { return JSON.parse(localStorage.getItem(SHUFFLE_KEY)) || {}; }
+    catch (e) { return {}; }
+  })();
+  function saveShuffle() {
+    try { localStorage.setItem(SHUFFLE_KEY, JSON.stringify(shuffleState)); } catch (e) {}
+  }
+  function getDisplayOptions(q) {
+    var st = shuffleState[q.id];
+    if (!st || !st.order || !st.order.length) {
+      return Object.keys(q.options).sort().map(function (k) {
+        return { displayKey: k, origKey: k, text: q.options[k] };
+      });
+    }
+    return st.order.map(function (origKey, idx) {
+      return { displayKey: LABELS[idx] || String(idx + 1), origKey: origKey, text: q.options[origKey] };
+    });
+  }
+  function getCorrectDisplayKey(q) {
+    var st = shuffleState[q.id];
+    if (!st || !st.newAnswer) return q.answer;
+    return st.newAnswer;
+  }
+  function shuffleQuestions(questions) {
+    (questions || []).forEach(function (q) {
+      var keys = Object.keys(q.options).sort();
+      if (keys.length < 2) return;
+      var arr = keys.slice();
+      var tries = 0;
+      do {
+        for (var i = arr.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
+        }
+        tries++;
+      } while (tries < 8 && arr.join("") === keys.join(""));
+      var idx = arr.indexOf(q.answer);
+      if (idx < 0) idx = 0;
+      shuffleState[q.id] = { order: arr, newAnswer: LABELS[idx] };
+    });
+    saveShuffle();
+  }
+  function unshuffleQuestions(questions) {
+    (questions || []).forEach(function (q) { delete shuffleState[q.id]; });
+    saveShuffle();
+  }
+  /* Hiện modal hỏi "Bạn có muốn đảo đáp án không?" với 2 lựa chọn Có / Không */
+  function askClearWithShuffle(msg, onYes, onNo) {
+    var modal = document.getElementById("shuffleModal");
+    var msgEl = document.getElementById("shuffleMsg");
+    var btnYes = document.getElementById("btnShuffleYes");
+    var btnNo = document.getElementById("btnShuffleNo");
+    var btnCancel = document.getElementById("btnShuffleCancel");
+    var btnClose = document.getElementById("btnShuffleClose");
+    if (!modal || !btnYes || !btnNo) {
+      if (confirm(msg + "\n\nBạn có muốn đảo đáp án không? (OK = Có, Cancel = Không)")) onYes();
+      else onNo();
+      return;
+    }
+    if (msgEl) msgEl.innerHTML = esc(msg) + "<br>Bạn có muốn <b>đảo thứ tự đáp án</b> không?";
+    modal.classList.remove("hidden");
+    btnYes.onclick = function () { modal.classList.add("hidden"); onYes(); };
+    btnNo.onclick = function () { modal.classList.add("hidden"); onNo(); };
+    function cancel() { modal.classList.add("hidden"); }
+    if (btnCancel) btnCancel.onclick = cancel;
+    if (btnClose) btnClose.onclick = cancel;
+    modal.onclick = function (e) { if (e.target === modal) cancel(); };
+  }
 
   /* ---------- Storage helpers ---------- */
   function loadResults(key) {
@@ -927,17 +999,31 @@
   }
 
   function clearPldcChapter(ci) {
-    if (!confirm("Xóa toàn bộ đáp án đã làm trong bài này?")) return;
     var ch = PLDC_DATA.trac_nghiem[ci];
     if (!ch) return;
-    ch.questions.forEach(function(q){ delete pldcResults[q.id]; });
-    saveResults(PLDC_STORE_KEY, pldcResults);
-    currentStreak = 0; prevStreak = 0; updateCombo();
-    renderPldcTN(ci);
-    renderPldcTNQnav(ci);
-    updatePldcTNProgress(ci);
-    renderTree();
-    updateRank();
+    askClearWithShuffle("Xóa toàn bộ đáp án đã làm trong bài này?", function () {
+      ch.questions.forEach(function(q){ delete pldcResults[q.id]; });
+      shuffleQuestions(ch.questions);
+      saveResults(PLDC_STORE_KEY, pldcResults);
+      currentStreak = 0; prevStreak = 0; updateCombo();
+      renderPldcTN(ci);
+      renderPldcTNQnav(ci);
+      updatePldcTNProgress(ci);
+      renderTree();
+      updateRank();
+      showToast("Đã xóa & đảo đáp án bài này 🔀");
+    }, function () {
+      ch.questions.forEach(function(q){ delete pldcResults[q.id]; });
+      unshuffleQuestions(ch.questions);
+      saveResults(PLDC_STORE_KEY, pldcResults);
+      currentStreak = 0; prevStreak = 0; updateCombo();
+      renderPldcTN(ci);
+      renderPldcTNQnav(ci);
+      updatePldcTNProgress(ci);
+      renderTree();
+      updateRank();
+      showToast("Đã xóa đáp án, giữ nguyên thứ tự");
+    });
   }
   function clearPldcDSAll() {
     if (!confirm("Xóa toàn bộ đáp án phần Đúng/Sai?")) return;
@@ -951,17 +1037,31 @@
     updateRank();
   }
   function clearLsdChapter(ci) {
-    if (!confirm("Xóa toàn bộ đáp án đã làm trong bài này?")) return;
     var ch = LSD_DATA.chapters[ci];
     if (!ch) return;
-    ch.questions.forEach(function(q){ delete lsdResults[q.id]; });
-    saveResults(LSD_STORE_KEY, lsdResults);
-    currentStreak = 0; prevStreak = 0; updateCombo();
-    renderLsdBai(ci);
-    renderLsdQnav(ci);
-    updateLsdProgress(ci);
-    renderTree();
-    updateRank();
+    askClearWithShuffle("Xóa toàn bộ đáp án đã làm trong bài này?", function () {
+      ch.questions.forEach(function(q){ delete lsdResults[q.id]; });
+      shuffleQuestions(ch.questions);
+      saveResults(LSD_STORE_KEY, lsdResults);
+      currentStreak = 0; prevStreak = 0; updateCombo();
+      renderLsdBai(ci);
+      renderLsdQnav(ci);
+      updateLsdProgress(ci);
+      renderTree();
+      updateRank();
+      showToast("Đã xóa & đảo đáp án bài này 🔀");
+    }, function () {
+      ch.questions.forEach(function(q){ delete lsdResults[q.id]; });
+      unshuffleQuestions(ch.questions);
+      saveResults(LSD_STORE_KEY, lsdResults);
+      currentStreak = 0; prevStreak = 0; updateCombo();
+      renderLsdBai(ci);
+      renderLsdQnav(ci);
+      updateLsdProgress(ci);
+      renderTree();
+      updateRank();
+      showToast("Đã xóa đáp án, giữ nguyên thứ tự");
+    });
   }
 
   function renderPldcTN(ci) {
@@ -1384,19 +1484,19 @@
     var r = store[q.id];
 
     var btnMap = {};
-    for (var k in q.options) {
-      (function (optKey) {
+    getDisplayOptions(q).forEach(function (opt) {
+      (function (optKey, optText) {
         var btn = document.createElement("button");
         btn.className = "opt";
-        btn.innerHTML = "<span class='key'>" + optKey + "</span><span class='oval'>" + esc(q.options[optKey]) + "</span>";
+        btn.innerHTML = "<span class='key'>" + optKey + "</span><span class='oval'>" + esc(optText) + "</span>";
         btn.onclick = function () {
           if (card.classList.contains("answered-ok") || card.classList.contains("answered-bad")) return;
           onSelect(optKey);
         };
         btnMap[optKey] = btn;
         optWrap.appendChild(btn);
-      })(k);
-    }
+      })(opt.displayKey, opt.text);
+    });
     card.appendChild(optWrap);
     card.appendChild(fbBox);
     card.appendChild(createNoteUI(q, subj));
@@ -1410,7 +1510,7 @@
 
   function handleAnswer(q, optKey, subj, onDone) {
     var store = subj === "lsd" ? lsdResults : pldcResults;
-    var isCorrect = (optKey === q.answer);
+    var isCorrect = (optKey === getCorrectDisplayKey(q));
     var storeKey = subj === "lsd" ? LSD_STORE_KEY : PLDC_STORE_KEY;
 
     var prev = store[q.id] || {};
@@ -1453,6 +1553,7 @@
     for (var k in btnMap) {
       btnMap[k].classList.remove("correct", "wrong", "dim");
     }
+    var correctKey = getCorrectDisplayKey(q);
     var doubtBox = (q.isDoubt && q.doubtNote) ? "<div class='doubt-box'><strong>⚠️ Phân tích nghi vấn:</strong> " + esc(q.doubtNote) + "</div>" : "";
 
     if (r.status === "correct") {
@@ -1471,15 +1572,15 @@
       card.classList.remove("answered-ok");
       card.classList.add("answered-bad");
       if (btnMap[r.selected]) btnMap[r.selected].classList.add("wrong");
-      if (btnMap[q.answer]) btnMap[q.answer].classList.add("correct");
+      if (btnMap[correctKey]) btnMap[correctKey].classList.add("correct");
       for (var optKey in btnMap) {
-        if (optKey !== r.selected && optKey !== q.answer) btnMap[optKey].classList.add("dim");
+        if (optKey !== r.selected && optKey !== correctKey) btnMap[optKey].classList.add("dim");
         btnMap[optKey].classList.add("locked");
       }
       if (fbBox) {
         fbBox.className = "feedback show bad";
         var hintHtml = q.hint ? "<div style='margin-top:6px;color:var(--hint)'>💡 <b>Gợi ý:</b> " + esc(q.hint) + "</div>" : "";
-        fbBox.innerHTML = "<span class='fb-title'>✗ Chưa chính xác (Đáp án đúng là " + q.answer + ")</span><div>" + esc(q.explain) + "</div>" + hintHtml + doubtBox;
+        fbBox.innerHTML = "<span class='fb-title'>✗ Chưa chính xác (Đáp án đúng là " + correctKey + ")</span><div>" + esc(q.explain) + "</div>" + hintHtml + doubtBox;
       }
     }
   }

@@ -115,6 +115,23 @@
 <div id="comboBadge" class="combo-badge"></div>
 <div id="rankUpFx" class="rankup-fx"></div>
 
+<div id="shuffleModal" class="modal hidden">
+  <div class="modal-card shuffle-card">
+    <div class="modal-head">
+      <h2>🗑 Xóa đáp án bài này?</h2>
+      <button id="btnShuffleClose" class="ghost-btn">✕</button>
+    </div>
+    <div class="shuffle-body">
+      <p id="shuffleMsg">Xóa toàn bộ đáp án đã làm trong bài này?<br>Bạn có muốn <b>đảo thứ tự đáp án</b> không?</p>
+      <div class="shuffle-actions">
+        <button id="btnShuffleYes" class="shuffle-btn yes">🔀 Có, đảo đi</button>
+        <button id="btnShuffleNo" class="shuffle-btn no">Không, giữ nguyên</button>
+        <button id="btnShuffleCancel" class="ghost-btn">Hủy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="data.js"></script>
 <script src="essay-data.js"></script>
 <script src="data-pldc.js"></script>
